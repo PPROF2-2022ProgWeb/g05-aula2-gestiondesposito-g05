@@ -24,7 +24,7 @@
 
 # ISPCA3G5
 ## Gestión de depósito (Sistema de Facturación)
-### https://pprof1-2021.github.io/g5-a3g5/
+### https://github.com/PPROF2-2022ProgWeb/g05-aula2-gestiondesposito-g05
 <br>
 <br>
 <br>
@@ -42,7 +42,7 @@ El sistema será un producto diseñado para trabajar en entornos WEB, lo que fac
 
 ---
 
-###         Aula 3 -  Grupo 5
+###         Aula 2 -  Grupo 5
 ---
 <br>
 <br>
