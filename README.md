@@ -141,7 +141,7 @@ Al proyecto desarrollado en 2021, la “consultora ISPC”, solicita  en esta op
 
 <p align="center">
   <a>
-    <img alt="Edit on CodeSandbox" src="img/logo.png">
+    <img alt="Edit on CodeSandbox" src="https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/DER.png">
   </a>
 </p>
 <!--
@@ -160,7 +160,6 @@ Al proyecto desarrollado en 2021, la “consultora ISPC”, solicita  en esta op
 - Consultas--(1 de Noviembre 2021)
 --- 
 -->
-<img alt="Awesome GitHub Profile Readme" src="img/DER.png"> </img>
 --- 
 
 ### 🎥 Listado de videos
