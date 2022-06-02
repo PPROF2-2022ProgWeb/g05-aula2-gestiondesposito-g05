@@ -19,7 +19,7 @@
 
 ---
 
-<a href="url"><img src="https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/Logo.png" align="left" height="300"></a>
+<a href="url"><img src="https://github.com/PPROF2-2022ProgWeb/g05-aula2-gestiondesposito-g05/tree/main/img/Logo.png" align="left" height="300"></a>
 
 
 # ISPCA3G5
@@ -83,7 +83,7 @@ El sistema será un producto diseñado para trabajar en entornos WEB, lo que fac
 
 <p align="center">
   <a>
-    <img alt="Edit on CodeSandbox" src="https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/proceso.png">
+    <img alt="Edit on CodeSandbox" src="https://github.com/PPROF2-2022ProgWeb/g05-aula2-gestiondesposito-g05/tree/main/img/proceso.png">
   </a>
 </p>
 
@@ -141,7 +141,7 @@ Al proyecto desarrollado en 2021, la “consultora ISPC”, solicita  en esta op
 
 <p align="center">
   <a>
-    <img alt="Edit on CodeSandbox" src="https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/DER.png">
+    <img alt="Edit on CodeSandbox" src="https://github.com/PPROF2-2022ProgWeb/g05-aula2-gestiondesposito-g05/tree/main/img/DER.png">
   </a>
 </p>
 <!--
