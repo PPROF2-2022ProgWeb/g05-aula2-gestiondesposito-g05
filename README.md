@@ -83,7 +83,7 @@ El sistema será un producto diseñado para trabajar en entornos WEB, lo que fac
 
 <p align="center">
   <a>
-    <img alt="Edit on CodeSandbox" src="https://github.com/PPROF2-2022ProgWeb/g05-aula2-gestiondesposito-g05/tree/main/img/proceso.png">
+    <img alt="Edit on CodeSandbox" src="https://github.com/PPROF2-2022ProgWeb/g05-aula2-gestiondesposito-g05/blob/main/img/pngcom.png">
   </a>
 </p>
 
