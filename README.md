@@ -19,7 +19,7 @@
 
 ---
 
-<a href="url"><img src="https://github.com/PPROF2-2022ProgWeb/g05-aula2-gestiondesposito-g05/tree/main/img/Logo.png" align="left" height="300"></a>
+<a href="url"><img src="https://github.com/PPROF2-2022ProgWeb/g05-aula2-gestiondesposito-g05/blob/main/img/Logo.png" align="left" height="300"></a>
 
 
 # ISPCA3G5
