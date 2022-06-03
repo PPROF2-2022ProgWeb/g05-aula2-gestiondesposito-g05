@@ -1,21 +1,5 @@
 
 <h1 align="center">Gestion Deposito (ISPCA2G5)</h1>
-<div align="center">
-
-
-<i>Una lista seleccionada de increíbles READMES de perfiles de Github</i>
-
-<a href="https://github.com/PPROF1-2021/g5-a3g5/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/PPROF1-2021/g5-a3g5?style=for-the-badge"></a>
-<img alt="GitHub closed issues" src="https://img.shields.io/github/issues-closed/PPROF1-2021/g5-a3g5?style=for-the-badge">
-<a href="https://github.com/PPROF1-2021/g5-a3g5/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/PPROF1-2021/g5-a3g5?style=for-the-badge"></a>
-<a href="https://github.com/PPROF1-2021/g5-a3g5/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/PPROF1-2021/g5-a3g5?style=for-the-badge"></a>
-<img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/PPROF1-2021/g5-a3g5?style=for-the-badge">
-<img alt="GitHub closed pull requests" src="https://img.shields.io/github/issues-pr-closed-raw/PPROF1-2021/g5-a3g5?style=for-the-badge">
-<img alt="GitHub Hacktoberfest combined status" src="https://img.shields.io/github/hacktoberfest/2021/PPROF1-2021/g5-a3g5?style=for-the-badge">
-<img alt="GitHub language count" src="https://img.shields.io/github/languages/count/PPROF1-2021/g5-a3g5?style=for-the-badge">
-<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/PPROF1-2021/g5-a3g5?style=for-the-badge">
-
-</div>
 
 ---
 
