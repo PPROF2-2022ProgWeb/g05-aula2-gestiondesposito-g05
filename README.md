@@ -1,5 +1,5 @@
 
-<h1 align="center">Gestion Deposito (ISPCA3G5)</h1>
+<h1 align="center">Gestion Deposito (ISPCA2G5)</h1>
 <div align="center">
 
 
@@ -22,7 +22,8 @@
 <a href="url"><img src="https://github.com/PPROF2-2022ProgWeb/g05-aula2-gestiondesposito-g05/blob/main/img/Logo.png" align="left" height="300"></a>
 
 
-# Desafío E-commerce - Proyecto de trabajo integrador.
+# Desafío E-commerce
+# Proyecto de trabajo integrador
 ### Sitio: Instituto Superior Politécnico Córdoba.
 
 ### Curso: Programador Web - TSDWAD - Cohorte 2021.
