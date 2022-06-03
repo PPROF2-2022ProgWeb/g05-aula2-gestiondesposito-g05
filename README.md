@@ -127,11 +127,7 @@ Al proyecto desarrollado en 2021, la “consultora ISPC”, solicita  en esta op
 
 ---
 
-<p align="center">
-  <a>
-    <img alt="Edit on CodeSandbox" src="https://github.com/PPROF2-2022ProgWeb/g05-aula2-gestiondesposito-g05/blob/main/img/Der.png">
-  </a>
-</p>
+
 <!--
 --- 
 #### Frontend
@@ -160,17 +156,27 @@ Al proyecto desarrollado en 2021, la “consultora ISPC”, solicita  en esta op
 <!--
 - **Creacion de App con XAMARIN  (ver)**
 -->
+--- 
 
+- **Arquitectura de Software**
 
+<p align="center">
+  <a>
+    <img alt="Edit on CodeSandbox" src="https://github.com/PPROF2-2022ProgWeb/g05-aula2-gestiondesposito-g05/blob/main/img/diagrama.png">
+  </a>
+</p>
 
 --- 
 
+- **Diseño de Base de Datos**
 
+<p align="center">
+  <a>
+    <img alt="Edit on CodeSandbox" src="https://github.com/PPROF2-2022ProgWeb/g05-aula2-gestiondesposito-g05/blob/main/img/Der.png">
+  </a>
+</p>
 
-
-
-
-
+--- 
 
 
 
