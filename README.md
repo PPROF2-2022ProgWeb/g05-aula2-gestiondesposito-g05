@@ -141,7 +141,7 @@ Al proyecto desarrollado en 2021, la “consultora ISPC”, solicita  en esta op
 
 - Convertir el index.html (su home) en una SPA de Angular con módulos y components.
 
-
+---
 
 <p align="center">
   <a>
@@ -166,7 +166,28 @@ Al proyecto desarrollado en 2021, la “consultora ISPC”, solicita  en esta op
 -->
 --- 
 
-### 🎥 Listado de videos
+### 🎥 Sistema de venta
+
+- **Arquitectura de Software**
+- **Diseño de Base de Datos**
+- **Patrones de Diseño**
+- **Creacion de Backend con JAVA**
+- **Creacion de Fronend con ANGULAR**
+- **Creacion de App con XAMARIN  (ver)**
+
+
+
+
+--- 
+
+
+
+
+
+
+
+
+
 
 <!-- YT:START -->
 
