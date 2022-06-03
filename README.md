@@ -22,9 +22,12 @@
 <a href="url"><img src="https://github.com/PPROF2-2022ProgWeb/g05-aula2-gestiondesposito-g05/blob/main/img/Logo.png" align="left" height="300"></a>
 
 
-# ISPCA3G5
-## Gestión de depósito (Sistema de Facturación)
-### https://github.com/PPROF2-2022ProgWeb/g05-aula2-gestiondesposito-g05
+# Desafío E-commerce - Proyecto de trabajo integrador.
+### Sitio: Instituto Superior Politécnico Córdoba.
+
+### Curso: Programador Web - TSDWAD - Cohorte 2021.
+
+#### https://github.com/PPROF2-2022ProgWeb/g05-aula2-gestiondesposito-g05
 <br>
 <br>
 <br>
