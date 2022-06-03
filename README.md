@@ -166,15 +166,16 @@ Al proyecto desarrollado en 2021, la “consultora ISPC”, solicita  en esta op
 -->
 --- 
 
-### 🎥 Sistema de venta
+### 🎥 Sistema de Venta - Requisitos
 
 - **Arquitectura de Software**
 - **Diseño de Base de Datos**
 - **Patrones de Diseño**
 - **Creacion de Backend con JAVA**
 - **Creacion de Fronend con ANGULAR**
+<!--
 - **Creacion de App con XAMARIN  (ver)**
-
+-->
 
 
 
