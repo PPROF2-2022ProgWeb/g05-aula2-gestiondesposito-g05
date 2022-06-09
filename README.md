@@ -96,7 +96,7 @@ Damos la bienvenida a todos los colaboradores 💙
 
 Se les solicitará un proyecto aplicando todos los contenidos dados en los módulos de la cursada (HTML5, CSS3, BOOTSTRAP, JAVASCRIPT),  pueden recurrir a la web de W3School para extraer recursos necesarios.
 
-Al proyecto desarrollado en 2021, la “consultora ISPC”, solicita  en esta oportunidad, incorporar un módulo de e-commerce para comercializar sus productos y/o servicios online
+Al proyecto desarrollado en 2021, la “consultora ISPC”, solicita  en esta oportunidad, incorporar un módulo de e-commerce para comercializar sus productos y/o servicios online.
 
 
 ### Antes de comenzar:
