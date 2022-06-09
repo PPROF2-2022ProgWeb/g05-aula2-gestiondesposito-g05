@@ -83,6 +83,7 @@ El sistema será un producto diseñado para trabajar en entornos WEB, lo que fac
 Damos la bienvenida a todos los colaboradores 💙
 
 - **Clavaguera Abril**. Estudiante de Desarrollo Web y Aplicaciones Móviles [Ver Github](https://github.com/Abrilc90).
+
 - **Mónica Antich**. Estudiante de Desarrollo Web y Aplicaciones Móviles [Ver Github](https://github.com/MonicaAntich).
 
 - **Zapata, Mónica**. Estudiante de Desarrollo Web y Aplicaciones Móviles [Ver Github](https://github.com/MonicaVZapata).
