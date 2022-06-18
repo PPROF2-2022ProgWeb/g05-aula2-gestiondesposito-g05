@@ -4,65 +4,80 @@
 /*!40111 SET SQL_NOTES=0 */;
 
 
-/*-------------------------------------------------------*/
-/*Paso 01 Borra cualquier base de datos con ese nombre  */
-/*-------------------------------------------------------*/
-DROP DATABASE IF EXISTS proyecto_1_ispc;
-
 
 /*-------------------------------------------------------*/
-/*Paso 02 Crea una base de datos con ese nombre         */
+/*Paso 01 Crea la base de datos del proyecto             */
 /*-------------------------------------------------------*/
-CREATE DATABASE proyecto_1_ispc;
+CREATE DATABASE gestion_mgalarmas;
 
 
 
 /*-------------------------------------------------------*/
-/*Paso 03 Seleciona una base de datos con ese nombre     */
+/*Paso 02 Seleciona una base de datos con ese nombre     */
 /*-------------------------------------------------------*/
-USE proyecto_1_ispc;
+USE gestion_mgalarmas;
 
 
 /*----------------------------------------------------------*/
-/*Paso 04 Crea una base de datos con ese nombre previo borra*/
+/*Paso 03 Creo la tabla clientes*/
 /*----------------------------------------------------------*/
-DROP TABLE IF EXISTS tipo_cliente;
-CREATE TABLE `tipo_cliente` (
-  `id_tipo_cliente` int(11) NOT NULL AUTO_INCREMENT,
-  `tipocliente` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`id_tipo_cliente`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
-
-
-
-/*----------------------------------------------------------*/
-/*Paso 05 Crea una base de datos con ese nombre previo borra*/
-/*----------------------------------------------------------*/
-DROP TABLE IF EXISTS provincia;
-CREATE TABLE `provincia` (
-  `id_provincia` int(255) NOT NULL AUTO_INCREMENT,
-  `provincia` varchar(30) NOT NULL,
-  PRIMARY KEY (`id_provincia`)
-) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4;
-
-
-
+CREATE TABLE `cliente` (
+  `Id_Cliente` int(5) NOT NULL,
+  `Razon Social / Cliente` varchar(70) NOT NULL,
+  `Cuit/Cuil/Dni` varchar(13) NOT NULL,
+  `Calle` varchar(70) NOT NULL,
+  `Numero` int(4) NOT NULL,
+  `Barrio` varchar(50) NOT NULL,
+  `Localidad` varchar(50) NOT NULL,
+  `Telefono` varchar(15) NOT NULL,
+  `Tipo de Iva` int(3) NOT NULL,
+  `Cta Cte?` varchar(5) NOT NULL,
+  `E-mail` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 /*----------------------------------------------------------*/
-/*Paso 06 Crea una base de datos con ese nombre previo borra*/
+/*Paso 04 Creo la tabla Compra*/
 /*----------------------------------------------------------*/
-DROP TABLE IF EXISTS localidad;
-CREATE TABLE `localidad` (
-  `id_localidad` int(255) NOT NULL AUTO_INCREMENT,
-  `localidad` varchar(70) DEFAULT NULL,
-  `provincia` int(255) NOT NULL,
-  PRIMARY KEY (`id_localidad`),
-  KEY `provincia` (`provincia`),
-  CONSTRAINT `localidad_ibfk_1` FOREIGN KEY (`provincia`) REFERENCES `provincia` (`id_provincia`)
-) ENGINE=InnoDB AUTO_INCREMENT=2074 DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE `compra` (
+  `cuitcuilCliente` int(13) NOT NULL,
+  `codProducto` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
 
+/*----------------------------------------------------------*/
+/*Paso 05 Creo la tabla producto*/
+/*----------------------------------------------------------*/
+CREATE TABLE `producto` (
+  `Id_Prod` int(6) NOT NULL,
+  `Nombre` varchar(50) NOT NULL,
+  `Descripcion` varchar(70) NOT NULL,
+  `Stock` int(10) NOT NULL,
+  `Precio` decimal(6,0) NOT NULL,
+  `Precio de Costo` decimal(6,0) NOT NULL,
+  `Porcentaje de Iva` int(3) NOT NULL,
+  `Id_Prov` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+/*----------------------------------------------------------*/
+/*Paso 05 Creo la tabla proveedor*/
+/*----------------------------------------------------------*/
+
+CREATE TABLE `proveedor` (
+  `Id_Prov` int(5) NOT NULL,
+  `Cuit/Cuil` varchar(13) NOT NULL,
+  `Razon Social` varchar(70) NOT NULL,
+  `Calle` varchar(70) NOT NULL,
+  `Numero` int(4) NOT NULL,
+  `Barrio` varchar(50) NOT NULL,
+  `Localidad` varchar(50) NOT NULL,
+  `Telefono` int(25) NOT NULL,
+  `Tipo de Iva` varchar(50) NOT NULL,
+  `E-mail` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+/*
 DROP TABLE IF EXISTS clientes;
 CREATE TABLE `clientes` (
   `id_cliente` int(255) NOT NULL AUTO_INCREMENT,
@@ -95,7 +110,7 @@ CREATE TABLE `facturacion` (
   CONSTRAINT `facturacion_ibfk_1` FOREIGN KEY (`codigo_producto`) REFERENCES `productos` (`id_numero_referencia`),
   CONSTRAINT `facturacion_ibfk_2` FOREIGN KEY (`tipo_factura`) REFERENCES `tipo_factura` (`id_tipo_factura`),
   CONSTRAINT `facturacion_ibfk_3` FOREIGN KEY (`cliente`) REFERENCES `clientes` (`id_cliente`)
-) */ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
 DROP TABLE IF EXISTS productos;
@@ -111,7 +126,7 @@ CREATE TABLE `productos` (
   PRIMARY KEY (`id_numero_referencia`),
   KEY `proveedor` (`proveedor`))/*,
   CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`proveedor`) REFERENCES `proveedor` (`id_proveedor`)
-) */ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 DROP TABLE IF EXISTS proveedor;
 CREATE TABLE `proveedor` (
@@ -142,4 +157,4 @@ CREATE TABLE `usuario` (
   PRIMARY KEY (`id_usuario`),
   KEY `cliente` (`cliente`),
   CONSTRAINT `usuario_ibfk_1` FOREIGN KEY (`cliente`) REFERENCES `clientes` (`id_cliente`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;*/
