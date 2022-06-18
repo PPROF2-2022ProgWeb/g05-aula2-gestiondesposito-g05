@@ -9,9 +9,9 @@ public class Operaciones {//clase insertar
     //private String url=("jdbc:mysql://localhost:3306/iefi_programacion_1");//declaro variable de url
     //private String usuario=("root");//declaro variable de usuario
     //private String clave=("1234");//declaro variable de clave
-    private String url=("jdbc:mysql://localhost:3306/iefi_programacion_1");
-    private String usuario=("root");//declaro variable de usuario
-    private String clave=("1234");//declaro variable de clave
+    private String url=("jdbc:mysql://mgalarmasserver1.ddns.net:3306/gestion_mgalarmas");
+    private String usuario=("ispca2g5");//declaro variable de usuario
+    private String clave=("ispca2g5");//declaro variable de clave
     
     
     

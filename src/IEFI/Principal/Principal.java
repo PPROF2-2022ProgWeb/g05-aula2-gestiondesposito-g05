@@ -53,7 +53,7 @@ public class Principal {//clase principal
                     case 2://Listar datos
                             LimpiarPantalla();//clase que limpia la pantalla
                             System.out.println("=================================================");                    
-                            System.out.println("|   Op2 = Listado de alumnos Grupo 5 ISPC       |");
+                            System.out.println("|   Op2 = Listado de productos cargados         |");
                             System.out.println("=================================================");
                             System.out.println(""); //salto
                             Operaciones I0=new Operaciones();//instancio la clase insertar
@@ -63,7 +63,7 @@ public class Principal {//clase principal
                     case 3://Insertar datos
                             LimpiarPantalla();//clase que limpia la pantalla
                             System.out.println("=================================================");                    
-                            System.out.println("|   Op3 = Carga nuevo alumno Grupo 5 ISPC       |");
+                            System.out.println("|   Op3 = Carga nuevo producto                  |");
                             System.out.println("=================================================");
                             System.out.println(""); //salto
                             Operaciones I1=new Operaciones();//instancio la clase insertar
@@ -73,7 +73,7 @@ public class Principal {//clase principal
                     case 4://Modificar datos
                             LimpiarPantalla();//clase que limpia la pantalla
                             System.out.println("=================================================");                    
-                            System.out.println("|   Op4 = Modificar DNI de alumno Grupo 5 ISPC  |");
+                            System.out.println("|   Op4 = Modificar producto existente          |");
                             System.out.println("=================================================");
                             System.out.println("");//salto
                             Operaciones I2=new Operaciones();//instancio la clase insertar                         
@@ -83,7 +83,7 @@ public class Principal {//clase principal
                     case 5://Eliminar datos
                             LimpiarPantalla();//clase que limpia la pantalla
                             System.out.println("=================================================");                    
-                            System.out.println("|   Op5 = Eliminar registro alumno Grupo 5 ISPC |");
+                            System.out.println("|   Op5 = Baja de producto                      |");
                             System.out.println("=================================================");
                             System.out.println("");//salto
                             Operaciones I3=new Operaciones();//instancio la clase insertar
@@ -131,11 +131,11 @@ public class Principal {//clase principal
         public static void CabeceraDoc() {//metodo que imprime la cabecera del programa
             DateTimeFormatter cfecha = DateTimeFormatter.ofPattern("dd/MM/yyyy");//formato de fecha
             DateTimeFormatter chora = DateTimeFormatter.ofPattern("HH:mm");//formato de hora
-            String cmotivo="IEFI_Programacion_1";//motivo de la ejecucion del programa
+            String cmotivo="Demo ABM a2g5 gestion deposito";//motivo de la ejecucion del programa
             String institucion="| Institucion : ISPC  Materia : Programacion 1 JAVA";//institucion del programa
             String total="| Aula  3  Grupo 5  :  Ejercicio : "+cmotivo+" |";//total del programa
             String Abril=("| Integrantes :  Clavaguera, Abril");//integrantes del programa
-            String Laura=("|                Heredia, Laura ");//integrantes del programa
+            String Laura=("|                Antich, Monica ");//integrantes del programa
             String Monica=("|                Zapata, Monica ");//integrantes del programa
             String Gaston=("|                Ferreyra, Gaston ");//integrantes del programa
             String Mario=("|                Gonzalez, Mario ");//integrantes del programa
@@ -187,10 +187,10 @@ public class Principal {//clase principal
     public static void Opciones(){//metodo que muestra las opciones del programa
         int ancho=98;//ancho de la linea       
         String opcion1="|   Conectar con base de datos presione :  1    |";//opcion 1
-        String opcion2="|   Listar registro alumnos    presione :  2    |";//opcion 2
-        String opcion3="|   Insertar registro alumnos  presione :  3    |";//opcion 3
-        String opcion4="|   Modificar registro alumnos presione :  4    |";//opcion 4
-        String opcion5="|   Eliminar registro alumno   presione :  5    |";//opcion 5
+        String opcion2="|   Listar productos           presione :  2    |";//opcion 2
+        String opcion3="|   Insertar producto          presione :  3    |";//opcion 3
+        String opcion4="|   Modificar producto         presione :  4    |";//opcion 4
+        String opcion5="|   Eliminar producto          presione :  5    |";//opcion 5
         String opcion6="|   Salir del programa         presione :  9    |";//opcion 6
         String opcion7="|   Menu de ayuda              presione :  0    |";//opcion 7
         for (int x=0; x<ancho; x++) {//for para imprimir la linea de =
