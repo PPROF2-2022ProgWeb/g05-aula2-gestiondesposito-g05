@@ -43,54 +43,199 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
     </nav>
     </header>
 <!--------------------------------------------------------------------------------------->
-    <!----------------------------------------------------------------------------------->
-    <div class="contenedor__contacto">
-        <!--------------------------------------------------------------------------->
-        <!--formulario contacto -->
-        <!--------------------------------------------------------------------------->
-        <form class="form__contacto"id="form__contacto" action="https://mariogonzalezispc.github.io/g5-a3g5_2/index.html">
-            <input type="hidden" id="5" name="tipo" value="">
-            <div class="form_contacto__aviso">
-                <h2>Consultas</h2>
-            </div>
-            <div>
-                <label for="nombres" class="form__label">Ingrese su nombre</label>
-                <input autofocus type="text" class="form__input" placeholder="Su nombre" name="nombre" id="nombres">
-            </div>
 
-            <div>
-                <label for="email" class="form__label">Ingrese su correo </label>
-                <input type="email" class="form__input" placeholder="lapampa@argentina.com" id="email">
-            </div>
 
-            <div>
-                <label for="telefono" class="form__label">Ingrese su telefono</label>
-                <input type="tel" class="form__input" placeholder="Su telefono (opcional)" id="telefono">
-            </div>
 
-            <div>
-                <label for="mensaje" class="form__label">Ingrese su mensaje</label>
-                <textarea class="textarea_1" name="mensaje" rows="10" cols="50" id="mensaje" 
-                placeholder="Escriba aqui su consulta"></textarea>
-            </div>
 
-            <div class="form__grupo form__grupo-btn-enviar">
-                <button type="submit" class="button_vs" id="form__mensaje-envio">Enviar consulta</button>
-                <!--<input type="submit" class="button_vs" name="Enviar"value="Enviar consulta">-->
-            </div>
 
-            <div class="form__grupo form__grupo-btn-enviar">
-                <input type="reset" class="button_vs" name="Limpiar"value="Reiniciar formulario">
-            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="contiene1">
+
+
+    <div class="pestaña_alta alta">
+        <input type="button" value="Alta" class="boton_alta alta">
+    </div>
+
+    <div class="pestaña_modi">
+        <input type="button" value="Modifica" class="boton_modi">
+    </div>
+
+    <div class="pestaña_baja">
+        <input type="button" value="Baja" class="boton_baja">
+    </div>
+
+
+
+
+
+
+
+    <form style="display: block; background-color: aquamarine;">
+    <div class="contiene_alta alta">
+        
+        <div class="codigo_input">
+            <label for="codigo" class="label_codigo">Codigo</label>
+            <input type="text"  name="Codigo" class="codigo" id="codigo">
+        </div>
+        <div class="rubro_input">
+            <label for="rubro" class="label_rubro">Rubro</label>
+            <input type="text"  name="Rubro" class="rubro" id="rubro">
+            
+            <!--<select name="Rubro">
+                               
+                <option value="Rub" selected="selected">Rubro</option>
+             </select>-->
+        </div>
+  
+        <div class="nombre_input" display="none">
+            <label for="nombre" class="label_nombre">Nombre</label>
+            <input type="text"  name="Nombre" class="nombre" id="nombre">
+        </div>
+        
+        <div class="marca_input">
+            <label for="marca" class="label_marca">Marca</label>
+            <input type="text"  name="Marca" class="marca" id="marca">
+        </div>
+        
+        <div class="origen_input">
+            <label for="origen" class="label_origen">Origen</label>
+            <input type="text"  name="Origen" class="origen" id="origen">
+        </div>
+        
+        <div class="descripcion_input">
+            <label for="descripcion" class="label_descripcion">Descripcion</label>
+            <textarea class="textarea" name="mensaje" rows="6" cols="10"  
+                placeholder="Descripcion del producto"></textarea>
+        </div>
+        
+        <div class="prevta_input">
+            <label for="prevta" class="label_prevta">Precio</label>
+            <input type="text"  name="Precio de Venta" class="prevta" id="prevta">
+        </div>
+
+        <div class="stock_input">
+            <label for="stock" class="label_stock">Stock</label>
+            <input type="text"  name="Stock" class="stock" id="stock">
+        </div>
+        
+        <div class="precto_input">
+            <label for="precto" class="label_precto">Costo</label>
+            <input type="text"  name="Precio de Costo" class="precto" id="precto">
+        </div> 
+
+        <div class="iva_input">
+            <label for="iva" class="label_iva">Iva</label>
+
+            <select name="Iva">
+                <option value="D">10,5%</option>
+                <option value="V" selected="selected">21%</option>
+                
+             </select>
+        </div>
+        <div class="gancia_input">
+            <label for="gancia" class="label_gancia">Ganancia</label>
+            <input type="text"  name="Ganancia" class="gancia" id="gancia">
+        </div>
+
+        <div class="modelo_input">
+            <label for="modelo" class="label_modelo">Modelo</label>
+            <input type="text"  name="Modelo" class="modelo" id="modelo">
+        </div>
+
+        <div class="proveedor_input">
+            <label for="proveedor" class="label_proveedor">Proveedor</label>
+            <input type="text"  name="proveedor" class="proveedor" id="proveedor">
+
+           <!-- <select name="Proveedor">
+                
+                <option value="prov" selected="selected">Proveedor</option>
+             </select>-->
+        </div>
+        <div>
+        <button type="submit" class="button_grabar" id="form__mesaje-exito">Grabar</button>
+        </div>
+
         </form>
+
+    </div>
+
+      
+<!---------------------FIN CLASS CONTIENE ALTA----------------------------------------------------->
+
+<!---------------------COMIENZO CLASS CONTIENE MODIFICAR---------------------------------------->
+
+
+    
+<form>
+    <div class="contiene_modi">
+        
+        <div class="codigo_input">
+            <label for="codigo" class="label_codigo">Codigo</label>
+            <input type="text"  name="Codigo" class="codigo" id="codigo">
+        </div>
+       
+        <div class="nombre_input">
+            <label for="nombre" class="label_nombre">Nombre</label>
+            <input type="text"  name="Nombre" class="nombre" id="nombre">
+        </div>
     </div>    
+</form>
+
+    
+
+
+
+
+
+<!--------------------FIN CLASS CONTIENE MODIFICAR----------------------------------------------->
+
+
+    <div class="contiene_baja">
+    </div>
+        </form>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--------------------------------------------------------------------------------------->
-
-
-
-
     <!---------------footer ----------->
     <footer>
+        <div class="footer__div">
         <div class="tipo__footer">
           <!--------------------------------------------------------------------------------------->
           <div class="box__footer">
@@ -132,6 +277,7 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
           <b>Gestion deposito Cordoba (ISPCA3G5)</b>
 
       </div>
+    </div>
   </footer>
   <!---------------footer ----------->
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
