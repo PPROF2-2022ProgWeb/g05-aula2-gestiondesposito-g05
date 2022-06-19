@@ -317,7 +317,7 @@ font-weight: 500;
 
 .contiene1 .contiene_alta .descripcion_input{/*div*/
     background-color: red;
-    display: block;
+    display: inline-flex;
     width: 360px;
     height: 40px;
     position: absolute;
@@ -336,10 +336,10 @@ font-weight: 500;
     display: inline-flex;
     width: 100px;
     height: 20px;
-    position: relative;
+    /* position: relative;
     align-items: center;
     top: 10px;
-    left: 5px;
+    left: 5px; */
     /*margin-top: 5px;
     margin-left: 5px;*/
     justify-content: left;
@@ -357,13 +357,18 @@ font-weight: 500;
     margin-left: 5px;
     justify-content: left;
 }
-.textarea{
+.contiene1 .textarea{
         resize: none;
         overflow: scroll;
         top: 40px;
         display: block;
         position: absolute;
-}        
+}  
+
+
+
+
+
 .contiene1 .contiene_alta .prevta_input{
     background-color: cornflowerblue;
     display: inline-flex;
