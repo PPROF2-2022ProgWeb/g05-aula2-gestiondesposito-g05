@@ -1,22 +1,28 @@
 
-package IEFI.Principal;//package IEFI.Principal;
+package Principal;//package Principal;
+import java.util.ArrayList;
 import java.util.Scanner;//
-import java.sql.*;
-import IEFI.Clases.*;//importa clases
+import Clases.*;//importa clases
 import java.time.LocalDateTime;//importa clase
 import java.time.format.DateTimeFormatter;//importa clase
+
+import java.net.InetAddress;
+import org.apache.commons.net.ntp.NTPUDPClient;
+import org.apache.commons.net.ntp.NtpUtils;
+import org.apache.commons.net.ntp.NtpV3Packet;
+import org.apache.commons.net.ntp.TimeInfo;
+
 
 public class Principal {//clase principal
     public static void main(String[] args) throws Exception {//metodo principal
         int accion=0;//variable para el switch
-        //Class.forName("com.mysql.jdbc.Driver");//cargo driver de java para mysql
-        Class.forName("com.mysql.jdbc.Driver").newInstance();
+        Class.forName("com.mysql.jdbc.Driver");//cargo driver de java para mysql
+        //Class.forName("com.mysql.jdbc.Driver").newInstance();
         LimpiarPantalla();//clase que limpia la pantalla
-        Operaciones dire=new Operaciones();//instancio la clase operaciones
-        //dire.setUrl("jdbc:mysql://localhost:3306/iefi_programacion_1", "root", "1235");
-        dire.setUrl("jdbc:mysql://localhost:3306/iefi_programacion_1", "root", "1234");
+        Operaciones dire = new Operaciones();//instancio la clase operaciones
+        dire.setUrl("jdbc:mysql://mgalarmasserver1:3306/gestion_mgalarmas", "ispca2g5", "ispca2g5");
         CabeceraDoc();//clase que imprime la cabecera del documento
-        Thread.sleep(4000);//espero 4 segundos
+        Thread.sleep(10000);//espero 4 segundos
         LimpiarPantalla();//clase que limpia la pantalla
         Opciones();//clase que imprime las opciones del menu   
     //---------------------------------------------------------------------- 
@@ -29,8 +35,11 @@ public class Principal {//clase principal
                     try {//try que restringe errores de ingreso de opcion 
                         accion=opcion.nextInt();//metodo scanner captura dato ingresado solo si es entero
                         } catch(Exception e) {//se da la exeption si se ingresa caracteres no permitidos
-                        System.out.println("ERROR: el valor ingresado no es una opcion");//mensaje de error1
-                        accion=0;//restablecemos el valor de la variable a cero para que entre por defecto
+                        System.out.println();//salto de linea
+                        System.out.println("    ERROR: el valor ingresado no es una opcion");//mensaje de error1
+                        System.out.println("    Reintente nuevamente");//mensaje de error2
+                        Thread.sleep(1500);//espero 4 segundos
+                        accion=0;//restablecemos el valor de la variable a cero para que entre por case 0
                         }
     //----------------------------------------------------------------------
     //Switch para decidir el valor ingresado por el usuario
@@ -127,49 +136,80 @@ public class Principal {//clase principal
             System.out.println(e);//imprime el error
         }
     }
-//--------------------------------------------------------------------------------------
-        public static void CabeceraDoc() {//metodo que imprime la cabecera del programa
-            DateTimeFormatter cfecha = DateTimeFormatter.ofPattern("dd/MM/yyyy");//formato de fecha
-            DateTimeFormatter chora = DateTimeFormatter.ofPattern("HH:mm");//formato de hora
-            String cmotivo="Demo ABM a2g5 gestion deposito";//motivo de la ejecucion del programa
-            String institucion="| Institucion : ISPC  Materia : Programacion 1 JAVA";//institucion del programa
-            String total="| Aula  3  Grupo 5  :  Ejercicio : "+cmotivo+" |";//total del programa
-            String Abril=("| Integrantes :  Clavaguera, Abril");//integrantes del programa
-            String Laura=("|                Antich, Monica ");//integrantes del programa
-            String Monica=("|                Zapata, Monica ");//integrantes del programa
-            String Gaston=("|                Ferreyra, Gaston ");//integrantes del programa
-            String Mario=("|                Gonzalez, Mario ");//integrantes del programa
-                try {//try catch para imprimir la cabecera
-                    new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();//limpia la pantalla
-                    } catch (Exception e) {
-                }
-                for (int x=0; x<total.length(); x++) {//for para imprimir la cabecera
-                    System.out.print("="); //imprime una linea de =          
-                }          
-        System.out.println();//salto
- System.out.println("| Cordoba Argentina - Fecha : "+cfecha.format(LocalDateTime.now())+ "  Hora : "+chora.format(LocalDateTime.now())+" |");
-        System.out.print(institucion);//imprime la institucion   
-        Relleno(total, institucion);//metodo que rellena la linea con espacios
-        System.out.println(total);//imprime la linea total
-        System.out.print(Abril);//imprime el integrante
-        Relleno(total, Abril);//metodo que rellena la linea con espacios
-        System.out.print(Laura);//imprime el integrante
-        Relleno(total, Laura);//metodo que rellena la linea con espacios     
-        System.out.print(Monica);//imprime el integrante
-        Relleno(total, Monica);//metodo que rellena la linea con espacios
-        System.out.print(Gaston);//imprime el integrante
-        Relleno(total, Gaston);//metodo que rellena la linea con espacios       
-        System.out.print(Mario);//imprime el integrante
-        Relleno(total, Mario);//metodo que rellena la linea con espacios
-            for (int k=0; k<3; k++) {
-            if (k==0) {//if para imprimir la linea de =
-                for (int z=0; z<total.length(); z++) {//for para imprimir la linea de =
-                    System.out.print("="); //imprime una linea de =          
+
+    // --------------------------------------------------------------------------------------
+    public static void CabeceraDoc() {// metodo que imprime la cabecera del programa
+        DateTimeFormatter cfecha = DateTimeFormatter.ofPattern("dd/MM/yyyy");// formato de fecha
+        DateTimeFormatter chora = DateTimeFormatter.ofPattern("HH:mm");// formato de hora
+/*----------------------------------------------------------------------------------------------- */
+
+        /*-------------------------------------------------------------------------------------------------------------------------------- */
+        String tiempo = ("| Cordoba - Argentina - Fecha : " + cfecha.format(LocalDateTime.now()) + " Hora : "
+                + chora.format(LocalDateTime.now())+" |");
+        // establezco fecha y hora a partir del sistema fisico local, NO de servidor
+        // para modificar y obtener tiempo del servidor oficial (ntpUDP,
+
+        // "ntp.ign.gob.ar", -10800, 8000);
+        // String timeServer = "ntp.ign.gob.ar";
+        // NTPUDPClient timeClient = new NTPUDPClient();
+        // InetAddress inetAddress = InetAddress.getByName(timeServer);
+        // TimeInfo timeInfo = timeClient.getTime(inetAddress);
+        // long returnTime = timeInfo.getReturnTime();
+        // System.out.println(returnTime);
+
+        /*------------------------------------------------------------------------------------------------------------------------------- */
+        String institucion = "| Institucion :  Instituto Politecnico Cordoba (ISPC)";// institucion del programa
+        String tecnicatura = "| Tecnicatura :  TSDWAD cohorte 2021";// tecnicatura del programa
+        String materia = "| Materia     :  Programador WEB II";// materia del programa
+        String autor = "| Aula        :  Aula 2 Grupo 5";// autor del programa
+        String ejer = "| Ejercicio   :  Demo ABM A2G5 Sistema de gestion";// total del programa
+        String Abril =  ("| Integrantes :  Clavaguera, Abril");// integrantes del programa
+        String MonicaA =  ("|                Antich, Monica "); // integrantes del programa
+        String MonicaZ = ("|                Zapata, Monica "); // integrantes del programa
+        String Gaston = ("|                Ferreyra, Gaston ");// integrantes del programa
+        String Mario =  ("|                Gonzalez, Mario ");// integrantes del programa
+
+        ArrayList<String> lista = new ArrayList<String>();// creo una lista de string
+        lista.add(tiempo);// agrego el tiempo a la lista
+        lista.add(institucion);// agrego la institucion a la lista
+        lista.add(tecnicatura);// agrego la tecnicatura a la lista
+        lista.add(materia);// agrego la materia a la lista
+        lista.add(autor);// agrego el autor a la lista
+        lista.add(ejer);// agrego el total a la lista
+        lista.add(Abril);// agrego el integrante a la lista
+        lista.add(MonicaA);// agrego el integrante a la lista
+        lista.add(MonicaZ);// agrego el integrante a la lista
+        lista.add(Gaston);// agrego el integrante a la lista
+        lista.add(Mario);// agrego el integrante a la lista
+        /*------------------------------------------------------------------------------------------------------------------------------- */
+        try {// try catch para imprimir la cabecera
+            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();// limpia la pantalla
+        } catch (Exception e) {
+        }
+        //----------------------------------------------------------------------------------------------------------------------
+        for (int x = 0; x < tiempo.length(); x++) {// for para imprimir la cabecera
+            System.out.print("="); // imprime una linea de = inicio cabecera presentacion del programa
+        }
+            System.out.println();// salto
+            System.out.println(tiempo); // imprime la fecha y hora obtenido de la maquina local
+            System.out.print("|");
+            for (int x = 0; x < tiempo.length()-2; x++) {// for para imprimir linea fina abajo de la hora
+            System.out.print("-"); // imprime una linea de - base de la fecha y hora
+            }
+            System.out.println("|");
+        for (int x = 1; x < lista.size(); x++) {// for para imprimir la cabecera
+            System.out.print(lista.get(x)); // imprime una linea de = inicio cabecera presentacion del programa
+            Relleno(tiempo, lista.get(x)); // metodo que rellena la linea con espacios
+        }
+        for (int k = 0; k < 3; k++) {
+            if (k == 0) { // if para imprimir la linea de =
+                for (int z = 0; z < tiempo.length(); z++) {// for para imprimir la linea de =
+                    System.out.print("="); // imprime una linea de =
                 }
             }
-            System.out.println();//salto de linea 
-            }
-}
+            System.out.println(); // salto de linea fin de la cabecera presentacion del programa 
+        }
+    }
 //--------------------------------------------------------------------------------------
     public static void Relleno(String t1, String t2){//metodo que rellena la linea con espacios
         for (int z=0; z<t1.length(); z++) {//for para rellenar la linea con espacios
@@ -222,6 +262,7 @@ public class Principal {//clase principal
         System.out.println("");//salto de linea
         System.out.print("    Ingrese opcion >>>>>>>>  : ");//imprime el mensaje
     }   
+
 //--------------------------------------------------------------------------------------
 //finde clase
 //--------------------------------------------------------------------------------------
