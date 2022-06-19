@@ -1,4 +1,4 @@
-package IEFI.Clases;
+package Clases;
 import java.util.Scanner;
 import java.sql.*;
 
@@ -6,16 +6,9 @@ public class Operaciones {//clase insertar
 //-----------------------------------------------
 //Atributos
 //-----------------------------------------------
-    //private String url=("jdbc:mysql://localhost:3306/iefi_programacion_1");//declaro variable de url
-    //private String usuario=("root");//declaro variable de usuario
-    //private String clave=("1234");//declaro variable de clave
     private String url=("jdbc:mysql://mgalarmasserver1.ddns.net:3306/gestion_mgalarmas");
     private String usuario=("ispca2g5");//declaro variable de usuario
     private String clave=("ispca2g5");//declaro variable de clave
-    
-    
-    
-    
     String nombre;//nombre de la persona
     String apellido;//apellido de la persona
     int dni;  //dni de la persona
@@ -41,19 +34,20 @@ public void mostrarDatos() {//metodo mostrar datos
     ResultSet r1;//resultado
         try{//inicio try
             cn = DriverManager.getConnection(this.url,this.usuario,this.clave);//creo la conexion
-            String sql="SELECT * FROM `alumnos` WHERE 1";//declaro variable de consulta
+            String sql="SELECT * FROM `producto` WHERE 1";//declaro variable de consulta
             st=cn.createStatement();//creo la sentencia
             r1=st.executeQuery(sql);//ejecuto la consulta
 //-----------------------------------------------
        while(r1.next()){//inicio while
-       System.out.println(r1.getString("apellido") + " " + r1.getString("nombre") + " " + r1.getInt("DNI"));//imprimo los datos
+       System.out.println(r1.getString("marca") + " " + r1.getString("modelo") +
+        " " + r1.getInt("descripcion")+" " + r1.getInt("precio"));//imprimo los datos
        }
        System.out.println("");//salto de linea
        System.out.print("Presione cero para volver al menu >> : ");//mensaje
        cn.close();//cierro la conexion a la base de datos
         }catch (Exception e){
             System.out.println("No hay conexion con base de datos !!!!!!");//mensaje de error         
-            System.out.println("Error en listar alumnos");//mensaje de error
+            System.out.println("Error en listar productos");//mensaje de error
             System.out.println("");//salto de linea
             System.out.print("Presione cero para volver al menu >> : ");//mensaje de error
    }    
