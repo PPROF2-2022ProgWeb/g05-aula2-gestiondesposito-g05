@@ -6,11 +6,11 @@ import Clases.*;//importa clases
 import java.time.LocalDateTime;//importa clase
 import java.time.format.DateTimeFormatter;//importa clase
 
-import java.net.InetAddress;
-import org.apache.commons.net.ntp.NTPUDPClient;
-import org.apache.commons.net.ntp.NtpUtils;
-import org.apache.commons.net.ntp.NtpV3Packet;
-import org.apache.commons.net.ntp.TimeInfo;
+// import java.net.InetAddress;
+// import org.apache.commons.net.ntp.NTPUDPClient;
+// import org.apache.commons.net.ntp.NtpUtils;
+// import org.apache.commons.net.ntp.NtpV3Packet;
+// import org.apache.commons.net.ntp.TimeInfo;
 
 
 public class Principal {//clase principal
