@@ -53,9 +53,14 @@ CREATE TABLE `producto` (
   `Id_Prod` int(6) NOT NULL,
   `Nombre` varchar(50) NOT NULL,
   `Descripcion` varchar(70) NOT NULL,
+  'Marca' varchar(50) NOT NULL,
+  'Origen' varchar(50) NOT NULL,
+  'Rubro' varchar(50) NOT NULL,
+  'Proveedor' varchar(50) NOT NULL,
   `Stock` int(10) NOT NULL,
-  `Precio` decimal(6,0) NOT NULL,
+  `Precio de venta` decimal(6,0) NOT NULL,
   `Precio de Costo` decimal(6,0) NOT NULL,
+  'Ganancias' decimal(6,0) NOT NULL,
   `Porcentaje de Iva` int(3) NOT NULL,
   `Id_Prov` int(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

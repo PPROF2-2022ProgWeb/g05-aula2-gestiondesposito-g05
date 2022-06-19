@@ -2,7 +2,7 @@
     width: 100%;
     background-color:rgba(255,255,255,0.8);
     height: 60px;
-    position: fixed;/*fija el encabezaso*/
+    position: fixed;/*fija el encabezado*/
     top: 0;
     left: 0;
     z-index: 1;
@@ -17,7 +17,7 @@
 /*color: white;*/
 color: black;
 text-decoration: none;
-font-size: 18px;
+font-size: 15px;
 font-weight: 500;
 
 }
@@ -28,7 +28,7 @@ font-weight: 500;
   margin-left: 20px;
   line-height: 60px;
 }
-.web{
+.web98{
     font-size: 20px;
     font-weight: 600;
     margin-left: 0px;
@@ -122,131 +122,233 @@ font-weight: 500;
 .contiene1 .contiene_alta{
     background-color:green;
     display: flex;
-    width: 94%;
+    width: 99%;
     height: 260px;
     border-radius: 6px;
     position: relative;
     margin-left: 5px;
 }
-.contiene1 .contiene_alta .codigo_input{
+.contiene1 .contiene_alta .codigo_input{/*este es el div*/
     background-color: grey;
     display: inline-flex;
-    width: 130px;
-    height: 30px;
+    width: 140px;
+    height: 40px;
+    position: absolute;
+    align-items: center;
+    top: 5px;
+    left: 5px;
+    justify-content: center;
+    place-content: center;
+    border: 1px solid black;
+}
+.contiene1 .label_codigo{/*label*/
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 60px;
+    height: 20px;
+    border: 1px solid black;
     position: relative;
     align-items: center;
-    margin-top: 5px;
-    margin-left: 5px;
-    justify-content: center;
+    justify-content: left;
 }
-.contiene1 .codigo{
+.contiene1 .codigo{/*input*/
     background-color: white;
     display: inline-flex;
     width: 70px;
     height: 20px;
     position: relative;
     align-items: center;
-    margin-top: 5px;
-    margin-left: 5px;
     justify-content: left;
+    border: 1px solid black;
+    float: left;
 }
-.contiene1 .label_codigo{
-    background-color: grey;
-    background-color: transparent;
+
+.contiene1 .contiene_alta .rubro_input{/*este es el div de*/
+    /*background-color: coral;*/
     display: inline-flex;
-    width: 100px;
-    height: 20px;
-    position: relative;
+    width: 210px;
+    height: 40px;
+    top:5px;
+    left: 150px;    
+    position: absolute;
     align-items: center;
-    margin-top: 5px;
-    margin-left: 5px;
-    justify-content: left;
-}
-.contiene1 .contiene_alta .rubro_input{
-    background-color: blue;
-    display: inline-flex;
-    width: 130px;
-    height: 30px;
-    position: relative;
-    align-items: center;
-    margin-top: 5px;
-    margin-left: 5px;
     justify-content: center;
+    place-content: center;
+    border: 1px solid black;
 }
-.contiene1 .rubro{
-    background-color: white;
-    display: inline-flex;
-    width: 70px;
-    height: 20px;
-    position: relative;
-    align-items: center;
-    margin-top: 5px;
-    margin-left: 5px;
-    justify-content: left;
-}
-.contiene1 .label_rubro{
-    background-color: grey;
+
+.contiene1 .label_rubro{/*label*/
+    /*background-color: grey;*/
     background-color: transparent;
     display: inline-flex;
-    width: 100px;
+    width: 60px;
+    height: 20px;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+
+.contiene1 .rubro{/*este es el input*/
+    /*background-color: white;*/
+    display: inline-flex;
+    width: 140px;
     height: 20px;
     position: relative;
     align-items: center;
-    margin-top: 5px;
-    margin-left: 5px;
     justify-content: left;
+    border: 1px solid black;
+    float: left;
 }
-.contiene1 .contiene_alta .nombre_input{
+.contiene1 .contiene_alta .nombre_input{/*div*/
     background-color: pink;
-    display: inline-flex;
-    width: 550px;
-    height: 30px;
+    display: none; /*inline-flex;*/
+    width: 210px;
+    height: 40px;
+    top: 5px;
+    left: 365px; 
+    position: absolute;
+    align-items: center;
+    justify-content: left;
+    place-content: center;
+    border: 1px solid black
+}
+.contiene1 .label_nombre{/*label*/
+    background-color: grey;
+    background-color: transparent;
+    display: none;/*inline-flex;*/
+    width: 60px;
+    height: 20px;
+    border: 1px solid black;
     position: relative;
     align-items: center;
-    margin-top: 5px;
-    margin-left: 5px;
     justify-content: left;
 }
-.contiene1 .nombre{
+
+.contiene1 .nombre{/*input*/
     background-color: white;
-    display: inline-flex;
-    width: 200px;
+    display: none; /*inline-flex;*/
+    width: 140px;
     height: 20px;
     position: relative;
     align-items: center;
-    margin-top: 5px;
-    margin-left: 5px;
     justify-content: left;
+    border: 1px solid black;
+    float: left;
 }
-.contiene1 .label_nombre{
+
+.contiene1 .contiene_alta .marca_input{/*div*/
+    background-color: cyan;
+    display: inline-flex;
+    width: 210px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    left: 580px;
+    align-items: center;
+    justify-content: left;
+    place-content: center;
+    border: 1px solid black
+}
+
+.contiene1 .label_marca{/*label*/
     background-color: grey;
     background-color: transparent;
     display: inline-flex;
-    width: 80px;
+    width: 60px;
     height: 20px;
-    border: 2px solid black;
+    border: 1px solid black;
     position: relative;
     align-items: center;
-    margin-top: 5px;
-    margin-left: 5px;
     justify-content: left;
 }
-.contiene1 .contiene_alta .descripcion_input{
+
+.contiene1 .marca{/*input*/
     background-color: white;
-    display: block;
-    width: 550px;
-    height: 30px;
+    display: inline-flex;
+    width: 140px;
+    height: 20px;
     position: relative;
     align-items: center;
-    margin-top: 5px;
-    margin-left: 5px;
     justify-content: left;
+    border: 1px solid black;
+    float: left;
+}
+
+.contiene1 .contiene_alta .origen_input{/*div*/
+    background-color: yellow;
+    display: inline-flex;
+    width: 210px;
+    height: 40px;
+    top: 185px;
+    left: 580px;
+    position: absolute;
+    align-items: center;
+    justify-content: left;
+    place-content: center;
+    border: 1px solid black
+}
+
+.contiene1 .label_origen{/*label*/
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 60px;
+    height: 20px;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+
+.contiene1 .origen{/*input*/
+    background-color: white;
+    display: inline-flex;
+    width: 140px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+}
+
+.contiene1 .contiene_alta .descripcion_input{/*div*/
+    background-color: red;
+    display: block;
+    width: 360px;
+    height: 40px;
+    position: absolute;
+    top: 50px;
+    align-items: center;
+    /*margin-top: 40px;
+    margin-right: 5px;*/
+    justify-content: right;
+    place-content: center;
+    border: 1px solid black
 
 }
-.contiene1 .descripcion{
-    background-color: white;
+.contiene1 .label_descripcion{/*label*/
+    background-color: grey;
+    /*background-color: transparent;*/
     display: inline-flex;
-    width: 435px;
+    width: 100px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    top: 10px;
+    left: 5px;
+    /*margin-top: 5px;
+    margin-left: 5px;*/
+    justify-content: left;
+    border: 1px solid black;
+}
+
+.contiene1 .descripcion{/*input*/
+    background-color: rgb(25, 173, 112);
+    display: inline-flex;
+    width: 743px;
     height: 20px;
     position: absolute;
     align-items: center;
@@ -254,18 +356,304 @@ font-weight: 500;
     margin-left: 5px;
     justify-content: left;
 }
-.contiene1 .label_descripcion{
-    background-color: grey;
-    /* background-color: transparent; */
+.textarea{
+        resize: none;
+        overflow: scroll;
+        top: 40px;
+        display: block;
+        position: absolute;
+}        
+.contiene1 .contiene_alta .prevta_input{
+    background-color: cornflowerblue;
     display: inline-flex;
-    width: 100px;
+    width: 210px;
+    height: 40px;
+    position: absolute;
+    align-items: center;
+    /* margin-top: 70px;
+    margin-left: 5px; */
+    top: 50px;
+    left: 365px;
+    justify-content: center;
+}
+.contiene1 .label_prevta{
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 60px;
+    height: 20px;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+.contiene1 .prevta{
+    background-color: white;
+    display: inline-flex;
+    width: 140px;
     height: 20px;
     position: relative;
     align-items: center;
-    margin-top: 5px;
-    margin-left: 5px;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+}
+
+.contiene1 .contiene_alta .stock_input{
+    background-color: rgb(237, 100, 184);
+    display: inline-flex;
+    width: 210px;
+    height: 40px;
+    position: absolute;
+    align-items: center;
+    /* margin-top: 70px;
+    margin-left: 5px; */
+    top: 50px;
+    left: 580px;
+    justify-content: center;
+}
+.contiene1 .label_stock{
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 60px;
+    height: 20px;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
     justify-content: left;
 }
+.contiene1 .stock{
+    background-color: white;
+    display: inline-flex;
+    width: 140px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+}
+.contiene1 .contiene_alta .precto_input{
+    background-color: magenta;
+    display: inline-flex;
+    width: 210px;
+    height: 40px;
+    position: absolute;
+    align-items: center;
+    /* margin-top: 70px;
+    margin-left: 5px; */
+    top: 95px;
+    left: 365px;
+    justify-content: center;
+}
+.contiene1 .label_precto{
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 60px;
+    height: 20px;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+.contiene1 .precto{
+    background-color: white;
+    display: inline-flex;
+    width: 140px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+}
+.contiene1 .contiene_alta .iva_input{
+    background-color: rgb(205, 50, 84);
+    display: inline-flex;
+    width: 210px;
+    height: 40px;
+    position: absolute;
+    align-items: center;
+    /* margin-top: 70px;
+    margin-right: 5px; */
+    top: 95px;
+    left: 580px;
+    justify-content: center;
+    border: 1px solid black;
+}
+.contiene1 .iva{
+    background-color: white;
+    display: inline-flex;
+    width: 115px;
+    height: 20px;
+    position: absolute;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    justify-content: center
+    /*border: 1px solid black;*/
+}
+.contiene1 .label_iva{
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 80px;
+    height: 20px;
+    position: relative;
+    align-items: right;
+    /*margin-top: 1px;
+    margin-left: 1px;*/
+    /*border: 1px solid black;*/
+    justify-content: left;
+    font-size: 15px;
+}
+.contiene1 .contiene_alta .gancia_input{/*div*/
+    background-color: yellow;
+    display: inline-flex;
+    width: 210px;
+    height: 40px;
+    position: absolute;
+    top: 140px;
+    left: 365px;
+    align-items: center;
+    justify-content: center;
+    place-content: center;
+    border: 1px solid black
+}
+
+.contiene1 .label_gancia{/*label*/
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 80px;
+    height: 20px;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+
+.contiene1 .gancia{/*input*/
+    background-color: white;
+    display: inline-flex;
+    width: 120px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+}
+
+.contiene1 .contiene_alta .modelo_input{/*div*/
+    background-color: rgb(0, 255, 0);
+    display: inline-flex;
+    width: 210px;
+    height: 40px;
+    position: absolute;
+    top: 140px;
+    left: 580px;
+    align-items: center;
+    justify-content: center;
+    place-content: center;
+    border: 1px solid black
+}
+
+.contiene1 .label_modelo{/*label*/
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 80px;
+    height: 20px;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+
+.contiene1 .modelo{/*input*/
+    background-color: white;
+    display: inline-flex;
+    width: 120px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+}
+
+
+
+.contiene1 .contiene_alta .proveedor_input{/*div*/
+    background-color: lightslategrey;
+    display: inline-flex;
+    width: 210px;
+    height: 40px;
+    position: absolute;
+    top: 185px;
+    left: 365px;
+    align-items: center;
+    justify-content: center;
+    place-content: center;
+    border: 1px solid black
+}
+
+
+.contiene1 .label_proveedor{/*label*/
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 80px;
+    height: 20px;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+
+.contiene1 .proveedor{/*input*/
+    background-color: white;
+    display: inline-flex;
+    width: 120px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+}
+.button_grabar{
+    
+    border: 2px solid;/*para darle un borde al boton*/
+    background: transparent;/*para que el boton sea transparente*/
+    font-size: 15px;/*tamaño del texto */
+    font-weight: 600;/*para que el texto sea caso bold*/
+    cursor: pointer;/*para que el cursor sea una mano*/
+    color: white;/*para que el texto sea mas liviano*/
+    outline: none;/*para que el outline no se vea*/
+    transition: all 0.4s;/*transicion de tamaño*/
+    height: 26px;/*altura del boton de enviar*/
+    width: 15%;/*ancho del boton de enviar*/
+    min-width: 20%;/*ancho minimo del boton de enviar*/
+    
+    margin-top:260px;
+    margin-left: 600px;
+    display: inline-flex;
+    line-height: 25px;
+    text-align: center;
+    
+    
+    
+}
+.button_grabar:hover {
+    background: white;/*el fonfo del boton sea blanco al pasar el puntero*/
+    color: #46a2fd;/*texto sera azul al pasar el puntero*/
+}
+
+
 /*-----------------------------------------------------------------------------*/
 
 
@@ -274,6 +662,7 @@ font-weight: 500;
 /*-----------------------------------------------------------------------------*/
 /* div rosa  mas boton de modifica + div amarillo */
 /*-----------------------------------------------------------------------------*/
+
 .contiene1 .pestaña_modi{
     background-color: pink;
     background-color: transparent;
@@ -310,6 +699,86 @@ font-weight: 500;
     margin-left: 5px;
     display: none;
 }
+
+
+.contiene1 .contiene_modi .codigo_input{/*este es el div*/
+    background-color: grey;
+    display: inline-flex;
+    width: 140px;
+    height: 40px;
+    position: absolute;
+    align-items: center;
+    top: 5px;
+    left: 5px;
+    justify-content: center;
+    place-content: center;
+    border: 1px solid black;
+}
+.contiene1 .label_codigo{/*label*/
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 60px;
+    height: 20px;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+.contiene1 .codigo{/*input*/
+    background-color: white;
+    display: inline-flex;
+    width: 70px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+}
+
+.contiene1 .contiene_modi .nom_input{/*este es el div de*/
+    background-color: coral;
+    display: inline-flex;
+    width: 210px;
+    height: 40px;
+    top:5px;
+    left: 150px;    
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    place-content: center;
+    border: 1px solid black;
+}
+
+.contiene1 .label_nom{/*label*/
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 60px;
+    height: 20px;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+
+.contiene1 .nom{/*este es el input*/
+    /*background-color: white;*/
+    display: inline-flex;
+    width: 140px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+}
+
+
+
+
+
 
 /*-----------------------------------------------------------------------------*/
 
@@ -588,6 +1057,7 @@ font-weight: 500;
 
     }
 }
+
 
 
 
