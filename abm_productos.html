@@ -63,16 +63,16 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
 <div class="contiene1">
 
 
-    <div class="pestaña_alta alta">
-        <input type="button" value="Alta" class="boton_alta alta">
+    <div class="pestaña_alta ">
+        <input type="button" value="Alta" class="boton_alta" onclick="alta()">
     </div>
 
     <div class="pestaña_modi">
-        <input type="button" value="Modifica" class="boton_modi">
+        <input type="button" value="Modifica" class="boton_modi" onclick="modificar()">
     </div>
 
     <div class="pestaña_baja">
-        <input type="button" value="Baja" class="boton_baja">
+        <input type="button" value="Baja" class="boton_baja" onclick="baja()">
     </div>
 
 
@@ -82,13 +82,13 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
 
 
     <form style="display: block; background-color: aquamarine;">
-    <div class="contiene_alta alta modif baja">
+    <div class="contiene_alta">
         
-        <div class="codigo_input">
+        <div class="codigo_input alta baja">
             <label for="codigo" class="label_codigo">Codigo</label>
             <input type="text"  name="Codigo" class="codigo" id="codigo">
         </div>
-        <div class="rubro_input">
+        <div class="rubro_input alta">
             <label for="rubro" class="label_rubro">Rubro</label>
             <input type="text"  name="Rubro" class="rubro" id="rubro">
             
@@ -98,43 +98,55 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
              </select>-->
         </div>
   
-        <div class="nombre_input" display="none">
+        <!-- <div class="nombre_input alta" display="none">
             <label for="nombre" class="label_nombre">Nombre</label>
             <input type="text"  name="Nombre" class="nombre" id="nombre">
-        </div>
+        </div> -->
         
-        <div class="marca_input">
+        <div class="marca_input alta baja">
             <label for="marca" class="label_marca">Marca</label>
             <input type="text"  name="Marca" class="marca" id="marca">
         </div>
         
-        <div class="origen_input">
+        <div class="origen_input alta">
             <label for="origen" class="label_origen">Origen</label>
             <input type="text"  name="Origen" class="origen" id="origen">
         </div>
+
+
+
+
+
         
-        <div class="descripcion_input">
+        
+        <div class="descripcion_input alta">
             <label for="descripcion" class="label_descripcion">Descripcion</label>
             <textarea class="textarea" name="mensaje" rows="6" cols="10"  
                 placeholder="Descripcion del producto"></textarea>
         </div>
+
+
+
+
+
+
         
-        <div class="prevta_input">
+        <div class="prevta_input alta">
             <label for="prevta" class="label_prevta">Precio</label>
             <input type="text"  name="Precio de Venta" class="prevta" id="prevta">
         </div>
 
-        <div class="stock_input">
+        <div class="stock_input alta">
             <label for="stock" class="label_stock">Stock</label>
             <input type="text"  name="Stock" class="stock" id="stock">
         </div>
         
-        <div class="precto_input">
+        <div class="precto_input alta">
             <label for="precto" class="label_precto">Costo</label>
             <input type="text"  name="Precio de Costo" class="precto" id="precto">
         </div> 
 
-        <div class="iva_input">
+        <div class="iva_input alta">
             <label for="iva" class="label_iva">Iva</label>
 
             <select name="Iva">
@@ -143,17 +155,18 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
                 
              </select>
         </div>
-        <div class="gancia_input">
+
+        <div class="gancia_input alta">
             <label for="gancia" class="label_gancia">Ganancia</label>
             <input type="text"  name="Ganancia" class="gancia" id="gancia">
         </div>
 
-        <div class="modelo_input">
+        <div class="modelo_input alta baja">
             <label for="modelo" class="label_modelo">Modelo</label>
             <input type="text"  name="Modelo" class="modelo" id="modelo">
         </div>
 
-        <div class="proveedor_input">
+        <div class="proveedor_input alta">
             <label for="proveedor" class="label_proveedor">Proveedor</label>
             <input type="text"  name="proveedor" class="proveedor" id="proveedor">
 
@@ -284,6 +297,7 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
   <script src="./js/script.js"></script>
   <script src="./js/funcionesGrupo99.js"></script>
   <script src="./js/validacion.js"></script>
+  <script src="./js/abm.js"></script>
 </body>
 </html>
 <!--https://mariogonzalezispc.github.io/g5-a3g5_2/-->
