@@ -26,6 +26,12 @@ function baja() {
      
     }
 }
+function consulta() {
+  borra();
+}
+/*-----------------------------------------------------------------------------------*/
+
+
 function borra() {
     let x, j;
     x = document.querySelectorAll(".alta, .modif, .baja"); 
