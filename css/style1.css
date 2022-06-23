@@ -843,12 +843,45 @@ font-weight: 500;
     display: none;
 }
 /* ------------------------------------------------------------- */
+.contiene1 .pestaña_consulta{
+    background-color: aquamarine;
+    background-color: transparent;
+    display: inline-flex;
+    width: 100px;
+    height: 40px;
+    position: relative;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    justify-content: center;
+}
 
 
+.contiene1 .pestaña_consulta .boton_consulta {
+    background-color: white;
+    display: inline-flex;
+/*--------------------*/
+    width: 80px;
+    height: 25px;
+    border-radius: 6px;
+/*--------------------*/
+    position: absoluta;
+    align-items: center;
+    margin-top: 5px; 
+    margin-left: 5px;
+    justify-content: center;
 
-
-
-
+}
+/*
+.contiene1 .contiene_consulta{
+    background-color: orange;
+    display: flex;
+    width: 94%;
+    height: 260px;
+    position: relative;
+    margin-left: 5px;
+    display: none;
+}*/
 
 
 

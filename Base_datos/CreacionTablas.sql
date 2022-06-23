@@ -51,9 +51,9 @@ CREATE TABLE `compra` (
 /*----------------------------------------------------------*/
 CREATE TABLE `producto` (
   `Id_Prod` int(6) NOT NULL,
-  `Nombre` varchar(50) NOT NULL,
   `Descripcion` varchar(70) NOT NULL,
   'Marca' varchar(50) NOT NULL,
+  'Modelo' varchar(50) NOT NULL,
   'Origen' varchar(50) NOT NULL,
   'Rubro' varchar(50) NOT NULL,
   'Proveedor' varchar(50) NOT NULL,
