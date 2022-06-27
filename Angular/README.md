@@ -1,5 +1,5 @@
 
-<h1 align="center">Gestion Deposito (ISPC-A2-G5)</h1>
+<h1 align="center">Gestion Deposito (ISPCA2G5)</h1>
 
 ---
 
@@ -168,7 +168,6 @@ Al proyecto desarrollado en 2021, la “consultora ISPC”, solicita  en esta op
 </p>
 
 --- 
-
 
 - **Diseño de Base de Datos**
 
