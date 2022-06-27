@@ -1,5 +1,5 @@
 
-<h1 align="center">Gestion Deposito (ISPCA2G5)</h1>
+<h1 align="center">Gestion Deposito (ISPC-A2-G5)</h1>
 
 ---
 
@@ -71,7 +71,7 @@ El sistema será un producto diseñado para trabajar en entornos WEB, lo que fac
 
 <p align="center">
   <a>
-    <img alt="Edit on CodeSandbox" src="https://github.com/PPROF2-2022ProgWeb/g05-aula2-gestiondesposito-g05/blob/main/img/pngcom.png">
+    <img alt="Edit on CodeSandbox" src="https://github.com/PPROF2-2022ProgWeb/g05-aula2-gestiondesposito-g05/blob/main/Angular/src/assets/img/pngcom.png">
   </a>
 </p>
 
@@ -163,17 +163,18 @@ Al proyecto desarrollado en 2021, la “consultora ISPC”, solicita  en esta op
 
 <p align="center">
   <a>
-    <img alt="Edit on CodeSandbox" src="https://github.com/PPROF2-2022ProgWeb/g05-aula2-gestiondesposito-g05/blob/main/img/diagrama.png">
+    <img alt="Edit on CodeSandbox" src="https://github.com/PPROF2-2022ProgWeb/g05-aula2-gestiondesposito-g05/blob/main/Angular/src/assets/img/diagrama.png">
   </a>
 </p>
 
 --- 
 
+
 - **Diseño de Base de Datos**
 
 <p align="center">
   <a>
-    <img alt="Edit on CodeSandbox" src="https://github.com/PPROF2-2022ProgWeb/g05-aula2-gestiondesposito-g05/blob/main/img/Der.png">
+    <img alt="Edit on CodeSandbox" src="https://github.com/PPROF2-2022ProgWeb/g05-aula2-gestiondesposito-g05/blob/main/Angular/src/assets/img/Der.png">
   </a>
 </p>
 
