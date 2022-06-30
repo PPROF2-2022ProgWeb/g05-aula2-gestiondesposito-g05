@@ -121,8 +121,10 @@ font-weight: 500;
     margin-left: 5px; */
     justify-content: center;
 }
+
+
 .contiene1 .contiene_alta{
-    background-color:green;
+    background-color:rgb(49, 0, 128);
     /*background-color: transparent;*/
     display: flex;
     width: 99%;
@@ -134,8 +136,8 @@ font-weight: 500;
 .contiene1 .contiene_alta .codigo_input{/*este es el div*/
     background-color: grey;
     display: flex;
-    width: 140px;
-    height: 40px;
+    width: 10%;
+    height: 15%;
     
     position: absolute;
     align-items: center;
@@ -152,8 +154,8 @@ font-weight: 500;
     background-color: grey;
     background-color: transparent;
     display: inline-flex;
-    width: 60px;
-    height: 20px;
+    width: 36%;
+    height: 55%;
     border: 1px solid black;
     position: relative;
     align-items: center;
@@ -161,9 +163,10 @@ font-weight: 500;
 }
 .contiene1 .codigo{/*input*/
     background-color: white;
+    /*background: transparent;*/
     display: inline-flex;
-    width: 70px;
-    height: 20px;
+    width: 35%;
+    height: 55%;
     position: relative;
     align-items: center;
     justify-content: left;
@@ -174,8 +177,8 @@ font-weight: 500;
 .contiene1 .contiene_alta .rubro_input{/*este es el div de*/
     background-color: coral;
     display: flex;
-    width: 210px;
-    height: 40px;
+    width: 10%;
+    height: 15%;
     margin-top: 5px;
     margin-left: 150px;
     position: absolute;
@@ -192,8 +195,8 @@ font-weight: 500;
     /*background-color: grey;*/
     background-color: transparent;
     display: inline-flex;
-    width: 60px;
-    height: 20px;
+    width: 36%;
+    height: 55%;
     border: 1px solid black;
     position: relative;
     align-items: center;
@@ -203,8 +206,8 @@ font-weight: 500;
 .contiene1 .rubro{/*este es el input*/
     /*background-color: white;*/
     display: inline-flex;
-    width: 140px;
-    height: 20px;
+    width: 35%;
+    height: 55%;
     position: relative;
     align-items: center;
     justify-content: left;
@@ -251,8 +254,8 @@ font-weight: 500;
 .contiene1 .contiene_alta .marca_input{/*div*/
     background-color: cyan;
     display: flex;
-    width: 210px;
-    height: 40px;
+    width: 10%;
+    height: 15%;
     position: absolute;
     margin-top: 5px;
     margin-left: 365px;
@@ -268,8 +271,8 @@ font-weight: 500;
     background-color: grey;
     background-color: transparent;
     display: inline-flex;
-    width: 60px;
-    height: 20px;
+    width: 36%;
+    height: 55%;
     border: 1px solid black;
     position: relative;
     align-items: center;
@@ -279,8 +282,8 @@ font-weight: 500;
 .contiene1 .marca{/*input*/
     background-color: white;
     display: inline-flex;
-    width: 140px;
-    height: 20px;
+    width: 35%;
+    height: 55%;
     position: relative;
     align-items: center;
     justify-content: left;
