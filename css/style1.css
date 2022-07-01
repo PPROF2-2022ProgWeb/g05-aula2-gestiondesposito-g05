@@ -141,8 +141,8 @@ font-weight: 500;
     
     position: absolute;
     align-items: center;
-    margin-top: 5px;
-    margin-left: 5px;
+    margin-top: 1%;
+    margin-left: 0%;
     justify-content: center;
     place-content: center;
     border: 1px solid black;
@@ -154,7 +154,7 @@ font-weight: 500;
     background-color: grey;
     background-color: transparent;
     display: inline-flex;
-    width: 36%;
+    width: 45%;
     height: 55%;
     border: 1px solid black;
     position: relative;
@@ -179,8 +179,8 @@ font-weight: 500;
     display: flex;
     width: 10%;
     height: 15%;
-    margin-top: 5px;
-    margin-left: 150px;
+    margin-top: 1%;
+    margin-left: 24%;
     position: absolute;
     align-items: center;
     justify-content: center;
@@ -195,7 +195,7 @@ font-weight: 500;
     /*background-color: grey;*/
     background-color: transparent;
     display: inline-flex;
-    width: 36%;
+    width: 45%;
     height: 55%;
     border: 1px solid black;
     position: relative;
@@ -257,8 +257,8 @@ font-weight: 500;
     width: 10%;
     height: 15%;
     position: absolute;
-    margin-top: 5px;
-    margin-left: 365px;
+    margin-top: 1%;
+    margin-left: 12%;
     align-items: center;
     justify-content: center;
     place-content: center;
@@ -271,7 +271,7 @@ font-weight: 500;
     background-color: grey;
     background-color: transparent;
     display: inline-flex;
-    width: 36%;
+    width: 45%;
     height: 55%;
     border: 1px solid black;
     position: relative;
@@ -282,7 +282,7 @@ font-weight: 500;
 .contiene1 .marca{/*input*/
     background-color: white;
     display: inline-flex;
-    width: 35%;
+    width: 100%;
     height: 55%;
     position: relative;
     align-items: center;
@@ -293,11 +293,11 @@ font-weight: 500;
 
 .contiene1 .contiene_alta .origen_input{/*div*/
     background-color: yellow;
-    display: inline-flex;
-    width: 210px;
-    height: 40px;
-    margin-top: 50px;
-    margin-left: 580px;
+    display: flex;
+    width: 20%;
+    height: 15%;
+    margin-top: 1%;
+    margin-left: 56%;
     position: absolute;
     align-items: center;
     justify-content: center;
@@ -311,8 +311,8 @@ font-weight: 500;
     background-color: grey;
     background-color: transparent;
     display: inline-flex;
-    width: 60px;
-    height: 20px;
+    width: 45%;
+    height: 55%;
     border: 1px solid black;
     position: relative;
     align-items: center;
@@ -322,8 +322,8 @@ font-weight: 500;
 .contiene1 .origen{/*input*/
     background-color: white;
     display: inline-flex;
-    width: 140px;
-    height: 20px;
+    width: 35%;
+    height: 55%;
     position: relative;
     align-items: center;
     justify-content: left;
@@ -334,46 +334,42 @@ font-weight: 500;
 .contiene1 .contiene_alta .descripcion_input{/*div*/
     background-color: rgb(255, 0, 234);
     /*background: transparent;*/
-    display: inline-flex;
-    width: 360px;
-    height: 40px;
+    display: flex;
+    width: 10%;
+    height: 15%;
     position: absolute;
     /*top: 50px;*/
     align-items: center;
-    margin-top: 50px;
-    margin-right: 5px;
+    margin-top: 5%;
+    margin-right: 15%;
     justify-content: center;
     place-content: center;
     border: 1px solid black;
     border-radius: 6px;
-
+    
 }
 .contiene1 .label_descripcion{/*label*/
     background-color: grey;
-    /*background-color: transparent;*/
+    background-color: transparent;
     display: inline-flex;
-    width: 100px;
-    height: 20px;
+    width: 80%;
+    height: 50%;
+    border: 1px solid black;
     position: relative;
     align-items: center;
-    /*top: 10px;
-    left: 5px; */
-    margin-top: 12px;
-    margin-left: 5px;
     justify-content: left;
-    border: 1px solid black;
-    border-radius: 6px;
 }
+
 
 .contiene1 .descripcion{/*input*/
     background-color: rgb(25, 35, 173);
     display: inline-flex;
-    width: 743px;
-    height: 20px;
+    width: 35%;
+    height: 55%;
     position: absolute;
     align-items: center;
-    margin-top: 5px;
-    margin-left: 5px;
+    /*margin-top: 5px;
+    margin-left: 5px;*/
     justify-content: left;
 }
 .contiene1 .textarea{
@@ -389,16 +385,16 @@ font-weight: 500;
 
 .contiene1 .contiene_alta .prevta_input{/*div*/
     background-color: cornflowerblue;
-    display: inline-flex;
-    width: 210px;
-    height: 40px;
+    display: flex;
+    width: 10%;
+    height: 15%;
     position: absolute;
     align-items: center;
     place-content: center;
     /* margin-top: 70px;
     margin-left: 5px; */
-    top: 50px;
-    left: 365px;
+    top: 45%;
+    left: 12%;
     justify-content: center;
     border-radius: 6px;
    
@@ -407,8 +403,8 @@ font-weight: 500;
     background-color: grey;
     background-color: transparent;
     display: inline-flex;
-    width: 60px;
-    height: 20px;
+    width: 80%;
+    height: 50%;
     border: 1px solid black;
     position: relative;
     align-items: center;
@@ -417,8 +413,8 @@ font-weight: 500;
 .contiene1 .prevta{
     background-color: white;
     display: inline-flex;
-    width: 140px;
-    height: 20px;
+    width: 100%;
+    height: 55%;
     position: relative;
     align-items: center;
     justify-content: left;
@@ -428,16 +424,16 @@ font-weight: 500;
 
 .contiene1 .contiene_alta .stock_input{/*div*/
     background-color: rgb(237, 100, 184);
-    display: inline-flex;
-    width: 210px;
-    height: 40px;
+    display: flex;
+    width: 10%;
+    height: 15%;
     position: absolute;
     align-items: center;
     place-content: center;
     /* margin-top: 70px;
     margin-left: 5px; */
-    top: 140px;
-    left: 580px;
+    top: 45%;
+    left: 24%;
     justify-content: center;
     border-radius: 6px;
 }
@@ -445,8 +441,8 @@ font-weight: 500;
     background-color: grey;
     background-color: transparent;
     display: inline-flex;
-    width: 60px;
-    height: 20px;
+    width: 80%;
+    height: 50%;
     border: 1px solid black;
     position: relative;
     align-items: center;
@@ -455,8 +451,8 @@ font-weight: 500;
 .contiene1 .stock{
     background-color: white;
     display: inline-flex;
-    width: 140px;
-    height: 20px;
+    width: 100%;
+    height: 55%;
     position: relative;
     align-items: center;
     justify-content: left;
@@ -465,15 +461,15 @@ font-weight: 500;
 }
 .contiene1 .contiene_alta .precto_input{/*div*/
     background-color: magenta;
-    display: inline-flex;
-    width: 210px;
-    height: 40px;
+    display: flex;
+    width: 10%;
+    height: 15%;
     position: absolute;
     align-items: center;
     /* margin-top: 70px;
     margin-left: 5px; */
-    top: 95px;
-    left: 365px;
+    top: 65%;
+    left: 12%;
     place-content: center;
     justify-content: center;
     border-radius: 6px;
@@ -482,8 +478,8 @@ font-weight: 500;
     background-color: grey;
     background-color: transparent;
     display: inline-flex;
-    width: 60px;
-    height: 20px;
+    width: 50%;
+    height: 50%;
     border: 1px solid black;
     position: relative;
     align-items: center;
@@ -492,25 +488,25 @@ font-weight: 500;
 .contiene1 .precto{
     background-color: white;
     display: inline-flex;
-    width: 140px;
-    height: 20px;
+    width: 100%;
+    height: 55%;
     position: relative;
     align-items: center;
     justify-content: left;
     border: 1px solid black;
-    float: left;
+    
 }
 .contiene1 .contiene_alta .iva_input{/*div*/
     background-color: rgb(205, 50, 84);
-    display: inline-flex;
-    width: 210px;
-    height: 40px;
+    display: flex;
+    width: 10%;
+    height: 15%;
     position: absolute;
     align-items: center;
     /* margin-top: 70px;
     margin-right: 5px; */
-    top: 95px;
-    left: 580px;
+    top: 65%;
+    left: 24%;
     justify-content: center;
     place-content: center;
     border: 1px solid black;
@@ -519,37 +515,36 @@ font-weight: 500;
 .contiene1 .iva{
     background-color: white;
     display: inline-flex;
-    width: 115px;
-    height: 20px;
-    position: absolute;
+    width: 35%;
+    height: 55%;
+    position: relative;
     align-items: center;
-    margin-top: 5px;
-    margin-left: 5px;
-    justify-content: center
-    /*border: 1px solid black;*/
+    /*margin-top: 5px;
+    margin-left: 5px;*/
+    justify-content: left;
+    border: 1px solid black;
 }
 .contiene1 .label_iva{
     background-color: grey;
-    background-color: transparent;
+    /*background-color: transparent;*/
     display: inline-flex;
-    width: 80px;
-    height: 20px;
+    width: 30%;
+    height: 50%;
     position: relative;
-    align-items: right;
+    align-items: center;
     /*margin-top: 1px;
     margin-left: 1px;*/
-    /*border: 1px solid black;*/
-    justify-content: left;
-    font-size: 15px;
+    border: 1px solid black;
+    justify-content: left;    
 }
 .contiene1 .contiene_alta .gancia_input{/*div*/
     background-color: yellow;
-    display: inline-flex;
-    width: 210px;
-    height: 40px;
+    display: flex;
+    width: 10%;
+    height: 15%;
     position: absolute;
-    top: 140px;
-    left: 365px;
+    top: 25%;
+    left: 24%;
     align-items: center;
     justify-content: center;
     place-content: center;
@@ -561,8 +556,8 @@ font-weight: 500;
     background-color: grey;
     background-color: transparent;
     display: inline-flex;
-    width: 80px;
-    height: 20px;
+    width: 80%;
+    height: 50%;
     border: 1px solid black;
     position: relative;
     align-items: center;
@@ -572,23 +567,23 @@ font-weight: 500;
 .contiene1 .gancia{/*input*/
     background-color: white;
     display: inline-flex;
-    width: 120px;
-    height: 20px;
+    width: 100%;
+    height: 55%;
     position: relative;
     align-items: center;
     justify-content: left;
     border: 1px solid black;
-    float: left;
+    
 }
 
 .contiene1 .contiene_alta .modelo_input{/*div*/
     background-color: rgb(0, 255, 0);
-    display: inline-flex;
-    width: 210px;
-    height: 40px;
+    display: flex;
+    width: 10%;
+    height: 15%;
     position: absolute;
-    top: 185px;
-    left: 365px;
+    top: 25%;
+    left: 12%;
     align-items: center;
     justify-content: center;
     place-content: center;
@@ -599,9 +594,9 @@ font-weight: 500;
 .contiene1 .label_modelo{/*label*/
     background-color: grey;
     background-color: transparent;
-    display: inline-flex;
-    width: 80px;
-    height: 20px;
+    display: flex;
+    width: 50%;
+    height: 50%;
     border: 1px solid black;
     position: relative;
     align-items: center;
@@ -611,13 +606,13 @@ font-weight: 500;
 .contiene1 .modelo{/*input*/
     background-color: white;
     display: inline-flex;
-    width: 120px;
-    height: 20px;
+    width: 100%;
+    height: 55%;
     position: relative;
     align-items: center;
     justify-content: left;
     border: 1px solid black;
-    float: left;
+    
 }
 
 
@@ -625,11 +620,11 @@ font-weight: 500;
 .contiene1 .contiene_alta .proveedor_input{/*div*/
     background-color: lightslategrey;
     display: inline-flex;
-    width: 210px;
-    height: 40px;
+    width: 18%;
+    height: 15%;
     position: absolute;
-    top: 5px;
-    left: 580px;
+    margin-top: 1%;
+    left: 36%;
     align-items: center;
     justify-content: center;
     place-content: center;
@@ -642,8 +637,8 @@ font-weight: 500;
     background-color: grey;
     background-color: transparent;
     display: inline-flex;
-    width: 80px;
-    height: 20px;
+    width: 40%;
+    height: 50%;
     border: 1px solid black;
     position: relative;
     align-items: center;
@@ -653,8 +648,8 @@ font-weight: 500;
 .contiene1 .proveedor{/*input*/
     background-color: white;
     display: inline-flex;
-    width: 120px;
-    height: 20px;
+    width: 45%;
+    height: 55%;
     position: relative;
     align-items: center;
     justify-content: left;
