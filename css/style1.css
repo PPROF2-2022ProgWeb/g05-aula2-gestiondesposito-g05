@@ -340,8 +340,8 @@ font-weight: 500;
     position: absolute;
     /*top: 50px;*/
     align-items: center;
-    margin-top: 5%;
-    margin-right: 15%;
+    margin-top: 6%;
+    margin-left: 36%;
     justify-content: center;
     place-content: center;
     border: 1px solid black;
@@ -350,14 +350,14 @@ font-weight: 500;
 }
 .contiene1 .label_descripcion{/*label*/
     background-color: grey;
-    background-color: transparent;
+    /*background-color: transparent;*/
     display: inline-flex;
-    width: 80%;
+    width: 90%;
     height: 50%;
     border: 1px solid black;
     position: relative;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
 }
 
 
@@ -424,6 +424,7 @@ font-weight: 500;
 
 .contiene1 .contiene_alta .stock_input{/*div*/
     background-color: rgb(237, 100, 184);
+    /*background: transparent;*/
     display: flex;
     width: 10%;
     height: 15%;
@@ -439,7 +440,7 @@ font-weight: 500;
 }
 .contiene1 .label_stock{
     background-color: grey;
-    background-color: transparent;
+    /*background-color: transparent;*/
     display: inline-flex;
     width: 80%;
     height: 50%;
@@ -450,6 +451,7 @@ font-weight: 500;
 }
 .contiene1 .stock{
     background-color: white;
+    /*background: transparent;*/
     display: inline-flex;
     width: 100%;
     height: 55%;
@@ -595,7 +597,7 @@ font-weight: 500;
     background-color: grey;
     background-color: transparent;
     display: flex;
-    width: 50%;
+    width: 40%;
     height: 50%;
     border: 1px solid black;
     position: relative;
@@ -619,7 +621,7 @@ font-weight: 500;
 
 .contiene1 .contiene_alta .proveedor_input{/*div*/
     background-color: lightslategrey;
-    display: inline-flex;
+    display: flex;
     width: 18%;
     height: 15%;
     position: absolute;
