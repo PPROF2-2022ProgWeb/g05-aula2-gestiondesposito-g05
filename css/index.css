@@ -36,19 +36,19 @@
     display: flex;/*para que se puedan ver en columnas*/
 }
 
-.listado-franquicias {/*hago que los filtros queden en columnas*/
+.franchise-list {/*hago que los filtros queden en columnas*/
     display: flex;/*para que se puedan ver en columnas*/
     flex-direction: column;
     width: 25%;/*ancho de los botones de filtro*/
     padding: 20px;/*alejo la imagen link del borde del contenedor*/
 }
 
-.listado-franquicias img {
+.franchise-list img {
     width: 100%;/*ancho de la imagen*/
     height: auto;/*alto de la imagen*/
 }
 
-.listado-franquicias h2 {
+.franchise-list h2 {
     color: rgba(0, 128, 255, 0.9);/*color de letra para h2*/
     /*color: white;*/
     font-weight: 700;/*ancho de letra*/
@@ -58,16 +58,16 @@
 /*------------------------------------------------------------*/
 /*estilos de los novedades*/
 /*------------------------------------------------------------*/
-.listado-novedades {
+.list-news {
     width: 82%;/*ancho del listado de productos*/
     display: flex;/*para que se puedan ver en columnas*/
     flex-wrap: wrap;/*para que si superan el ancho padre se vea hacia abajo*/
     padding: 10px;/*alejo la imagen del borde del contenedor*/
 }
 
-.listado-novedades .nota_1,
-.listado-novedades .nota_2,
-.listado-novedades .nota_3 {
+.list-news .note_1,
+.list-news .note_2,
+.list-news .note_3 {
     width: 31.6%;/*ancho de las imagenes de novedades*/
     height: auto;/*alto de las imagenes de novedades*/
     margin: 5px;/*espacio entre las imagenes de novedades*/
@@ -78,14 +78,14 @@
     background-color: rgba(0, 128, 255, 0.6);/*color de fondo y tranparencia*/
 }
 
-.listado-novedades h2 {/*estilos de los titulos hs de las novedades*/   
+.list-news h2 {/*estilos de los titulos hs de las novedades*/   
     color: white;/*color dl h2 */
     font-weight: 400;/*ancho de letra*/
     font-size: 25px;/*tamaño de letra*/
     display: inline-block;
 }
 
-.listado-novedades .titulo {/*para el titulo de la nota*/
+.list-news .title {/*para el titulo de la nota*/
     width: 98%;/*ancho del titulo*/
     height: auto;/*alto del titulo*/
     margin: 5px;/*espacio entre el borde y el titulo*/
@@ -101,7 +101,7 @@
     flex-direction: column;/*para que se puedan ver en columnas*/   
 }
 
-.listado-novedades img {/*estableco estilos a la imagenes*/
+.list-news img {/*estableco estilos a la imagenes*/
     width: 100%;/*ancho de la imagen*/
     height: auto; /*alto de la imagen*/
     object-fit: fill;/*para que se ajuste a la imagen*/
@@ -132,11 +132,11 @@
     .wrap2 h1 {
         color: white;/*color de letra para h1*/
     }
-    .listado-franquicias {/*apago la colomna*/
+    .franchise-list {/*apago la colomna*/
         display: none;/*para que no se vea el listado de franquicias*/
     }
 
-    .listado-novedades {
+    .list-news {
         display: flex;/*para que se puedan ver en columnas*/
         flex-wrap: wrap;
         padding: 20px;/*alejo la imagen del borde del contenedor*/
@@ -148,9 +148,9 @@
         align-content: center;/*para que el titulo quede centrado*/
     }
 
-    .listado-novedades .nota_1,
-    .listado-novedades .nota_2,
-    .listado-novedades .nota_3 {
+    .list-news .note_1,
+    .list-news .note_2,
+    .list-news .note_3 {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -161,7 +161,7 @@
         transition: all 0.3s;
     }
 
-    .listado-novedades .titulo {
+    .list-news .titulo {
         width: 98%;
         display: flex;
         text-align: center;
@@ -187,14 +187,14 @@
         display: none;
     }
 
-    .listado-novedades {
+    .list-news {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         padding: 20px;
     }
 
-    .listado-novedades {
+    .list-news {
         width: 100%;
         margin-left: 3%;
         margin-bottom: 3%;
@@ -203,12 +203,12 @@
         transition: all 0.2s;
     }
 
-    .listado-franquicias {
+    .franchise-list {
         display: none;
     }
-    .listado-novedades .nota_1,
-    .listado-novedades .nota_2,
-    .listado-novedades .nota_3 {
+    .list-news .note_1,
+    .list-news .note_2,
+    .list-news .note_3 {
         margin-left: 5.5%;
     }
 
