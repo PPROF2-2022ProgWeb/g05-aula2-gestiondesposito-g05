@@ -2,25 +2,40 @@
     width: 100%;
     background-color:rgba(255,255,255,0.8);
     height: 60px;
-    position: fixed;/*fija el encabezado*/
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
 
-}
+} 
+
+
+.logo__img{
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    line-height: 60px;
+
+
+  }
 /*-----------------------------------------------*/
-.nav{
+/* .nav{
   display: flex; 
   justify-content: space-between; 
 }
 .nav-link{
-/*color: white;*/
 color: black;
 text-decoration: none;
 font-size: 15px;
 font-weight: 500;
+list-style: none;
 
 }
+			
+ul, ol {
+    list-style:none;
+}
+
 
 .logo__img{
   width: 60px;
@@ -33,7 +48,7 @@ font-weight: 500;
     font-weight: 600;
     margin-left: 0px;
     line-height: 60px;
-    width: max-content;/*no corta el titulo*/
+    width: max-content;
     display: block;
     position: absolute;
     margin-left: 120px;
@@ -60,11 +75,119 @@ font-weight: 500;
 .nav-menu-link{
     padding: 8px 10px;
 }
-.nav-menu-link:hover {
+.nav-menu-link:hover{
     color: white;
     background-color: #508fbd;
     transition: 0.3s;
+
+}  */
+/*-----------------------------------------------*/
+#header{
+    width: 100%;
+    background-color:rgba(255,255,255,0.8);
+    height: 105px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
+#lista_nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin-right: 50px;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 600;
+    user-select: none;
+}
+
+ul {
+    list-style:none;
+}
+
+.nav > li {
+    float: inline-end;
+}
+
+.nav li a {
+    background-color: transparent;
+    color:black;
+    text-decoration:none;
+    padding:10px 12px;
+    display:inline-block;
+    min-width:100px;
+    text-align:center;
+}
+
+.nav li a:hover {
+    background-color:#508fbd;
+    color:white;
+    transition: 0.3s;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    /*min-width:140px;*/
+}
+
+.nav li:hover > ul {
+    display:block;
+    background-color:rgba(255,255,255,0.8);
+}
+
+
+
+.nav li ul li {
+    position:relative;
+}
+
+ .nav li ul li ul {
+    background-color:rgba(255,255,255,0.8);
+    right:-140px;
+    top: 0px;
+} 
+
+
+.img_carr{
+    width: 30px;
+    height: 30px;
+    margin-top: 3px;
+    margin-left: 7px;
+    align-items: center;
+}
+
+.compra1{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 1270px;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+
+}
+.compra1:hover ul{
+    display: block;
+    background-color: #508fbd;
+    color: white;
+    transition: 0.3s;
+}
+/*--------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 .nav-toggle{ 
     color: white;
     background: none;
