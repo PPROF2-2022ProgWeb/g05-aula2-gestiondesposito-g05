@@ -1,12 +1,12 @@
 .wrap2 {
     font-family: 'Open Sans', sans-serif;/*tipo de letra de google*/
-    max-width: 1250px;/*ancho maximo permitodo de la pagina*/
+    max-width: 1350px;/*ancho maximo permitodo de la pagina*/
     height: auto;/*alto de la pagina*/
-    width: 95%;/*ancho de la pagina*/
+    width: 99%;/*ancho de la pagina*/
     margin: auto;/*centra la pagina*/
-    background-color: rgba(255, 255, 255, 0.7);/*color de fondo y tranparencia*/
+    background-color: rgba(255, 255, 255, 0.5);/*color de fondo y tranparencia*/
     /*background-color: rgba(0, 128, 255, 0.5);*//*color de fondo y tranparencia*/
-    margin-top: 140px;
+    margin-top: 160px;
     border-radius: 20px;
 }
 
@@ -73,7 +73,7 @@
 .listado-franquicias {/*hago que los filtros queden en columnas*/
     display: flex;/*para que se puedan ver en columnas*/
     flex-direction: column;
-    width: 25%;/*ancho de los botones de filtro*/
+    width: 20%;/*ancho de los botones de filtro*/
     padding: 20px;/*alejo la imagen link del borde del contenedor*/
 }
 
@@ -98,6 +98,27 @@
     flex-wrap: wrap;/*para que si superan el ancho padre se vea hacia abajo*/
     padding: 10px;/*alejo la imagen del borde del contenedor*/
 }
+
+.listado-novedades .ofertas{
+    width: 33%;
+    height: 50%;
+    /* background-color: rgba(255,255,255,0.8); */
+    background-color: red;
+    position: relative;
+    top:1%;
+    left: 2%;
+    z-index: 0;
+    padding: 10px;/*alejo la imagen del borde del contenedor*/
+    float: left;
+    border : 1px solid black;
+    border-radius: 10px;
+    color: black;
+}
+
+
+
+
+
 
 .listado-novedades .nota_1,
 .listado-novedades .nota_2,
