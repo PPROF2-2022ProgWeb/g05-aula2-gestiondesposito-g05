@@ -1,0 +1,1185 @@
+.header {
+    width: 100%;
+    background-color:rgba(255,255,255,0.8);
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+} 
+
+
+.logo__img{
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    line-height: 60px;
+  }
+/*-----------------------------------------------*/
+#buscador{
+    width: 42%;
+    height: 42px;
+    background-color: rgba(255,255,255,0.8);
+    position: fixed;
+    top: 20px;
+    left: 370px;
+    z-index: 1;
+    padding-left: 10px;
+    border-radius: 5px;
+    font-size: 22px;
+}
+.btn_buscador{
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255,255,255,0.8);
+    position: fixed;
+    top: 3.45%;
+    left: 66.5%;
+    z-index: 1;
+    border-radius: 5px;
+    background-color: rgba(136, 130, 130, 0.8);
+}
+.btn_buscador:hover{
+    background-color: #508fbd;
+    transition: 0.3s;
+}
+#header{
+    width: 100%;
+    background-color:rgba(255,255,255,0.8);
+    height: 105px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+#lista_nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+    margin-right: 50px;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 600;
+    user-select: none;
+}
+
+ul {
+    list-style:none;
+    font-size: 15px;
+    font-weight: 600;
+    user-select: none;
+}
+
+.nav > li {
+    float: inline-end;
+}
+
+.nav li a {
+    background-color: transparent;
+    color:black;
+    text-decoration:none;
+    padding:10px 12px;
+    display:inline-block;
+    min-width:100px;
+    text-align:center;
+}
+
+.nav li a:hover {
+    background-color:#508fbd;
+    color:white;
+    transition: 0.3s;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    /*min-width:140px;*/
+}
+
+.nav li:hover > ul {
+    display:block;
+    background-color:rgba(255,255,255,0.8);
+}
+.nav li ul li {
+    position:relative;
+}
+
+ .nav li ul li ul {
+    background-color:rgba(255,255,255,0.8);
+    right:-140px;
+    top: 0px;
+} 
+.img_carr{
+    width: 30px;
+    height: 30px;
+    margin-top: 3px;
+    margin-left: 7px;
+    align-items: center;
+}
+
+.compra1{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 1270px;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+
+}
+.compra1:hover ul{
+    display: block;
+    background-color: #508fbd;
+    color: white;
+    transition: 0.3s;
+}
+/*--------------------------------------------------------------*/
+
+
+.nav-toggle{ 
+    color: white;
+    background: none;
+    border: none;
+    font-size: 25px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+}
+
+/* ------------------------------------------------------------- */
+.contiene1{
+    background-color: red;
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    height: 350px;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin-top: 60px;
+}
+
+
+/*-----------------------------------------------------------------------------*/
+/* div azul mas boton de alta + div verde */
+/*-----------------------------------------------------------------------------*/
+.contiene1 .pestaña_alta{
+    background-color: blue;
+    background: transparent;
+    display: inline-flex; 
+    width: 100px;
+    height: 25px;
+    position: relative;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    justify-content: center;
+}
+
+.contiene1 .pestaña_alta .boton_alta {
+    background-color: white;
+    display: inline-flex;
+/*--------------------*/
+    width: 80px;
+    height: 25px;
+    border-radius: 6px;
+/*--------------------*/
+    position: absoluta;
+    align-items: center;
+    /* margin-top: 5px; 
+    margin-left: 5px; */
+    justify-content: center;
+}
+.contiene1 .contiene_alta{
+    background-color:green;
+    display: inline-flex;
+    width: 99%;
+    height: 260px;
+    border-radius: 6px;
+    position: relative;
+    margin-left: 5px;
+}
+.contiene1 .contiene_alta .codigo_input{/*este es el div*/
+    background-color: grey;
+    display: inline-flex;
+    width: 140px;
+    height: 40px;
+    position: absolute;
+    align-items: center;
+    top: 5px;
+    left: 5px;
+    justify-content: center;
+    place-content: center;
+    border: 1px solid black;
+}
+.contiene1 .label_codigo{/*label*/
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 60px;
+    height: 20px;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+.contiene1 .codigo{/*input*/
+    background-color: white;
+    display: inline-flex;
+    width: 70px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+}
+
+.contiene1 .contiene_alta .rubro_input{/*este es el div de*/
+    /*background-color: coral;*/
+    display: inline-flex;
+    width: 210px;
+    height: 40px;
+    top:5px;
+    left: 150px;    
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    place-content: center;
+    border: 1px solid black;
+}
+
+.contiene1 .label_rubro{/*label*/
+    /*background-color: grey;*/
+    background-color: transparent;
+    display: inline-flex;
+    width: 60px;
+    height: 20px;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+
+.contiene1 .rubro{/*este es el input*/
+    /*background-color: white;*/
+    display: inline-flex;
+    width: 140px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+}
+.contiene1 .contiene_alta .nombre_input{/*div*/
+    background-color: pink;
+    display: none; /*inline-flex;*/
+    width: 210px;
+    height: 40px;
+    top: 5px;
+    left: 365px; 
+    position: absolute;
+    align-items: center;
+    justify-content: left;
+    place-content: center;
+    border: 1px solid black
+}
+.contiene1 .label_nombre{/*label*/
+    background-color: grey;
+    background-color: transparent;
+    display: none;/*inline-flex;*/
+    width: 60px;
+    height: 20px;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+
+.contiene1 .nombre{/*input*/
+    background-color: white;
+    display: none; /*inline-flex;*/
+    width: 140px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+}
+
+.contiene1 .contiene_alta .marca_input{/*div*/
+    background-color: cyan;
+    display: inline-flex;
+    width: 210px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    left: 580px;
+    align-items: center;
+    justify-content: left;
+    place-content: center;
+    border: 1px solid black
+}
+
+.contiene1 .label_marca{/*label*/
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 60px;
+    height: 20px;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+
+.contiene1 .marca{/*input*/
+    background-color: white;
+    display: inline-flex;
+    width: 140px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+}
+
+.contiene1 .contiene_alta .origen_input{/*div*/
+    background-color: yellow;
+    display: inline-flex;
+    width: 210px;
+    height: 40px;
+    top: 185px;
+    left: 580px;
+    position: absolute;
+    align-items: center;
+    justify-content: left;
+    place-content: center;
+    border: 1px solid black
+}
+
+.contiene1 .label_origen{/*label*/
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 60px;
+    height: 20px;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+
+.contiene1 .origen{/*input*/
+    background-color: white;
+    display: inline-flex;
+    width: 140px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+}
+
+.contiene1 .contiene_alta .descripcion_input{/*div*/
+    background-color: red;
+    display: inline-flex;
+    width: 360px;
+    height: 40px;
+    position: absolute;
+    top: 50px;
+    align-items: center;
+    /*margin-top: 40px;
+    margin-right: 5px;*/
+    justify-content: right;
+    place-content: center;
+    border: 1px solid black
+
+}
+.contiene1 .label_descripcion{/*label*/
+    background-color: grey;
+    /*background-color: transparent;*/
+    display: inline-flex;
+    width: 100px;
+    height: 20px;
+    /* position: relative;
+    align-items: center;
+    top: 10px;
+    left: 5px; */
+    /*margin-top: 5px;
+    margin-left: 5px;*/
+    justify-content: left;
+    border: 1px solid black;
+}
+
+.contiene1 .descripcion{/*input*/
+    background-color: rgb(25, 173, 112);
+    display: inline-flex;
+    width: 743px;
+    height: 20px;
+    position: absolute;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    justify-content: left;
+}
+.contiene1 .textarea{
+        resize: none;
+        overflow: scroll;
+        top: 40px;
+        display: block;
+        position: absolute;
+}  
+
+
+
+
+
+.contiene1 .contiene_alta .prevta_input{
+    background-color: cornflowerblue;
+    display: inline-flex;
+    width: 210px;
+    height: 40px;
+    position: absolute;
+    align-items: center;
+    /* margin-top: 70px;
+    margin-left: 5px; */
+    top: 50px;
+    left: 365px;
+    justify-content: center;
+}
+.contiene1 .label_prevta{
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 60px;
+    height: 20px;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+.contiene1 .prevta{
+    background-color: white;
+    display: inline-flex;
+    width: 140px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+}
+
+.contiene1 .contiene_alta .stock_input{
+    background-color: rgb(237, 100, 184);
+    display: inline-flex;
+    width: 210px;
+    height: 40px;
+    position: absolute;
+    align-items: center;
+    /* margin-top: 70px;
+    margin-left: 5px; */
+    top: 50px;
+    left: 580px;
+    justify-content: center;
+}
+.contiene1 .label_stock{
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 60px;
+    height: 20px;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+.contiene1 .stock{
+    background-color: white;
+    display: inline-flex;
+    width: 140px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+}
+.contiene1 .contiene_alta .precto_input{
+    background-color: magenta;
+    display: inline-flex;
+    width: 210px;
+    height: 40px;
+    position: absolute;
+    align-items: center;
+    /* margin-top: 70px;
+    margin-left: 5px; */
+    top: 95px;
+    left: 365px;
+    justify-content: center;
+}
+.contiene1 .label_precto{
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 60px;
+    height: 20px;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+.contiene1 .precto{
+    background-color: white;
+    display: inline-flex;
+    width: 140px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+}
+.contiene1 .contiene_alta .iva_input{
+    background-color: rgb(205, 50, 84);
+    display: inline-flex;
+    width: 210px;
+    height: 40px;
+    position: absolute;
+    align-items: center;
+    /* margin-top: 70px;
+    margin-right: 5px; */
+    top: 95px;
+    left: 580px;
+    justify-content: center;
+    border: 1px solid black;
+}
+.contiene1 .iva{
+    background-color: white;
+    display: inline-flex;
+    width: 115px;
+    height: 20px;
+    position: absolute;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    justify-content: center
+    /*border: 1px solid black;*/
+}
+.contiene1 .label_iva{
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 80px;
+    height: 20px;
+    position: relative;
+    align-items: right;
+    /*margin-top: 1px;
+    margin-left: 1px;*/
+    /*border: 1px solid black;*/
+    justify-content: left;
+    font-size: 15px;
+}
+.contiene1 .contiene_alta .gancia_input{/*div*/
+    background-color: yellow;
+    display: inline-flex;
+    width: 210px;
+    height: 40px;
+    position: absolute;
+    top: 140px;
+    left: 365px;
+    align-items: center;
+    justify-content: center;
+    place-content: center;
+    border: 1px solid black
+}
+
+.contiene1 .label_gancia{/*label*/
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 80px;
+    height: 20px;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+
+.contiene1 .gancia{/*input*/
+    background-color: white;
+    display: inline-flex;
+    width: 120px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+}
+
+.contiene1 .contiene_alta .modelo_input{/*div*/
+    background-color: rgb(0, 255, 0);
+    display: inline-flex;
+    width: 210px;
+    height: 40px;
+    position: absolute;
+    top: 140px;
+    left: 580px;
+    align-items: center;
+    justify-content: center;
+    place-content: center;
+    border: 1px solid black
+}
+
+.contiene1 .label_modelo{/*label*/
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 80px;
+    height: 20px;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+
+.contiene1 .modelo{/*input*/
+    background-color: white;
+    display: inline-flex;
+    width: 120px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+}
+
+
+
+.contiene1 .contiene_alta .proveedor_input{/*div*/
+    background-color: lightslategrey;
+    display: inline-flex;
+    width: 210px;
+    height: 40px;
+    position: absolute;
+    top: 185px;
+    left: 365px;
+    align-items: center;
+    justify-content: center;
+    place-content: center;
+    border: 1px solid black
+}
+
+
+.contiene1 .label_proveedor{/*label*/
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 80px;
+    height: 20px;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+
+.contiene1 .proveedor{/*input*/
+    background-color: white;
+    display: inline-flex;
+    width: 120px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+}
+.button_grabar{
+    
+    border: 2px solid;/*para darle un borde al boton*/
+    background: transparent;/*para que el boton sea transparente*/
+    font-size: 15px;/*tamaño del texto */
+    font-weight: 600;/*para que el texto sea caso bold*/
+    cursor: pointer;/*para que el cursor sea una mano*/
+    color: white;/*para que el texto sea mas liviano*/
+    outline: none;/*para que el outline no se vea*/
+    transition: all 0.4s;/*transicion de tamaño*/
+    height: 26px;/*altura del boton de enviar*/
+    width: 15%;/*ancho del boton de enviar*/
+    min-width: 20%;/*ancho minimo del boton de enviar*/
+    
+    margin-top:260px;
+    margin-left: 600px;
+    display: inline-flex;
+    line-height: 25px;
+    text-align: center;
+    
+    
+    
+}
+.button_grabar:hover {
+    background: white;/*el fonfo del boton sea blanco al pasar el puntero*/
+    color: #46a2fd;/*texto sera azul al pasar el puntero*/
+}
+
+
+/*-----------------------------------------------------------------------------*/
+/********************************************************************************/
+
+/*.contiene_modi{
+    background-color: rgb(200, 255, 0);
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    height: 350px;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin-top: 60px;
+}*/
+
+
+/*-----------------------------------------------------------------------------*/
+/* div rosa  mas boton de modifica + div amarillo */
+/*-----------------------------------------------------------------------------*/
+
+.contiene1 .pestaña_modi{
+    background-color: pink;
+    background-color: transparent;
+    display: inline-flex;
+    width: 100px;
+    height: 40px;
+    position: relative;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    justify-content: center;
+}
+.contiene1 .pestaña_modi .boton_modi {
+    background-color: white;
+    display: inline-flex;
+/*--------------------*/
+    width: 80px;
+    height: 25px;
+    border-radius: 6px;
+/*--------------------*/
+    position: absoluta;
+    align-items: center;
+    margin-top: 5px; 
+    margin-left: 5px;
+    justify-content: center;
+    border-radius: 6px;
+}
+.contiene1 .contiene_modi{
+    background-color: yellow;
+    display: flex;
+    width: 94%;
+    height: 260px;
+    position: relative;
+    margin-left: 5px;
+    display: none;
+}
+
+/*
+.contiene1 .contiene_modi .codigo_input{/*este es el div*
+    background-color: grey;
+    display: inline-flex;
+    width: 140px;
+    height: 40px;
+    position: absolute;
+    align-items: center;
+    top: 5px;
+    left: 5px;
+    justify-content: center;
+    place-content: center;
+    border: 1px solid black;
+}
+.contiene1 .label_codigo{/*label*
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 60px;
+    height: 20px;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+.contiene1 .codigo{/*input*
+    background-color: white;
+    display: inline-flex;
+    width: 70px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+}
+
+.contiene1 .contiene_modi .nom_input{/*este es el div de*
+    background-color: coral;
+    display: inline-flex;
+    width: 210px;
+    height: 40px;
+    top:5px;
+    left: 150px;    
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    place-content: center;
+    border: 1px solid black;
+}
+
+.contiene1 .label_nom{/*label*
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 60px;
+    height: 20px;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+
+.contiene1 .nom{/*este es el input*/
+    /*background-color: white;*
+    display: inline-flex;
+    width: 140px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+}*/
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------*/
+
+
+
+
+/*-----------------------------------------------------------------------------*/
+/* div azul mas boton de baja */
+/*-----------------------------------------------------------------------------*/
+.contiene1 .pestaña_baja{
+    background-color: aquamarine;
+    background-color: transparent;
+    display: inline-flex;
+    width: 100px;
+    height: 40px;
+    position: relative;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    justify-content: center;
+}
+.contiene1 .pestaña_baja .boton_baja {
+    background-color: white;
+    display: inline-flex;
+/*--------------------*/
+    width: 80px;
+    height: 25px;
+    border-radius: 6px;
+/*--------------------*/
+    position: absoluta;
+    align-items: center;
+    margin-top: 5px; 
+    margin-left: 5px;
+    justify-content: center;
+
+}
+
+.contiene1 .contiene_baja{
+    background-color: orange;
+    display: flex;
+    width: 94%;
+    height: 260px;
+    position: relative;
+    margin-left: 5px;
+    display: none;
+}
+/* ------------------------------------------------------------- */
+.contiene1 .pestaña_consulta{
+    background-color: aquamarine;
+    background-color: transparent;
+    display: inline-flex;
+    width: 100px;
+    height: 40px;
+    position: relative;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    justify-content: center;
+}
+
+
+.contiene1 .pestaña_consulta .boton_consulta {
+    background-color: white;
+    display: inline-flex;
+/*--------------------*/
+    width: 80px;
+    height: 25px;
+    border-radius: 6px;
+/*--------------------*/
+    position: absoluta;
+    align-items: center;
+    margin-top: 5px; 
+    margin-left: 5px;
+    justify-content: center;
+
+}
+/*
+.contiene1 .contiene_consulta{
+    background-color: orange;
+    display: flex;
+    width: 94%;
+    height: 260px;
+    position: relative;
+    margin-left: 5px;
+    display: none;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------*/
+/*Responsive para tablet 1050px */
+/*--------------------------------------------------------------*/
+@media screen and (max-width: 1050px) {
+    .web{
+        font-size: 16px;
+        font-weight: 600;
+        margin-left: 0px;
+        line-height: 60px;
+        width: max-content;/*no corta el titulo*/
+        display: block;
+        position: absolute;
+        margin-left: 120px;
+    }
+    .nav-link{
+        color: black;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 500;
+        
+        }
+        .nav-menu-link{
+            padding: 8px 0px;
+        }
+
+
+
+
+
+}
+
+/*--------------------------------------------------------------*/
+/*Responsive para tablet 768px */
+/*--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+    .nav-menu{
+        flex-direction: column;
+        margin-right: 10px;
+        background-color: #034574;
+        position: fixed;
+        right: 0;
+        top: 90px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100%-60px);
+        overflow-y: auto;
+        right: -800px;
+        transition: 0.2s;
+    }
+    .nav-link{
+        color: white;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 500;
+        
+        }
+    .nav-menu-item{
+        font-size: 14px;
+        line-height: 60px;
+    }
+    .nav-menu-link:hover{
+        background-color: none;
+        transition: 0.5s;
+        color: aqua;
+    }
+    .web{
+        display: none;
+    }
+    .mov {
+        display: block;
+        position: absolute;
+        margin-left: 120px;
+        line-height: 60px;
+    }
+    .nav-toggle {
+        display: block;
+        color: black;
+    }
+    .nav-menu__visible{
+        right: -10px;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+/*--------------------------------------------------------------*/
+/*Responsive para tablet 768px */
+/*--------------------------------------------------------------*/
+@media screen and (max-width: 768px)and (orientation: landscape) {
+    main {
+        margin-top: 150px;
+ 
+    }
+    .nav-menu{
+        flex-direction: column;
+        margin-right: 10px;
+        background-color: #034574;
+        position: fixed;
+        right: 0;
+        top: 90px;
+        width: 100%;
+        padding: 10px 0 0 0;
+        height: calc(100%-60px);
+        overflow-y: auto;
+        right: -810px;
+        transition: 0.2s;
+    }
+    .nav-menu-item{
+        font-size: 14px;
+        line-height: 60px;
+    }
+    .nav-menu-link:hover{
+        background-color: none;
+        transition: 0.5s;
+        color: aqua;
+    }
+    .web{
+        display: none;
+    }
+    .mov {
+        display: block;
+        position: absolute;
+        margin-left: 120px;
+    }
+    .nav-toggle {
+        display: block;
+        color: black;
+    }
+    .nav-menu__visible{
+        right: -10px;
+
+    }
+}
+
+
+/*--------------------------------------------------------------*/
+/*Responsive para celulares 576px */
+/*--------------------------------------------------------------*/
+@media screen and (max-width: 576px) {
+    .header{
+        height: 60px;
+    }
+    .logo__img{
+        width: 45px;
+        height: 45px;
+        margin-top: 8px;
+        margin-left: 20px;
+        line-height: 60px;
+      }
+      .mov {
+          font-size: 16px;
+        display: block;
+        line-height: 60px;
+        margin-left: 0px;
+        /*position: relative;*/
+    }
+    .nav-menu{
+        flex-direction: column;
+        margin-right: 10px;
+        background-color: #034574;
+        position: fixed;
+        right: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100%-60px);
+        overflow-y: auto;
+        right: -600px;
+        transition: 0.8s;
+    }
+    .nav-menu-item{
+        font-size: 14px;
+        line-height: 60px;
+    }
+    .nav-menu-link:hover{
+        background-color: none;
+        transition: 0.5s;
+        color: aqua;
+    }
+    .web{
+        display: none;
+    }
+    .mov {
+        display: block;
+        position: absolute;
+        margin-left: 90px;
+    }
+    .nav-toggle {
+        line-height: 60px;
+        display: block;
+        color: black;
+    }
+    .nav-menu__visible{
+        right: -10px;
+        
+
+    }
+}
+
+
+
+

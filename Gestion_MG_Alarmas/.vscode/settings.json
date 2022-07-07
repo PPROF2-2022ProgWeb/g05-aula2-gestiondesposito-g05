@@ -1,0 +1,7 @@
+{
+    "git.ignoreLimitWarning": true,
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Program Files\\Java\\jar_files\\commons-net-3.8.0.jar"
+    ]
+}
