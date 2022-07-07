@@ -79,7 +79,8 @@
 
 .listado-franquicias img {
     width: 100%;/*ancho de la imagen*/
-    height: auto;/*alto de la imagen*/
+    height: 75px;/*alto de la imagen*/
+    border-radius: 10px;/*borde redondo*/
 }
 
 .listado-franquicias h2 {
