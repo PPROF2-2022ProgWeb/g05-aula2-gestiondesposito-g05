@@ -102,17 +102,18 @@
 .listado-novedades .ofertas{
     width: 33%;
     height: 50%;
-    /* background-color: rgba(255,255,255,0.8); */
-    background-color: red;
+    background-color: rgba(255,255,255,0.8);
+    /* background-color: red; */
     position: relative;
     top:1%;
     left: 2%;
     z-index: 0;
     padding: 10px;/*alejo la imagen del borde del contenedor*/
-    float: left;
+    /* float: left; */
     border : 1px solid black;
     border-radius: 10px;
     color: black;
+
 }
 
 
@@ -120,49 +121,60 @@
 
 
 
+/* 
 .listado-novedades .nota_1,
 .listado-novedades .nota_2,
 .listado-novedades .nota_3 {
-    width: 31.6%;/*ancho de las imagenes de novedades*/
-    height: auto;/*alto de las imagenes de novedades*/
-    margin: 5px;/*espacio entre las imagenes de novedades*/
-    padding: 10px 10px;/*espacio entre la imagen y el borde del contenedor*/
-    border: white solid 1px;/*borde de la imagen*/
-    border-radius: 5px;/*radio de lo bordes de las notras */
-    color: white;/*color de letra para las notas*/
-    background-color: rgba(0, 128, 255, 0.6);/*color de fondo y tranparencia*/
-}
+    /*width: 31.6%;/*ancho de las imagenes de novedades*/
+ /*   height: auto;/*alto de las imagenes de novedades*/
+ /*   margin: 5px;/*espacio entre las imagenes de novedades*/
+ /*   padding: 10px 10px;/*espacio entre la imagen y el borde del contenedor*/
+ /*   border: white solid 1px;/*borde de la imagen*/
+ /*   border-radius: 5px;/*radio de lo bordes de las notras */
+  /*  color: white;/*color de letra para las notas*/
+ /*   background-color: rgba(0, 128, 255, 0.6);/*color de fondo y tranparencia*/
+/*} */
 
 .listado-novedades h2 {/*estilos de los titulos hs de las novedades*/   
-    color: white;/*color dl h2 */
+    color: black;/*color dl h2 */
     font-weight: 400;/*ancho de letra*/
     font-size: 25px;/*tamaño de letra*/
     display: inline-block;
 }
 
-.listado-novedades .titulo {/*para el titulo de la nota*/
-    width: 98%;/*ancho del titulo*/
-    height: auto;/*alto del titulo*/
-    margin: 5px;/*espacio entre el borde y el titulo*/
-    line-height: 10px;/*espacio entre el titulo y el texto*/
-    padding: 10px 10px;/*espacio entre el borde y el titulo*/
-    border: white solid 1px;/*borde de la nota*/
-    border-radius: 5px;/*radio de la nota*/
-    color: white;/*color de fondo de la nota*/
-    background-color: rgba(0, 128, 255, 0.6);/*color de fondo de la nota*/
-    display: flex;/*para que se puedan ver en columnas*/
-    justify-content: center;/*para que el titulo quede centrado*/
-    align-content: center;/*para que el titulo quede centrado*/
-    flex-direction: column;/*para que se puedan ver en columnas*/   
-}
+/* .listado-novedades .titulo {
+    width: 98%;
+    height: auto;
+    margin: 5px;
+    line-height: 10px;
+    padding: 10px 10px;
+    border: white solid 1px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(0, 128, 255, 0.6);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;   
+} */
 
 .listado-novedades img {/*estableco estilos a la imagenes*/
-    width: 100%;/*ancho de la imagen*/
-    height: auto; /*alto de la imagen*/
+    width: 80%;/*ancho de la imagen*/
+    height: 75%; /*alto de la imagen*/
     object-fit: fill;/*para que se ajuste a la imagen*/
     border-radius: 4px;/*para que se vea redondeado*/
-    padding: 10px;/*alejo la imagen del borde del contenedor*/
+    padding: 5px;/*alejo la imagen del borde del contenedor*/
 }
+
+
+
+
+
+
+
+
+
+
 
 /*--------------------------------------------------------------*/
 /*Responsive para  768px                                        */
