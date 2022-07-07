@@ -17,69 +17,6 @@
     line-height: 60px;
   }
 /*-----------------------------------------------*/
-/* .nav{
-  display: flex; 
-  justify-content: space-between; 
-}
-.nav-link{
-color: black;
-text-decoration: none;
-font-size: 15px;
-font-weight: 500;
-list-style: none;
-
-}
-			
-ul, ol {
-    list-style:none;
-}
-
-
-.logo__img{
-  width: 60px;
-  height: 60px;
-  margin-left: 20px;
-  line-height: 60px;
-}
-.web98{
-    font-size: 20px;
-    font-weight: 600;
-    margin-left: 0px;
-    line-height: 60px;
-    width: max-content;
-    display: block;
-    position: absolute;
-    margin-left: 120px;
-}
-.mov{
-  
-    margin-left: 20px;
-    font-weight: 600;
-    color: black;
-    display: none;
-    line-height: 80px;
-}
-.nav-menu{
-    display: flex;
-    margin-right: 10px;
-    list-style: none;
-}
-.nav-menu-item{
-    font-size: 18px;
-    margin: 0 10px;
-    line-height: 60px;
-    text-transform: uppercase;
-}
-.nav-menu-link{
-    padding: 8px 10px;
-}
-.nav-menu-link:hover{
-    color: white;
-    background-color: #508fbd;
-    transition: 0.3s;
-
-}  */
-/*-----------------------------------------------*/
 #buscador{
     width: 42%;
     height: 42px;
@@ -97,7 +34,7 @@ ul, ol {
     height: 36px;
     background-color: rgba(255,255,255,0.8);
     position: fixed;
-    top: 3.47%;
+    top: 3.45%;
     left: 66.5%;
     z-index: 1;
     border-radius: 5px;
@@ -164,9 +101,6 @@ ul {
     display:block;
     background-color:rgba(255,255,255,0.8);
 }
-
-
-
 .nav li ul li {
     position:relative;
 }
@@ -176,8 +110,6 @@ ul {
     right:-140px;
     top: 0px;
 } 
-
-
 .img_carr{
     width: 30px;
     height: 30px;
@@ -203,17 +135,6 @@ ul {
     transition: 0.3s;
 }
 /*--------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
 
 
 .nav-toggle{ 
