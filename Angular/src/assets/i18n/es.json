@@ -1,4 +1,11 @@
 {
   "Idioma":"Título",
-  "TextoIdioma":"Español"
+  "TextoIdioma":"Español",
+  "login":"acceso",
+  "Productos":"Productos",
+  "Alarmas":"Alarmas",
+  "Inicio":"Inicio",
+  "Contacto":"Contacto"
+
+
 }

@@ -16,6 +16,9 @@ export class AppComponent {
     if( (lang !== 'es') && ( lang !== 'en') ){
       translate.setDefaultLang('en');
     }
+    if(lang == 'es'){
+      translate.setDefaultLang('es');
+    }
   }
 
   title = 'Angular';

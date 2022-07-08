@@ -1,4 +1,9 @@
 {
   "Idioma":"Title",
-  "TextoIdioma":"English"
+  "TextoIdioma":"English",
+  "login":"login",
+  "Productos":"Products",
+  "Alarmas":"alarms",
+  "Inicio":"Start",
+  "Contacto":"Contact"
 }
