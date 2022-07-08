@@ -85,7 +85,8 @@ font-weight: 500;
     justify-content: center;
     position: absolute;
     align-items: center;
-    top: 100%;    
+    top: 100%;
+       
     
 }
 
@@ -101,8 +102,8 @@ font-weight: 500;
     height: 25px;
     position: relative;
     align-items: center;
-    margin-top: 5px;
-    margin-left: 5px;
+    margin-top: 15%;
+    margin-left: 3%;
     justify-content: center;
 }
 
@@ -659,7 +660,7 @@ font-weight: 500;
     float: left;
 }
 
-.button_grabar{
+.contiene1 .button_grabar{
     
     border: 2px solid;/*para darle un borde al boton*/
     background: transparent;/*para que el boton sea transparente*/
@@ -670,21 +671,25 @@ font-weight: 500;
     outline: none;/*para que el outline no se vea*/
     transition: all 0.4s;/*transicion de tamaÃ±o*/
     height: 26px;/*altura del boton de enviar*/
-    width: 15%;/*ancho del boton de enviar*/
+    width: 150%;/*ancho del boton de enviar*/
     min-width: 20%;/*ancho minimo del boton de enviar*/
+    place-content: center;/*centra el texto*/
+    justify-content: center;
+   
     
-    margin-top:260px;
-    margin-left: 600px;
-    display: inline-flex;
+    margin-top:200px;
+    margin-left: 1500%;
+    display: flex;
     line-height: 25px;
     text-align: center;
     border-radius: 6px;
+    position: relative;
     
     
     
 }
-.button_grabar:hover {
-    background: white;/*el fonfo del boton sea blanco al pasar el puntero*
+.contiene1 .button_grabar:hover {
+    background: white;/*el fonfo del boton sea blanco al pasar el puntero*/
     color: #46a2fd;/*texto sera azul al pasar el puntero*/
 }
 
