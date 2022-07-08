@@ -1,3 +1,4 @@
+import { TranslateService } from '@ngx-translate/core';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,11 +6,12 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent{
 
-  constructor() { }
+  constructor(public translate:TranslateService) { }
 
-  ngOnInit(): void {
-  }
+ switchLang =(lang:string)=>{
+  this.translate.use(lang);
+ }
 
 }

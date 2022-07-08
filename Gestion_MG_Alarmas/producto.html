@@ -54,18 +54,70 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
         <div class="store-wrapper"><!--contenedor de la tabla-->
             <div class="category_list"><!--contenedor de la lista-->
                 <a href="#" class="category_item button_vs" onclick="todo()" id="a">Todo</a>
-                <a href="#" class="category_item button_vs" onclick="leds()" id="b">Leds</a>
-                <a href="#" class="category_item button_vs" onclick="disp()" id="c">Display</a>
-                <a href="#" class="category_item button_vs" onclick="tran()" id="d">Transistores</a>
-                <a href="#" class="category_item button_vs" onclick="serv()" id="e">Servidores</a>
-                <a href="#" class="category_item button_vs" onclick="gral()" id="f">Componentes</a>
+                <a href="#" class="category_item button_vs" onclick="leds()" id="b">Centrales</a>
+                <a href="#" class="category_item button_vs" onclick="disp()" id="c">Teclados</a>
+                <a href="#" class="category_item button_vs" onclick="tran()" id="d">Sirenas</a>
+                <a href="#" class="category_item button_vs" onclick="serv()" id="e">Infrarrojos</a>
+                <a href="#" class="category_item button_vs" onclick="gral()" id="f">Magneticos</a>
+                <a href="#" class="category_item button_vs" onclick="gral()" id="g">Detect Exterior</a>
+                <a href="#" class="category_item button_vs" onclick="gral()" id="h">Barreras</a>
             </div>
             <section class="products-list">
                 <!--------------------------------------------------------------------------------------->
-                <div class="product-item ser">
-                    <img src="./img/rasp_8.jpg" alt="">
-                    <a href="#">CPU Rasp1</a>
+                <div class="ofertas pir">
+                    <div style="background-color: green;">
+                        <h2 class="esp">Infrarrojos</h2>
+                        <h2 class="eng" style="display: none;">Offer</h2>
+                    </div>
+
+                    <img src="./img/Otus_1.png"/>
+
+                    <div>
+                        <label class="esp">Carateristicas</label>
+                    </div>
+
+                    <div>
+                        <input type="button" value="Comprar" class="btn_ver" onclick="ver_oferta()">
+                    </div>
+
+                    <div>
+                        <p class="esp">
+                            <span style="font-size: 9px;">Descuento del 10% en todos los productos</span>
+                        </p>
+                        <p class="eng" style="display: none;">
+                            <span>10% discount on all products</span>
+                        </p>
+                    </div>
                 </div>
+
+
+                <div class="ofertas">
+                    <div style="background-color: green;">
+                        <h2 class="esp">Oferta</h2>
+                        <h2 class="eng" style="display: none;">Offer</h2>
+                    </div>
+
+                    <img src="./img/Otus_1.png"/>
+
+                    <div>
+                        <label class="esp">Mas carateristicas</label>
+                    </div>
+
+                    <div>
+                        <input type="button" value="Comprar" class="btn_ver" onclick="ver_oferta()">
+                    </div>
+
+                    <div>
+                        <p class="esp">
+                            <span style="font-size: 9px;">Descuento del 10% en todos los productos</span>
+                        </p>
+                        <p class="eng" style="display: none;">
+                            <span>10% discount on all products</span>
+                        </p>
+                    </div>
+                </div>
+
+
                 <div class="product-item led">
                     <img src="./img/Diodos_led_5mm_ro.jpg" alt="">
                     <a href="#">Led rojo 5mm</a>
