@@ -126,11 +126,13 @@ ul {
     align-items: center;
     border: none;
     background-color: transparent;
-
+}
+.compra1 ul{
+    display: none;
 }
 .compra1:hover ul{
     display: block;
-    background-color: #508fbd;
+    /* background-color: #508fbd; */
     color: white;
     transition: 0.3s;
 }
