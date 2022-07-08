@@ -1,9 +1,44 @@
 {
   "Idioma":"Title",
   "TextoIdioma":"English",
-  "login":"login",
+  "login":"Login",
   "Productos":"Products",
-  "Alarmas":"alarms",
+  "Alarmas":"Alarms",
   "Inicio":"Start",
-  "Contacto":"Contact"
+  "Contacto":"Contact",
+  "Soluciones":"Solutions",
+  "Ventas":"Sales",
+  "Trabajos":"Jobs",
+  "Procesos":"Processes",
+  "Importante":"Important information",
+  "derechos":"All rights reserved",
+
+  "Gestion":"Cordoba warehouse management",
+  "Sociales":"Social networks",
+  "terms":"All of our staff are highly qualified and work in an excellent environment.",
+  "terms1":"We think that this is one of the most important factors to offer a good service to our clients.",
+  "terms2":"Some of our vendors are located in other cities of our country and one of them is in Brazil.",
+  "terms3":"como representante de la compañía en ese mercado.",
+  "terms4":"The company also has external consultants,",
+  "terms5":"suitable people specialized in the planning of our courses and seminars that are taught in institutions",
+  "terms6":"  educational and renowned companies.",
+
+  "Novedades":"News",
+  "Franquicias":"franchises",
+  "Noticias":"Technical News",
+  "Memorias":"Flash memories. SuperFlash technology",
+  "MICROCHIP":"MICROCHIP incorporates new Serial and Parallel SST FLASH memories, with very low consumption and high",
+  "confiabilidad":"reliability, using its SuperFlash Technology",
+  "Generando":"Generating Ring Tones with a",
+
+  "terms7":"Cell phones have “invaded” our daily lives to such an extent that only in the republic",
+  "terms8":"Argentina",
+  "terms9":"there are more than 53 million units!!!, according to the latest statistics, which represents something like",
+  "terms10":"a 1",
+  "terms11":"and ½ unit per inhabitant .... A real madness",
+  "terms12":"Microchip Simplifies Graphics in",
+
+  "terms13":"Microchip announces the PIC24FJ256DA family of microcontrollers, consisting of eight components,",
+  "terms14":"which integrates three graphics acceleration units and a",
+  "terms15":"Display controller, along with up to 96KB of RAM."
 }
