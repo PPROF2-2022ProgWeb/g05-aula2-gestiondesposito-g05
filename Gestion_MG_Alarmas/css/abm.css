@@ -10,7 +10,8 @@
     padding: 1px;
 }
 .pestana_alta{
-    background-color: blue;
+    /* background-color: blue; */
+    background-color: transparent;
     display: flex;
     margin-top: 10px;
     width: 100%;
@@ -48,17 +49,25 @@
     line-height: 23px;
     text-align: center;
 
-
-
-
-
-    
+    /* //position: relative;
+    margin-top: 10px;
+    margin-left: 550px;
+    /* display: flex; */
+    /* line-height: 25px;
+    text-align: center;
+    border-radius: 6px; */ 
 }
 .button_abm:hover {
     background: white;/*el fonfo del boton sea blanco al pasar el puntero*/
     color: #46a2fd;/*texto sera azul al pasar el puntero*/
 }
 
+.graba{
+    position: relative;
+    margin-top: 250px;
+    margin-left: 600px;
+    width: 140px;
+}
 
 
 /*-----------------------------------------------------------------------------*/
