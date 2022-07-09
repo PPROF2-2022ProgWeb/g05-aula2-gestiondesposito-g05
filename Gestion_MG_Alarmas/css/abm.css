@@ -48,14 +48,6 @@
     display: fixed;
     line-height: 23px;
     text-align: center;
-
-    /* //position: relative;
-    margin-top: 10px;
-    margin-left: 550px;
-    /* display: flex; */
-    /* line-height: 25px;
-    text-align: center;
-    border-radius: 6px; */ 
 }
 .button_abm:hover {
     background: white;/*el fonfo del boton sea blanco al pasar el puntero*/
@@ -69,22 +61,6 @@
     width: 140px;
 }
 
-
-/*-----------------------------------------------------------------------------*/
-/* div azul mas boton de alta + div verde */
-/*-----------------------------------------------------------------------------*/
-
-
-/* .contiene1 .contiene_alta{
-    background-color:rgb(49, 0, 128); */
-    /*background-color: transparent;*/
-    /* display: flex;
-    width: 99%;
-    height: 260px;
-    border-radius: 6px;
-    position: relative;
-    margin-left: 5px;
-} */
 /**********************************************************/
 .contiene1 .codigo_input{/*este es el div*/
     background-color: grey;
@@ -632,6 +608,54 @@
 
 
 
+/*********************************************************/
 
 
 
+
+@media screen and (max-width: 576px) {
+
+    #abmi_nav{
+        display: none;
+    }
+
+
+    .contiene1 .contiene_alta{
+        display: none;
+    }
+    .contiene1 .contiene_alta .label_precto{
+        display: none;
+    }
+    .contiene1 .contiene_alta .precto{
+        display: none;
+    }
+    .contiene1 .contiene_alta .label_iva{
+        display: none;
+    }
+    .contiene1 .contiene_alta .iva{
+        display: none;
+    }
+    .contiene1 .contiene_alta .label_gancia{
+        display: none;
+    }
+    .contiene1 .contiene_alta .gancia{
+        display: none;
+    }
+    .contiene1 .contiene_alta .label_modelo{
+        display: none;
+    }
+    .contiene1 .contiene_alta .modelo{
+        display: none;
+    }
+    .contiene1 .contiene_alta .label_proveedor{
+        display: none;
+    }
+    .contiene1 .contiene_alta .proveedor{
+        display: none;
+    }
+    .graba{
+        display: none;
+    }
+}   
+    
+/*********************************************************/
