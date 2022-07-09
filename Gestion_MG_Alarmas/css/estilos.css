@@ -99,6 +99,14 @@ footer {
     height: 1px;
     background: grey;
 }
+.toto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+    background-color: transparent;
+}
 
 
 
