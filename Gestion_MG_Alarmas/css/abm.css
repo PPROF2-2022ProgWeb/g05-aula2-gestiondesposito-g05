@@ -47,11 +47,581 @@
     display: fixed;
     line-height: 23px;
     text-align: center;
+
+
+
+
+
+    
 }
 .button_abm:hover {
     background: white;/*el fonfo del boton sea blanco al pasar el puntero*/
     color: #46a2fd;/*texto sera azul al pasar el puntero*/
 }
+
+
+
+/*-----------------------------------------------------------------------------*/
+/* div azul mas boton de alta + div verde */
+/*-----------------------------------------------------------------------------*/
+
+
+/* .contiene1 .contiene_alta{
+    background-color:rgb(49, 0, 128); */
+    /*background-color: transparent;*/
+    /* display: flex;
+    width: 99%;
+    height: 260px;
+    border-radius: 6px;
+    position: relative;
+    margin-left: 5px;
+} */
+/**********************************************************/
+.contiene1 .codigo_input{/*este es el div*/
+    background-color: grey;
+    display: flex;
+    width: 10%;
+    height: 15%;
+    position: absolute;
+    align-items: center;
+    margin-top: 1%;
+    margin-left: 0%;
+    justify-content: center;
+    place-content: center;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+.contiene1 .label_codigo{/*label*/
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 45%;
+    height: 55%;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+.contiene1 .codigo{/*input*/
+    background-color: white;
+    /*background: transparent;*/
+    display: inline-flex;
+    width: 35%;
+    height: 55%;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+}
+/*****************************************************/
+
+
+/*****************************************************/
+.contiene1 .rubro_input{/*este es el div de*/
+    background-color: coral;
+    display: flex;
+    width: 10%;
+    height: 15%;
+    margin-top: 1%;
+    margin-left: 24%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    place-content: center;
+    border: 1px solid black;
+    float: left;
+    border-radius: 6px;
+
+}
+
+.contiene1 .label_rubro{/*label*/
+    /*background-color: grey;*/
+    background-color: transparent;
+    display: inline-flex;
+    width: 45%;
+    height: 55%;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+
+.contiene1 .rubro{/*este es el input*/
+    /*background-color: white;*/
+    display: inline-flex;
+    width: 35%;
+    height: 55%;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+}
+/*****************************************************/
+
+
+
+/*****************************************************/
+.contiene1 .marca_input{/*div*/
+    background-color: cyan;
+
+    display: flex;
+    width: 10%;
+    height: 15%;
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 12%;
+    align-items: center;
+    justify-content: center;
+    place-content: center;
+    border: 1px solid black;
+    border-radius: 6px;
+    
+}
+
+.contiene1 .label_marca{/*label*/
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 45%;
+    height: 55%;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+
+.contiene1 .marca{/*input*/
+    background-color: white;
+    display: inline-flex;
+    width: 100%;
+    height: 55%;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    
+}
+/*****************************************************/
+
+
+/*****************************************************/
+.contiene1 .origen_input{/*div*/
+    background-color: yellow;
+    display: flex;
+    width: 20%;
+    height: 15%;
+    margin-top: 1%;
+    margin-left: 56%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    place-content: center;
+    border: 1px solid black;
+    border-radius: 6px;
+    
+}
+
+.contiene1 .label_origen{/*label*/
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 45%;
+    height: 55%;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+
+.contiene1 .origen{/*input*/
+    background-color: white;
+    display: inline-flex;
+    width: 35%;
+    height: 55%;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    
+}
+/*****************************************************/
+
+
+
+
+
+
+
+/*****************************************************/
+.contiene1 .descripcion_input{/*div*/
+    background-color: rgb(255, 0, 234);
+    /*background: transparent;*/
+    display: flex;
+    width: 10%;
+    height: 15%;
+    position: absolute;
+    /*top: 50px;*/
+    align-items: center;
+    margin-top: 6%;
+    margin-left: 36%;
+    justify-content: center;
+    place-content: center;
+    border: 1px solid black;
+    border-radius: 6px;
+    
+}
+.contiene1 .label_descripcion{/*label*/
+    background-color: grey;
+    /*background-color: transparent;*/
+    display: inline-flex;
+    width: 90%;
+    height: 50%;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contiene1 .descripcion{/*input*/
+    background-color: rgb(25, 35, 173);
+    display: inline-flex;
+    width: 35%;
+    height: 55%;
+    position: absolute;
+    align-items: center;
+    /*margin-top: 5px;
+    margin-left: 5px;*/
+    justify-content: left;
+}
+.contiene1 .textarea{
+        resize: none;
+        overflow: scroll;
+        top: 40px;
+        display: block;
+        position: absolute;
+}
+/*****************************************************/
+
+
+
+
+
+
+
+/******************************************************/
+.contiene1 .prevta_input{/*div*/
+    background-color: cornflowerblue;
+    display: flex;
+    width: 10%;
+    height: 15%;
+    position: absolute;
+    align-items: center;
+    place-content: center;
+    /* margin-top: 70px;
+    margin-left: 5px; */
+    top: 45%;
+    left: 12%;
+    justify-content: center;
+    border-radius: 6px;
+   
+}
+.contiene1 .label_prevta{
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 80%;
+    height: 50%;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+.contiene1 .prevta{
+    background-color: white;
+    display: inline-flex;
+    width: 100%;
+    height: 55%;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    
+}
+/******************************************************/
+
+
+
+/******************************************************/
+.contiene1 .stock_input{/*div*/
+    background-color: rgb(237, 100, 184);
+    /*background: transparent;*/
+    display: flex;
+    width: 10%;
+    height: 15%;
+    position: absolute;
+    align-items: center;
+    place-content: center;
+    /* margin-top: 70px;
+    margin-left: 5px; */
+    top: 45%;
+    left: 24%;
+    justify-content: center;
+    border-radius: 6px;
+}
+.contiene1 .label_stock{
+    background-color: grey;
+    /*background-color: transparent;*/
+    display: inline-flex;
+    width: 80%;
+    height: 50%;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+.contiene1 .stock{
+    background-color: white;
+    /*background: transparent;*/
+    display: inline-flex;
+    width: 100%;
+    height: 55%;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+}
+/*********************************************************/
+
+
+/*********************************************************/
+.contiene1 .precto_input{/*div*/
+    background-color: magenta;
+    display: flex;
+    width: 10%;
+    height: 15%;
+    position: absolute;
+    align-items: center;
+    /* margin-top: 70px;
+    margin-left: 5px; */
+    top: 65%;
+    left: 12%;
+    place-content: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+.contiene1 .label_precto{/*label*/
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 50%;
+    height: 50%;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+.contiene1 .precto{/*input*/
+    background-color: white;
+    display: inline-flex;
+    width: 100%;
+    height: 55%;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    
+}
+/*********************************************************/
+
+
+/*********************************************************/
+.contiene1 .contiene_alta .iva_input{/*div*/
+    background-color: rgb(205, 50, 84);
+    display: flex;
+    width: 10%;
+    height: 15%;
+    position: absolute;
+    align-items: center;
+    /* margin-top: 70px;
+    margin-right: 5px; */
+    top: 65%;
+    left: 24%;
+    justify-content: center;
+    place-content: center;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+.contiene1 .label_iva{/*label*/
+    background-color: grey;
+    /*background-color: transparent;*/
+    display: inline-flex;
+    width: 30%;
+    height: 50%;
+    position: relative;
+    align-items: center;
+    /*margin-top: 1px;
+    margin-left: 1px;*/
+    border: 1px solid black;
+    justify-content: left;    
+}
+.contiene1 .iva{/*input*/
+    background-color: white;
+    display: inline-flex;
+    width: 35%;
+    height: 55%;
+    position: relative;
+    align-items: center;
+    /*margin-top: 5px;
+    margin-left: 5px;*/
+    justify-content: left;
+    border: 1px solid black;
+}
+/*********************************************************/
+
+
+
+
+
+
+
+
+
+
+
+/*********************************************************/
+.contiene1 .gancia_input{/*div*/
+    background-color: yellow;
+    display: flex;
+    width: 10%;
+    height: 15%;
+    position: absolute;
+    top: 25%;
+    left: 24%;
+    align-items: center;
+    justify-content: center;
+    place-content: center;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+.contiene1 .label_gancia{/*label*/
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 80%;
+    height: 50%;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+
+.contiene1 .gancia{/*input*/
+    background-color: white;
+    display: inline-flex;
+    width: 100%;
+    height: 55%;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    
+}
+/*********************************************************/
+
+
+/*********************************************************/
+.contiene1 .modelo_input{/*div*/
+    background-color: rgb(0, 255, 0);
+    display: flex;
+    width: 10%;
+    height: 15%;
+    position: absolute;
+    top: 25%;
+    left: 12%;
+    align-items: center;
+    justify-content: center;
+    place-content: center;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+.contiene1 .label_modelo{/*label*/
+    background-color: grey;
+    background-color: transparent;
+    display: flex;
+    width: 40%;
+    height: 50%;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+
+.contiene1 .modelo{/*input*/
+    background-color: white;
+    display: inline-flex;
+    width: 100%;
+    height: 55%;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    
+}
+/*********************************************************/
+
+
+/**********************************************************/
+.contiene1 .proveedor_input{/*div*/
+    background-color: lightslategrey;
+    display: flex;
+    width: 18%;
+    height: 15%;
+    position: absolute;
+    margin-top: 1%;
+    left: 36%;
+    align-items: center;
+    justify-content: center;
+    place-content: center;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+
+.contiene1 .label_proveedor{/*label*/
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 40%;
+    height: 50%;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+
+.contiene1 .proveedor{/*input*/
+    background-color: white;
+    display: inline-flex;
+    width: 45%;
+    height: 55%;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+}
+/**********************************************************/
+
+
+
+
+
 
 
 
