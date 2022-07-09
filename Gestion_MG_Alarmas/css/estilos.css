@@ -39,6 +39,9 @@ footer {
     text-align: left;/*alineacion del texto*/
     padding: 1em;/*espacio entre el footer y el contenido*/
     align-self: flex-end;
+    user-select: none;
+    
+
 
 
 }
@@ -98,6 +101,14 @@ footer {
     border: none;
     height: 1px;
     background: grey;
+}
+.toto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+    background-color: transparent;
 }
 
 
