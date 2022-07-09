@@ -39,6 +39,9 @@ footer {
     text-align: left;/*alineacion del texto*/
     padding: 1em;/*espacio entre el footer y el contenido*/
     align-self: flex-end;
+    user-select: none;
+    
+
 
 
 }

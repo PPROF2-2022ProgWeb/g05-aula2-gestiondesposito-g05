@@ -27,7 +27,7 @@
 <script src="./js/idioma.js"></script>
 
 
-<body onload="idioma_espanol()">
+<body>
     <!--------------------------------------------------------------------------------------->
     <div id="header">
         <input type="text" class="esp" id="buscador" placeholder="Buscar...">
@@ -88,7 +88,6 @@
         </li> -->
         </ul>
     </div>
-
 <!--------------------------------------------------------------------------------------->
 
 
@@ -110,28 +109,53 @@
 <div class="contiene1">
 
 
-    <div class="pestaña_alta ">
-        <input type="button" value="Alta" class="boton_alta" onclick="alta()">
-    </div>
-
-    <div class="pestaña_modi">
-        <input type="button" value="Modifica" class="boton_modi" onclick="modificar()">
-    </div>
-
-    <div class="pestaña_baja">
-        <input type="button" value="Baja" class="boton_baja" onclick="baja()">
-    </div>
-
-    <div class="pestaña_consulta">
-        <input type="button" value="Consulta" class="boton_consulta" onclick="consulta()">
-    </div>
 
 
+    <ul class="abm_nav esp" id="abmi_nav">
+        <li><input type="button" value="Alta" class="button_abm" onclick="alta()"></li>
+        <li><input type="button" value="Modifica" class="button_abm" onclick="modificar()"></li>
+        <li><input type="button" value="Baja" class="button_abm" onclick="baja()"></li>
+        <li><input type="button" value="Consulta" class="button_abm" onclick="consulta()"></li>
+
+    </ul>
+
+    <ul class="abm_nav eng" style="display: none;" id="abmi_nav">
+        <li><input type="button" value="Alta" class="button_abm" onclick="alta()"></li>
+        <li><input type="button" value="Modifica" class="button_abm" onclick="modificar()"></li>
+        <li><input type="button" value="Baja" class="button_abm" onclick="baja()"></li>
+        <li><input type="button" value="Consulta" class="button_abm" onclick="consulta()"></li>
+
+    </ul>
+
+    <!-- <input type="button" value="Alta" class="boton_alta" onclick="alta()">
+</div>
+
+<div class="pestaña_modi">
+    <input type="button" value="Modifica" class="boton_modi" onclick="modificar()">
+</div>
+
+<div class="pestaña_baja">
+    <input type="button" value="Baja" class="boton_baja" onclick="baja()">
+</div>
+
+<div class="pestaña_consulta">
+    <input type="button" value="Consulta" class="boton_consulta" onclick="consulta()"> -->
+<!-- </div> -->
 
 
 
 
-    <form style="display: block; background-color: aquamarine;">
+
+
+
+
+
+    <div class="pestana_alta">
+
+
+
+
+    <form>
     <div class="contiene_alta">
         
         <div class="codigo_input alta baja">
@@ -230,6 +254,7 @@
         </div>
 
         </form>
+    </div> 
 
     </div>
 
@@ -296,58 +321,93 @@
 
 
 <!--------------------------------------------------------------------------------------->
-    <!---------------footer ----------->
-    <footer>
-        <div class="footer__div">
-        <div class="tipo__footer">
-          <!--------------------------------------------------------------------------------------->
-          <div class="box__footer">
-              <div class="logo">
-                  <img src="./img/Logo.png" alt="aca va al logo">
-              </div>
-              <div class="terms">
-                <p>Todo nuestro personal está altamente calificado y trabaja en un excelente entorno. 
-                    Nosotros pensamos que éste es uno de los más importantes factores para ofrecer un buen servicio a nuestros clientes.
-                    Algunos de nuestros vendedores están localizados en otras ciudades de nuestro país y uno de ellos se encuentra en Brasil 
-                    como representante de la compañía en ese mercado.
-                  La compañía cuenta también con consultores externos,
-                   personas idóneas especializadas en el planeamiento de nuestros cursos y seminarios que son dictados en instituciones 
-                   educacionales y compañías renombradas.</p>
-              </div>
-          </div>
-          <!--------------------------------------------------------------------------------------->
-          <div class="box__footer">
-              <h2>Soluciones</h2>
-              <a href="">Ventas</a>
-              <a href="">Trabajos</a>
-              <a href="">Procesos</a>
-              <a href="terminosycondiciones.html" target="_parent">Informacion Importante</a>
-          </div>
-          <!--------------------------------------------------------------------------------------->
-          <div class="box__footer">
-              <h2>Redes Sociales</h2>
-              <a href="#"><i class="fab fa-facebook"></i>Facebook</a>
-              <a href="#"><i class="fab fa-twitter"></i></i>Twitter</a>
-              <a href="#"><i class="fab fa-linkedin"></i></i>Linkedin</a>
-              <a href="#"><i class="fab fa-instagram"></i></i>Instagram</a>
-          </div>
-          <!--------------------------------------------------------------------------------------->
-      </div>
-      <div class="box__copyright">
-          <hr>
-          <br>
-          <p>Copyright © 2021 - Todos los derechos reservados</p>
-          <b>Gestion deposito Cordoba (ISPCA3G5)</b>
-
-      </div>
-    </div>
-  </footer>
-  <!---------------footer ----------->
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script src="./js/script.js"></script>
-  <script src="./js/funcionesGrupo99.js"></script>
-  <script src="./js/validacion.js"></script>
-  <script src="./js/abm.js"></script>
+        <!---------------footer ----------->
+        <footer>
+            <div class="tipo__footer">
+                <!--------------------------------------------------------------------------------------->
+                <div class="box__footer">
+                    <div class="logo">
+                        <!-- <img src="./img/Logo.png" alt="aca va al logo"> -->
+                    </div>
+                    <div class="terms esp">
+                        <p>Todo nuestro personal está altamente calificado y trabaja en un excelente entorno.
+                            Nosotros pensamos que éste es uno de los más importantes factores para ofrecer un buen
+                            servicio a nuestros clientes.
+                            Algunos de nuestros vendedores están localizados en otras ciudades de nuestro país y uno de
+                            ellos se encuentra en Brasil
+                            como representante de la compañía en ese mercado.
+                            La compañía cuenta también con consultores externos,
+                            personas idóneas especializadas en el planeamiento de nuestros cursos y seminarios que son
+                            dictados en instituciones
+                            educacionales y compañías renombradas.</p>
+                    </div>
+                    <div>
+                        <p class=" terms eng" style="display: none;">
+                            <span>All our personnel is highly qualified and works in a good environment.
+                                We think that this is one of the most important factors to offer a good service to our
+                                customers.
+                                Some of our sales representatives are located in other cities of our country and one of them
+                                is located in Brazil as a representative of the company in that market.
+                                The company also has external consultants,
+                                ideal people specialized in the planning of our courses and seminars that are held in
+                                educational institutions and companies renowned.</span>
+                        </p>
+                    </div>
+                </div>
+                <!--------------------------------------------------------------------------------------->
+                <div class="box__footer esp">
+                    <h2>Soluciones</h2>
+                    <a href="">Ventas</a>
+                    <a href="">Trabajos</a>
+                    <a href="">Procesos</a>
+                    <a href="Terminosycondiciones.html" target="_parent">Informacion Importante</a>
+                </div>
+                <div class="box__footer eng" style="display: none;" >
+                    <h2>Solution</h2>
+                    <a href="">Sale</a>
+                    <a href="">Jobs</a>
+                    <a href="">Processes</a>
+                    <a href="Termsandconditions.html" target="_parent">Important Information</a>
+                </div>
+                
+                <!--------------------------------------------------------------------------------------->
+                <div class="box__footer esp">
+                    <h2>Redes Sociales</h2>
+                    <a href="#"><i class="fab fa-facebook"></i>Facebook</a>
+                    <a href="#"><i class="fab fa-twitter"></i></i>Twitter</a>
+                    <a href="#"><i class="fab fa-linkedin"></i></i>Linkedin</a>
+                    <a href="#"><i class="fab fa-instagram"></i></i>Instagram</a>
+                </div>
+                <div class="box__footer eng" style="display: none;">
+                    <h2>Social Networks</h2>
+                    <a href="#"><i class="fab fa-facebook"></i>Facebook</a>
+                    <a href="#"><i class="fab fa-twitter"></i></i>Twitter</a>
+                    <a href="#"><i class="fab fa-linkedin"></i></i>Linkedin</a>
+                    <a href="#"><i class="fab fa-instagram"></i></i>Instagram</a>
+                </div>
+                <!--------------------------------------------------------------------------------------->
+            </div>
+            <div class="box__copyright esp toto">
+                 <hr>
+                <br>
+                <p>Copyright © 2021 - Todos los derechos reservados</p>
+                <b>Sistema Gestion MG Alarmas (ISPCA2G5)</b>
+            </div>
+            <div class="box__copyright eng toto" style="display: none;">
+                <hr>
+                <br>
+                <p>Copyright © 2021 - All rights reserved</p>
+                <b>Management System MG Alarms (ISPCA2G5)</b>
+            </div>
+            
+        </footer>
+        <!---------------footer ----------->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="./js/funcionesGrupo99.js"></script>
+        <script src="./js/validacion.js"></script>
+        <script src="./js/abm.js"></script>
+        <script src="./js/idioma.js"></script>
 </body>
 </html>
 <!--https://mariogonzalezispc.github.io/g5-a3g5_2/-->
