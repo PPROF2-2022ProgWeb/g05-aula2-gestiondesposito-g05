@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MG Alarmas</title>
-    <link rel="icon" type="image/x-icon" href=" "><!--favicon-->
+    <title>MG Alarmas (ISPCA2G5)</title>
+    <link rel="icon" type="image/x-icon" href="./img/camion.png">
+    <!--favicon-->
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./css/productos.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/style1.css">
+    <link rel="stylesheet" href="./css/abm.css">
+    <link rel="stylesheet" href="./css/rma.css">
+    <link rel="stylesheet" href="./css/presupuesto.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
@@ -17,35 +21,64 @@
 </head>
 
 <script defer src="https://code.jquery.com/jquery-3.4.1.min.js"
-integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
 </script><!-- integra libreria para reloj y fecha-->
 <script defer src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="./js/idioma.js"></script>
+<script src="./js/funcionesGrupo99.js"></script>
 
-<body>
+<body onload="validar_idioma()">
 <!--------------------------------------------------------------------------------------->
-<header class="header">
-    <nav class="nav">
-        <img class="logo__img" src="./img/Logo.png" ALT="Logo Gestion deposito">
-        <h1 class="web">MG Alarmas (ISPCA2G5)</h1>
-        <h1 class="mov">MG Alarmas</h1> 
-        <button class="nav-toggle" id="nav-toggle" onclick="mi_Menu()">
-            <i class="fas fa-bars" aria-hidden="true"></i>
+    <div id="header">
+        <input type="text" class="esp" id="buscador" placeholder="Buscar...">
+        <input type="text" class="eng" style="display: none;" id="buscador" placeholder="Search...">
+        <button id="btn_buscador" class="btn_buscador"><i class="fas fa-search"></i></button>
+        <button type="button" class="compra1"><img class="img_carr" src="./img/carrito-de-compras.png">
+            <ul>
+                <li>
+                    <a href="">El carrito esta vacio</a>
+                </li>
+            </ul>
         </button>
-        <ul class="nav-menu">
-            <li class="nav-menu-item"><a  href="./index.html" class="nav-menu-link nav-link">Inicio</a></li>
-            <li class="nav-menu-item"><a  href="./producto.html" class="nav-menu-link nav-link">Productos</a></li> 
-            <li class="nav-menu-item"><a  href="./abm_productos.html" class="nav-menu-link nav-link">ABM</a></li> 
-            <li class="nav-menu-item"><a  href="./login.html" class="nav-menu-link nav-link">Login</a></li> 
-            <!--<li class="nav-menu-item"><a  href="./registro.html" class="nav-menu-link nav-link">Registro</a></li>-->              
-            <li class="nav-menu-item"><a  href="./contacto.html" class="nav-menu-link nav-link">Contacto</a></li>
+<!--------------------------------------------------------------------------------------->
+        <ul class="nav esp" id="lista_nav">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./producto.html">Productos</a></li>
+            <li><a href="./presupuestos.html">Presupuestos</a>
+            <ul>               
+                <li><a href="#" onclick="">Finales</a></li>
+                <li><a href="#" onclick="">Distribucion</a></li>
+            </ul>  
+        </li>
+            <li><a href="./rma.html">RMA</a>
+                <ul>               
+                <li><a href="#" onclick="">Ingresos</a></li>
+                <li><a href="#" onclick="">Resolucion</a></li>
+                <li><a href="#" onclick="">Egresos</a></li>
+            </ul>   
+            </li>
+            <li><a href="./abm_productos.html">ABM</a>
+                <ul>
+                    <li><a href="#" onclick="">Productos</a></li>
+                    <li><a href="#" onclick="">Usuarios</a></li>
+                    <li><a href="#" onclick="">Rubros</a></li>
+                </ul>          
+            </li>
+            <li><a href="./login.html">Login</a>
+                <ul>
+                    <li><a href="./registro.html">Registro</a></li>
+                </ul>
+            </li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="">Idioma</a>
+                <ul>
+                    <li><a href="#" onclick="idioma_espanol()">Español</a></li>
+                    <li><a href="#" onclick="idioma_ingles()">English</a></li>
+                </ul>
+            </li>
         </ul>
-    </nav>
-    </header>
-
-
-
-
+<!--------------------------------------------------------------------------------------->
 
 
 
@@ -85,7 +118,7 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
                     </div>
                     <!--Titulo formulario iniciar sesion-->
                     <input type="hidden" id="2" name="tipo" value="2">
-                    <input autofocus type="email" class="form__input" placeholder="Correo electronico" id="email">                    
+                    <input autofocus type="email" class="form__input" placeholder="Ingrese su usuario" id="email">                    
                     <input type="password" class="form__input " placeholder="Contraseña" id="clave">
                     <button class="button_vs_r">Iniciar sesion</button>
                 </form>
@@ -100,55 +133,98 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
 
 
 
-    <!---------------footer ----------->
-    <footer>
-        <div class="tipo__footer">
-          <!--------------------------------------------------------------------------------------->
-          <div class="box__footer">
-              <div class="logo">
-                  <img src="./img/Logo.png" alt="aca va al logo">
-              </div>
-              <div class="terms">
-                <p>Todo nuestro personal está altamente calificado y trabaja en un excelente entorno. 
-                    Nosotros pensamos que éste es uno de los más importantes factores para ofrecer un buen servicio a nuestros clientes.
-                    Algunos de nuestros vendedores están localizados en otras ciudades de nuestro país y uno de ellos se encuentra en Brasil 
-                    como representante de la compañía en ese mercado.
-                  La compañía cuenta también con consultores externos,
-                   personas idóneas especializadas en el planeamiento de nuestros cursos y seminarios que son dictados en instituciones 
-                   educacionales y compañías renombradas.</p>
-              </div>
-          </div>
-          <!--------------------------------------------------------------------------------------->
-          <div class="box__footer">
-              <h2>Soluciones</h2>
-              <a href="">Ventas</a>
-              <a href="">Trabajos</a>
-              <a href="">Procesos</a>
-              <a href="terminosycondiciones.html" target="_parent">Informacion Importante</a>
-          </div>
-          <!--------------------------------------------------------------------------------------->
-          <div class="box__footer">
-              <h2>Redes Sociales</h2>
-              <a href="#"><i class="fab fa-facebook"></i>Facebook</a>
-              <a href="#"><i class="fab fa-twitter"></i></i>Twitter</a>
-              <a href="#"><i class="fab fa-linkedin"></i></i>Linkedin</a>
-              <a href="#"><i class="fab fa-instagram"></i></i>Instagram</a>
-          </div>
-          <!--------------------------------------------------------------------------------------->
-      </div>
-      <div class="box__copyright">
-          <hr>
-          <br>
-          <p>Copyright © 2021 - Todos los derechos reservados</p>
-          <b>Gestion deposito Cordoba (ISPCA3G5)</b>
 
-      </div>
-  </footer>
-  <!---------------footer ----------->
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script src="./js/script.js"></script>
-  <script src="./js/funcionesGrupo99.js"></script>
-  <script src="./js/validacion.js"></script>
+
+
+
+        <!---------------footer ----------->
+        <footer>
+            <div class="tipo__footer">
+                <!--------------------------------------------------------------------------------------->
+                <div class="box__footer">
+                    <div class="logo">
+                        <!-- <img src="./img/Logo.png" alt="aca va al logo"> -->
+                    </div>
+                    <div class="terms esp">
+                        <p>Todo nuestro personal está altamente calificado y trabaja en un excelente entorno.
+                            Nosotros pensamos que éste es uno de los más importantes factores para ofrecer un buen
+                            servicio a nuestros clientes.
+                            Algunos de nuestros vendedores están localizados en otras ciudades de nuestro país y uno de
+                            ellos se encuentra en Brasil
+                            como representante de la compañía en ese mercado.
+                            La compañía cuenta también con consultores externos,
+                            personas idóneas especializadas en el planeamiento de nuestros cursos y seminarios que son
+                            dictados en instituciones
+                            educacionales y compañías renombradas.</p>
+                    </div>
+                    <div>
+                        <p class=" terms eng" style="display: none;">
+                            <span>All our personnel is highly qualified and works in a good environment.
+                                We think that this is one of the most important factors to offer a good service to our
+                                customers.
+                                Some of our sales representatives are located in other cities of our country and one of them
+                                is located in Brazil as a representative of the company in that market.
+                                The company also has external consultants,
+                                ideal people specialized in the planning of our courses and seminars that are held in
+                                educational institutions and companies renowned.</span>
+                        </p>
+                    </div>
+                </div>
+                <!--------------------------------------------------------------------------------------->
+                <div class="box__footer esp">
+                    <h2>Soluciones</h2>
+                    <a href="">Ventas</a>
+                    <a href="">Trabajos</a>
+                    <a href="">Procesos</a>
+                    <a href="Terminosycondiciones.html" target="_parent">Informacion Importante</a>
+                </div>
+                <div class="box__footer eng" style="display: none;" >
+                    <h2>Solution</h2>
+                    <a href="">Sale</a>
+                    <a href="">Jobs</a>
+                    <a href="">Processes</a>
+                    <a href="Termsandconditions.html" target="_parent">Important Information</a>
+                </div>
+                
+                <!--------------------------------------------------------------------------------------->
+                <div class="box__footer esp">
+                    <h2>Redes Sociales</h2>
+                    <a href="#"><i class="fab fa-facebook"></i>Facebook</a>
+                    <a href="#"><i class="fab fa-twitter"></i></i>Twitter</a>
+                    <a href="#"><i class="fab fa-linkedin"></i></i>Linkedin</a>
+                    <a href="#"><i class="fab fa-instagram"></i></i>Instagram</a>
+                </div>
+                <div class="box__footer eng" style="display: none;">
+                    <h2>Social Networks</h2>
+                    <a href="#"><i class="fab fa-facebook"></i>Facebook</a>
+                    <a href="#"><i class="fab fa-twitter"></i></i>Twitter</a>
+                    <a href="#"><i class="fab fa-linkedin"></i></i>Linkedin</a>
+                    <a href="#"><i class="fab fa-instagram"></i></i>Instagram</a>
+                </div>
+                <!--------------------------------------------------------------------------------------->
+            </div>
+            <div class="box__copyright esp toto">
+                 <hr>
+                <br>
+                <p>Copyright © 2021 - Todos los derechos reservados</p>
+                <b>Sistema Gestion MG Alarmas (ISPCA2G5)</b>
+            </div>
+            <div class="box__copyright eng toto" style="display: none;">
+                <hr>
+                <br>
+                <p>Copyright © 2021 - All rights reserved</p>
+                <b>Management System MG Alarms (ISPCA2G5)</b>
+            </div>
+            
+        </footer>
+        <!---------------footer ----------->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="./js/funcionesGrupo99.js"></script>
+        <script src="./js/validacion.js"></script>
+        <script src="./js/abm.js"></script>
+        <script src="./js/idioma.js"></script>
+
 </body>
+
 </html>
-<!--https://mariogonzalezispc.github.io/g5-a3g5_2/-->

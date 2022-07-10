@@ -1,6 +1,7 @@
 //-----------------------------------------------------------------------------------
 //funcion DOM del sitio trabaja sobre el NAVBAR colocando fecha y hora actual
 //-----------------------------------------------------------------------------------
+var idioma="";
 showTime();
 
 function showTime() {
@@ -140,3 +141,15 @@ function sale() {//funcion para salir de la pagina
 function ok_registro() {
   swal('Su registro se cargo con exito !!!!!', '', 'success');
 }
+
+//-----------------------------------------------------------------------------------
+//funcion de validacion de idioma
+//-----------------------------------------------------------------------------------
+window.addEventListener('load', function() {
+   if (idioma == "esp") {
+     alert("El idioma seleccionado es Español");
+ }
+   if (idioma == "eng") {
+     alert("El idioma seleccionado es Inglés");
+ }
+});

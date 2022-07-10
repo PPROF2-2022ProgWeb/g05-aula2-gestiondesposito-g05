@@ -5,6 +5,8 @@ function idioma_espanol() {
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "flex";
     }
+    idioma="esp";
+
 }
 /*-----------------------------------------------------------------------------------*/
 function idioma_ingles() {
@@ -13,6 +15,7 @@ function idioma_ingles() {
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "flex";
     }
+    idioma="eng";
 }
 /*-----------------------------------------------------------------------------------*/
 function cambia_idioma() {

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +11,9 @@
     <link rel="stylesheet" href="./css/productos.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/style1.css">
+    <link rel="stylesheet" href="./css/abm.css">
+    <link rel="stylesheet" href="./css/rma.css">
+    <link rel="stylesheet" href="./css/presupuesto.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
@@ -24,10 +26,10 @@
 <script defer src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="./js/idioma.js"></script>
+<script src="./js/funcionesGrupo99.js"></script>
 
-
-<body onload="idioma_espanol()">
-    <!--------------------------------------------------------------------------------------->
+<body onload="validar_idioma()">
+<!--------------------------------------------------------------------------------------->
     <div id="header">
         <input type="text" class="esp" id="buscador" placeholder="Buscar...">
         <input type="text" class="eng" style="display: none;" id="buscador" placeholder="Search...">
@@ -39,18 +41,29 @@
                 </li>
             </ul>
         </button>
-
+<!--------------------------------------------------------------------------------------->
         <ul class="nav esp" id="lista_nav">
             <li><a href="./index.html">Inicio</a></li>
             <li><a href="./producto.html">Productos</a></li>
-            <!-- <li style="display: none;"><a href="./abm_productos.html">ABM</a></li> -->
+            <li><a href="./presupuestos.html">Presupuestos</a>
+            <ul>               
+                <li><a href="#" onclick="">Finales</a></li>
+                <li><a href="#" onclick="">Distribucion</a></li>
+            </ul>  
+        </li>
+            <li><a href="./rma.html">RMA</a>
+                <ul>               
+                <li><a href="#" onclick="">Ingresos</a></li>
+                <li><a href="#" onclick="">Resolucion</a></li>
+                <li><a href="#" onclick="">Egresos</a></li>
+            </ul>   
+            </li>
             <li><a href="./abm_productos.html">ABM</a>
-            
                 <ul>
                     <li><a href="#" onclick="">Productos</a></li>
                     <li><a href="#" onclick="">Usuarios</a></li>
+                    <li><a href="#" onclick="">Rubros</a></li>
                 </ul>          
-            
             </li>
             <li><a href="./login.html">Login</a>
                 <ul>
@@ -64,17 +77,33 @@
                     <li><a href="#" onclick="idioma_ingles()">English</a></li>
                 </ul>
             </li>
-            <!-- <li><img class="img_carr" src="./img/carrito-de-compras.png" onclick="">
-                <ul>
-                    <li>El carrito esta VACIO</li>
-                </ul>
-            
-            </li> -->
         </ul>
+<!--------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
 
         <ul class="nav eng" id="lista_nav" style="display: none;">
             <li><a href="./index.html">Home</a></li>
             <li><a href="./producto.html">Product</a></li>
+            <li><a href="./abm_productos.html">ABM</a>
+            
+                <ul>
+                    <li><a href="#" onclick="">Product</a></li>
+                    <li><a href="#" onclick="">Users</a></li>
+                </ul>          
+            
+            </li>
+
             <li><a href="./login.html">Login</a>
                 <ul>
                     <li><a href="./registro.html">Registration</a></li>
@@ -95,6 +124,29 @@
         </li> -->
         </ul>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!--------------------------------------------------------------------------------------->
     <div class="contenedor_pantalla">
@@ -136,11 +188,6 @@
                     <a href="https://www.te.com/usa-en/home.html" target="blanck">
                         <img alt="" src="./img/Franquicia_8.png" width="120" height="75" /></a><br>
                 </section>
-               
-               
-               
-               
-               
                
                 <div class="listado-novedades">
                     <!--------------------------------------------------------------------------------------->
@@ -310,27 +357,19 @@
                         </div>
                     </div>
                     <!--------------------------------------------------------------------------------------->                   
-
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             </div>
         </div>
         <!--------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
 
         <!---------------footer ----------->
         <footer>

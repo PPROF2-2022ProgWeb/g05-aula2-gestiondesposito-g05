@@ -5,15 +5,15 @@
     width: 99%;/*ancho de la pagina*/
     margin: auto;/*centra la pagina*/
     /*background-color: rgba(255, 255, 255, 0.5);color de fondo y tranparencia*/
-        background-color: rgba(0, 128, 255, 0.5);
+    background-color: rgba(0, 128, 255, 0.5);
     /*background-color: rgba(0, 128, 255, 0.5);*//*color de fondo y tranparencia*/
     margin-top: 160px;
     border-radius: 20px;
 }
 
 .wrap2 h1 {
-    color: rgba(0, 128, 255, 0.6);/*color de letra para h1*/
-    /*color: white;*/
+    /* color: rgba(0, 128, 255, 0.6);color de letra para h1 */
+    color: white;
     font-weight: 700;/*ancho de letra*/
     display: flex;/*para que se pueda centrar*/
     flex-direction: column;
@@ -29,39 +29,6 @@
     background-color: white;
     margin: 20px 50px;
 }
-
-
-
-
-/*------------------------------------------------------------*/
-/*estilos de boton de idioma*/
-/* .idioma{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    
-    background-color: navy; 
-    
-}*/
-/* .idioma ul, li{    
-    list-style: none;
-} */
-/*------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*------------------------------------------------------------*/
@@ -85,8 +52,8 @@
 }
 
 .listado-franquicias h2 {
-    color: rgba(0, 128, 255, 0.9);/*color de letra para h2*/
-    /*color: white;*/
+    /* color: rgba(0, 128, 255, 0.9);color de letra para h2 */
+    color: white;
     font-weight: 700;/*ancho de letra*/
     font-size: 25px;/*tamaño de letra*/
 }
