@@ -1,7 +1,7 @@
 //-----------------------------------------------------------------------------------
 //funcion DOM filtra componentes de la lista
 //-----------------------------------------------------------------------------------
-function borra() { //funcion para borrar los componentes que se muestran
+function borra_p() { //funcion para borrar los componentes que se muestran
     let x, i;
     x = document.querySelectorAll(".led, .dis, .tra, .ser, .gra"); //obtengo todos los componentes
     for (i = 0; i < x.length; i++) { //recorro todos los componentes
@@ -10,7 +10,7 @@ function borra() { //funcion para borrar los componentes que se muestran
   }
   
   function todo() { //funcion para mostrar todos los componentes
-    alert("TODO");
+    borra_p(); //borro los componentes
     var x, i;
     x = document.querySelectorAll(".led,.dis, .tra, .ser, .gra"); //obtengo todos los componentes
     for (i = 0; i < x.length; i++) { //recorro todos los componentes
@@ -21,8 +21,7 @@ function borra() { //funcion para borrar los componentes que se muestran
   }
   
   function leds() { //funcion para mostrar los componentes led
-    alert("LEDS");
-    borra(); //borro los componentes
+    borra_p(); //borro los componentes
     let x, i;
     x = document.querySelectorAll(".led"); //obtengo los componentes led
     for (i = 0; i < x.length; i++) { //recorro los componentes 
@@ -33,9 +32,7 @@ function borra() { //funcion para borrar los componentes que se muestran
   }
   
   function disp() { //funcion para mostrar los componentes display
-    alert("DISPLAY");
-
-    borra(); //borro los componentes
+    borra_p(); //borro los componentes
     var x, i;
     x = document.querySelectorAll(".dis"); //obtengo los componentes display
     for (i = 0; i < x.length; i++) { //recorro los componentes
@@ -46,7 +43,7 @@ function borra() { //funcion para borrar los componentes que se muestran
   }
   
   function tran() { //funcion para mostrar los componentes transistores
-    borra(); //borro los componentes
+    borra_p(); //borro los componentes
     var x, i;
     x = document.querySelectorAll(".tra"); //obtengo los componentes transistores
     for (i = 0; i < x.length; i++) { //recorro los componentes
@@ -57,7 +54,7 @@ function borra() { //funcion para borrar los componentes que se muestran
   }
   
   function serv() { //funcion para mostrar los componentes transistores
-    borra(); //borro los componentes
+    borra_p(); //borro los componentes
     var x, i;
     x = document.querySelectorAll(".ser"); //obtengo los componentes servidores
     for (i = 0; i < x.length; i++) { //recorro los componentes
@@ -68,7 +65,7 @@ function borra() { //funcion para borrar los componentes que se muestran
   }
   
   function gral() { //funcion para mostrar los componentes transistores
-    borra(); //borro los componentes
+    borra_p(); //borro los componentes
     var x, i;
     x = document.querySelectorAll(".gra"); //obtengo los componentes generales
     for (i = 0; i < x.length; i++) { //recorro los componentes

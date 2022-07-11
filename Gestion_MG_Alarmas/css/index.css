@@ -85,25 +85,6 @@
 
 }
 
-
-
-
-
-
-/* 
-.listado-novedades .nota_1,
-.listado-novedades .nota_2,
-.listado-novedades .nota_3 {
-    /*width: 31.6%;/*ancho de las imagenes de novedades*/
- /*   height: auto;/*alto de las imagenes de novedades*/
- /*   margin: 5px;/*espacio entre las imagenes de novedades*/
- /*   padding: 10px 10px;/*espacio entre la imagen y el borde del contenedor*/
- /*   border: white solid 1px;/*borde de la imagen*/
- /*   border-radius: 5px;/*radio de lo bordes de las notras */
-  /*  color: white;/*color de letra para las notas*/
- /*   background-color: rgba(0, 128, 255, 0.6);/*color de fondo y tranparencia*/
-/*} */
-
 .listado-novedades h2 {/*estilos de los titulos hs de las novedades*/   
     color: black;/*color dl h2 */
     font-weight: 400;/*ancho de letra*/
@@ -111,21 +92,6 @@
     display: inline-block;
 }
 
-/* .listado-novedades .titulo {
-    width: 98%;
-    height: auto;
-    margin: 5px;
-    line-height: 10px;
-    padding: 10px 10px;
-    border: white solid 1px;
-    border-radius: 5px;
-    color: white;
-    background-color: rgba(0, 128, 255, 0.6);
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;   
-} */
 
 .listado-novedades img {/*estableco estilos a la imagenes*/
     width: 80%;/*ancho de la imagen*/
@@ -134,6 +100,178 @@
     border-radius: 4px;/*para que se vea redondeado*/
     padding: 5px;/*alejo la imagen del borde del contenedor*/
 }
+
+/*------------------------------------------------------*/
+/*inicio*/
+/*------------------------------------------------------*/
+.contenedor_inicio{
+    font-family: 'Open Sans', sans-serif;/*tipo de letra de google*/
+    max-width: 1300px;
+    width: 90%;
+    height: 1250px;
+    margin: auto;
+    /*background-color: rgba(0, 128, 255, 0.6);/*color de fondo caja trasera*/
+    background-color: rgba(255, 255, 255, 0.6);/*color de fondo caja trasera*/
+    margin-top: 100px;
+    border-radius: 5px;
+    padding: 20px;
+}
+.contenedor_inicio h2{
+    font-size: 25px;
+    color: white;
+    text-align: left;
+}
+.contenedor_inicio h3{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+
+.contenedor_inicio .imagenes_1{
+    width: 100%;
+    height: 850px;
+    /*background-color: grey;*/
+}
+.contenedor_inicio .noticias{
+    width: 100%;
+    height: 38%;
+    /*background-color: aquamarine;*/
+    display: inline-block;/*para que se puedan ver en columnas*/
+    flex-wrap: wrap; /*para que si superan el ancho padre se vea hacia abajo*/
+    padding: 20px 20px 20px 20px;
+  
+}
+.contenedor_inicio .imagenes_1 .novedades{
+    display: flex;/*para que se puedan ver en columnas*/
+    flex-direction: column;
+    width: 78%;
+    height: 550px;
+    padding: 10px 10px;/*alejo el boton del borde del contenedor*/
+    /*background-color: orange;*/
+
+}
+
+.contenedor_inicio .imagenes_1 .franquicias{
+    width: 21%;/*ancho del listado de productos*/
+    flex-direction: column;
+    flex-wrap: wrap; /*para que si superan el ancho padre se vea hacia abajo*/
+    padding: 10px 10px;/*alejo la imagen del borde del contenedor*/
+    /*background-color: green;*/
+    height: 550px;
+}
+.contenedor_inicio .imagenes_1 .franquicias img{
+    width: 100%;
+    height: 75px;
+    align-items: center;
+
+}
+.contenedor_inicio .noticias h3{
+    font-size: 25px;
+    text-align: left;
+    color: #46a2fd;
+}
+.contenedor_inicio .noticias .rellena {
+    display: flex;/*para que se puedan ver en columnas*/
+    flex-wrap: wrap; /*para que si superan el ancho padre se vea hacia abajo*/
+    width: 2%;/*ancho de los botones de filtro*/
+    height: 200px;
+    /*background-color: yellow;*/
+}
+.contenedor_inicio .noticias .nota_1 {
+    border: white solid 1px;
+    color: white;
+    background-color: rgba(0, 128, 255, 0.6);/*color de fondo caja trasera*/
+    display: flex;/*para que se puedan ver en columnas*/
+    flex-wrap: wrap; /*para que si superan el ancho padre se vea hacia abajo*/
+    width: 30%;/*ancho de los botones de filtro*/
+    height: 250px;
+    margin-left: 30px;
+    padding: 20px;
+    /*background-color: rgba(245, 179, 13, 0.5)*/
+
+}
+
+.contenedor_inicio .noticias .nota_2{
+    border: white solid 1px;
+    color: white;
+    background-color: rgba(0, 128, 255, 0.6);/*color de fondo caja trasera*/
+    display: flex;/*para que se puedan ver en columnas*/
+    flex-wrap: wrap; /*para que si superan el ancho padre se vea hacia abajo*/
+    width: 30%;/*ancho del listado de productos*/
+    /*background-color: pink;*/
+    padding: 10px 25px;/*alejo la imagen del borde del contenedor*/
+    height: 250px;
+}
+.contenedor_inicio .noticias .nota_3{
+    border: white solid 1px;
+    color: white;
+    background-color: rgba(0, 128, 255, 0.6);/*color de fondo caja trasera*/
+    display: flex;/*para que se puedan ver en columnas*/
+    flex-wrap: wrap; /*para que si superan el ancho padre se vea hacia abajo*/
+    width: 30%;/*ancho del listado de productos*/
+    left: 20%;
+    padding: 10px 25px;/*alejo la imagen del borde del contenedor*/
+    /*background-color: green;*/
+    height: 250px;
+}
+.contenedor_inicio .noticias .nota_3 texto_3{
+    border: white solid 1px;
+    color: white;
+    background-color: rgba(0, 128, 255, 0.6);/*color de fondo caja trasera*/
+    display: flex;/*para que se puedan ver en columnas*/
+    flex-wrap: wrap; /*para que si superan el ancho padre se vea hacia abajo*/
+    width: 30%;/*ancho del listado de productos*/
+    left: 20%;
+    padding: 10px 25px;/*alejo la imagen del borde del contenedor*/
+    /*background-color: green;*/
+    height: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
