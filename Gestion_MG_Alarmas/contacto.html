@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="./css/rma.css">
     <link rel="stylesheet" href="./css/abm.css">
     <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/registro.css">
+    <link rel="stylesheet" href="./css/contacto.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -85,6 +87,49 @@
             </li>
         </ul>
     </div>
+<!--------------------------------------------------------------------------------------->
+
+   <!----------------------------------------------------------------------------------->
+   <div class="contenedor__contacto">
+    <!--------------------------------------------------------------------------->
+    <!--formulario contacto -->
+    <!--------------------------------------------------------------------------->
+    <form class="form__contacto"id="form__contacto" action="https://mariogonzalezispc.github.io/g5-a3g5_2/index.html">
+        <input type="hidden" id="5" name="tipo" value="">
+        <div class="form_contacto__aviso">
+            <h2>Consultas</h2>
+        </div>
+        <div>
+            <label for="nombres" class="form__label">Ingrese su nombre</label>
+            <input autofocus type="text" class="form__input" placeholder="Su nombre" name="nombre" id="nombres">
+        </div>
+
+        <div>
+            <label for="email" class="form__label">Ingrese su correo </label>
+            <input type="email" class="form__input" placeholder="lapampa@argentina.com" id="email">
+        </div>
+
+        <div>
+            <label for="telefono" class="form__label">Ingrese su telefono</label>
+            <input type="tel" class="form__input" placeholder="Su telefono (opcional)" id="telefono">
+        </div>
+
+        <div>
+            <label for="mensaje" class="form__label">Ingrese su mensaje</label>
+            <textarea class="textarea_1" name="mensaje" rows="10" cols="50" id="mensaje" 
+            placeholder="Escriba aqui su consulta"></textarea>
+        </div>
+
+        <div class="form__grupo form__grupo-btn-enviar">
+            <button type="submit" class="button_vs" id="form__mensaje-envio">Enviar consulta</button>
+            <!--<input type="submit" class="button_vs" name="Enviar"value="Enviar consulta">-->
+        </div>
+
+        <div class="form__grupo form__grupo-btn-enviar">
+            <input type="reset" class="button_vs" name="Limpiar"value="Reiniciar formulario">
+        </div>
+    </form>
+</div>    
 <!--------------------------------------------------------------------------------------->
 
 
