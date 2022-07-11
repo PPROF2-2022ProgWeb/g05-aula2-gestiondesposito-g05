@@ -79,7 +79,6 @@
     object-fit: fill;/*para que se ajuste a la imagen*/
     border-radius: 4px;/*para que se vea redondeado*/
 }
-
 .products-list .product-item a{
     display: block;
     width: 100%;
