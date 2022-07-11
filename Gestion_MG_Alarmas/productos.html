@@ -8,12 +8,19 @@
     <link rel="icon" type="image/x-icon" href="./img/camion.png">
     <!--favicon-->
     <link rel="stylesheet" href="./css/estilos.css">
-    <link rel="stylesheet" href="./css/productos.css">
+    <!-- <link rel="stylesheet" href="./css/style1.css"> -->
+
+    <link rel="stylesheet" href="./css/encabezado.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/style1.css">
-    <link rel="stylesheet" href="./css/abm.css">
-    <link rel="stylesheet" href="./css/rma.css">
+    <link rel="stylesheet" href="./css/productos.css">
     <link rel="stylesheet" href="./css/presupuesto.css">
+    <link rel="stylesheet" href="./css/rma.css">
+    <link rel="stylesheet" href="./css/abm.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/registro.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
@@ -86,7 +93,6 @@
 
 
 
-
 <!--------------------------------------------------------------------------------------->
 <div class="contenedor_pantalla">
     <!--contenedor de toda la pagina-->
@@ -98,75 +104,59 @@
         </button>
         <div class="store-wrapper"><!--contenedor de la tabla-->
             <div class="category_list"><!--contenedor de la lista-->
-                <a href="#" class="category_item button_vs" onclick="todo()" id="a">Todo</a>
-                <a href="#" class="category_item button_vs" onclick="leds()" id="b">Centrales</a>
-                <a href="#" class="category_item button_vs" onclick="disp()" id="c">Teclados</a>
-                <a href="#" class="category_item button_vs" onclick="tran()" id="d">Sirenas</a>
-                <a href="#" class="category_item button_vs" onclick="serv()" id="e">Infrarrojos</a>
-                <a href="#" class="category_item button_vs" onclick="gral()" id="f">Magneticos</a>
-                <a href="#" class="category_item button_vs" onclick="gral()" id="g">Detect Exterior</a>
-                <a href="#" class="category_item button_vs" onclick="gral()" id="h">Barreras</a>
+                <a href="#" class="category_item button_pro" onclick="todo()" id="a">Todo</a>
+                <a href="#" class="category_item button_pro" onclick="leds()" id="b">Centrales</a>
+                <a href="#" class="category_item button_pro" onclick="disp()" id="c">Teclados</a>
+                <a href="#" class="category_item button_pro" onclick="tran()" id="d">Sirenas</a>
+                <a href="#" class="category_item button_pro" onclick="serv()" id="e">Infrarrojos</a>
+                <a href="#" class="category_item button_pro" onclick="gral()" id="f">Magneticos</a>
+                <a href="#" class="category_item button_pro" onclick="gral()" id="g">Detect Exterior</a>
+                <a href="#" class="category_item button_pro" onclick="gral()" id="h">Barreras</a>
             </div>
+
+<!--------------------------------------------------------------------------------------->           
             <section class="products-list">
-                <!--------------------------------------------------------------------------------------->
-                <div class="ofertas pir">
-                    <div style="background-color: green;">
-                        <h2 class="esp">Infrarrojos</h2>
-                        <h2 class="eng" style="display: none;">Offer</h2>
+
+
+
+
+                    <!--------------------------------------------------------------------------------------->
+                    <div class="product-item ofertas">
+                        <div style="background-color: green;">
+                            <h2 class="esp">Detectores Movimiento</h2>
+                            <h2 class="eng" style="display: none;">Offer</h2>
+                        </div>
+
+                        <img src="./img/Otus_1.png"/>
+
+                        <div>
+                            <label class="esp">Mas carateristicas</label>
+                        </div>
+
+                        <div>
+                            <input type="button" value="Comprar" class="btn_ver" onclick="ver_oferta()">
+                        </div>
+
+                        <div>
+                            <p class="esp">
+                                <span style="font-size: 9px;">Descuento del 10% en todos los productos</span>
+                            </p>
+                            <p class="eng" style="display: none;">
+                                <span>10% discount on all products</span>
+                            </p>
+                        </div>
                     </div>
-
-                    <img src="./img/Otus_1.png"/>
-
-                    <div>
-                        <label class="esp">Carateristicas</label>
-                    </div>
-
-                    <div>
-                        <input type="button" value="Comprar" class="btn_ver" onclick="ver_oferta()">
-                    </div>
-
-                    <div>
-                        <p class="esp">
-                            <span style="font-size: 9px;">Descuento del 10% en todos los productos</span>
-                        </p>
-                        <p class="eng" style="display: none;">
-                            <span>10% discount on all products</span>
-                        </p>
-                    </div>
-                </div>
+                    <!--------------------------------------------------------------------------------------->
 
 
-                <div class="ofertas">
-                    <div style="background-color: green;">
-                        <h2 class="esp">Oferta</h2>
-                        <h2 class="eng" style="display: none;">Offer</h2>
-                    </div>
-
-                    <img src="./img/Otus_1.png"/>
-
-                    <div>
-                        <label class="esp">Mas carateristicas</label>
-                    </div>
-
-                    <div>
-                        <input type="button" value="Comprar" class="btn_ver" onclick="ver_oferta()">
-                    </div>
-
-                    <div>
-                        <p class="esp">
-                            <span style="font-size: 9px;">Descuento del 10% en todos los productos</span>
-                        </p>
-                        <p class="eng" style="display: none;">
-                            <span>10% discount on all products</span>
-                        </p>
-                    </div>
-                </div>
 
 
-                <div class="product-item led">
+
+                <div class="product-item led" style="display: none;">
                     <img src="./img/Diodos_led_5mm_ro.jpg" alt="">
                     <a href="#">Led rojo 5mm</a>
                 </div>
+
                 <div class="product-item gra">
                     <img src="./img/Acelerometro_brujula.jpg" alt="">
                     <a href="#">Acelerometro</a>
@@ -320,6 +310,10 @@
                     <a href="#">Led verde 5mm</a>
                 </div>
             </section>
+
+
+
+
         </div>
     </div>
 </div>
@@ -412,6 +406,7 @@
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
         <script src="./js/script.js"></script>
         <script src="./js/funcionesGrupo99.js"></script>
+        <script src="./js/productos.js"></script>
         <script src="./js/validacion.js"></script>
         <script src="./js/abm.js"></script>
         <script src="./js/idioma.js"></script>

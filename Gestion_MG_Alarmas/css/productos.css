@@ -1,5 +1,3 @@
-
-
 .wrap{/*contenedor de los productos*/
     font-family: 'Open Sans', sans-serif;/*tipo de letra de google*/
     max-width: 1200px;
@@ -53,6 +51,38 @@
 .category_list .ct_item-activo{
     background:rgba(0, 128, 255, 0.5)
 }
+
+.button_pro{
+    padding: 1px 1px; /*espacios de arriba y laterales*/
+    border: 0px solid;/*para darle un borde al boton*/
+    background: transparent;/*para que el boton sea transparente*/
+    font-size: 20px;/*tamaño del texto */
+    font-weight: 600;/*para que el texto sea caso bold*/
+    cursor: pointer;/*para que el cursor sea una mano*/
+    color: white;/*para que el texto sea mas liviano*/
+    outline: none;/*para que el outline no se vea*/
+    transition: all 0.4s;/*transicion de tamaño*/
+    height: 50px;/*altura del boton de enviar*/
+    width: 50%;/*ancho del boton de enviar*/
+    min-width: 140px;/*ancho minimo del boton de enviar*/
+    border-radius: 5px;/*para darle un borde redondo al boton*/
+    margin: 0 auto;
+    display: fixed;
+    line-height: 30px;
+    text-align: center;
+}
+.button_pro:hover {
+    background: white;/*el fonfo del boton sea blanco al pasar el puntero*/
+    color: #46a2fd;/*texto sera azul al pasar el puntero*/
+}
+
+
+
+
+
+
+
+
 /*------------------------------------------------------------*/
 /*estilos de los productos*/
 /*------------------------------------------------------------*/
@@ -79,7 +109,6 @@
     object-fit: fill;/*para que se ajuste a la imagen*/
     border-radius: 4px;/*para que se vea redondeado*/
 }
-
 .products-list .product-item a{
     display: block;
     width: 100%;
@@ -89,11 +118,6 @@
     text-decoration: none;
     text-align: center;
 }
-.products-list .product-item .led{}
-.products-list .product-item .dis{}
-.products-list .product-item .tra{}
-.products-list .product-item .ser{}
-.products-list .product-item .gra{}
 
 .wrap .nav-toggle2{ 
     padding: 1px 1px; /*espacios de arriba y laterales*/
