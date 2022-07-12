@@ -1,5 +1,6 @@
 .contiene1{
     display: block;
+    flex-direction: column;
     position: relative;
     margin-top: 13%;
     width: 100%;
@@ -7,7 +8,10 @@
     background:rgba(0, 128, 255, 0.5);
     /* border: 1px solid #E0E0E0; */
     box-shadow: 0 0 10px #E0E0E0;
-    padding: 1px;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
 }
 .pestana_alta{
     /* background-color: blue; */
@@ -16,6 +20,7 @@
     margin-top: 10px;
     width: 100%;
     height: 400px;
+    flex-direction: column;
 
 }
 #abmi_nav{
@@ -56,85 +61,89 @@
 
 .graba{
     position: relative;
-    margin-top: 270px;
-    margin-left: 800px;
+    margin-top: 200%;
+    margin-left: 600%;
     width: 140px;
+}
+.clear{
+    clear: both;
 }
 
 /**********************************************************/
 .contiene1 .codigo_input{/*este es el div*/
     background-color: rgb(155, 23, 45);
-    display: flex;
-    width: 20%;
+    display: inline-flex;
+    width: 17%;
     height: 15%;
-    position: absolute;
+    float: left;
+    /*position: absolute;*/
     align-items: center;
     margin-top: 1%;
     margin-left: 1%;
-    justify-content: center;
-    place-content: center;
+    justify-content: space-around;
+    /*place-content: center;*/
     border: 1px solid black;
-    border-radius: 6px;
+    border-radius: 6px;  
+    
+    
 }
 .contiene1 .label_codigo{/*label*/
     background-color: grey;
     /*background-color: transparent;*/
-    display: inline-flex;
+    display: flex;
     width: 45%;
-    height: 55%;
+    height: 100%;
     border: 1px solid black;
     position: relative;
-    align-items: center;
-    justify-content: left;
+    
+    
 }
 .contiene1 .codigo{/*input*/
     background-color: white;
     /*background: transparent;*/
-    display: inline-flex;
+    display: flex;
     width: 95%;
     height: 55%;
     position: relative;
-    align-items: center;
-    justify-content: left;
     border: 1px solid black;
-    float: left;
+    border-radius: 6px;
 }
 /*****************************************************/
 
 
 /*****************************************************/
-.contiene1 .rubro_input{/*este es el div de*/
-    background-color: coral;
-    display: flex;
-    width: 20%;
+.contiene1 .rubro_input{/*este es el div*/
+    background-color: rgb(155, 23, 45);
+    display: inline-flex;
+    width: 17%;
     height: 15%;
-    margin-top: 1%;
-    margin-left: 24%;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    place-content: center;
-    border: 1px solid black;
     float: left;
-    border-radius: 6px;
-
+    /*position: absolute;*/
+    /*align-items: center;*/
+    margin-top: 1%;
+    margin-left: 2%;
+    justify-content: space-around;
+    /*place-content: center;*/
+    border: 1px solid black;
+    border-radius: 6px;  
 }
 
 .contiene1 .label_rubro{/*label*/
-    /*background-color: grey;*/
-    background-color: transparent;
-    display: inline-flex;
+    background-color: grey;
+    /*background-color: transparent;*/
+    display: flex;
     width: 45%;
     height: 55%;
     border: 1px solid black;
     position: relative;
     align-items: center;
     justify-content: left;
+    max-width: 100%;
 }
-
-.contiene1 .rubro{/*este es el input*/
-    /*background-color: white;*/
-    display: inline-flex;
+.contiene1 .rubro{/*input*/
+    background-color: white;
+    /*background: transparent;*/
+    display: flex;
     width: 95%;
     height: 55%;
     position: relative;
@@ -142,107 +151,113 @@
     justify-content: left;
     border: 1px solid black;
     float: left;
+    border-radius: 6px;
+    
 }
 /*****************************************************/
 
 
 
 /*****************************************************/
-.contiene1 .marca_input{/*div*/
-    background-color: cyan;
-
-    display: flex;
-    width: 20%;
+.contiene1 .marca_input{/*este es el div*/
+    background-color: rgb(155, 23, 45);
+    display: inline-flex;
+    width: 17%;
     height: 15%;
-    position: absolute;
-    margin-top: 6%;
-    margin-left: 1%;
+    float: left;
+    /*position: absolute;*/
     align-items: center;
-    justify-content: center;
+    margin-top: 1%;
+    margin-left: 2%;
+    /*justify-content: center;
     place-content: center;
-    border: 1px solid black;
-    border-radius: 6px;
-    
+    border: 1px solid black;*/
+    border-radius: 6px;  
+   
 }
 
 .contiene1 .label_marca{/*label*/
     background-color: grey;
-    background-color: transparent;
-    display: inline-flex;
+    /*background-color: transparent;*/
+    display: flex;
     width: 45%;
     height: 55%;
     border: 1px solid black;
     position: relative;
     align-items: center;
     justify-content: left;
+    max-width: 100%;
 }
-
 .contiene1 .marca{/*input*/
     background-color: white;
-    display: inline-flex;
+    /*background: transparent;*/
+    display: flex;
     width: 95%;
     height: 55%;
     position: relative;
     align-items: center;
     justify-content: left;
     border: 1px solid black;
-    
+    float: left;
+    border-radius: 6px;
 }
 /*****************************************************/
 
 
-/*****************************************************/
-.contiene1 .origen_input{/*div*/
-    background-color: yellow;
-    display: flex;
-    width: 20%;
+/******************************************************/
+.contiene1 .origen_input{/*este es el div*/
+    background-color: rgb(155, 23, 45);
+    display: inline-flex;
+    width: 17%;
     height: 15%;
-    margin-top: 16%;
-    margin-left: 1%;
-    position: absolute;
+    float: left;
+    /*position: absolute;*/
     align-items: center;
-    justify-content: center;
+    margin-top: 1%;
+    margin-left: 2%;
+    /*justify-content: center;
     place-content: center;
-    border: 1px solid black;
-    border-radius: 6px;
-    
+    border: 1px solid black;*/
+    border-radius: 6px;      
 }
 
 .contiene1 .label_origen{/*label*/
     background-color: grey;
-    background-color: transparent;
-    display: inline-flex;
+    /*background-color: transparent;*/
+    display: flex;
     width: 45%;
     height: 55%;
     border: 1px solid black;
     position: relative;
     align-items: center;
     justify-content: left;
+    max-width: 100%;
 }
-
 .contiene1 .origen{/*input*/
     background-color: white;
-    display: inline-flex;
+    /*background: transparent;*/
+    display: flex;
     width: 95%;
     height: 55%;
     position: relative;
     align-items: center;
     justify-content: left;
     border: 1px solid black;
-    
+    float: left;
+    border-radius: 6px;
 }
 /*****************************************************/
 
 
 /*****************************************************/
-.contiene1 .descripcion_input{/*div*/
+/*.contiene1 .descripcion_input{/*div*
     background-color: rgb(255, 0, 234);
-    /*background: transparent;*/
+    /*background: transparent;*
     display: flex;
     width: 20%;
     height: 15%;
-    position: absolute;
-    /*top: 50px;*/
+    /*position: absolute;*
+    top: 50px;
     align-items: center;
     margin-top: 6%;
     margin-left: 46.5%;
@@ -250,330 +265,78 @@
     place-content: center;
     border: 1px solid black;
     border-radius: 6px;
+    max-width: 100%;
+    float: left;
+    
 }
-.contiene1 .label_descripcion{/*label*/
+.contiene1 .label_descripcion{/*label*
     background-color: grey;
-    /*background-color: transparent;*/
-    display: inline-flex;
+    /*background-color: transparent;*
+    display: flex;
     width: 90%;
     height: 50%;
     border: 1px solid black;
     position: relative;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
 }
 
 
-.contiene1 .descripcion{/*input*/
+.contiene1 .descripcion{/*input*
     background-color: rgb(25, 35, 173);
-    display: inline-flex;
+    display: flex;
     width: 95%;
     height: 55%;
-    position: absolute;
+    position: relative;
     align-items: center;
-    /*margin-top: 5px;
-    margin-left: 5px;*/
+    margin-top: 5px;
+    margin-left: 5px;
     justify-content: left;
-}
+    border-radius: 6px;
+    max-width: 100%;
+}/*
 .contiene1 .textarea{
         resize: none;
         overflow: scroll;
         top: 55px;
         display: block;
         position: absolute;
-}
+}*/
 /*****************************************************/
 
 /******************************************************/
-.contiene1 .prevta_input{/*div*/
-    background-color: cornflowerblue;
-    display: flex;
-    width: 20%;
+.contiene1 .prevta_input{/*este es el div*/
+    background-color: rgb(155, 23, 45);
+    display: inline-flex;
+    width: 17%;
     height: 15%;
-    position: absolute;
+    float: left;
+    /*position: absolute;*/
     align-items: center;
+    margin-top: 1%;
+    margin-left: 2%;
+    /*justify-content: center;
     place-content: center;
-    /* margin-top: 70px;
-    margin-left: 5px; */
-    margin-top: 11%;
-    margin-left: 24%;
-    justify-content: center;
-    border-radius: 6px;
+    border: 1px solid black;*/
+    border-radius: 6px;  
 }
-.contiene1 .label_prevta{
+.contiene1 .label_prevta{/*label*/
     background-color: grey;
-    background-color: transparent;
-    display: inline-flex;
-    width: 80%;
-    height: 50%;
-    border: 1px solid black;
-    position: relative;
-    align-items: center;
-    justify-content: left;
-}
-.contiene1 .prevta{
-    background-color: white;
-    display: inline-flex;
-    width: 95%;
+    /*background-color: transparent;*/
+    display: flex;
+    width: 45%;
     height: 55%;
+    border: 1px solid black;
     position: relative;
     align-items: center;
     justify-content: left;
-    border: 1px solid black;
-    
+    max-width: 100%;
 }
-/******************************************************/
-
-
-
-/******************************************************/
-.contiene1 .stock_input{/*div*/
-    background-color: rgb(237, 100, 184);
+.contiene1 .prevta{/*input*/
+    background-color: white;
     /*background: transparent;*/
     display: flex;
-    width: 20%;
-    height: 15%;
-    position: absolute;
-    align-items: center;
-    place-content: center;
-    /* margin-top: 70px;
-    margin-left: 5px; */
-    margin-top: 21%;
-    margin-left: 1%;
-    justify-content: center;
-    border-radius: 6px;
-   
-}
-.contiene1 .label_stock{
-    background-color: grey;
-    /*background-color: transparent;*/
-    display: inline-flex;
-    width: 80%;
-    height: 50%;
-    border: 1px solid black;
-    position: relative;
-    align-items: center;
-    justify-content: left;
-}
-.contiene1 .stock{
-    background-color: white;
-    display: inline-flex;
-    width: 95%;
-    height: 55%;
-    position: relative;
-    align-items: center;
-    justify-content: left;
-    border: 1px solid black
-}
-/*********************************************************/
-
-
-/*********************************************************/
-.contiene1 .precto_input{/*div*/
-    background-color: magenta;
-    display: flex;
-    width: 20%;
-    height: 15%;
-    position: absolute;
-    align-items: center;
-    /* margin-top: 70px;
-    margin-left: 5px; */
-    margin-top: 16%;
-    margin-left: 24%;
-    place-content: center;
-    justify-content: center;
-    border-radius: 6px;
-    
-}
-.contiene1 .label_precto{/*label*/
-    background-color: grey;
-    background-color: transparent;
-    display: inline-flex;
-    width: 20%;
-    height: 50%;
-    border: 1px solid black;
-    position: relative;
-    align-items: center;
-    justify-content: left;
-}
-.contiene1 .precto{/*input*/
-    background-color: white;
-    display: inline-flex;
-    width: 95%;
-    height: 55%;
-    position: relative;
-    align-items: center;
-    justify-content: left;
-    border: 1px solid black;
-    
-}
-/*********************************************************/
-
-
-/*********************************************************/
-.contiene1 .iva_input{/*div*/
-    background-color: rgb(205, 50, 84);
-    display: flex;
-    width: 20%;
-    height: 15%;
-    position: absolute;
-    align-items: center;
-    /* margin-top: 70px;
-    margin-right: 5px; */
-    margin-top: 21%;
-    margin-left: 24%;
-    justify-content: center;
-    place-content: center;
-    border: 1px solid black;
-    border-radius: 6px;
-   
-}
-.contiene1 .label_iva{/*label*/
-    background-color: grey;
-    /*background-color: transparent;*/
-    display: inline-flex;
-    width: 30%;
-    height: 50%;
-    position: relative;
-    align-items: center;
-    /*margin-top: 1px;
-    margin-left: 1px;*/
-    border: 1px solid black;
-    justify-content: left;    
-}
-.contiene1 .iva{/*input*/
-    background-color: white;
-    display: inline-flex;
-    width: 95%;
-    height: 55%;
-    position: relative;
-    align-items: center;
-    /*margin-top: 5px;
-    margin-left: 5px;*/
-    justify-content: left;
-    border: 1px solid black;
-}
-/*********************************************************/
-
-/*********************************************************/
-.contiene1 .gancia_input{/*div*/
-    background-color: yellow;
-    display: flex;
-    width: 20%;
-    height: 15%;
-    position: absolute;
-    margin-top: 6%;
-    left: 24%;
-    align-items: center;
-    justify-content: center;
-    place-content: center;
-    border: 1px solid black;
-    border-radius: 6px;
-    
-}
-
-.contiene1 .label_gancia{/*label*/
-    background-color: grey;
-    background-color: transparent;
-    display: inline-flex;
-    width: 80%;
-    height: 50%;
-    border: 1px solid black;
-    position: relative;
-    align-items: center;
-    justify-content: left;
-}
-
-.contiene1 .gancia{/*input*/
-    background-color: white;
-    display: inline-flex;
-    width: 95%;
-    height: 55%;
-    position: relative;
-    align-items: center;
-    justify-content: left;
-    border: 1px solid black;
-    
-}
-/*********************************************************/
-
-
-/*********************************************************/
-.contiene1 .modelo_input{/*div*/
-    background-color: rgb(0, 255, 0);
-    display: flex;
-    width: 20%;
-    height: 15%;
-    position: absolute;
-    margin-top: 11%;
-    margin-left: 1%;
-    align-items: center;
-    justify-content: center;
-    place-content: center;
-    border: 1px solid black;
-    border-radius: 6px;
-   
-}
-
-.contiene1 .label_modelo{/*label*/
-    background-color: grey;
-    background-color: transparent;
-    display: flex;
-    width: 40%;
-    height: 50%;
-    border: 1px solid black;
-    position: relative;
-    align-items: center;
-    justify-content: left;
-}
-
-.contiene1 .modelo{/*input*/
-    background-color: white;
-    display: inline-flex;
-    width: 95%;
-    height: 55%;
-    position: relative;
-    align-items: center;
-    justify-content: left;
-    border: 1px solid black;
-    
-}
-/*********************************************************/
-
-
-/**********************************************************/
-.contiene1 .proveedor_input{/*div*/
-    background-color: lightslategrey;
-    display: flex;
-    width: 20%;
-    height: 15%;
-    position: absolute;
-    margin-top: 1%;
-    margin-left: 46.5%;
-    align-items: center;
-    justify-content: center;
-    place-content: center;
-    border: 1px solid black;
-    border-radius: 6px;
-    
-}
-
-
-.contiene1 .label_proveedor{/*label*/
-    background-color: grey;
-    background-color: transparent;
-    display: inline-flex;
-    width: 40%;
-    height: 50%;
-    border: 1px solid black;
-    position: relative;
-    align-items: center;
-    justify-content: left;
-}
-
-.contiene1 .proveedor{/*input*/
-    background-color: white;
-    display: inline-flex;
     width: 95%;
     height: 55%;
     position: relative;
@@ -581,10 +344,286 @@
     justify-content: left;
     border: 1px solid black;
     float: left;
+    border-radius: 6px;
+}
+/******************************************************/
+
+
+
+/******************************************************/
+.contiene1 .stock_input{/*este es el div*/
+    background-color: rgb(155, 23, 45);
+    display: inline-flex;
+    width: 17%;
+    height: 15%;
+    float: left;
+    /*position: absolute;*/
+    align-items: center;
+    margin-top: 1%;
+    margin-left: 2%;
+    /*justify-content: center;
+    place-content: center;
+    border: 1px solid black;*/
+    border-radius: 6px;  
+}
+.contiene1 .label_stock{/*label*/
+    background-color: grey;
+    /*background-color: transparent;*/
+    display: flex;
+    width: 45%;
+    height: 55%;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    max-width: 100%;
+    border-radius: 6px;
+}
+.contiene1 .stock{/*input*/
+    background-color: white;
+    /*background: transparent;*/
+    display: flex;
+    width: 95%;
+    height: 55%;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+    border-radius: 6px;
+}
+/*********************************************************/
+
+/*********************************************************/
+.contiene1 .precto_input{/*este es el div*/
+    background-color: rgb(155, 23, 45);
+    display: flex;
+    width: 17%;
+    height: 15%;
+    float: left;
+    /*position: absolute;*/
+    align-items: center;
+    margin-top: 1%;
+    margin-left: 2%;
+    /*justify-content: center;
+    place-content: center;
+    border: 1px solid black;*/
+    border-radius: 6px;  
+    
+}
+.contiene1 .label_precto{/*label*/
+    background-color: grey;
+    /*background-color: transparent;*/
+    display: flex;
+    width: 45%;
+    height: 55%;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    max-width: 100%;
+}
+.contiene1 .precto{/*input*/
+    background-color: white;
+    /*background: transparent;*/
+    display: flex;
+    width: 95%;
+    height: 55%;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+    border-radius: 6px;
+}
+/*********************************************************/
+
+
+/*********************************************************/
+.contiene1 .iva_input{/*este es el div*/
+    background-color: rgb(155, 23, 45);
+    display: flex;
+    width: 7%;
+    height: 15%;
+    float: left;
+    /*position: absolute;*/
+    align-items: center;
+    margin-top: 1%;
+    margin-left: 2%;
+    /*justify-content: center;
+    place-content: center;
+    border: 1px solid black;*/
+    border-radius: 6px;   
+}
+.contiene1 .label_iva{/*label*/
+    background-color: grey;
+    /*background-color: transparent;*/
+    display: flex;
+    width: 45%;
+    height: 55%;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    max-width: 100%;
+}
+.contiene1 .iva{/*input*/
+    background-color: white;
+    /*background: transparent;*/
+    display: flex;
+    width: 95%;
+    height: 55%;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+    border-radius: 6px;
+}
+/*********************************************************/
+
+/*********************************************************/
+.contiene1 .gancia_input{/*este es el div*/
+    background-color: rgb(155, 23, 45);
+    display: flex;
+    width: 19%;
+    height: 15%;
+    float: left;
+    /*position: absolute;*/
+    align-items: center;
+    margin-top: 1%;
+    margin-left: 1%;
+    /*justify-content: center;
+    place-content: center;
+    border: 1px solid black;*/
+    border-radius: 6px;  
+    
+}
+
+.contiene1 .label_gancia{/*label*/
+    background-color: grey;
+    /*background-color: transparent;*/
+    display: flex;
+    width: 45%;
+    height: 55%;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    max-width: 100%;
+}
+.contiene1 .gancia{/*input*/
+    background-color: white;
+    /*background: transparent;*/
+    display: flex;
+    width: 95%;
+    height: 55%;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+    border-radius: 6px;
+}
+/*********************************************************/
+
+
+/*********************************************************/
+.contiene1 .modelo_input{/*este es el div*/
+    background-color: rgb(155, 23, 45);
+    display: flex;
+    width: 17%;
+    height: 15%;
+    float: left;
+    /*position: absolute;*/
+    align-items: center;
+    margin-top: 1%;
+    margin-left: 2%;
+    /*justify-content: center;
+    place-content: center;
+    border: 1px solid black;*/
+    border-radius: 6px;  
+}
+
+.contiene1 .label_modelo{/*label*/
+    background-color: grey;
+    /*background-color: transparent;*/
+    display: flex;
+    width: 45%;
+    height: 55%;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    max-width: 100%;
+}
+.contiene1 .modelo{/*input*/
+    background-color: white;
+    /*background: transparent;*/
+    display: flex;
+    width: 95%;
+    height: 55%;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+    border-radius: 6px;
+}
+/*********************************************************/
+
+
+/**********************************************************/
+.contiene1 .proveedor_input{/*este es el div*/
+    background-color: rgb(155, 23, 45);
+    display: flex;
+    width: 19%;
+    height: 15%;
+    float: left;
+    /*position: absolute;*/
+    align-items: center;
+    margin-top: 1%;
+    margin-left: 2%;
+    /*justify-content: center;
+    place-content: center;
+    border: 1px solid black;*/
+    border-radius: 6px;  
+}
+.contiene1 .label_proveedor{/*label*/
+    background-color: grey;
+    /*background-color: transparent;*/
+    display: flex;
+    width: 45%;
+    height: 55%;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    max-width: 100%;
+}
+.contiene1 .proveedor{/*input*/
+    background-color: white;
+    /*background: transparent;*/
+    display: flex;
+    width: 95%;
+    height: 55%;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+    border-radius: 6px;
 }
 /**********************************************************/
 
 /*********************************************************/
+
+/*********************************************************/
+/* CSS USUARIOS******************************************/
+/********************************************************/
+
+
+
 
 
 
