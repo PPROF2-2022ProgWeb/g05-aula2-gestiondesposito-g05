@@ -93,7 +93,8 @@
     height: 100%;
     border: 1px solid black;
     position: relative;
-    border-radius: 6px;   
+    border-radius: 6px;  
+    padding: 1px; 
     
 }
 .contiene1 .codigo{/*input*/
@@ -139,6 +140,7 @@
     justify-content: left;
     max-width: 100%;
     border-radius: 6px;
+    padding: 1px;
 }
 .contiene1 .rubro{/*input*/
     background-color: white;
@@ -189,6 +191,7 @@
     justify-content: left;
     max-width: 100%;
     border-radius: 6px;
+    padding: 1px;
 }
 .contiene1 .marca{/*input*/
     background-color: white;
