@@ -6,6 +6,11 @@
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "inline-flex";
     }
+    x = document.querySelectorAll(".alta_b");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "block";
+      x[i].style.border = "1px solid white";
+    }
 }
 /*-----------------------------------------------------------------------------------*/
  function modificar() {
@@ -15,7 +20,11 @@
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "inline-flex";
     }
-
+    x = document.querySelectorAll(".modifica_b");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "block";
+      x[i].style.border = "1px solid white";
+    }
 }
 /*-----------------------------------------------------------------------------------*/
 function baja() {
@@ -23,11 +32,24 @@ function baja() {
     x = document.querySelectorAll(".baja");
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "inline-flex";
-     
+    }
+    x = document.querySelectorAll(".baja_b");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "block";
+      x[i].style.border = "1px solid white";
     }
 }
 function consulta() {
   borra();
+  x = document.querySelectorAll(".consulta");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "inline-flex";
+  }
+  x = document.querySelectorAll(".consulta_b");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "block";
+    x[i].style.border = "1px solid white";
+  }
 }
 /*-----------------------------------------------------------------------------------*/
 
@@ -38,6 +60,11 @@ function borra() {
     for (j = 0; j < x.length; j++) {
       x[j].style.display = "none";
       x[j].value = "";
+    }
+    x = document.querySelectorAll(".alta_b, .modifica_b, .baja_b, .consulta_b");
+    for (i = 0; i < x.length; i++) {
+      // // x[i].style.display = "block";
+      x[i].style.border = "none";
     }
   }
   /*-----------------------------------------------------------------------------------*/

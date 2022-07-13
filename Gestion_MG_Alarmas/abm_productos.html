@@ -93,10 +93,10 @@
 <div class="contiene1">
 
     <ul class="abm_nav esp" id="abmi_nav">
-        <li><input type="button" value="Alta" class="button_abm" onclick="alta()"></li>
-        <li><input type="button" value="Modifica" class="button_abm" onclick="modificar()"></li>
-        <li><input type="button" value="Baja" class="button_abm" onclick="baja()"></li>
-        <li><input type="button" value="Consulta" class="button_abm" onclick="consulta()"></li>
+        <li><input type="button" value="Alta" class="button_abm alta_b" onclick="alta()"></li>
+        <li><input type="button" value="Modifica" class="button_abm modifica_b" onclick="modificar()"></li>
+        <li><input type="button" value="Baja" class="button_abm baja_b" onclick="baja()"></li>
+        <li><input type="button" value="Consulta" class="button_abm consulta_b" onclick="consulta()"></li>
 
     </ul>
 
@@ -135,9 +135,9 @@
             <label for="codigo" class="label_codigo">Codigo</label>
             <input type="text"  name="Codigo" class="codigo" id="codigo">
         </div>
-        <div class="rubro_input alta">
+
+        <div class="rubro_input alta modif">
             <label for="rubro" class="label_rubro">Rubro</label>
-                      
             <select name="Rubro">
                 <option value="Rub" selected="selected">Rubro</option>
              </select>
@@ -155,7 +155,7 @@
                 placeholder="Descripcion del producto"></textarea>
         </div>
         
-       <div class="origen_input alta">
+       <div class="origen_input alta modif">
             <label for="origen" class="label_origen">Origen</label>
             <input type="text"  name="Origen" class="origen" id="origen">
         </div>

@@ -173,3 +173,18 @@ ul {
     cursor: pointer;
     display: none;
 }
+/*--------------------------------------------------------------*/
+/*Responsive para celulares 576px */
+/*--------------------------------------------------------------*/
+@media screen and (max-width: 576px) {
+    #lista_nav{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
