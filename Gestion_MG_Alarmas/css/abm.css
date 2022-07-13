@@ -4,7 +4,7 @@
     position: relative;
     margin-top: 13%;
     width: 100%;
-    height: 400px;
+    height: 450px;
     background:rgba(0, 128, 255, 0.5);
     /* border: 1px solid #E0E0E0; */
     box-shadow: 0 0 10px #E0E0E0;
@@ -65,15 +65,12 @@
     margin-left: 600%;
     width: 140px;
 }
-.clear{
-    clear: both;
-}
 
 /**********************************************************/
 .contiene1 .codigo_input{/*este es el div*/
     background-color: rgb(155, 23, 45);
     display: inline-flex;
-    width: 17%;
+    width: 30%;
     height: 15%;
     float: left;
     /*position: absolute;*/
@@ -84,6 +81,7 @@
     /*place-content: center;*/
     border: 1px solid black;
     border-radius: 6px;  
+    padding: 15px;
     
     
 }
@@ -91,11 +89,11 @@
     background-color: grey;
     /*background-color: transparent;*/
     display: flex;
-    width: 45%;
+    width: 85%;
     height: 100%;
     border: 1px solid black;
     position: relative;
-    
+    border-radius: 6px;   
     
 }
 .contiene1 .codigo{/*input*/
@@ -115,30 +113,32 @@
 .contiene1 .rubro_input{/*este es el div*/
     background-color: rgb(155, 23, 45);
     display: inline-flex;
-    width: 17%;
+    width: 30%;
     height: 15%;
     float: left;
     /*position: absolute;*/
     /*align-items: center;*/
     margin-top: 1%;
-    margin-left: 2%;
+    margin-left: 1%;
     justify-content: space-around;
     /*place-content: center;*/
     border: 1px solid black;
     border-radius: 6px;  
+    padding: 15px;
 }
 
 .contiene1 .label_rubro{/*label*/
     background-color: grey;
     /*background-color: transparent;*/
     display: flex;
-    width: 45%;
+    width: 75%;
     height: 55%;
     border: 1px solid black;
     position: relative;
     align-items: center;
     justify-content: left;
     max-width: 100%;
+    border-radius: 6px;
 }
 .contiene1 .rubro{/*input*/
     background-color: white;
@@ -162,17 +162,18 @@
 .contiene1 .marca_input{/*este es el div*/
     background-color: rgb(155, 23, 45);
     display: inline-flex;
-    width: 17%;
+    width: 30%;
     height: 15%;
     float: left;
     /*position: absolute;*/
     align-items: center;
     margin-top: 1%;
-    margin-left: 2%;
-    /*justify-content: center;
-    place-content: center;
-    border: 1px solid black;*/
+    margin-left: 1%;
+    justify-content: space-around;
+    /*place-content: center;*/
+    border: 1px solid black;
     border-radius: 6px;  
+    padding: 15px;
    
 }
 
@@ -180,13 +181,14 @@
     background-color: grey;
     /*background-color: transparent;*/
     display: flex;
-    width: 45%;
+    width: 75%;
     height: 55%;
     border: 1px solid black;
     position: relative;
     align-items: center;
     justify-content: left;
     max-width: 100%;
+    border-radius: 6px;
 }
 .contiene1 .marca{/*input*/
     background-color: white;
@@ -208,30 +210,32 @@
 .contiene1 .origen_input{/*este es el div*/
     background-color: rgb(155, 23, 45);
     display: inline-flex;
-    width: 17%;
+    width: 30%;
     height: 15%;
     float: left;
     /*position: absolute;*/
     align-items: center;
     margin-top: 1%;
-    margin-left: 2%;
-    /*justify-content: center;
-    place-content: center;
+    margin-left: 1%;
+    justify-content: space-around;
+    /*place-content: center;
     border: 1px solid black;*/
     border-radius: 6px;      
+    padding: 15px;
 }
 
 .contiene1 .label_origen{/*label*/
     background-color: grey;
     /*background-color: transparent;*/
     display: flex;
-    width: 45%;
+    width: 75%;
     height: 55%;
     border: 1px solid black;
     position: relative;
     align-items: center;
     justify-content: left;
     max-width: 100%;
+    border-radius: 6px;
 }
 .contiene1 .origen{/*input*/
     background-color: white;
@@ -249,89 +253,35 @@
 /*****************************************************/
 
 
-/*****************************************************/
-/*.contiene1 .descripcion_input{/*div*
-    background-color: rgb(255, 0, 234);
-    /*background: transparent;*
-    display: flex;
-    width: 20%;
-    height: 15%;
-    /*position: absolute;*
-    top: 50px;
-    align-items: center;
-    margin-top: 6%;
-    margin-left: 46.5%;
-    justify-content: center;
-    place-content: center;
-    border: 1px solid black;
-    border-radius: 6px;
-    max-width: 100%;
-    float: left;
-    
-}
-.contiene1 .label_descripcion{/*label*
-    background-color: grey;
-    /*background-color: transparent;*
-    display: flex;
-    width: 90%;
-    height: 50%;
-    border: 1px solid black;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
-}
-
-
-.contiene1 .descripcion{/*input*
-    background-color: rgb(25, 35, 173);
-    display: flex;
-    width: 95%;
-    height: 55%;
-    position: relative;
-    align-items: center;
-    margin-top: 5px;
-    margin-left: 5px;
-    justify-content: left;
-    border-radius: 6px;
-    max-width: 100%;
-}/*
-.contiene1 .textarea{
-        resize: none;
-        overflow: scroll;
-        top: 55px;
-        display: block;
-        position: absolute;
-}*/
-/*****************************************************/
-
 /******************************************************/
 .contiene1 .prevta_input{/*este es el div*/
     background-color: rgb(155, 23, 45);
     display: inline-flex;
-    width: 17%;
+    width: 30%;
     height: 15%;
     float: left;
     /*position: absolute;*/
     align-items: center;
     margin-top: 1%;
-    margin-left: 2%;
-    /*justify-content: center;
-    place-content: center;
+    margin-left: 1%;
+    justify-content: space-around;
+    /*place-content: center;
     border: 1px solid black;*/
     border-radius: 6px;  
+    padding: 15px;
 }
 .contiene1 .label_prevta{/*label*/
     background-color: grey;
     /*background-color: transparent;*/
     display: flex;
-    width: 45%;
+    width: 60%;
     height: 55%;
     border: 1px solid black;
     position: relative;
     align-items: center;
     justify-content: left;
     max-width: 100%;
+    border-radius: 6px;
 }
 .contiene1 .prevta{/*input*/
     background-color: white;
@@ -354,30 +304,32 @@
 .contiene1 .stock_input{/*este es el div*/
     background-color: rgb(155, 23, 45);
     display: inline-flex;
-    width: 17%;
+    width: 30%;
     height: 15%;
     float: left;
     /*position: absolute;*/
     align-items: center;
     margin-top: 1%;
-    margin-left: 2%;
-    /*justify-content: center;
-    place-content: center;
-    border: 1px solid black;*/
+    margin-left: 1%;
+    justify-content: space-around;
+    /*place-content: center;*/
+    border: 1px solid black;
     border-radius: 6px;  
+    padding: 15px;
+    
+    
 }
 .contiene1 .label_stock{/*label*/
     background-color: grey;
     /*background-color: transparent;*/
     display: flex;
-    width: 45%;
-    height: 55%;
+    width: 75%;
+    height: 100%;
     border: 1px solid black;
     position: relative;
-    align-items: center;
-    justify-content: left;
-    max-width: 100%;
     border-radius: 6px;
+    
+    
 }
 .contiene1 .stock{/*input*/
     background-color: white;
@@ -386,10 +338,7 @@
     width: 95%;
     height: 55%;
     position: relative;
-    align-items: center;
-    justify-content: left;
     border: 1px solid black;
-    float: left;
     border-radius: 6px;
 }
 /*********************************************************/
@@ -398,30 +347,32 @@
 .contiene1 .precto_input{/*este es el div*/
     background-color: rgb(155, 23, 45);
     display: flex;
-    width: 17%;
+    width: 30%;
     height: 15%;
     float: left;
     /*position: absolute;*/
     align-items: center;
     margin-top: 1%;
-    margin-left: 2%;
-    /*justify-content: center;
-    place-content: center;
+    margin-left: 1%;
+    justify-content: space-around;
+    /*place-content: center;
     border: 1px solid black;*/
     border-radius: 6px;  
+    padding: 15px;
     
 }
 .contiene1 .label_precto{/*label*/
     background-color: grey;
     /*background-color: transparent;*/
     display: flex;
-    width: 45%;
+    width: 95%;
     height: 55%;
     border: 1px solid black;
     position: relative;
     align-items: center;
     justify-content: left;
     max-width: 100%;
+    border-radius: 6px;
 }
 .contiene1 .precto{/*input*/
     background-color: white;
@@ -443,29 +394,31 @@
 .contiene1 .iva_input{/*este es el div*/
     background-color: rgb(155, 23, 45);
     display: flex;
-    width: 7%;
+    width: 30%;
     height: 15%;
     float: left;
     /*position: absolute;*/
     align-items: center;
     margin-top: 1%;
-    margin-left: 2%;
-    /*justify-content: center;
-    place-content: center;
+    margin-left: 1%;
+    justify-content: space-around;
+    /*place-content: center;
     border: 1px solid black;*/
     border-radius: 6px;   
+    padding: 15px;
 }
 .contiene1 .label_iva{/*label*/
     background-color: grey;
     /*background-color: transparent;*/
     display: flex;
-    width: 45%;
+    width: 65%;
     height: 55%;
     border: 1px solid black;
     position: relative;
     align-items: center;
     justify-content: left;
     max-width: 100%;
+    border-radius: 6px;
 }
 .contiene1 .iva{/*input*/
     background-color: white;
@@ -486,17 +439,18 @@
 .contiene1 .gancia_input{/*este es el div*/
     background-color: rgb(155, 23, 45);
     display: flex;
-    width: 19%;
+    width: 30%;
     height: 15%;
     float: left;
     /*position: absolute;*/
     align-items: center;
     margin-top: 1%;
     margin-left: 1%;
-    /*justify-content: center;
-    place-content: center;
+    justify-content: space-around;
+    /*place-content: center;
     border: 1px solid black;*/
     border-radius: 6px;  
+    padding: 15px;
     
 }
 
@@ -504,13 +458,14 @@
     background-color: grey;
     /*background-color: transparent;*/
     display: flex;
-    width: 45%;
+    width: 75%;
     height: 55%;
     border: 1px solid black;
     position: relative;
     align-items: center;
     justify-content: left;
     max-width: 100%;
+    border-radius: 6px;
 }
 .contiene1 .gancia{/*input*/
     background-color: white;
@@ -532,30 +487,32 @@
 .contiene1 .modelo_input{/*este es el div*/
     background-color: rgb(155, 23, 45);
     display: flex;
-    width: 17%;
+    width: 30%;
     height: 15%;
     float: left;
     /*position: absolute;*/
     align-items: center;
     margin-top: 1%;
-    margin-left: 2%;
-    /*justify-content: center;
-    place-content: center;
+    margin-left: 1%;
+    justify-content: space-around;
+    /*place-content: center;
     border: 1px solid black;*/
     border-radius: 6px;  
+    padding: 15px;
 }
 
 .contiene1 .label_modelo{/*label*/
     background-color: grey;
     /*background-color: transparent;*/
     display: flex;
-    width: 45%;
+    width: 65%;
     height: 55%;
     border: 1px solid black;
     position: relative;
     align-items: center;
     justify-content: left;
     max-width: 100%;
+    border-radius: 6px;
 }
 .contiene1 .modelo{/*input*/
     background-color: white;
@@ -576,30 +533,33 @@
 /**********************************************************/
 .contiene1 .proveedor_input{/*este es el div*/
     background-color: rgb(155, 23, 45);
-    display: flex;
-    width: 19%;
+    display: inline-flex;
+    width: 30%;
     height: 15%;
     float: left;
     /*position: absolute;*/
     align-items: center;
     margin-top: 1%;
-    margin-left: 2%;
-    /*justify-content: center;
-    place-content: center;
-    border: 1px solid black;*/
+    margin-left: 1%;
+    justify-content: space-around;
+    /*place-content: center;*/
+    border: 1px solid black;
     border-radius: 6px;  
+    padding: 15px;
+    
+    
 }
 .contiene1 .label_proveedor{/*label*/
     background-color: grey;
     /*background-color: transparent;*/
     display: flex;
-    width: 45%;
-    height: 55%;
+    width: 95%;
+    height: 100%;
     border: 1px solid black;
     position: relative;
-    align-items: center;
-    justify-content: left;
-    max-width: 100%;
+    border-radius: 6px;
+    
+    
 }
 .contiene1 .proveedor{/*input*/
     background-color: white;
@@ -608,15 +568,62 @@
     width: 95%;
     height: 55%;
     position: relative;
-    align-items: center;
-    justify-content: left;
     border: 1px solid black;
-    float: left;
     border-radius: 6px;
 }
-/**********************************************************/
+/******************************************************************/
 
-/*********************************************************/
+/******************************************************************/
+
+.contiene1 .descripcion_input{/*este es el div*/
+    background-color: rgb(155, 23, 45);
+    display: inline-flex;
+    width: 30%;
+    height: 10%;
+    float: left;
+    /*position: absolute;*/
+    align-items: center;
+    margin-top: 1%;
+    margin-left: 1%;
+    /*justify-content: space-around;*/
+    place-content: down-center;
+    border: 1px solid black;
+    border-radius: 6px;      
+    /*padding: 10px;*/
+}
+
+.contiene1 .label_descripcion{/*label*/
+    background-color: grey;
+    /*background-color: transparent;*/
+    display: flex;
+    width: 82%;
+    height: 60%;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    /*max-width: 100%;*/
+    border-radius: 6px;
+}
+.contiene1 .descripcion{/*input*/
+    background-color: white;
+   /* background: transparent;*/
+    display: flex;
+    width: 95%;
+    height: 55%;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+.contiene1 .textarea{
+        resize: none;
+        overflow: scroll;
+        margin-top: 12%;
+        margin-right: 10%;
+        display: flex;
+        /*float: left;*/
+}
+
 
 /*********************************************************/
 /* CSS USUARIOS******************************************/

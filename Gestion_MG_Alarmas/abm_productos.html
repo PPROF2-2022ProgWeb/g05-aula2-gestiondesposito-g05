@@ -89,24 +89,8 @@
     </div>
 <!--------------------------------------------------------------------------------------->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!--------------------------------------------------------------------------------------->
 <div class="contiene1">
-
-
-
 
     <ul class="abm_nav esp" id="abmi_nav">
         <li><input type="button" value="Alta" class="button_abm" onclick="alta()"></li>
@@ -140,17 +124,7 @@
 <!-- </div> -->
 
 
-
-
-
-
-
-
-
     <div class="pestana_alta">
-
-
-
 
     <form>
     <div class="contiene_alta">
@@ -163,12 +137,10 @@
         </div>
         <div class="rubro_input alta">
             <label for="rubro" class="label_rubro">Rubro</label>
-            <input type="text"  name="Rubro" class="rubro" id="rubro">
-            
-            <!--<select name="Rubro">
-                               
+                      
+            <select name="Rubro">
                 <option value="Rub" selected="selected">Rubro</option>
-             </select>-->
+             </select>
         </div>
   
         
@@ -176,41 +148,38 @@
             <label for="marca" class="label_marca">Marca</label>
             <input type="text"  name="Marca" class="marca" id="marca">
         </div>
+
+        <div class="descripcion_input alta modif">
+            <label for="descripcion" class="label_descripcion">Descripcion</label>
+            <textarea class="textarea" name="mensaje" rows="3" cols="5"  
+                placeholder="Descripcion del producto"></textarea>
+        </div>
         
        <div class="origen_input alta">
             <label for="origen" class="label_origen">Origen</label>
             <input type="text"  name="Origen" class="origen" id="origen">
         </div>
 
-
-
-
-
         
-        
-        <!--<div class="descripcion_input alta modif">
-            <label for="descripcion" class="label_descripcion">Descripcion del Producto</label>
-            <textarea class="textarea" name="mensaje" rows="6" cols="10"  
-                placeholder="Descripcion del producto"></textarea>
-        </div>-->
-
-
-
-
-
-
         
         <div class="prevta_input alta modif">
             <label for="prevta" class="label_prevta">Precio</label>
             <input type="text"  name="Precio de Venta" class="prevta" id="prevta">
         </div>
 
-        <div class="clear">
+        
         <div class="stock_input alta">
             <label for="stock" class="label_stock">Stock</label>
             <input type="text"  name="Stock" class="stock" id="stock">
         </div>
-        </div>
+        <div class="proveedor_input alta">
+            <label for="proveedor" class="label_proveedor">Proveedor</label>
+          <select name="Proveedor">
+                
+                <option value="prov" selected="selected">Proveedor</option>
+          </select>
+        </div>    
+        
         
         <div class="precto_input alta modif">
             <label for="precto" class="label_precto">Costo</label>
@@ -221,12 +190,12 @@
             <label for="iva" class="label_iva">Iva</label>
 
            <select name="Iva">
-                <!--<option value="D">10,5%</option>
-                <option value="V" selected="selected">21%</option>-->
+                <option value="D">10,5%</option>
+                <option value="V" selected="selected">21%</option>
                 
              </select>
         </div>
-
+        
         <div class="gancia_input alta">
             <label for="gancia" class="label_gancia">Ganancia</label>
             <input type="text"  name="Ganancia" class="gancia" id="gancia">
@@ -236,17 +205,6 @@
             <label for="modelo" class="label_modelo">Modelo</label>
             <input type="text"  name="Modelo" class="modelo" id="modelo">
         </div>
-
-        <div class="proveedor_input alta">
-            <label for="proveedor" class="label_proveedor">Proveedor</label>
-            <input type="text"  name="proveedor" class="proveedor" id="proveedor">
-
-           <!-- <select name="Proveedor">
-                
-                <option value="prov" selected="selected">Proveedor</option>
-             </select>-->
-        </div>
-
 
         <button type="submit" class="button_abm graba" id="exito">Grabar</button>
 
