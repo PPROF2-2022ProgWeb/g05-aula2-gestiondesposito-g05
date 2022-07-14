@@ -108,161 +108,124 @@
 
     </ul>
 
-    <!-- <input type="button" value="Alta" class="boton_alta" onclick="alta()">
-</div>
-
-<div class="pestaña_modi">
-    <input type="button" value="Modifica" class="boton_modi" onclick="modificar()">
-</div>
-
-<div class="pestaña_baja">
-    <input type="button" value="Baja" class="boton_baja" onclick="baja()">
-</div>
-
-<div class="pestaña_consulta">
-    <input type="button" value="Consulta" class="boton_consulta" onclick="consulta()"> -->
-<!-- </div> -->
-
-
     <div class="pestana_alta">
 
-    <form>
-    <div class="contiene_alta">
+        <form>
+            <div class="contiene_alta">
+                <div class="codigo_input alta baja">
+                    <label for="codigo" class="label_codigo">Codigo</label>
+                    <input type="text"  name="Codigo" class="codigo" id="codigo">
+                </div>
 
-        <!-- <button type="submit" class="button_abm graba" id="exito">Grabar</button> -->
-        
-        <div class="codigo_input alta baja">
-            <label for="codigo" class="label_codigo">Codigo</label>
-            <input type="text"  name="Codigo" class="codigo" id="codigo">
-        </div>
-
-        <div class="rubro_input alta modif">
-            <label for="rubro" class="label_rubro">Rubro</label>
-            <select name="Rubro">
-                <option value="Rub" selected="selected">Rubro</option>
-             </select>
-        </div>
+            <div class="rubro_input alta modif">
+                    <label for="rubro" class="label_rubro">Rubro</label>
+                <select name="Rubro">
+                    <option value="Rub" selected="selected">Rubro</option>
+                </select>
+            </div>
   
         
-        <div class="marca_input alta baja modif">
-            <label for="marca" class="label_marca">Marca</label>
-            <input type="text"  name="Marca" class="marca" id="marca">
-        </div>
+            <div class="marca_input alta baja modif">
+                <label for="marca" class="label_marca">Marca</label>
+                <input type="text"  name="Marca" class="marca" id="marca">
+            </div>
 
-        <div class="descripcion_input alta modif">
-            <label for="descripcion" class="label_descripcion">Descripcion</label>
-            <textarea class="textarea" name="mensaje" rows="3" cols="5"  
+            <div class="descripcion_input alta modif">
+                <label for="descripcion" class="label_descripcion">Descripcion</label>
+                <textarea class="textarea" name="mensaje" rows="3" cols="5"  
                 placeholder="Descripcion del producto"></textarea>
-        </div>
+            </div>
         
-       <div class="origen_input alta modif">
-            <label for="origen" class="label_origen">Origen</label>
-            <input type="text"  name="Origen" class="origen" id="origen">
-        </div>
+            <div class="origen_input alta modif">
+                <label for="origen" class="label_origen">Origen</label>
+                <input type="text"  name="Origen" class="origen" id="origen">
+            </div>
+            
+            <div class="prevta_input alta modif">
+                <label for="prevta" class="label_prevta">Precio</label>
+                <input type="text"  name="Precio de Venta" class="prevta" id="prevta">
+            </div>
+        
+            <div class="stock_input alta modif">
+                <label for="stock" class="label_stock">Stock</label>
+                <input type="text"  name="Stock" class="stock" id="stock">
+            </div>
 
+            <div class="proveedor_input alta">
+                <label for="proveedor" class="label_proveedor">Proveedor</label>
+                <select name="Proveedor">
+                    <option value="prov" selected="selected">Prove</option>
+                </select>
+            </div>    
         
-        
-        <div class="prevta_input alta modif">
-            <label for="prevta" class="label_prevta">Precio</label>
-            <input type="text"  name="Precio de Venta" class="prevta" id="prevta">
-        </div>
+            <div class="precto_input alta modif">
+                <label for="precto" class="label_precto">Costo</label>
+                <input type="text"  name="Precio de Costo" class="precto" id="precto">
+            </div> 
 
+            <div class="iva_input alta modif" >
+                <label for="iva" class="label_iva">Iva</label>
+                <select name="Iva">
+                    <option value="D">10,5%</option>
+                    <option value="V" selected="selected">21%</option>
+                </select>
+            </div>
         
-        <div class="stock_input alta modif">
-            <label for="stock" class="label_stock">Stock</label>
-            <input type="text"  name="Stock" class="stock" id="stock">
-        </div>
-        <div class="proveedor_input alta modif">
-            <label for="proveedor" class="label_proveedor">Proveedor</label>
-          <select name="Proveedor">
-                
-                <option value="prov" selected="selected">Proveedor</option>
-          </select>
-        </div>    
+            <div class="gancia_input alta modif">
+                <label for="gancia" class="label_gancia">Ganancia</label>
+                <input type="text"  name="Ganancia" class="gancia" id="gancia">
+            </div>
+
+            <div class="modelo_input alta baja modif">
+                <label for="modelo" class="label_modelo">Modelo</label>
+                <input type="text"  name="Modelo" class="modelo" id="modelo">
+            </div>
         
-        
-        <div class="precto_input alta modif">
-            <label for="precto" class="label_precto">Costo</label>
-            <input type="text"  name="Precio de Costo" class="precto" id="precto">
-        </div> 
-
-        <div class="iva_input alta modif" >
-            <label for="iva" class="label_iva">Iva</label>
-
-           <select name="Iva">
-                <option value="D">10,5%</option>
-                <option value="V" selected="selected">21%</option>
-                
-             </select>
-        </div>
-        
-        <div class="gancia_input alta modif">
-            <label for="gancia" class="label_gancia">Ganancia</label>
-            <input type="text"  name="Ganancia" class="gancia" id="gancia">
-        </div>
-
-        <div class="modelo_input alta baja modif">
-            <label for="modelo" class="label_modelo">Modelo</label>
-            <input type="text"  name="Modelo" class="modelo" id="modelo">
-        </div>
-
-        <button type="submit" class="button_abm graba" id="exito">Grabar</button>
 
         </form>
     </div> 
 
-    </div>
-
-      
-<!---------------------FIN CLASS CONTIENE ALTA----------------------------------------------------->
 
 
-<!---------------------TABLA PARA CONSULTA----------------------------------------------------->
+            <div class="contenedor_tabla" style="display: none;">
+                <table class="tabla1" style="display: none;">
+                    <thead >
+                        <tr>
+                            <th>Codigo</th><th>Descripcion</th><th>Precio</th><th>Stock</th>
+                        </tr>
+                    </thead>
+ 
+                <tbody id="cuerpoTabla">
+                        <td>
+                            <th><input type="text" name="codigo" class="codigo" id="codigo"></th>
+                            <th><input type="text" name="descipcion" class="descripcion" id="descripcion"></th>
+                            <th><input type="text" name="precio" class="precio" id="precio"></th>
+                            <th><input type="text" name="stock" class="stock" id="stock"></th>
+                        </td>
+                </tbody>
 
+                </table>
+            </div>
+     <!---------------------Button grabar --------------------------------------------------->
 
-
-
-
-
-
-
-
-
-
-<!---------------------COMIENZO CLASS CONTIENE MODIFICAR---------------------------------------->
-
-
-    
-<!--<form style="display: block; background-color: rgb(127, 187, 255);">
-    <div class="contiene_modi">
-        
-        <div class="codigo_input">
-            <label for="codigo" class="label_codigo">Codigo</label>
-            <input type="text"  name="Codigo" class="codigo" id="codigo">
-        </div>
        
-        <div class="nombre_input">
-            <label for="nombre" class="label_nombre">Nombre</label>
-            <input type="text"  name="Nombre" class="nombre" id="nombre">
-        </div>
-    </div>    
-</form>-->
-
-    
-
+        <button type="submit" class="button_abm graba" id="boton_m">Grabar</button>
+   
+             <!---------------------CARTEL LEER ---------------------------------------------------->
+            <div class="ventana_abm" style="display: none;">
+                <h4> Contenido no apto para celulares</h4>
+            </div>
+<!---------------------FIN CARTEL LEER ----------------------------------------------------->
 
 
-
-
-<!--------------------FIN CLASS CONTIENE BAJA----------------------------------------------->
-
-
-    <!--<div class="contiene_baja">
     </div>
-        </form>-->
+      
+    <!-------------------------------------------------------------------------->
 
 
 
+</div>
+</div>
 </div>
 
 
