@@ -60,17 +60,16 @@
 }
 
 .graba{
-    position: relative;
-    margin-top: 200%;
-    margin-left: 600%;
+    position: absolute;
+    margin-top: 320px;
+    margin-left: 50%;
     width: 140px;
 }
-
 /**********************************************************/
 .contiene1 .codigo_input{/*este es el div*/
     background-color: rgb(155, 23, 45);
     display: inline-flex;
-    width: 30%;
+    width: 32%;
     height: 15%;
     float: left;
     /*position: absolute;*/
@@ -81,7 +80,7 @@
     /*place-content: center;*/
     border: 1px solid black;
     border-radius: 6px;  
-    padding: 15px;
+    padding: 5px;
     
     
 }
@@ -89,12 +88,12 @@
     background-color: grey;
     /*background-color: transparent;*/
     display: flex;
-    width: 85%;
+    width: 45%;
     height: 100%;
     border: 1px solid black;
     position: relative;
     border-radius: 6px;  
-    padding: 1px; 
+    padding: 5px; 
     
 }
 .contiene1 .codigo{/*input*/
@@ -106,6 +105,7 @@
     position: relative;
     border: 1px solid black;
     border-radius: 6px;
+    padding: 5px;
 }
 /*****************************************************/
 
@@ -114,7 +114,7 @@
 .contiene1 .rubro_input{/*este es el div*/
     background-color: rgb(155, 23, 45);
     display: inline-flex;
-    width: 30%;
+    width: 32%;
     height: 15%;
     float: left;
     /*position: absolute;*/
@@ -125,22 +125,23 @@
     /*place-content: center;*/
     border: 1px solid black;
     border-radius: 6px;  
-    padding: 15px;
+    padding: 5px;
 }
 
 .contiene1 .label_rubro{/*label*/
     background-color: grey;
     /*background-color: transparent;*/
     display: flex;
-    width: 75%;
+    width: 45%;
     height: 55%;
+    margin-right: auto;
     border: 1px solid black;
     position: relative;
     align-items: center;
     justify-content: left;
     max-width: 100%;
     border-radius: 6px;
-    padding: 1px;
+    padding: 5px;
 }
 .contiene1 .rubro{/*input*/
     background-color: white;
@@ -154,6 +155,7 @@
     border: 1px solid black;
     float: left;
     border-radius: 6px;
+    padding: 5px;
     
 }
 /*****************************************************/
@@ -164,7 +166,7 @@
 .contiene1 .marca_input{/*este es el div*/
     background-color: rgb(155, 23, 45);
     display: inline-flex;
-    width: 30%;
+    width: 32%;
     height: 15%;
     float: left;
     /*position: absolute;*/
@@ -175,7 +177,7 @@
     /*place-content: center;*/
     border: 1px solid black;
     border-radius: 6px;  
-    padding: 15px;
+    padding: 5px;
    
 }
 
@@ -183,7 +185,7 @@
     background-color: grey;
     /*background-color: transparent;*/
     display: flex;
-    width: 75%;
+    width: 45%;
     height: 55%;
     border: 1px solid black;
     position: relative;
@@ -191,7 +193,7 @@
     justify-content: left;
     max-width: 100%;
     border-radius: 6px;
-    padding: 1px;
+    padding: 5px;
 }
 .contiene1 .marca{/*input*/
     background-color: white;
@@ -205,6 +207,7 @@
     border: 1px solid black;
     float: left;
     border-radius: 6px;
+    padding: 5px;
 }
 /*****************************************************/
 
@@ -213,7 +216,7 @@
 .contiene1 .origen_input{/*este es el div*/
     background-color: rgb(155, 23, 45);
     display: inline-flex;
-    width: 30%;
+    width: 32%;
     height: 15%;
     float: left;
     /*position: absolute;*/
@@ -224,14 +227,14 @@
     /*place-content: center;
     border: 1px solid black;*/
     border-radius: 6px;      
-    padding: 15px;
+    padding: 5px;
 }
 
 .contiene1 .label_origen{/*label*/
     background-color: grey;
     /*background-color: transparent;*/
     display: flex;
-    width: 75%;
+    width: 45%;
     height: 55%;
     border: 1px solid black;
     position: relative;
@@ -239,6 +242,7 @@
     justify-content: left;
     max-width: 100%;
     border-radius: 6px;
+    padding: 5px;
 }
 .contiene1 .origen{/*input*/
     background-color: white;
@@ -252,6 +256,7 @@
     border: 1px solid black;
     float: left;
     border-radius: 6px;
+    padding: 5px;
 }
 /*****************************************************/
 
@@ -260,7 +265,7 @@
 .contiene1 .prevta_input{/*este es el div*/
     background-color: rgb(155, 23, 45);
     display: inline-flex;
-    width: 30%;
+    width: 32%;
     height: 15%;
     float: left;
     /*position: absolute;*/
@@ -271,13 +276,13 @@
     /*place-content: center;
     border: 1px solid black;*/
     border-radius: 6px;  
-    padding: 15px;
+    padding: 5px;
 }
 .contiene1 .label_prevta{/*label*/
     background-color: grey;
     /*background-color: transparent;*/
     display: flex;
-    width: 60%;
+    width: 45%;
     height: 55%;
     border: 1px solid black;
     position: relative;
@@ -285,6 +290,7 @@
     justify-content: left;
     max-width: 100%;
     border-radius: 6px;
+    padding: 5px;
 }
 .contiene1 .prevta{/*input*/
     background-color: white;
@@ -298,6 +304,7 @@
     border: 1px solid black;
     float: left;
     border-radius: 6px;
+    padding: 5px;
 }
 /******************************************************/
 
@@ -307,7 +314,7 @@
 .contiene1 .stock_input{/*este es el div*/
     background-color: rgb(155, 23, 45);
     display: inline-flex;
-    width: 30%;
+    width: 32%;
     height: 15%;
     float: left;
     /*position: absolute;*/
@@ -318,7 +325,7 @@
     /*place-content: center;*/
     border: 1px solid black;
     border-radius: 6px;  
-    padding: 15px;
+    padding: 5px;
     
     
 }
@@ -326,11 +333,12 @@
     background-color: grey;
     /*background-color: transparent;*/
     display: flex;
-    width: 75%;
+    width: 45%;
     height: 100%;
     border: 1px solid black;
     position: relative;
     border-radius: 6px;
+    padding: 5px;
     
     
 }
@@ -343,6 +351,7 @@
     position: relative;
     border: 1px solid black;
     border-radius: 6px;
+    padding: 5px;
 }
 /*********************************************************/
 
@@ -350,7 +359,7 @@
 .contiene1 .precto_input{/*este es el div*/
     background-color: rgb(155, 23, 45);
     display: flex;
-    width: 30%;
+    width: 32%;
     height: 15%;
     float: left;
     /*position: absolute;*/
@@ -361,14 +370,14 @@
     /*place-content: center;
     border: 1px solid black;*/
     border-radius: 6px;  
-    padding: 15px;
+    padding: 5px;
     
 }
 .contiene1 .label_precto{/*label*/
     background-color: grey;
     /*background-color: transparent;*/
     display: flex;
-    width: 95%;
+    width: 45%;
     height: 55%;
     border: 1px solid black;
     position: relative;
@@ -376,6 +385,7 @@
     justify-content: left;
     max-width: 100%;
     border-radius: 6px;
+    padding: 5px;
 }
 .contiene1 .precto{/*input*/
     background-color: white;
@@ -389,6 +399,7 @@
     border: 1px solid black;
     float: left;
     border-radius: 6px;
+    padding: 5px;
 }
 /*********************************************************/
 
@@ -397,7 +408,7 @@
 .contiene1 .iva_input{/*este es el div*/
     background-color: rgb(155, 23, 45);
     display: flex;
-    width: 30%;
+    width: 32%;
     height: 15%;
     float: left;
     /*position: absolute;*/
@@ -408,20 +419,22 @@
     /*place-content: center;
     border: 1px solid black;*/
     border-radius: 6px;   
-    padding: 15px;
+    padding: 5px;
 }
 .contiene1 .label_iva{/*label*/
     background-color: grey;
     /*background-color: transparent;*/
     display: flex;
-    width: 65%;
+    width: 45%;
     height: 55%;
+    margin-right: auto;
     border: 1px solid black;
     position: relative;
     align-items: center;
     justify-content: left;
     max-width: 100%;
     border-radius: 6px;
+    padding: 5px;
 }
 .contiene1 .iva{/*input*/
     background-color: white;
@@ -435,6 +448,7 @@
     border: 1px solid black;
     float: left;
     border-radius: 6px;
+    padding: 5px;
 }
 /*********************************************************/
 
@@ -442,7 +456,7 @@
 .contiene1 .gancia_input{/*este es el div*/
     background-color: rgb(155, 23, 45);
     display: flex;
-    width: 30%;
+    width: 32%;
     height: 15%;
     float: left;
     /*position: absolute;*/
@@ -453,7 +467,7 @@
     /*place-content: center;
     border: 1px solid black;*/
     border-radius: 6px;  
-    padding: 15px;
+    padding: 5px;
     
 }
 
@@ -461,7 +475,7 @@
     background-color: grey;
     /*background-color: transparent;*/
     display: flex;
-    width: 75%;
+    width: 50%;
     height: 55%;
     border: 1px solid black;
     position: relative;
@@ -469,6 +483,7 @@
     justify-content: left;
     max-width: 100%;
     border-radius: 6px;
+    padding: 5px;
 }
 .contiene1 .gancia{/*input*/
     background-color: white;
@@ -482,6 +497,7 @@
     border: 1px solid black;
     float: left;
     border-radius: 6px;
+    padding: 5px;
 }
 /*********************************************************/
 
@@ -490,7 +506,7 @@
 .contiene1 .modelo_input{/*este es el div*/
     background-color: rgb(155, 23, 45);
     display: flex;
-    width: 30%;
+    width: 32%;
     height: 15%;
     float: left;
     /*position: absolute;*/
@@ -501,14 +517,14 @@
     /*place-content: center;
     border: 1px solid black;*/
     border-radius: 6px;  
-    padding: 15px;
+    padding: 5px;
 }
 
 .contiene1 .label_modelo{/*label*/
     background-color: grey;
     /*background-color: transparent;*/
     display: flex;
-    width: 65%;
+    width: 45%;
     height: 55%;
     border: 1px solid black;
     position: relative;
@@ -516,6 +532,7 @@
     justify-content: left;
     max-width: 100%;
     border-radius: 6px;
+    padding: 5px;
 }
 .contiene1 .modelo{/*input*/
     background-color: white;
@@ -529,6 +546,7 @@
     border: 1px solid black;
     float: left;
     border-radius: 6px;
+    padding: 5px;
 }
 /*********************************************************/
 
@@ -537,7 +555,7 @@
 .contiene1 .proveedor_input{/*este es el div*/
     background-color: rgb(155, 23, 45);
     display: inline-flex;
-    width: 30%;
+    width: 32%;
     height: 15%;
     float: left;
     /*position: absolute;*/
@@ -548,7 +566,7 @@
     /*place-content: center;*/
     border: 1px solid black;
     border-radius: 6px;  
-    padding: 15px;
+    padding: 5px;
     
     
 }
@@ -556,11 +574,13 @@
     background-color: grey;
     /*background-color: transparent;*/
     display: flex;
-    width: 95%;
+    width: 55%;
     height: 100%;
+    margin-right: auto;
     border: 1px solid black;
     position: relative;
     border-radius: 6px;
+    padding: 5px;
     
     
 }
@@ -571,8 +591,12 @@
     width: 95%;
     height: 55%;
     position: relative;
+    align-items: center;
+    justify-content: left;
     border: 1px solid black;
+    float: left;
     border-radius: 6px;
+    padding: 5px;
 }
 /******************************************************************/
 
@@ -581,7 +605,7 @@
 .contiene1 .descripcion_input{/*este es el div*/
     background-color: rgb(155, 23, 45);
     display: inline-flex;
-    width: 30%;
+    width: 32%;
     height: 10%;
     float: left;
     /*position: absolute;*/
@@ -590,23 +614,24 @@
     margin-left: 1%;
     /*justify-content: space-around;*/
     place-content: down-center;
-    border: 1px solid black;
+    border: 1px solid rgb(143, 21, 21);
     border-radius: 6px;      
-    /*padding: 10px;*/
+    padding: 5px;
 }
 
 .contiene1 .label_descripcion{/*label*/
     background-color: grey;
     /*background-color: transparent;*/
     display: flex;
-    width: 82%;
-    height: 60%;
+    width: 60%;
+    height: 100%;
     border: 1px solid black;
     position: relative;
     align-items: center;
     justify-content: left;
     /*max-width: 100%;*/
     border-radius: 6px;
+    padding: 5px;
 }
 .contiene1 .descripcion{/*input*/
     background-color: white;
@@ -617,6 +642,7 @@
     position: relative;
     border: 1px solid black;
     border-radius: 6px;
+    padding: 5px;
 }
 .contiene1 .textarea{
         resize: none;
@@ -626,11 +652,182 @@
         display: flex;
         /*float: left;*/
 }
+.contiene1 .ventana_abm{
+    background-color: aqua;
+    display: none;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 50%;
+    width: 140px;
+}
+
+/****************************************************************/
+/* Aspecto Tabla Consulkta*/
+/****************************************************************/
+.contenedor_tabla{
+    background-color: white;
+    display: block;
+    width: 100%;
+    height: 350px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    padding: 5px;
+}
+/************************************************************************/
+.contenedor_tabla .codigo{
+    background-color: rgb(155, 23, 45);
+    display: flex;
+    width: 80%;
+    height: 50px;
+    float: left;
+    /*position: absolute;*/
+    align-items: center;
+    justify-content: center;
+    /*place-content: center;*/
+    border: 1px solid black;
+    border-radius: 6px;  
+    padding: 5px;
+}
+/*.contenedor_tabla .codigo{/*input*
+    background-color: white;
+   /* background: transparent;*
+    display: flex;
+    width: 45%;
+    height: 55px;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 1px;
+}*/
+
+/****************************************************************/
+.contenedor_tabla .descripcion{
+    background-color: rgb(155, 23, 45);
+    display: flex;
+    width: 10%;
+    height: 100%;
+    float: left;
+    /*position: absolute;*/
+    align-items: center;
+    justify-content: center;
+    /*place-content: center;*/
+    border: 1px solid black;
+    border-radius: 6px;  
+    padding: 5px;
+}
+.contenedor_tabla .precio{
+    background-color: rgb(155, 23, 45);
+    display: flex;
+    width: 10%;
+    height: 100%;
+    float: left;
+    /*position: absolute;*/
+    align-items: center;
+    justify-content: center;
+    /*place-content: center;*/
+    border: 1px solid black;
+    border-radius: 6px;  
+    padding: 5px;
+}
+.contenedor_tabla .stock{
+    background-color: rgb(155, 23, 45);
+    display: flex;
+    width: 10%;
+    height: 100%;
+    float: left;
+    /*position: absolute;*/
+    align-items: center;
+    justify-content: center;
+    /*place-content: center;*/
+    border: 1px solid black;
+    border-radius: 6px;  
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*********************************************************/
 /* CSS USUARIOS******************************************/
 /********************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -680,6 +877,9 @@
     }
     .graba{
         display: none;
+    }
+    .contiene1 .ventana_abm{
+        display: block;
     }
 }   
     
