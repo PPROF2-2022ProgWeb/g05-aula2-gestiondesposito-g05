@@ -25,6 +25,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <script defer src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -32,22 +33,26 @@
 </script><!-- integra libreria para reloj y fecha-->
 <script defer src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<script src="./js/idioma.js"></script>
-<script src="./js/funcionesGrupo99.js"></script>
 
 <body onload="validar_idioma()">
 <!--------------------------------------------------------------------------------------->
     <div id="header">
         <input type="text" class="esp" id="buscador" placeholder="Buscar...">
         <input type="text" class="eng" style="display: none;" id="buscador" placeholder="Search...">
+
+        <button class="nav-toggle" id="nav_toggle" onclick="mi_Menu()">
+            <i class="fas fa-bars" aria-hidden="true"></i></button>
+
+
         <button id="btn_buscador" class="btn_buscador"><i class="fas fa-search"></i></button>
-        <button type="button" class="compra1"><img class="img_carr" src="./img/carrito-de-compras.png">
+        <button id="carrito" type="button" class="compra1"><img class="img_carr" src="./img/carrito-de-compras.png">
             <ul>
                 <li>
                     <a href="">El carrito esta vacio</a>
                 </li>
             </ul>
         </button>
+
 <!--------------------------------------------------------------------------------------->
         <ul class="nav esp" id="lista_nav">
             <li><a href="./index.html">Inicio</a></li>
@@ -58,14 +63,14 @@
                 <li><a href="./presupuestos.html" onclick="">Distribucion</a></li>
             </ul>  
         </li>
-            <li><a href="#">RMA</a>
+            <li id="RMA"><a href="#">RMA</a>
                 <ul>               
                 <li><a href="./rma.html" onclick="">Ingresos</a></li>
                 <li><a href="./rma.html" onclick="">Resolucion</a></li>
                 <li><a href="./rma.html" onclick="">Egresos</a></li>
             </ul>   
             </li>
-            <li><a href="#">ABM</a>
+            <li id="ABM"><a href="#">ABM</a>
                 <ul>
                     <li><a href="./abm_productos.html" onclick="">Productos</a></li>
                     <li><a href="./abm_productos.html" onclick="">Usuarios</a></li>
@@ -403,6 +408,7 @@
         <script src="./js/validacion.js"></script>
         <script src="./js/abm.js"></script>
         <script src="./js/idioma.js"></script>
+        <script src="./js/encabezado.js"></script>
 
 </body>
 
