@@ -75,7 +75,7 @@ function consulta() {
     x[i].style.display = "block";
     x[i].style.border = "1px solid white";
   }
-}
+} 
 /*-----------------------------------------------------------------------------------*/
 
 
