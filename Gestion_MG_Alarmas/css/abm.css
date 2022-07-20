@@ -820,46 +820,40 @@
 
 
 /****************************************************************/
-/*.contenedor_tabla .descripcion {
-    background-color: rgb(155, 23, 45);
+.contenedor_tabla .descri {
+    /*input*/
+    background-color: white;
+    /* background: transparent;*/
     display: flex;
-    width: 10%;
-    height: 100%;
-    float: left;
-    /*position: absolute;*
-    align-items: center;
-    justify-content: center;
-    /*place-content: center;*
+    width: 95%;
+    height: 55%;
+    position: relative;
     border: 1px solid black;
     border-radius: 6px;
     padding: 5px;
 }
 
-.contenedor_tabla .precio {
-    background-color: rgb(155, 23, 45);
+.contenedor_tabla .pre {
+    /*input*/
+    background-color: white;
+    /* background: transparent;*/
     display: flex;
-    width: 10%;
-    height: 100%;
-    float: left;
-    /*position: absolute;*
-    align-items: center;
-    justify-content: center;
-    /*place-content: center;*
+    width: 95%;
+    height: 55%;
+    position: relative;
     border: 1px solid black;
     border-radius: 6px;
     padding: 5px;
 }
 
-.contenedor_tabla .stock {
-    background-color: rgb(155, 23, 45);
+.contenedor_tabla .stk {
+    /*input*/
+    background-color: white;
+    /* background: transparent;*/
     display: flex;
-    width: 10%;
-    height: 100%;
-    float: left;
-    /*position: absolute;*
-    align-items: center;
-    justify-content: center;
-    /*place-content: center;*
+    width: 95%;
+    height: 55%;
+    position: relative;
     border: 1px solid black;
     border-radius: 6px;
     padding: 5px;
