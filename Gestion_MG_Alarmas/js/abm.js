@@ -103,9 +103,46 @@ function borra() {
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "none";
     }
+  });
 
-    
+ /*-----------------------------------------------------------------------------------*/
+
+  let productos = new Array(20);
+  productos[0] = {codigo: "1", descripcion: "Producto 1", precio: "", stock: ""};
+  productos[1] = {codigo: "2", descripcion: "Producto 2", precio: "", stock: ""};
+  productos[2] = {codigo: "3", descripcion: "Producto 3", precio: "", stock: ""};
+  productos[3] = {codigo: "4", descripcion: "Producto 4", precio: "", stock: ""};
+  productos[4] = {codigo: "5", descripcion: "Producto 5", precio: "", stock: ""};
+
+  let tablaProducto = document.getElementById("productos");
+  let cuerpoTabla = document.createElement("tbody");
+
+  productos.forEach(p=> {
+    let fila = document.createElement("tr");
+
+    let td=document.createElement("td");    
+    td.innerText = p.codigo;
+    fila.appendChild(td);
+
+    td = document.createElement("td");
+    td.innerText = p.descripcion;
+    fila.appendChild(td);
+
+    td = document.createElement("td");
+    td.innerText = p.ptrcio;
+    fila.appendChild(td);
+
+    td = document.createElement("td");
+    td.innerText = p.stock;
+    fila.appendChild(td);
+
+
+
+    cuerpoTabla.appendChild(fila);
+
 
   });
 
- 
+  tablaProducto.appendChild(cuerpoTabla);
+
+  

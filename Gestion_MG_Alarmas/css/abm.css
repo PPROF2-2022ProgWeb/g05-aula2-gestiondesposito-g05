@@ -801,98 +801,15 @@
     align-items: center;
     justify-content: center;
     border-radius: 6px;
-    padding: 5px;
+    padding: 15px;
+    
 }
-.contenedor_tabla .cod {
-    /*input*/
-    background-color: white;
-    /* background: transparent;*/
-    display: flex;
-    width: 95%;
-    height: 55%;
-    position: relative;
-    border: 1px solid black;
-    border-radius: 6px;
-    padding: 5px;
-}
-
-/************************************************************************/
-
-
-/****************************************************************/
-.contenedor_tabla .descri {
-    /*input*/
-    background-color: white;
-    /* background: transparent;*/
-    display: flex;
-    width: 95%;
-    height: 55%;
-    position: relative;
-    border: 1px solid black;
-    border-radius: 6px;
-    padding: 5px;
-}
-
-.contenedor_tabla .pre {
-    /*input*/
-    background-color: white;
-    /* background: transparent;*/
-    display: flex;
-    width: 95%;
-    height: 55%;
-    position: relative;
-    border: 1px solid black;
-    border-radius: 6px;
-    padding: 5px;
-}
-
-.contenedor_tabla .stk {
-    /*input*/
-    background-color: white;
-    /* background: transparent;*/
-    display: flex;
-    width: 95%;
-    height: 55%;
-    position: relative;
-    border: 1px solid black;
-    border-radius: 6px;
-    padding: 5px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.contenedor_tabla tr td {
+    border: 2px solid #000;
+    width: 180px;
+    height: 30px;
+    
+} 
 
 
 
@@ -915,29 +832,6 @@
 /*********************************************************/
 /* CSS USUARIOS******************************************/
 /********************************************************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
