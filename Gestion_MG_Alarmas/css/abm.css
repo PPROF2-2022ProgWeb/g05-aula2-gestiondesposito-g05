@@ -789,9 +789,12 @@
 } */
 
 /****************************************************************/
-/* Aspecto Tabla Consulkta*/
+/* Aspecto Tabla Consulta*/
 /****************************************************************/
+
 .contenedor_tabla {
+    /*background-color: rgb(19, 98, 122);
+    /*background: transparent;*/
     background-color: white;
     display: none;
     width: 100%;
@@ -799,117 +802,20 @@
     align-items: center;
     justify-content: center;
     border-radius: 6px;
-    padding: 5px;
+    padding: 15px;
+    
 }
-
-/************************************************************************/
-.contenedor_tabla .codigo {
-    background-color: rgb(155, 23, 45);
-    display: flex;
-    width: 80%;
-    height: 50px;
-    float: left;
-    /*position: absolute;*/
-    align-items: center;
-    justify-content: center;
-    /*place-content: center;*/
-    border: 1px solid black;
-    border-radius: 6px;
-    padding: 5px;
-}
-
-/*.contenedor_tabla .codigo{/*input*
-    background-color: white;
-   /* background: transparent;*
-    display: flex;
-    width: 45%;
-    height: 55px;
-    position: relative;
-    border: 1px solid black;
-    border-radius: 6px;
-    padding: 1px;
-}*/
-
-/****************************************************************/
-.contenedor_tabla .descripcion {
-    background-color: rgb(155, 23, 45);
-    display: flex;
-    width: 10%;
-    height: 100%;
-    float: left;
-    /*position: absolute;*/
-    align-items: center;
-    justify-content: center;
-    /*place-content: center;*/
-    border: 1px solid black;
-    border-radius: 6px;
-    padding: 5px;
-}
-
-.contenedor_tabla .precio {
-    background-color: rgb(155, 23, 45);
-    display: flex;
-    width: 10%;
-    height: 100%;
-    float: left;
-    /*position: absolute;*/
-    align-items: center;
-    justify-content: center;
-    /*place-content: center;*/
-    border: 1px solid black;
-    border-radius: 6px;
-    padding: 5px;
-}
-
-.contenedor_tabla .stock {
-    background-color: rgb(155, 23, 45);
-    display: flex;
-    width: 10%;
-    height: 100%;
-    float: left;
-    /*position: absolute;*/
-    align-items: center;
-    justify-content: center;
-    /*place-content: center;*/
-    border: 1px solid black;
-    border-radius: 6px;
-    padding: 5px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.contenedor_tabla tr td {
+    
+    border: 1px solid #000;
+    width: 180px;
+    height: 30px;
+    
+} 
+table {
+    border-collapse: collapse;
+    
+} 
 
 
 
@@ -932,29 +838,6 @@
 /*********************************************************/
 /* CSS USUARIOS******************************************/
 /********************************************************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
