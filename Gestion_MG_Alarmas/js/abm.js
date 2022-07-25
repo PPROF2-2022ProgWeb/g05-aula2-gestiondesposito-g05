@@ -108,11 +108,16 @@ function borra() {
  /*-----------------------------------------------------------------------------------*/
 
   let productos = new Array(20);
-  productos[0] = {codigo: "1", descripcion: "Producto 1", precio: "", stock: ""};
-  productos[1] = {codigo: "2", descripcion: "Producto 2", precio: "", stock: ""};
-  productos[2] = {codigo: "3", descripcion: "Producto 3", precio: "", stock: ""};
-  productos[3] = {codigo: "4", descripcion: "Producto 4", precio: "", stock: ""};
-  productos[4] = {codigo: "5", descripcion: "Producto 5", precio: "", stock: ""};
+  productos[0] = {codigo: "1", descripcion: "", precio: "", stock: ""};
+  productos[1] = {codigo: "2", descripcion: "", precio: "", stock: ""};
+  productos[2] = {codigo: "3", descripcion: "", precio: "", stock: ""};
+  productos[3] = {codigo: "4", descripcion: "", precio: "", stock: ""};
+  productos[4] = {codigo: "5", descripcion: "", precio: "", stock: ""};
+  productos[5] = {codigo: "6", descripcion: "", precio: "", stock: ""};
+  productos[6] = {codigo: "7", descripcion: "", precio: "", stock: ""};
+  productos[7] = {codigo: "8", descripcion: "", precio: "", stock: ""};
+  productos[8] = {codigo: "9", descripcion: "", precio: "", stock: ""};
+  
 
   let tablaProducto = document.getElementById("productos");
   let cuerpoTabla = document.createElement("tbody");

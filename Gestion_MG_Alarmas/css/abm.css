@@ -793,8 +793,9 @@
 /****************************************************************/
 
 .contenedor_tabla {
-    background-color: rgb(19, 98, 122);
+    /*background-color: rgb(19, 98, 122);
     /*background: transparent;*/
+    background-color: white;
     display: none;
     width: 100%;
     height: 350px;
@@ -805,9 +806,14 @@
     
 }
 .contenedor_tabla tr td {
-    border: 2px solid #000;
+    
+    border: 1px solid #000;
     width: 180px;
     height: 30px;
+    
+} 
+table {
+    border-collapse: collapse;
     
 } 
 
