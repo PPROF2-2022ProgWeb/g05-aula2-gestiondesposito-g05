@@ -4,7 +4,7 @@ export const productos=[
         nombre:'producto01',
         precio:100,
         descripcion:'descripcion',
-        imagen:'producto01.jpg',
+        imagen:'producto01.png',
         cantidad:100,
         disponible:true
 
@@ -14,7 +14,7 @@ export const productos=[
         nombre:'producto02',
         precio:100,
         descripcion:'descripcion',
-        imagen:'producto02.jpg',
+        imagen:'producto02.png',
         cantidad:100,
         disponible:true
 
@@ -24,7 +24,7 @@ export const productos=[
         nombre:'producto03',
         precio:100,
         descripcion:'Display_lcd_ce',
-        imagen:'producto03.jpg',
+        imagen:'producto03.png',
         cantidad:100,
         disponible:true
 
@@ -34,7 +34,7 @@ export const productos=[
         nombre:'producto04',
         precio:100,
         descripcion:'Display_lcd1602_backazul',
-        imagen:'producto04.jpg',
+        imagen:'producto04.png',
         cantidad:100,
         disponible:true
 
@@ -44,7 +44,7 @@ export const productos=[
         nombre:'producto05',
         precio:100,
         descripcion:'Display_lcd1602_backverde',
-        imagen:'producto05.jpg',
+        imagen:'producto05.png',
         cantidad:100,
         disponible:true
 
@@ -54,7 +54,7 @@ export const productos=[
         nombre:'producto06',
         precio:100,
         descripcion:'Display_oled091',
-        imagen:'producto06.jpg',
+        imagen:'producto06.png',
         cantidad:100,
         disponible:true
 
@@ -64,7 +64,7 @@ export const productos=[
         nombre:'producto07',
         precio:100,
         descripcion:'Display_tft22',
-        imagen:'producto07.jpg',
+        imagen:'producto07.png',
         cantidad:100,
         disponible:true
 
@@ -74,7 +74,7 @@ export const productos=[
         nombre:'producto08',
         precio:100,
         descripcion:'Display_lcd2004_backazul',
-        imagen:'producto08.jpg',
+        imagen:'producto08.png',
         cantidad:100,
         disponible:true
 
@@ -84,7 +84,7 @@ export const productos=[
         nombre:'product09',
         precio:100,
         descripcion:'ESP-01',
-        imagen:'producto09.jpg',
+        imagen:'producto09.png',
         cantidad:100,
         disponible:true
 
@@ -94,7 +94,7 @@ export const productos=[
         nombre:'producto10',
         precio:100,
         descripcion:'esp8266 H12F',
-        imagen:'producto10.jpg',
+        imagen:'producto10.png',
         cantidad:100,
         disponible:true
 
