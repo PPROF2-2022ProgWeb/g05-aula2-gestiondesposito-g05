@@ -15,6 +15,7 @@ import { PagenotfoundComponent } from './shared/components/pagenotfound/pagenotf
 import { AbmComponent } from './shared/components/abm/abm.component';
 import { AccesoComponent } from './shared/components/acceso/acceso.component';
 import { ContactoComponent } from './shared/components/contacto/contacto.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ContactoComponent } from './shared/components/contacto/contacto.compone
         useFactory: httpTranslateLoader,
         deps: [HttpClient]
       }
-    })
+    }),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
