@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {productos} from '../../../productos';
-
+import {CarritoService} from '../../../carrito.service';
 @Component({
   selector: 'app-tienda',
   templateUrl: './tienda.component.html',
@@ -9,14 +9,16 @@ import {productos} from '../../../productos';
 export class TiendaComponent implements OnInit {
 
   productos=productos;
+  carrito= new CarritoService();
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  adicionarCarrito(id: number)
+  adicionarCarrito(producto: any)
   {
-    window.alert("Producto Agregado "+id);
+    this.carrito.adicionarCarrito(producto);
+    window.alert("Producto Agregado "+producto.id);
 
   }
 
