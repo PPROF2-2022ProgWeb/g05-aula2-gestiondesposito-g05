@@ -1,3 +1,4 @@
+import { CarritoComponent } from './shared/components/carrito/carrito.component';
 import { PagenotfoundComponent } from './shared/components/pagenotfound/pagenotfound.component';
 import { ContactoComponent } from './shared/components/contacto/contacto.component';
 import { AccesoComponent } from './shared/components/acceso/acceso.component';
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path: 'abm', component: AbmComponent},
   {path: 'acceso', component: AccesoComponent},
   {path: 'contacto', component: ContactoComponent},
+  {path: 'carrito', component: CarritoComponent},
   {path: '**', component: PagenotfoundComponent}
 ];
 

@@ -16,6 +16,7 @@ import { AbmComponent } from './shared/components/abm/abm.component';
 import { AccesoComponent } from './shared/components/acceso/acceso.component';
 import { ContactoComponent } from './shared/components/contacto/contacto.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarritoComponent } from './shared/components/carrito/carrito.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     PagenotfoundComponent,
     AbmComponent,
     AccesoComponent,
-    ContactoComponent
+    ContactoComponent,
+    CarritoComponent
   ],
   imports: [
     BrowserModule,
