@@ -9,8 +9,8 @@ import {CarritoService} from '../../../carrito.service';
 export class TiendaComponent implements OnInit {
 
   productos=productos;
-  carrito= new CarritoService();
-  constructor() { }
+  //carrito= new CarritoService();
+  constructor(private carrito:CarritoService) { }
 
   ngOnInit(): void {
   }
