@@ -9,19 +9,18 @@
 
         <div class="store"><!--contenedor de la tabla-->
           <section class="listado-franquicias"><!--contenedor de la lista-->
-            <h1>{{'Tienda' | translate }}</h1> <!--titulo-->
-
-            <div class="producto" *ngFor="let producto of productos">
-              <h2>{{producto.nombre}}</h2>
-              <img class="imgProducto" src='../assets/img/{{producto.imagen}}'>
-              <p>{{producto.descripcion}}</p>
-              <span class="precio"><strong>{{'precio' | translate }} </strong>{{producto.precio | currency}}</span>
-              <br>
-              <button (click)="adicionarCarrito(producto)"><p>{{'comprar' | translate }}</p></button>
-              </div>
-          </section>
+          <h1>{{'Tienda' | translate }}</h1> <!--titulo-->
+          <div class="producto" *ngFor="let producto of productos">
+          <h2>{{producto.nombre}}</h2>
+          <img class="imgProducto" src='../assets/img/{{producto.imagen}}'>
+          <p>{{producto.descripcion}}</p>
+          <span class="precio"><strong>{{'precio' | translate }} </strong>{{producto.precio | currency}}</span>
+          <br>
+          <button (click)="adicionarCarrito(producto)"><p>{{'comprar' | translate }}</p></button>
           </div>
+          </section>
         </div>
+      </div>
   </div>
   <!--------------------------------------------------------------------------------------->
   </body>
