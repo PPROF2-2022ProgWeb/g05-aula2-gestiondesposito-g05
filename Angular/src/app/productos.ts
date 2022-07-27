@@ -1,90 +1,90 @@
 export const productos=[
     {
         id:1,
-        nombre:'producto1',
+        nombre:'producto01',
         precio:100,
         descripcion:'descripcion',
-        imagen:'',
+        imagen:'producto01.jpg',
         cantidad:100,
         disponible:true
 
     },
     {
         id:2,
-        nombre:'producto2',
+        nombre:'producto02',
         precio:100,
         descripcion:'descripcion',
-        imagen:'',
+        imagen:'producto02.jpg',
         cantidad:100,
         disponible:true
 
     },
     {
         id:3,
-        nombre:'producto3',
+        nombre:'producto03',
         precio:100,
-        descripcion:'descripcion',
-        imagen:'',
+        descripcion:'Display_lcd_ce',
+        imagen:'producto03.jpg',
         cantidad:100,
         disponible:true
 
     },
     {
         id:4,
-        nombre:'producto4',
+        nombre:'producto04',
         precio:100,
-        descripcion:'descripcion',
-        imagen:'',
+        descripcion:'Display_lcd1602_backazul',
+        imagen:'producto04.jpg',
         cantidad:100,
         disponible:true
 
     },
     {
         id:5,
-        nombre:'producto5',
+        nombre:'producto05',
         precio:100,
-        descripcion:'descripcion',
-        imagen:'',
+        descripcion:'Display_lcd1602_backverde',
+        imagen:'producto05.jpg',
         cantidad:100,
         disponible:true
 
     },
     {
         id:6,
-        nombre:'producto6',
+        nombre:'producto06',
         precio:100,
-        descripcion:'descripcion',
-        imagen:'',
+        descripcion:'Display_oled091',
+        imagen:'producto06.jpg',
         cantidad:100,
         disponible:true
 
     },
     {
         id:7,
-        nombre:'producto7',
+        nombre:'producto07',
         precio:100,
-        descripcion:'descripcion',
-        imagen:'',
+        descripcion:'Display_tft22',
+        imagen:'producto07.jpg',
         cantidad:100,
         disponible:true
 
     },
     {
         id:8,
-        nombre:'producto8',
+        nombre:'producto08',
         precio:100,
-        descripcion:'descripcion',
-        imagen:'',
+        descripcion:'Display_lcd2004_backazul',
+        imagen:'producto08.jpg',
         cantidad:100,
         disponible:true
 
     },
     {
         id:9,
-        nombre:'producto9',
+        nombre:'product09',
         precio:100,
-        descripcion:'descripcion',
-        imagen:'',
+        descripcion:'ESP-01',
+        imagen:'producto09.jpg',
         cantidad:100,
         disponible:true
 
@@ -93,8 +93,8 @@ export const productos=[
         id:10,
         nombre:'producto10',
         precio:100,
-        descripcion:'descripcion',
-        imagen:'',
+        descripcion:'esp8266 H12F',
+        imagen:'producto10.jpg',
         cantidad:100,
         disponible:true
 

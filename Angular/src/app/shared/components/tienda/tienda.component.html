@@ -11,8 +11,15 @@
           <section class="listado-franquicias"><!--contenedor de la lista-->
             <h1>{{'Tienda' | translate }}</h1> <!--titulo-->
 
-            <div *ngFor="let producto of productos">
+            <div class="producto" *ngFor="let producto of productos">
               <h2>{{producto.nombre}}</h2>
+              <img class="imgProducto" src='../assets/img/{{producto.imagen}}'>
+              <p>{{producto.descripcion}}</p>
+              <span class="precio"><strong>Precio: </strong>{{producto.precio | currency}}</span>
+              <br>
+              <button (click)="adicionarCarrito(producto.id)">Comprar</button>
+
+
               </div>
 
 

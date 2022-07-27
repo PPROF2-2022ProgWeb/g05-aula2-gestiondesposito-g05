@@ -14,4 +14,10 @@ export class TiendaComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  adicionarCarrito(id: number)
+  {
+    window.alert("Producto Agregado "+id);
+
+  }
+
 }
