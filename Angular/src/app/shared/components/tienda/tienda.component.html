@@ -15,9 +15,9 @@
               <h2>{{producto.nombre}}</h2>
               <img class="imgProducto" src='../assets/img/{{producto.imagen}}'>
               <p>{{producto.descripcion}}</p>
-              <span class="precio"><strong>Precio: </strong>{{producto.precio | currency}}</span>
+              <span class="precio"><strong>{{'precio' | translate }} </strong>{{producto.precio | currency}}</span>
               <br>
-              <button (click)="adicionarCarrito(producto)">Comprar</button>
+              <button (click)="adicionarCarrito(producto)"><p>{{'comprar' | translate }}</p></button>
 
 
               </div>

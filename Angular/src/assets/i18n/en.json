@@ -11,6 +11,8 @@
   "Ventas":"Sales",
   "Trabajos":"Jobs",
   "Procesos":"Processes",
+  "precio":"Price: ",
+  "comprar":"Buy",
   "Importante":"Important information",
   "derechos":"All rights reserved",
   "Gestion":"Cordoba warehouse management",
