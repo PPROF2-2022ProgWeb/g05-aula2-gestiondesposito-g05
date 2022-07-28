@@ -10,13 +10,26 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TiendaComponent } from './shared/components/tienda/tienda.component';
+import { PagenotfoundComponent } from './shared/components/pagenotfound/pagenotfound.component';
+import { AbmComponent } from './shared/components/abm/abm.component';
+import { AccesoComponent } from './shared/components/acceso/acceso.component';
+import { ContactoComponent } from './shared/components/contacto/contacto.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarritoComponent } from './shared/components/carrito/carrito.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     Cuerpo1Component,
-    FooterComponent
+    FooterComponent,
+    TiendaComponent,
+    PagenotfoundComponent,
+    AbmComponent,
+    AccesoComponent,
+    ContactoComponent,
+    CarritoComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +41,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
         useFactory: httpTranslateLoader,
         deps: [HttpClient]
       }
-    })
+    }),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

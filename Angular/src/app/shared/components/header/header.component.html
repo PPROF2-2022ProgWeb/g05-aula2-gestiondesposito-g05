@@ -1,6 +1,6 @@
 
 <nav class="nav">
-  <img class="logo__img" src="  ../assets/img/logo.png" ALT="Logo Gestion deposito">
+  <a [routerLink]="['']"><img class="logo__img" src="  ../assets/img/logo.png" ALT="Logo Gestion deposito"></a>
   <h1 class="web">MG {{'Alarmas' | translate }} (ISPCA2G5)</h1>
   <h1 class="mov">MG {{'Alarmas' | translate }} mobile</h1>
 
@@ -10,11 +10,12 @@
   </button>
 
   <ul class="nav-menu">
-      <li class="nav-menu-item"><a  routerLink="./index.html" class="nav-menu-link nav-link">{{'Inicio' | translate }}</a></li>
-      <li class="nav-menu-item"><a  routerLink="./producto.html" class="nav-menu-link nav-link">{{'Productos' | translate }}</a></li>
-      <li class="nav-menu-item"><a  routerLink="./abm_productos.html" class="nav-menu-link nav-link">ABM</a></li>
-      <li class="nav-menu-item"><a  routerLink="./login.html" class="nav-menu-link nav-link">{{'login' | translate }}</a></li>
-      <li class="nav-menu-item"><a  routerLink="./contacto.html" class="nav-menu-link nav-link">{{'Contacto' | translate }}</a></li>
+      <li class="nav-menu-item"><a  routerLink="/inicio" routerLinkActive="active-link" class="nav-menu-link nav-link">{{'Inicio' | translate }}</a></li>
+      <li class="nav-menu-item"><a  routerLink="/tienda" routerLinkActive="active-link" class="nav-menu-link nav-link">{{'Tienda' | translate }}</a></li>
+      <li class="nav-menu-item"><a  routerLink="/abm" routerLinkActive="active-link" class="nav-menu-link nav-link">ABM</a></li>
+      <li class="nav-menu-item"><a  routerLink="/acceso" routerLinkActive="active-link" class="nav-menu-link nav-link">{{'login' | translate }}</a></li>
+      <li class="nav-menu-item"><a  routerLink="/contacto" routerLinkActive="active-link" class="nav-menu-link nav-link">{{'Contacto' | translate }}</a></li>
+      <li class="nav-menu-item"><a  routerLink="/carrito" routerLinkActive="active-link" class="nav-menu-link nav-link"><i class="material-icons">{{'shopping_cart' | translate }}</i></a></li>
       <span class="form-inline">
         <select
             class="form-control"
