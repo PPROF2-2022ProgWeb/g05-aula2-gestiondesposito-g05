@@ -1,3 +1,46 @@
-<p>
-  login works!
-</p>
+
+    <!--------------------------------------------------------------------------------------->
+    <main>
+      <!--Contenido principal-->
+      <div class="contenedor__todo">
+          <!--Contenedor de todo el contenido-->
+          <div class="caja__trasera">
+              <!--------------------------------------------------------------------------->
+              <div class="caja__trasera_login">
+                  <!--esta clase esta en estilos.css-->
+                  <button id="btn__iniciar-sesion"></button>
+              </div>
+              <!--------------------------------------------------------------------------->
+              <div class="caja__trasera_registro">
+                  <h3>{{'logtex1' | translate }}</h3>
+                  <p>Registrate para que puedas iniciar sesion</p>
+                  <button class="button_vs" onclick="location.href='registro.html'">Registrarse</button>
+              </div>
+              <!--------------------------------------------------------------------------->
+          </div>
+
+          <!--------------------------------------------------------------------------->
+          <!--formulario iniciar sesion-->
+          <!--------------------------------------------------------------------------->
+          <div class="contenedor__login">
+              <form action="" class="formulario__login"id="form__login">
+                  <!--formulario iniciar sesion-->
+                  <!--<h2>Iniciar sesion</h2>-->
+                  <div class="form_contacto__aviso">
+                      <h2>Iniciar sesion</h2>
+                  </div>
+                  <!--Titulo formulario iniciar sesion-->
+                  <input type="hidden" id="2" name="tipo" value="2">
+                  <input autofocus type="email" class="form__input" placeholder="Ingrese su usuario" id="email">                    
+                  <input type="password" class="form__input " placeholder="Contraseña" id="clave">
+                  <button class="button_vs_r">Iniciar sesion</button>
+              </form>
+              <!--fin formulario iniciar sesion-->
+          </div>
+          <!--------------------------------------------------------------------------->
+      </div>
+  </main>
+  <!--Fin de contenido principal-->
+  <!--------------------------------------------------------------------------->
+
+
