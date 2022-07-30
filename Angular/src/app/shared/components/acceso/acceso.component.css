@@ -1,0 +1,203 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+body
+  {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin: 0;
+     /* background: url(../../imagenes/img/imagenes/assets/fondo_login.jpg);
+*/
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;/*dejo la imagen fija*/
+  }
+.container{
+
+  padding: 0 15PX;
+}
+
+.borde1{
+  background-color: rgba(226, 162, 43, 0.5);
+  height: 100px;
+}
+.borde2{
+  background-color:rgba(226, 162, 43, 0.5);
+  height: 50px;
+}
+.borde3{
+  background-color: rgba(226, 162, 43, 0.5);
+  height: 50px;
+}
+
+h1,h2,h3,h5,p{
+  color: rgb(255, 255, 255);
+}
+
+.cabecera{
+
+  height: 90px;
+}
+.footerPie{
+  height: 120px;
+}
+main{
+  padding: 20px;
+  padding-top: 20px;
+  margin: auto;
+}
+.contenedor__todo{
+  width: 100%;
+  max-width:800px;
+  margin: auto;
+  position: relative;
+}
+.caja_proceso
+{
+width: 100%;
+padding: 10px 20px;
+display: block;
+justify-content: center;
+backdrop-filter: blur(10px); /*desenfoque*/
+background-color: rgba(226, 162, 43, 0.5);
+}
+.caja_trasera
+{
+width: 100%;
+padding: 10px 20px;
+display: flex;
+justify-content: center;
+backdrop-filter: blur(10px); /*desenfoque*/
+background-color: rgba(226, 162, 43, 0.5);
+}
+.caja_trasera div
+{
+margin: 50px 40px;
+transition: all 500ms;
+}
+.caja_trasera div p,
+.caja_trasera div button
+{
+margin-top: 30px;
+}
+.caja_trasera div h3
+{
+font-weight: 400px;
+font-size: 26px;
+}
+.caja_trasera div button
+{
+padding: 10px 40px;
+border: 2px solid #fff;
+background: transparent;
+color: #fff;
+font-size: 15px; /*tamaño del texto*/
+font-weight: 600; /*grosor del texto*/
+cursor: pointer;
+outline: none;
+transition: all 300ms ;
+}
+.caja_trasera div button:hover
+{
+background: #fff;
+color: rgb(226, 162, 43);
+}
+/*++++Formularios++++*/
+.caja_delantera_loginRegistro
+{
+  display: flex;
+  align-items: center;/*para que los formulario quede centrado*/
+  width: 100%;
+  max-width: 380px;
+  position: relative;
+  top: -180px;
+  left: 10px;
+  transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+
+}
+.caja_delantera_loginRegistro form
+{
+width: 100%;
+padding: 80px 20px;
+background: #fff;
+position: absolute; /*para poder moverla*/
+border-radius: 20px;
+
+
+}
+
+.caja_delantera_loginRegistro form h2
+{
+  color: rgb(226, 162, 43);
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+.caja_delantera_loginRegistro form input
+{
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  background: rgba(226, 162, 43, 0.7);
+  font-size: 16px;
+  outline: none;
+}
+.caja_delantera_loginRegistro form button
+{
+  padding: 10px 40px;
+  margin-top: 40px;
+  border: none;
+  font-size: 14px;
+  background: rgb(226, 162, 43);
+  cursor: progress;
+  outline: none;
+}
+.formulario_login
+{
+opacity: 1;
+display: block;
+
+}
+.formulario_registro{
+display: none;
+}
+
+/*+++++++Responsive Desing++++++*/
+@media screen and (max-width:850px){
+.LoginMain{
+margin-top: 50px;
+}
+.caja_trasera{
+ max-width: 350px;
+ height: 300px;
+ flex-direction: column;
+ margin: auto;
+}
+.caja_trasera div{
+  margin: 0px;
+  position: absolute;
+}
+
+/*formulario*/
+.caja_delantera_loginRegistro
+{
+top: -10px;
+left: -5px;
+margin: auto;
+}
+.caja_delantera_loginRegistro form
+{
+position: relative;
+}
+}
+
+
+
+
