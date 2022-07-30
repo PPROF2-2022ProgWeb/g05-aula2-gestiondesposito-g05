@@ -1,6 +1,7 @@
 {
   "Idioma":"Title",
-  "TextoIdioma":"English",
+  "demo.es":"Spanish",
+  "demo.en":"English",
   "login":"Login",
   "Tienda":"Store",
   "Alarmas":"Alarms",
@@ -37,7 +38,7 @@
   "terms6":"  educational and renowned companies.",
   "logtex1":"You do not have an account yet?",
   "Novedades":"News",
-  "Franquicias":"franchises",
+  "Franquicias":"Franchises",
   "Noticias":"Technical News",
   "Memorias":"Flash memories. SuperFlash technology",
   "MICROCHIP":"MICROCHIP incorporates new Serial and Parallel SST FLASH memories, with very low consumption and high",
