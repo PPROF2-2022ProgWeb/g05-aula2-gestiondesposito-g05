@@ -9,31 +9,31 @@
     <form class="form__contacto"id="form__contacto" action="https://mariogonzalezispc.github.io/g5-a3g5_2/index.html">
         <input type="hidden" id="5" name="tipo" value="">
         <div class="form_contacto__aviso">
-            <h2>Consultas</h2>
+            <h2>{{'contacto1' | translate }}</h2>
         </div>
         <div>
-            <label for="nombres" class="form__label">Ingrese su nombre</label>
-            <input autofocus type="text" class="form__input" placeholder="Su nombre" name="nombre" id="nombres">
-        </div>
-
-        <div>
-            <label for="email" class="form__label">Ingrese su correo </label>
-            <input type="email" class="form__input" placeholder="lapampa@argentina.com" id="email">
+            <label for="nombres" class="form__label">{{'contacto2' | translate }}</label>
+            <input autofocus type="text" class="form__input" placeholder="{{'contacto3' | translate }}" name="nombre" id="nombres">
         </div>
 
         <div>
-            <label for="telefono" class="form__label">Ingrese su telefono</label>
-            <input type="tel" class="form__input" placeholder="Su telefono (opcional)" id="telefono">
+            <label for="email" class="form__label">{{'contacto4' | translate }}</label>
+            <input type="email" class="form__input" placeholder="{{'contacto5' | translate }}" id="email">
         </div>
 
         <div>
-            <label for="mensaje" class="form__label">Ingrese su mensaje</label>
+            <label for="telefono" class="form__label">{{'contacto6' | translate }}</label>
+            <input type="tel" class="form__input" placeholder="{{'contacto7' | translate }}" id="telefono">
+        </div>
+
+        <div>
+            <label for="mensaje" class="form__label">{{'contacto8' | translate }}</label>
             <textarea class="textarea_1" name="mensaje" rows="10" cols="50" id="mensaje"
-            placeholder="Escriba aqui su consulta"></textarea>
+            placeholder="{{'contacto9' | translate }}"></textarea>
         </div>
 
         <div class="form__grupo form__grupo-btn-enviar">
-            <button type="submit" class="button_vs" id="form__mensaje-envio">Enviar consulta</button>
+            <button type="submit" class="button_vs" id="form__mensaje-envio">{{'contacto10' | translate }}</button>
             <!--<input type="submit" class="button_vs" name="Enviar"value="Enviar consulta">-->
         </div>
 
