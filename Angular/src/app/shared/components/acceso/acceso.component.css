@@ -23,15 +23,15 @@ body
 }
 
 .borde1{
-  background-color: rgba(226, 162, 43, 0.5);
+  background-color: rgba(0, 128, 255, 0.5);
   height: 100px;
 }
 .borde2{
-  background-color:rgba(226, 162, 43, 0.5);
+  background-color:rgba(0, 128, 255, 0.5);
   height: 50px;
 }
 .borde3{
-  background-color: rgba(226, 162, 43, 0.5);
+  background-color: rgba(0, 128, 255, 0.5);
   height: 50px;
 }
 
@@ -64,7 +64,7 @@ padding: 10px 20px;
 display: block;
 justify-content: center;
 backdrop-filter: blur(10px); /*desenfoque*/
-background-color: rgba(226, 162, 43, 0.5);
+background-color: rgba(0, 128, 255, 0.5);
 }
 .caja_trasera
 {
@@ -73,7 +73,7 @@ padding: 10px 20px;
 display: flex;
 justify-content: center;
 backdrop-filter: blur(10px); /*desenfoque*/
-background-color: rgba(226, 162, 43, 0.5);
+background-color: rgba(0, 128, 255, 0.5);
 }
 .caja_trasera div
 {
@@ -105,7 +105,7 @@ transition: all 300ms ;
 .caja_trasera div button:hover
 {
 background: #fff;
-color: rgb(226, 162, 43);
+color: rgb(0, 128, 255);
 }
 /*++++Formularios++++*/
 .caja_delantera_loginRegistro
@@ -133,7 +133,7 @@ border-radius: 20px;
 
 .caja_delantera_loginRegistro form h2
 {
-  color: rgb(226, 162, 43);
+  color: rgb(0, 128, 255);
   font-size: 30px;
   text-align: center;
   margin-bottom: 20px;
@@ -145,7 +145,7 @@ border-radius: 20px;
   margin-top: 10px;
   padding: 10px;
   border: none;
-  background: rgba(226, 162, 43, 0.7);
+  background: rgba(0, 128, 255, 0.5);
   font-size: 16px;
   outline: none;
 }
@@ -155,7 +155,7 @@ border-radius: 20px;
   margin-top: 40px;
   border: none;
   font-size: 14px;
-  background: rgb(226, 162, 43);
+  background: rgb(0, 128, 255);
   cursor: progress;
   outline: none;
 }
