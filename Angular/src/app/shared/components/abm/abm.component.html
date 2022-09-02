@@ -1,1 +1,171 @@
-<h1>abm</h1>
+<!--------------------------------------------------------------------------------------->
+<div class="contiene1">
+
+  <ul class="abm_nav esp" id="abmi_nav">
+      <li><input type="button" value="Alta" class="button_abm alta_b" onclick="alta()"></li>
+      <li><input type="button" value="Modifica" class="button_abm modifica_b" onclick="modificar()"></li>
+      <li><input type="button" value="Baja" class="button_abm baja_b" onclick="baja()"></li>
+      <li><input type="button" value="Consulta" class="button_abm consulta_b" onclick="consulta()"></li>
+
+  </ul>
+
+  <ul class="abm_nav eng" style="display: none;" id="abmi_nav">
+      <li><input type="button" value="Alta" class="button_abm" onclick="alta()"></li>
+      <li><input type="button" value="Modifica" class="button_abm" onclick="modificar()"></li>
+      <li><input type="button" value="Baja" class="button_abm" onclick="baja()"></li>
+      <li><input type="button" value="Consulta" class="button_abm" onclick="consulta()"></li>
+
+  </ul>
+
+
+
+
+  <!--------------------------------------------------------------------------------------->
+  <div class="pestana_alta" style="display: none;">
+
+      <form>
+          <div class="contiene_alta">
+              <div class="codigo_input alta baja" style="background-color: orenge;">
+                  <label for="codigo" class="label_codigo">Codigo</label>
+                  <input type="text" name="Codigo" class="codigo" id="codigo">
+              </div>
+
+              <div class="rubro_input alta modif">
+                  <label for="rubro" class="label_rubro">Rubro</label>
+                  <select name="Rubro">
+                      <option value="Rub" selected="selected">Rubro</option>
+                  </select>
+              </div>
+
+              <div class="marca_input alta baja modif">
+                  <label for="marca" class="label_marca">Marca</label>
+                  <input type="text" name="Marca" class="marca" id="marca">
+              </div>
+
+              <div class="descripcion_input alta modif">
+                  <label for="descripcion" class="label_descripcion">Descripcion</label>
+                  <textarea class="textarea" name="mensaje" rows="3" cols="5"
+                      placeholder="Descripcion del producto"></textarea>
+              </div>
+
+              <div class="origen_input alta modif">
+                  <label for="origen" class="label_origen">Origen</label>
+                  <input type="text" name="Origen" class="origen" id="origen">
+              </div>
+
+              <div class="prevta_input alta modif">
+                  <label for="prevta" class="label_prevta">Precio</label>
+                  <input type="text" name="Precio de Venta" class="prevta" id="prevta">
+              </div>
+
+              <div class="stock_input alta modif">
+                  <label for="stock" class="label_stock">Stock</label>
+                  <input type="text" name="Stock" class="stock" id="stock">
+              </div>
+
+              <div class="proveedor_input alta">
+                  <label for="proveedor" class="label_proveedor">Proveedor</label>
+                  <select name="Proveedor">
+                      <option value="prov" selected="selected">Prove</option>
+                  </select>
+              </div>
+
+              <div class="precto_input alta modif">
+                  <label for="precto" class="label_precto">Costo</label>
+                  <input type="text" name="Precio de Costo" class="precto" id="precto">
+              </div>
+
+              <div class="iva_input alta modif">
+                  <label for="iva" class="label_iva">Iva</label>
+                  <select name="Iva">
+                      <option value="D">10,5%</option>
+                      <option value="V" selected="selected">21%</option>
+                  </select>
+              </div>
+
+              <div class="gancia_input alta modif">
+                  <label for="gancia" class="label_gancia">Ganancia</label>
+                  <input type="text" name="Ganancia" class="gancia" id="gancia">
+              </div>
+
+              <div class="modelo_input alta baja modif">
+                  <label for="modelo" class="label_modelo">Modelo</label>
+                  <input type="text" name="Modelo" class="modelo" id="modelo">
+              </div>
+          </div>
+      </form>
+  </div>
+<!--------------------------------------------------------------------------------------->
+
+
+ <!---------------------div de la tabla -------------------------------------------------->
+  <div class="contenedor_tabla">
+      <table id="productos">
+          <!--
+              <tr>
+                  <th>Codigo</th>
+                  <th>Descripcion</th>
+                  <th>Precio</th>
+                  <th>Stock</th>
+              </tr>
+
+          <tbody id="cuerpoTabla">-->
+              <!--<tr>
+              <td><input type="text" name="cod" class="cod" id="cod"></td>
+              <td><input type="text" name="descrip" class="descri" id="descrip"></td>
+              <td><input type="text" name="pre" class="pre" id="pre"></td>
+              <td><input type="number" name="stk" class="stk" id="stk"></td>
+              </tr>-->
+
+              <tr>
+                  <td>Codigo</td>
+                  <td>Descripcion</td>
+                  <td>Precio</td>
+                  <td>Stock</td>
+              </tr>
+
+
+
+
+
+          <!--</tbody>-->
+
+      </table>
+
+      <button type="submit" class="button_abm graba" id="boton_m">Grabar</button>
+  </div>
+  <!--------------------------------------------------------------------------------------->
+
+
+
+
+  <!---------------------CARTEL LEER ---------------------------------------------------->
+  <div class="ventana_abm">
+      <h1> Contenido no apto para celulares</h1>
+  </div>
+  <!---------------------FIN CARTEL LEER ------------------------------------------------->
+
+
+
+
+
+</div>
+
+<!-------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
