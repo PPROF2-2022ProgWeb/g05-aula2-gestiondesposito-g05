@@ -20,10 +20,11 @@
 
 ####
 ---
-**Perspectiva del producto:**
+**1. INTRODUCCION:**
 <br><br>
-Es un producto diseñado para trabajar en entornos WEB, lo que facilita la manera de trabajar, manejando ventas, usuarios autorizados, administradores, inventarios como también proveedores de la empresa.
-Tendrá un control de stock y estará vinculado con la tienda virtual de la misma, realizando los cambios correspondientes.
+
+Este documento presenta, en castellano, el formato de Especificación de Requisitos Software (ERS) según la última versión del estándar IEEE 830. Según IEEE, un buen Documento de Requisitos, pese a no ser obligatorio que siga estrictamente la organización y el formato dados en el estándar 830, si debería incluir, de una forma o de otra, toda la información presentada en dicho estándar. El estándar de IEEE 830 no está libre de defectos ni de prejuicios, y por ello ha sido justamente criticado por múltiples autores y desde múltiples puntos de vista, llegando a cuestionar incluso si es realmente un estándar en el sentido habitual que tiene el término en otras ingenierías. El presente documento no pretende pronunciarse ni a favor ni en contra de unos u otros: tan solo reproduce, con propósitos fundamentalmente docentes, como se organizaría un Documento de Requisitos según el estándar IEEE 830.
+
 
 <br>
 <br>
