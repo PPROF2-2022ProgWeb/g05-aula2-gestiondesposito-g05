@@ -1,48 +1,114 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+    margin: 0;/*margen en 0*/
+    padding: 0;/*padding en 0*/
+    box-sizing: border-box;/*para que no se vea el borde*/
+    text-decoration: none;/*para que no se vea el texto*/
+    font-family: 'Roboto', sans-serif;/*fuente*/
 }
 
-.nav-links{
-    font-size: 20px;
-    padding: 60px 0px;
+.contenedor {
+    background: transparent;
+    background-color: aqua;
+    display: block;
+    flex-direction: column;
+    position: relative;
+    margin-top: 30px;
+    left: 45px;
     width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    overflow: hidden;
+    height: 450px;
+    /* border: 1px solid #E0E0E0; */
+    box-shadow: 0 0 10px #E0E0E0;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contenedor .nav{
+    /*background-color: blueviolet;*/
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+    margin-right: 50px;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 600;
+    user-select: none;
+}
+.contenedor .contenedor_bienv{
+    /*background-color: brown;*/
+    margin-top: 25px;
+}
+.contenedor .contenedor_bienv .detalle{
+    /*background-color: rgb(42, 165, 134);*/
+    position: absolute;
+    left: 140px;
+    margin-top: 15px;
+}
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient();
+}
+.form{
+    width: 200px;
+    min-width: 300px;
+    border-radius: 10px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin: 250px;
+    margin-top: 34px;
+}
+.text{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
     color: black;
+    margin-bottom: 25px;
 }
-
-body{
-    font-family: 'open sans';
-}
-
-.contenedor{
-padding: 60px 0;
-width: 90%;
-max-width: 1000px;
-margin: auto;
-overflow: hidden;
-}
-
-.titulo{
-    color:blueviolet;
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.textos-header{
-    color: aquamarine;
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.contenedor-libros{
+.form input{
+    display: block;
+    margin:auto;
+    height: 40px;
     width: 90%;
-    max-width: 1000px;
+    padding-left: 20px;
+    color: black;
+    border-radius: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: transparent;
+    border-top-left-radius: 10px ;
+    border-bottom-right-radius: 10px;
+    outline: none;
+}
+.form input[type="password"]{
+    margin-top: 20px;
+}
+::placeholder{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 600);
+}
+.form input:hover{
+    transition: 5s;
+    border: 1px solid #2980b9;
+    color: #2498db;
+}
+.form button{
+    display: block ;
     margin: auto;
-    overflow: hidden; 
+    margin-top: 25px;
+    margin-bottom: 30px;
+    height: 40px;
+    width: 78%;
+    background: transparent;
+    color: burlywood;
+    border-radius: 2px;
+    cursor: pointer;
+    outline: none;
+    transition: all .5s ease; 
+}
+.form button:hover{
+    color:#E0E0E0;
+    border: 2px solid #3498db;
+    background: linear-gradient(#34495e, #2c3e50);
 }
