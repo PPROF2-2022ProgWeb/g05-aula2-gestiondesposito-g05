@@ -1,3 +1,5 @@
+import { UsuarioServService } from './../../../usuario-serv.service';
+import { UsuarioClass } from './../../../usuario-class';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListusuariosComponent implements OnInit {
 
-  constructor() { }
+  usuario:UsuarioClass[];
+  constructor(private usuarioservicio:UsuarioServService) { }
 
   ngOnInit(): void {
+    this.obtenerUsuario();
   }
-
+  private obtenerUsuario(){
+    this.usuarioservicio.obtenerListaDeUsuario().subscribe(dato=>{
+    this.usuario=dato;
+    });
+  }
 }

@@ -1,1 +1,30 @@
-<p>listusuarios works!</p>
+<h2>Listado de Libros</h2>
+<hr>
+<br>
+<table class="table table-striped">
+  <thead class="table-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Apellido Paterno</th>
+      <th scope="col">Apellido Materno</th>
+      <th scope="col">Domicilio</th>
+      <th scope="col">Telefono</th>
+      <th scope="col">Sanctions</th>
+      <th scope="col">SancMoney</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let usuario of usuario">
+      <td>{{usuario.id}}</td>
+      <td>{{usuario.Nombre}}</td>
+      <td>{{usuario.ApePaterno}}</td>
+      <td>{{usuario.ApeMaterno}}</td>
+      <td>{{usuario.Domicilio}}</td>
+      <td>{{usuario.Telefono}}</td>
+      <td>{{usuario.Sanctions}}</td>
+      <td>{{usuario.SancMoney}}</td>
+    </tr>
+
+  </tbody>
+</table>
