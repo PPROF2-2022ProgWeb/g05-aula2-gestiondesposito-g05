@@ -1,13 +1,13 @@
 export class UsuarioClass {
 
 id:number;
-Nombre:string;
-ApePaterno:string;
-ApeMaterno:string;
-Domicilio:string;
-Telefono:string;
-Sanctions:string;
-SancMoney:string;
+name:string;
+last_name_p:string;
+last_name_m:string;
+domicilio:string;
+tel:string;
+sanctions:string;
+sancMoney:string;
 
 
 }

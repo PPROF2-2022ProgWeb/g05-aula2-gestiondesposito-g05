@@ -1,4 +1,4 @@
-<h2>Listado de Libros</h2>
+<h2>Listado de Uusarios</h2>
 <hr>
 <br>
 <table class="table table-striped">
@@ -17,13 +17,13 @@
   <tbody>
     <tr *ngFor="let usuario of usuario">
       <td>{{usuario.id}}</td>
-      <td>{{usuario.Nombre}}</td>
-      <td>{{usuario.ApePaterno}}</td>
-      <td>{{usuario.ApeMaterno}}</td>
-      <td>{{usuario.Domicilio}}</td>
-      <td>{{usuario.Telefono}}</td>
-      <td>{{usuario.Sanctions}}</td>
-      <td>{{usuario.SancMoney}}</td>
+      <td>{{usuario.name}}</td>
+      <td>{{usuario.last_name_p}}</td>
+      <td>{{usuario.last_name_m}}</td>
+      <td>{{usuario.domicilio}}</td>
+      <td>{{usuario.tel}}</td>
+      <td>{{usuario.sanctions}}</td>
+      <td>{{usuario.sancMoney}}</td>
     </tr>
 
   </tbody>
