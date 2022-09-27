@@ -7,8 +7,8 @@ import { LibroClass } from './../../../libro-class';
   styleUrls: ['./listlibros.component.css']
 })
 export class ListlibrosComponent implements OnInit {
-  libro:LibroClass[];
 
+  libro:LibroClass[];
   constructor(private libroservicio:LibroService) { }
 
   ngOnInit(): void {
