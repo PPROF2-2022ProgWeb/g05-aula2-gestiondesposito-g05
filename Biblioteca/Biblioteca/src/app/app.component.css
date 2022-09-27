@@ -1,0 +1,11 @@
+.body {
+  /*background-color: aqua;*/
+  /*background-image: url ("/Biblioteca/ITPLibrary-main/src/itp_library/images/fondo.jpg");imagen de fondo*/
+  background-image: url(../assets/img/fondo.jpg);
+
+  background-size: cover;/*la imagen de fondo abarca todo/
+  background-repeat: no-repeat;/*no se repita la imagen de fondo*/
+  background-attachment: fixed;/*para que se vea la imagen de fondo sea adj*/
+  background-position: center;/*imagen de fondo centrada*/
+  padding: 0px 0px 0px 0px;
+}

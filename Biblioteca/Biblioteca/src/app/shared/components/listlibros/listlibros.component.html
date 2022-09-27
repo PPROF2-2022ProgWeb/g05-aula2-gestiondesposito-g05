@@ -1,1 +1,41 @@
+<br><br><br>
 <h2>Listado de Libros</h2>
+<hr>
+<br><br>
+<table class="table table-striped">
+  <thead class="table-dark">
+    <tr>
+
+      <th scope="col">#</th>
+      <th scope="col">title</th>
+      <th scope="col">date</th>
+      <th scope="col">author</th>
+      <th scope="col">category</th>
+      <th scope="col">edit</th>
+      <th scope="col">lang</th>
+      <th scope="col">pages</th>
+      <th scope="col">description</th>
+      <th scope="col">ejemplares</th>
+      <th scope="col">stock</th>
+      <th scope="col">available</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let libro of libro">
+
+      <td>{{libro.id}}</td>
+      <td>{{libro.title}}</td>
+      <td>{{libro.date}}</td>
+      <td>{{libro.author}}</td>
+      <td>{{libro.category}}</td>
+      <td>{{libro.edit}}</td>
+      <td>{{libro.lang}}</td>
+      <td>{{libro.pages}}</td>
+      <td>{{libro.description}}</td>
+      <td>{{libro.ejemplares}}</td>
+      <td>{{libro.stock}}</td>
+      <td>{{libro.available}}</td>
+    </tr>
+
+  </tbody>
+</table>

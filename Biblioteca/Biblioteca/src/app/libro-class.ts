@@ -1,10 +1,4 @@
-import { Injectable } from '@angular/core';
-
-@Injectable({
-  providedIn: 'root'
-})
-export class LibroService {
-
+export class LibroClass {
   id:number;
 	title:string;
 	date:string;
@@ -17,5 +11,4 @@ export class LibroService {
 	ejemplares:string;
 	stock:number;
 	available:number;
-
 }

@@ -1,0 +1,13 @@
+.form{
+  width: 200px;
+  min-width: 300px;
+  border-radius: 10px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+
+}
+
+.login-form{
+  margin-top: 94px;
+}
