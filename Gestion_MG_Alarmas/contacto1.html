@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MG Alarmas (ISPCA2G5)</title>
+    <link rel="icon" type="image/x-icon" href="./img/camion.png">
+    <!--favicon-->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <!-- <link rel="stylesheet" href="./css/style1.css"> -->
+
+    <link rel="stylesheet" href="./css/encabezado.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/productos.css">
+    <link rel="stylesheet" href="./css/presupuesto.css">
+    <link rel="stylesheet" href="./css/rma.css">
+    <link rel="stylesheet" href="./css/abm.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/registro.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<script defer src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+</script><!-- integra libreria para reloj y fecha-->
+<script defer src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="./js/idioma.js"></script>
+<script src="./js/funcionesGrupo99.js"></script>
+
+<body onload="validar_idioma()">
+<!--------------------------------------------------------------------------------------->
+    <div id="header">
+        <input type="text" class="esp" id="buscador" placeholder="Buscar...">
+        <input type="text" class="eng" style="display: none;" id="buscador" placeholder="Search...">
+        <button id="btn_buscador" class="btn_buscador"><i class="fas fa-search"></i></button>
+        <button type="button" class="compra1"><img class="img_carr" src="./img/carrito-de-compras.png">
+            <ul>
+                <li>
+                    <a href="">El carrito esta vacio</a>
+                </li>
+            </ul>
+        </button>
+<!--------------------------------------------------------------------------------------->
+        <ul class="nav esp" id="lista_nav">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./productos.html">Productos</a></li>
+            <li><a href="#">Presupuestos</a>
+            <ul>               
+                <li><a href="./presupuestos.html" onclick="">Finales</a></li>
+                <li><a href="./presupuestos.html" onclick="">Distribucion</a></li>
+            </ul>  
+        </li>
+            <li><a href="#">RMA</a>
+                <ul>               
+                <li><a href="./rma.html" onclick="">Ingresos</a></li>
+                <li><a href="./rma.html" onclick="">Resolucion</a></li>
+                <li><a href="./rma.html" onclick="">Egresos</a></li>
+            </ul>   
+            </li>
+            <li><a href="#">ABM</a>
+                <ul>
+                    <li><a href="./abm_productos.html" onclick="">Productos</a></li>
+                    <li><a href="./abm_productos.html" onclick="">Usuarios</a></li>
+                    <li><a href="./abm_productos.html" onclick="">Rubros</a></li>
+                </ul>          
+            </li>
+            <li><a href="#">Login</a>
+                <ul>
+                    <li><a href="./login.html">Ingresar</a></li>
+                    <li><a href="./registro.html">Registrarse</a></li>
+                </ul>
+            </li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="#">Idioma</a>
+                <ul>
+                    <li><a href="#" onclick="idioma_espanol()">Español</a></li>
+                    <li><a href="#" onclick="idioma_ingles()">English</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+<!--------------------------------------------------------------------------------------->
+
+
+
+    <!--------------------------------------------------------------------------------------->
+    <main>
+        <div class="contenedor__contacto">
+            <!--------------------------------------------------------------------------->
+            <!--formulario contacto -->
+            <!--------------------------------------------------------------------------->
+            <form action="" class="form__contacto">
+                <input type="hidden" id="5" name="tipo" value="">
+                <!--   <h2>Dejenos su comentario y nos contactaremos a la brevedad.</h2>-->
+                <div class="form_contacto__aviso">
+                    <h2>Enviando su consulta</h2>
+                    <br>
+                    <h2>Nos contactaremos a la brevedad.</h2>
+                </div>
+                <div>
+                    <label for="nombres" class="form__label">Nombre ingresado</label>
+                    <input type="text" class="form__input" name="nombre" id="1">
+                </div>
+
+                <div>
+                    <label for="email" class="form__label">Correo ingresado</label>
+                    <input type="email" class="form__input" id="2">
+                </div>
+
+                <div>
+                    <label for="telefono" class="form__label">Telefono ingresado</label>
+                    <input type="tel" class="form__input" id="3">
+                </div>
+
+                <div>
+                    <label for="mensaje" class="form__label">Su mensaje</label>
+                    <textarea class="textarea_1" name="mensaje" rows="10" cols="50" id="4"></textarea>
+                </div>
+
+            <!--    <div class="form_contacto__aviso">
+                    <h2>Gracias nos contactaremos a la brevedad.</h2>
+                </div>-->
+
+            </form>
+        </div>
+        <!--------------------------------------------------------------------------->
+    </main>
+    <!-------------------------------------------------------------------------------------------------->
+    <!--Rutina que Desagrupa los input del input ID 5 y los RX los muestra en el formulario------------->
+    <!-------------------------------------------------------------------------------------------------->
+    <script type="text/javascript">
+        var url_string = window.location.href; //
+        var url = new URL(url_string);
+        var c1 = url.searchParams.get("payload");
+        document.getElementById('5').value = c1;
+        let dimension = c1.length;
+        let ID = 0;
+        //-----------------------------------------------------------------------------------------------
+        for (let i = 0; i <= dimension - 1; i++) {
+            if (c1[i] == "°") {
+                ID++;
+            }
+            if (c1[i] != "°") {
+                document.getElementById(ID).value = c1[i] + document.getElementById(ID).value;
+            }
+        }
+        document.getElementById("1").readOnly = true;
+        document.getElementById("2").readOnly = true;
+        document.getElementById("3").readOnly = true;
+        document.getElementById("4").readOnly = true;
+        document.querySelector(".nav").style.display = "none";
+
+    </script>
+    <!-- <script src="./js/script.js"></script> -->
+    <script src="./js/funcionesGrupo99.js"></script>
+</body>
+</html>

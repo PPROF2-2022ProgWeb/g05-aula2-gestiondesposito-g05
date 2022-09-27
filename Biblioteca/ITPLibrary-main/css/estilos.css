@@ -1,0 +1,265 @@
+#header {
+    width: 100%;
+    background-color:rgba(255,255,255,0.8);
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+}
+.body {
+    /*background-color: aqua;*/
+    /*background-image: url ("/Biblioteca/ITPLibrary-main/src/itp_library/images/fondo.jpg");imagen de fondo*/
+    background-image: url(/Biblioteca/ITPLibrary-main/src/itp_library/images/fondo.jpg);
+    background-size: cover;/*la imagen de fondo abarca todo/
+    background-repeat: no-repeat;/*no se repita la imagen de fondo*/
+    background-attachment: fixed;/*para que se vea la imagen de fondo sea adj*/
+    background-position: center;/*imagen de fondo centrada*/
+    padding: 0px 0px 0px 0px;
+}
+.contenedor {
+    /*background-color:#3498db;*/
+    /*background-color: red;*/
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+    margin-top: 30px;
+    left: 45px;
+    width: 90%;
+    height: 600px;
+    /* border: 1px solid #E0E0E0; 
+    box-shadow: 0 0 10px #E0E0E0;*/
+    border-radius: 10px;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contenedor .contenedor_bienv {
+    
+    /*background-color: brown;*/
+    margin-top: 100px;
+    font-size: 100%;
+    padding: 8px;
+    text-align: left;
+    font-style: italic;
+
+}
+.contenedor .contenedor_bienv h1{
+    color: blue;
+}
+.contenedor .detalle{
+    /*background-color: beige;*/
+    display: block;
+    position: relative;
+    font-style: italic;
+    margin-top: 85px;
+    font-size: large;
+   
+}
+
+.form{
+    width: 200px;
+    min-width: 300px;
+    border-radius: 10px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin: 350px;
+    margin-top: 34px;
+}
+.form1{
+    width: 200px;
+    min-width: 300px;
+    border-radius: 10px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin: 100px;
+    margin-top: 90px;
+    position: absolute;
+}
+.form2{
+    width: 200px;
+    min-width: 300px;
+    border-radius: 10px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin: 550px;
+    margin-top: 90px;
+    position: relative;
+}
+
+.form h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+    
+}
+.form1 h4{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.text{
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 25px;
+
+}
+.form input{
+    display: block;
+    margin:auto;
+    height: 40px;
+    width: 90%;
+    padding-left: 20px;
+    color: black;
+    border-radius: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: transparent;
+    border-top-left-radius: 10px ;
+    border-bottom-right-radius: 10px;
+    outline: none;
+}
+.form1 input{
+    display: block;
+    margin:auto;
+    height: 40px;
+    width: 100%;
+    padding-left: 20px;
+    color: black;
+    border-radius: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: transparent;
+    border-top-left-radius: 10px ;
+    border-bottom-right-radius: 10px;
+    outline: none;
+}
+.form2 input{
+    display: block;
+    margin:auto;
+    height: 40px;
+    width: 100%;
+    padding-left: 20px;
+    color: black;
+    border-radius: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: transparent;
+    border-top-left-radius: 10px ;
+    border-bottom-right-radius: 10px;
+    outline: none;
+}
+.form input[type="password"]{
+    margin-top: 20px;
+}
+.form1 input[type="password"]{
+    margin-top: 20px;
+}
+.form2 input[type="password"]{
+    margin-top: 20px;
+}
+::placeholder{
+    font-size: 1rem;
+    color: black;
+    font-style: italic;
+}
+.form input:hover{
+    transition: 5s;
+    border: 1px solid #2980b9;
+    color: #2498db;
+}
+.form1 input:hover{
+    transition: 5s;
+    border: 1px solid #2980b9;
+    color: #2498db;
+}
+.form2 input:hover{
+    transition: 5s;
+    border: 1px solid #2980b9;
+    color: #2498db;
+}
+.form button{
+    display: block ;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    height: 40px;
+    width: 78%;
+    background: transparent;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: all .5s ease; 
+}
+
+.form1 button{
+    display: block ;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    margin-left: 80%;
+    height: 40px;
+    width: 78%;
+    background: transparent;
+    color: burlywood;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: all .5s ease; 
+}
+.form button:hover{
+    color:#E0E0E0;
+    border: 2px solid #3498db;
+    background: linear-gradient(#34495e, #2c3e50);
+}
+.form1 button:hover{
+    color:#E0E0E0;
+    border: 2px solid #3498db;
+    background: linear-gradient(#34495e, #2c3e50);
+}
+.form2 button:hover{
+    color:#E0E0E0;
+    border: 2px solid #3498db;
+    background: linear-gradient(#34495e, #2c3e50);
+}
+.detalle{
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 800;
+    color: black;
+    margin-bottom: 25px;
+    list-style: none;
+
+}
+footer {
+    width: 100%;/*ancho del footer*/
+    background: rgba(0, 128, 255, 0.5);
+    height: auto;/*alto del footer*/
+    color: white;/*color del texto*/
+    margin-left: 0px;/*espacio entre el footer y el contenido*/
+    position: relative;/*para que se vea centrado*/
+    margin-top: 50px;/*600px;/*espacio entre el footer y el contenido*/
+    margin-bottom: 0px;/*espacio entre el footer y el contenido*/
+    z-index: -1;/*para que se vea por abajo de todo*/
+    text-align: center;/*alineacion del texto*/
+    padding: 1em;/*espacio entre el footer y el contenido*/
+    align-self: flex-end;
+}
+@media (max-width:760px){
+
+    nav{
+        flex-direction: column;
+        width: 50%;
+    }
+    .nav-enlace{
+        margin: 10px 0;
+    }
+    .form{
+        flex-direction: column;
+        width: 100%;
+    }
+    .text{
+        flex-direction: column;
+        width: 100%;
+    }
+}    
+

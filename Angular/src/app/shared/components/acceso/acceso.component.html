@@ -1,0 +1,52 @@
+<br><br>
+<br><br>
+<br><br>
+<main class="LoginMain">
+
+
+<div class="contenedor__todo">
+    <div class="caja_trasera">
+
+        <div class="caja_trasera_login">
+        <h3>{{'acceso1' | translate }}</h3>
+        <p>{{'acceso2' | translate }}</p>
+        <p>{{'acceso3' | translate }}</p>
+        <button id="btn_login">{{'acceso4' | translate }}</button>
+        </div>
+
+        <div class="caja_trasera_registro">
+            <h3>{{'acceso5' | translate }}</h3>
+            <p>{{'acceso6' | translate }}</p>
+            <button id="btn_registro">{{'acceso7' | translate }}</button>
+        </div>
+
+    </div>
+
+    <div class="caja_delantera_loginRegistro">
+
+        <form action="validarLogin.php" method="Post" class="formulario_login" onsubmit="return validarRegLogin()">
+            <h2>{{'acceso4' | translate }}</h2>
+            <input type="text" placeholder="{{'acceso10' | translate }}" id="usuarioLogin" name="usuarioLogin">
+            <input type="password" placeholder="{{'acceso11' | translate }}" id="pasLogin" name="pasLogin">
+
+            <button type="submit">{{'acceso9' | translate }}</button>
+        </form>
+
+        <form action="proceso.php" method="post" class="formulario_registro" onsubmit="return validarRegUsuario()" id="registroDeUsuario">
+            <h2>{{'acceso7' | translate }}</h2>
+
+            <input type="text" placeholder="{{'acceso12' | translate }}" id="username" name="username" class="form-control">
+            <input type="text" placeholder="{{'acceso13' | translate }}Apellido" id="fullname" name="fullname" class="form-control">
+            <input type="date" id="FechaNacim" name="FechaNacim" class="form-control">
+            <input type="email" placeholder="{{'acceso14' | translate }}" id="email" name="email" class="form-control">
+            <input type="password" placeholder="{{'acceso11' | translate }}" id="passwordid" name="passwordid" class="form-control">
+            <input type="text" placeholder="{{'acceso15' | translate }}" class="form-control" name="cuil" id="cuil">
+            <input type="text" placeholder="{{'acceso16' | translate }}" class="form-control" name="provincia" id="provincia">
+            <input type="text" placeholder="{{'acceso17' | translate }}" class="form-control" name="pais" id="pais">
+            <button id="btnResumen" type="submit">{{'acceso7' | translate }}</button>
+        </form>
+
+    </div>
+
+</div>
+</main>

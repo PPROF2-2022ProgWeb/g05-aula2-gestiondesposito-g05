@@ -1,0 +1,123 @@
+/*--------------------------------------------------------------*/
+/*Formularios Login*/
+/*--------------------------------------------------------------*/
+.contenedor__todo {
+    width: 100%;/*ancho del main*/
+    max-width: 1000px;/*ancho del main*/
+    margin: auto;/*margen en 0*/
+    position: relative;/*para que se vea el borde*/
+    background-color:transparent;/*color de fondo*/
+    min-height: 60vh;/*altura del contenedor*/
+
+
+}
+.caja__trasera {
+    width: 100%; /*ancho de la caja trasera*/
+    padding: 10px 20px;/*padding de la caja trasera*/
+    display: flex;/*deja uno al lado del otro en forma horizontal*/
+    border-radius: 20px;/*borde redondeado*/
+    justify-content: center;/*centra el contenido*/
+    /*backdrop-filter: blur(10px);/*para darle un efecto de blur*/
+    background-color: rgba(0, 128, 255, 0.5);/*color de fondo caja trasera*/
+}
+.caja__trasera div { /*para centrar el contenido*/
+    margin: 100px 140px; /*margen de la caja trasera*/
+    color: white;/*color de texto*/
+    transition: all 0.5s;/*transicion de tamaño*/
+}
+.caja__trasera div p,
+.caja__trasera div button { 
+    margin-top: 30px; /*margen de la caja trasera*/
+}
+.caja__trasera h3 {
+    font-weight: 400;/*para que el texto sea mas fino */
+    font-size: 26px;/*tamaño del texto*/
+}
+.caja__trasera button,
+.button_vs{
+    padding: 1px 1px; /*espacios de arriba y laterales*/
+    border: 2px solid;/*para darle un borde al boton*/
+    background: transparent;/*para que el boton sea transparente*/
+    font-size: 15px;/*tamaño del texto */
+    font-weight: 600;/*para que el texto sea caso bold*/
+    cursor: pointer;/*para que el cursor sea una mano*/
+    color: white;/*para que el texto sea mas liviano*/
+    outline: none;/*para que el outline no se vea*/
+    transition: all 0.4s;/*transicion de tamaño*/
+    height: 46px;/*altura del boton de enviar*/
+    width: 50%;/*ancho del boton de enviar*/
+    min-width: 40%;/*ancho minimo del boton de enviar*/
+    margin: 0 auto;
+    display: fixed;
+    line-height: 23px;
+    text-align: center;
+}
+.caja__trasera button:hover,
+.button_vs:hover {
+    background: white;/*el fonfo del boton sea blanco al pasar el puntero*/
+    color: #46a2fd;/*texto sera azul al pasar el puntero*/
+}
+.button_vs_r{
+    padding: 1px 1px; /*espacios de arriba y laterales*/
+    border: 2px solid;/*para darle un borde al boton*/
+    background: transparent;/*para que el boton sea transparente*/
+    font-size: 15px;/*tamaño del texto */
+    font-weight: 600;/*para que el texto sea caso bold*/
+    cursor: pointer;/*para que el cursor sea una mano*/
+    color: #46a2fd;/*para que el texto sea mas liviano*/
+    outline: none;/*para que el outline no se vea*/
+    transition: all 0.4s;/*transicion de tamaño*/
+    height: 46px;/*altura del boton de enviar*/
+    width: 50%;/*ancho del boton de enviar*/
+    min-width: 40%;/*ancho minimo del boton de enviar*/
+    margin-left: 80px;
+    margin: 0 auto;
+    display: fixed;
+    line-height: 23px;
+    text-align: center;
+}
+.button_vs_r:hover {/*clase colores inversos para boton login*/
+    background: #46a2fd;/*el fonfo del boton sea blanco al pasar el puntero*/
+    color: white;/*texto sera azul al pasar el puntero*/
+}
+
+.contenedor__login {
+    display: flex;/*deja uno al lado del otro en forma horizontal*/
+    align-items: center;/*centra el contenido*/
+    width: 100%;/*ancho del contenedor*/
+    max-width: 380px;/*ancho maximo */
+    position: relative;
+    top: -200px;
+    left: 10px;
+    /*transition: left 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275);/*transicion de tamaño*/
+}
+.contenedor__login form {
+    width: 100%;/*ancho del formulario*/
+    padding: 80px 20px;/*espacio entre el formulario y el contenido*/
+    background: white;/*cambiar a blanco*/
+    position: absolute;
+    border-radius: 20px;/*borde redondeado*/
+}
+.contenedor__login form h2 {
+    font-size: 30px;/*tamaño del texto*/
+    text-align: center;/*alineacion del texto*/
+    margin-bottom: 20px;/*espacio entre el texto y el contenido*/
+    color: #46a2fd;/*color del texto*/
+}
+
+.contenedor__login input {
+    margin-top: 20px;/*cambiar a 20px*/
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+.contenedor__login form button {
+    padding: 1px 1px; /*espacios de arriba y laterales*/
+    margin-left: 80px;
+}
+.formulario__login {
+    opacity: 1;/*para que se vea el formulario*/
+    display: block;/*se ve el bloque*/
+}

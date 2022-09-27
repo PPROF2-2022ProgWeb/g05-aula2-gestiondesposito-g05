@@ -9,6 +9,17 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { TiendaComponent } from './shared/components/tienda/tienda.component';
 import { PresupuestoComponent } from './shared/components/presupuesto/presupuesto.component';
 
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TiendaComponent } from './shared/components/tienda/tienda.component';
+import { PagenotfoundComponent } from './shared/components/pagenotfound/pagenotfound.component';
+import { AbmComponent } from './shared/components/abm/abm.component';
+import { AccesoComponent } from './shared/components/acceso/acceso.component';
+import { ContactoComponent } from './shared/components/contacto/contacto.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarritoComponent } from './shared/components/carrito/carrito.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,13 +27,37 @@ import { PresupuestoComponent } from './shared/components/presupuesto/presupuest
     Cuerpo1Component,
     FooterComponent,
     TiendaComponent,
+<<<<<<< HEAD
     PresupuestoComponent
+=======
+    PagenotfoundComponent,
+    AbmComponent,
+    AccesoComponent,
+    ContactoComponent,
+    CarritoComponent
+>>>>>>> b4c8fa3458e925d2f28f844cebe250c70ec0580b
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: httpTranslateLoader,
+        deps: [HttpClient]
+      }
+    }),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+//AOT Sopoerte de compilacion
+
+export function httpTranslateLoader(http:HttpClient) {
+  return new TranslateHttpLoader(http);
+
+}
