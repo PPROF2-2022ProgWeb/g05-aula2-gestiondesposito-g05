@@ -12,6 +12,8 @@ import { LibrosComponent } from './shared/components/libros/libros.component';
 import { ReportesComponent } from './shared/components/reportes/reportes.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { HeaderComponent } from './shared/components/header/header.component';
+import { BodyComponent } from './shared/components/body/body.component';
+import { ErrorComponent } from './shared/components/error/error.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { HeaderComponent } from './shared/components/header/header.component';
     LibrosComponent,
     ReportesComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    BodyComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
