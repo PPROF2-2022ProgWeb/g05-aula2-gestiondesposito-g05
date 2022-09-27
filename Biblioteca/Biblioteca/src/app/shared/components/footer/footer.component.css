@@ -1,0 +1,14 @@
+footer {
+  width: 100%;/*ancho del footer*/
+  background: rgba(0, 128, 255, 0.5);
+  height: auto;/*alto del footer*/
+  color: white;/*color del texto*/
+  margin-left: 0px;/*espacio entre el footer y el contenido*/
+  position: relative;/*para que se vea centrado*/
+  margin-top: 50px;/*600px;/*espacio entre el footer y el contenido*/
+  margin-bottom: 0px;/*espacio entre el footer y el contenido*/
+ /* z-index: -1;/*para que se vea por abajo de todo*/
+  text-align: center;/*alineacion del texto*/
+  padding: 1em;/*espacio entre el footer y el contenido*/
+  align-self: flex-end;
+}

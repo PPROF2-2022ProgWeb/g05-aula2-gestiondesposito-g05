@@ -1,0 +1,14 @@
+header {
+  width: 100%;
+  background-color:rgba(0, 128, 255, 0.5);
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+}
+.nav-link{
+  color: white;/*color del texto*/
+  width: 250%;
+}

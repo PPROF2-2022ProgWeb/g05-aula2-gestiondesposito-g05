@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+#header {
+  width: 100%;
+  background-color:rgba(255,255,255,0.8);
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+}
+.body {
+  /*background-color: aqua;*/
+  /*background-image: url ("/Biblioteca/ITPLibrary-main/src/itp_library/images/fondo.jpg");imagen de fondo*/
+  background-image: url(../src/assets/img/fondo.jpg);
+
+  background-size: cover;/*la imagen de fondo abarca todo/
+  background-repeat: no-repeat;/*no se repita la imagen de fondo*/
+  background-attachment: fixed;/*para que se vea la imagen de fondo sea adj*/
+  background-position: center;/*imagen de fondo centrada*/
+  padding: 0px 0px 0px 0px;
+}
