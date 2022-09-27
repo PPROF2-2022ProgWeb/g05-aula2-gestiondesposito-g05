@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
 
+import { LibroService } from './../../../libro.service';
+import { LibroClass } from './../../../libro-class';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-libros',
   templateUrl: './libros.component.html',
@@ -7,9 +10,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LibrosComponent implements OnInit {
 
-  constructor() { }
+  libro:LibroClass= new LibroClass();
+  constructor(private libroService:LibroService, private router:Router) { }
 
   ngOnInit(): void {
+
+  }
+
+  GuradarLibro(){
+    this.libroService.registrarLibro(this.libro).subscribe(dato=>{
+      this.irALaListaDeLibro();
+      console.log(dato);
+    },error => console.log(error));
+  }
+irALaListaDeLibro(){
+  this.router.navigate(['/Libros']);
+}
+
+  onSubmit(){
+    console.log(this.libro);
+
   }
 
 }

@@ -1,3 +1,4 @@
+import { UsuarioClass } from './../../../usuario-class';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsuariosComponent implements OnInit {
 
+  usuario:UsuarioClass= new UsuarioClass();
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.usuario);
   }
 
 }

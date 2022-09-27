@@ -1,2 +1,45 @@
 <br><br><br>
-<p>libros works!</p>
+<div class="col-md-6 offset-md-3">
+<h3 class="text-center">Registrar Libro</h3>
+
+<form (ngSubmit)="onSubmit()">
+<div class="form-group">
+  <label for="">Titulo</label>
+  <input type="text" class="form-control" id="title" [(ngModel)]="libro.title" name="title">
+
+  <label for="">Datos</label>
+  <input type="text" class="form-control" id="date" [(ngModel)]="libro.date" name="date">
+
+  <label for="">Autor</label>
+  <input type="text" class="form-control" id="author" [(ngModel)]="libro.author" name="author">
+
+  <label for="">Categoría</label>
+  <input type="text" class="form-control" id="category" [(ngModel)]="libro.category" name="category">
+
+  <label for="">Editorial</label>
+  <input type="text" class="form-control" id="edit" [(ngModel)]="libro.edit" name="edit">
+
+  <label for="">Idioma</label>
+  <input type="text" class="form-control" id="lang" [(ngModel)]="libro.lang" name="lang">
+
+  <label for="">Paginas</label>
+  <input type="text" class="form-control" id="pages" [(ngModel)]="libro.pages" name="pages">
+
+  <label for="">Descripcion</label>
+  <input type="text" class="form-control" id="description" [(ngModel)]="libro.description" name="description">
+
+  <label for="">Ejemplares</label>
+  <input type="text" class="form-control" id="ejemplares" [(ngModel)]="libro.ejemplares" name="ejemplares">
+
+  <label for="">Stock</label>
+  <input type="text" class="form-control" id="stock" [(ngModel)]="libro.stock" name="stock">
+
+  <label for="">Estado</label>
+  <input type="text" class="form-control" id="available" [(ngModel)]="libro.available" name="available">
+</div>
+<br>
+<button class="btn btn-success">Guardar Regristro</button>
+</form>
+</div>
+
+
