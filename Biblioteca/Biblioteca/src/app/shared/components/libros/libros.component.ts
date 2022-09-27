@@ -17,18 +17,19 @@ export class LibrosComponent implements OnInit {
 
   }
 
-  GuradarLibro(){
+  GuardarLibro(){
     this.libroService.registrarLibro(this.libro).subscribe(dato=>{
       this.irALaListaDeLibro();
       console.log(dato);
     },error => console.log(error));
   }
+
 irALaListaDeLibro(){
-  this.router.navigate(['/Libros']);
+  this.router.navigate(['/listaLibros']);
 }
 
   onSubmit(){
-    console.log(this.libro);
+    this.GuardarLibro();
 
   }
 

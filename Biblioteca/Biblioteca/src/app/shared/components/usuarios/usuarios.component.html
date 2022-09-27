@@ -1,15 +1,33 @@
 <br><br><br>
-<div class="form">
-  <!--<h4>Registrar nuevo Usuario</h4>-->
-  <form class="login-form">
-  <input type="text" name="Nombre" id="nombre" placeholder="Ingrese el Nombre">
-  <input type="text" name="Apellido Paterno" id="apellido paterno" placeholder="Ingrese el Apellido paterno">
-  <input type="text" name="Apellido Materno" id="apellido materno" placeholder="Ingrese el Apellido materno">
-  <input type="text" name="Domicilio" id="domicilio" placeholder="Ingrese el Domicilio">
-  <input type="number" name="Telefono" id="telefono" placeholder="Ingrese un numero telefonico">
-  <button>Ingresar</button>
-  <button>Registrar</button>
-  <button>Modificar</button>
-</form>
+<div class="col-md-6 offset-md-3">
+<h3 class="text-center">Registrar Libro</h3>
+
+<form (ngSubmit)="onSubmit()">
+<div class="form-group">
+  <label class="form-label">Nombre</label>
+  <input type="text" class="form-control" id="name" [(ngModel)]="usuario.name" name="name">
+
+  <label class="form-label">Apellido Paterno</label>
+  <input type="text" class="form-control" id="last_name_p" [(ngModel)]="usuario.last_name_p" name="last_name_p">
+
+  <label class="form-label">Apellido Materno</label>
+  <input type="text" class="form-control" id="last_name_m" [(ngModel)]="usuario.last_name_m" name="last_name_m">
+
+  <label class="form-label">Domicilio</label>
+  <input type="text" class="form-control" id="domicilio" [(ngModel)]="usuario.domicilio" name="domicilio">
+
+  <label class="form-label">Telefono</label>
+  <input type="text" class="form-control" id="tel" [(ngModel)]="usuario.tel" name="tel">
+
+  <label class="form-label">Sanctions</label>
+  <input type="text" class="form-control" id="sanctions" [(ngModel)]="usuario.sanctions" name="sanctions">
+
+  <label class="form-label">SancMoney</label>
+  <input type="text" class="form-control" id="sancMoney" [(ngModel)]="usuario.sancMoney" name="sancMoney">
 
 </div>
+<br>
+<button class="btn btn-success">Guardar Regristro</button>
+</form>
+</div>
+

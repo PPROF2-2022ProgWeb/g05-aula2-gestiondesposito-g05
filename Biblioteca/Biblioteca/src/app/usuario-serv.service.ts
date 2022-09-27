@@ -19,8 +19,8 @@ export class UsuarioServService {
     }
 
     // este metodo nos sirve para registrar un Libro
-    registrarLibro(Libros:UsuarioClass):Observable<Object>{
-      return  this.HttpClient.post(`${this.baseURL}`,Libros);
+    registrarUsuario(Usuario:UsuarioClass):Observable<Object>{
+      return  this.HttpClient.post(`${this.baseURL}`,Usuario);
     }
 
 }
