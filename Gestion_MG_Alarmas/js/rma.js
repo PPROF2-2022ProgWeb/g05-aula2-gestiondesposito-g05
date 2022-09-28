@@ -23,6 +23,4 @@ mediaqueryList.addListener(function (EventoMediaQueryList) {
     x[i].style.display = "none";
   }
 
-  
-
 });
