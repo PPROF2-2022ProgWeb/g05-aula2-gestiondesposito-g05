@@ -1,0 +1,362 @@
+.contiene1 {
+    display: block;
+    flex-direction: column;
+    position: relative;
+    margin-top: 13%;
+    width: 100%;
+    height: 450px;
+    background: rgba(0, 128, 255, 0.5);
+    /* border: 1px solid #E0E0E0; */
+    box-shadow: 0 0 10px #E0E0E0;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.pestana_alta {
+    /* background-color: blue; */
+    background-color: transparent;
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    height: 350px;
+    flex-direction: column;
+
+}
+
+.ventana_abm {
+    background-color: rgba(255,255,255,0.8);
+    display: none;
+    margin-top: 50px;
+    width: 100%;
+    height: 200px;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+
+.ventana_abm h1 {
+    margin-top: 65px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+
+#abmi_nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: 50px;
+    list-style: none;
+    font-size: 25px;
+    font-weight: 600;
+    user-select: none;
+}
+
+
+.button_abm {
+    padding: 1px 1px;
+    /*espacios de arriba y laterales*/
+    border: 0px solid;
+    /*para darle un borde al boton*/
+    background: transparent;
+    /*para que el boton sea transparente*/
+    font-size: 20px;
+    /*tamaño del texto */
+    font-weight: 600;
+    /*para que el texto sea caso bold*/
+    cursor: pointer;
+    /*para que el cursor sea una mano*/
+    color: white;
+    /*para que el texto sea mas liviano*/
+    outline: none;
+    /*para que el outline no se vea*/
+    transition: all 0.4s;
+    /*transicion de tamaño*/
+    height: 27px;
+    /*altura del boton de enviar*/
+    width: 50%;
+    /*ancho del boton de enviar*/
+    min-width: 140px;
+    /*ancho minimo del boton de enviar*/
+    border-radius: 5px;
+    /*para darle un borde redondo al boton*/
+    margin: 0 auto;
+    display: fixed;
+    line-height: 23px;
+    text-align: center;
+}
+
+.button_abm:hover {
+    background: white;
+    /*el fonfo del boton sea blanco al pasar el puntero*/
+    color: #46a2fd;
+    /*texto sera azul al pasar el puntero*/
+}
+
+.graba {
+    position: relative;
+    /* margin-top: 320px;
+    margin-left: 50%;
+    width: 140px; */
+    margin-bottom: 10px;
+    margin-left: 50%;
+}
+
+/**********************************************************/
+.contiene1 .codigo_input {
+    /*este es el div*/
+    background-color: rgb(155, 23, 45);
+    display: inline-flex;
+    width: 32%;
+    height: 15%;
+    float: left;
+    /*position: absolute;*/
+    align-items: center;
+    margin-top: 1%;
+    margin-left: 1%;
+    justify-content: space-around;
+    /*place-content: center;*/
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 5px;
+
+
+}
+
+.contiene1 .label_codigo {
+    /*label*/
+    background-color: grey;
+    /*background-color: transparent;*/
+    display: flex;
+    width: 45%;
+    height: 100%;
+    border: 1px solid black;
+    position: relative;
+    border-radius: 6px;
+    padding: 5px;
+
+}
+.contiene1 .codigo {
+    /*input*/
+    background-color: white;
+    /*background: transparent;*/
+    display: flex;
+    width: 95%;
+    height: 55%;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 5px;
+}
+.contiene1 .nombre_input {
+    /*este es el div*/
+    background-color: rgb(155, 23, 45);
+    display: inline-flex;
+    width: 32%;
+    height: 15%;
+    float: left;
+    /*position: absolute;*/
+    /*align-items: center;*/
+    margin-top: 1%;
+    margin-left: 1%;
+    justify-content: space-around;
+    /*place-content: center;*/
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.contiene1 .label_nombre {
+    /*label*/
+    background-color: grey;
+    /*background-color: transparent;*/
+    display: flex;
+    width: 45%;
+    height: 55%;
+    margin-right: auto;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    max-width: 100%;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.contiene1 .nombre {
+    /*input*/
+    background-color: white;
+    /*background: transparent;*/
+    display: flex;
+    width: 95%;
+    height: 55%;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+    border-radius: 6px;
+    padding: 5px;
+
+}
+
+/*****************************************************/
+
+
+
+/*****************************************************/
+.contiene1 .apellido_input {
+    /*este es el div*/
+    background-color: rgb(155, 23, 45);
+    display: inline-flex;
+    width: 32%;
+    height: 15%;
+    float: left;
+    /*position: absolute;*/
+    align-items: center;
+    margin-top: 1%;
+    margin-left: 1%;
+    justify-content: space-around;
+    /*place-content: center;*/
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 5px;
+
+}
+
+.contiene1 .label_apellido {
+    /*label*/
+    background-color: grey;
+    /*background-color: transparent;*/
+    display: flex;
+    width: 45%;
+    height: 55%;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    max-width: 100%;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.contiene1 .apellido {
+    /*input*/
+    background-color: white;
+    /*background: transparent;*/
+    display: flex;
+    width: 95%;
+    height: 55%;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+    border-radius: 6px;
+    padding: 5px;
+}
+.contiene1 .email_input {
+     /*este es el div*/
+     background-color: rgb(155, 23, 45);
+     display: inline-flex;
+     width: 32%;
+     height: 15%;
+     float: right;
+     /*position: absolute;*/
+     align-items: center;
+     margin-top: 1%;
+     margin-left: 1%;
+     justify-content: space-around;
+     /*place-content: center;*/
+     border: 1px solid black;
+     border-radius: 6px;
+     padding: 5px;
+}
+
+.contiene1 .label_email {
+    /*label*/
+    background-color: grey;
+    /*background-color: transparent;*/
+    display: flex;
+    width: 45%;
+    height: 55%;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    max-width: 100%;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.contiene1 .email {
+    /*input*/
+    background-color: white;
+    /*background: transparent;*/
+    display: flex;
+    width: 95%;
+    height: 55%;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+    border-radius: 6px;
+    padding: 5px;
+}
+.contiene1 .clave_input {
+     /*este es el div*/
+     background-color: rgb(155, 23, 45);
+     display: inline-flex;
+     width: 32%;
+     height: 15%;
+     float: right;
+     /*position: absolute;*/
+     align-items: center;
+     margin-top: 1%;
+     margin-left: 1%;
+     justify-content: space-around;
+     /*place-content: center;*/
+     border: 1px solid black;
+     border-radius: 6px;
+     padding: 5px;
+}
+
+.contiene1 .label_clave {
+    /*label*/
+    background-color: grey;
+    /*background-color: transparent;*/
+    display: flex;
+    width: 45%;
+    height: 55%;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    max-width: 100%;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.contiene1 .clave {
+    /*input*/
+    background-color: white;
+    /*background: transparent;*/
+    display: flex;
+    width: 95%;
+    height: 55%;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+    border-radius: 6px;
+    padding: 5px;
+}

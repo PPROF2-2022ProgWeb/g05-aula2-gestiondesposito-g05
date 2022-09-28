@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="./css/presupuesto.css">
     <link rel="stylesheet" href="./css/rma.css">
     <link rel="stylesheet" href="./css/abm.css">
+    <link rel="stylesheet" href="./css/usuario.css">
+    <link rel="stylesheet" href="./css/rubros.css">
     <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="./css/registro.css">
     <link rel="stylesheet" href="./css/contacto.css">
@@ -33,9 +35,7 @@
 </script><!-- integra libreria para reloj y fecha-->
 <script defer src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
-<body onload="validar_idioma()">
-<!--------------------------------------------------------------------------------------->
+<header>
     <div id="header">
         <input type="text" class="esp" id="buscador" placeholder="Buscar...">
         <input type="text" class="eng" style="display: none;" id="buscador" placeholder="Search...">
@@ -73,8 +73,8 @@
             <li id="ABM"><a href="#">ABM</a>
                 <ul>
                     <li><a href="./abm_productos.html" onclick="">Productos</a></li>
-                    <li><a href="./abm_productos.html" onclick="">Usuarios</a></li>
-                    <li><a href="./abm_productos.html" onclick="">Rubros</a></li>
+                    <li><a href="./abm_usuarios.html" onclick="">Usuarios</a></li>
+                    <li><a href="./abm_rubros.html" onclick="">Rubros</a></li>
                 </ul>          
             </li>
             <li><a href="#">Login</a>
@@ -93,6 +93,20 @@
             </li>
         </ul>
     </div>
+
+
+</header>
+
+
+
+
+
+
+
+
+<body onload="validar_idioma()">
+<!--------------------------------------------------------------------------------------->
+    
 <!--------------------------------------------------------------------------------------->
 
 

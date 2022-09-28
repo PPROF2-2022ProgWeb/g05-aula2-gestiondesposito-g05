@@ -100,65 +100,150 @@
 
 <body onload="validar_idioma()">
 <!--------------------------------------------------------------------------------------->
-    
+   
 <!--------------------------------------------------------------------------------------->
 
+<!--------------------------------------------------------------------------------------->
+<div class="contiene1">
 
+    <ul class="abm_nav esp" id="abmi_nav">
+        <li><input type="button" value="Alta" class="button_abm alta_b" onclick="alta()"></li>
+        <li><input type="button" value="Modifica" class="button_abm modifica_b" onclick="modificar()"></li>
+        <li><input type="button" value="Baja" class="button_abm baja_b" onclick="baja()"></li>
+        <li><input type="button" value="Consulta" class="button_abm consulta_b" onclick="consulta()"></li>
 
+    </ul>
 
+    <ul class="abm_nav eng" style="display: none;" id="abmi_nav">
+        <li><input type="button" value="Alta" class="button_abm" onclick="alta()"></li>
+        <li><input type="button" value="Modifica" class="button_abm" onclick="modificar()"></li>
+        <li><input type="button" value="Baja" class="button_abm" onclick="baja()"></li>
+        <li><input type="button" value="Consulta" class="button_abm" onclick="consulta()"></li>
 
-
+    </ul>
 
 
 
 
     <!--------------------------------------------------------------------------------------->
-    <main>
-        <!--Contenido principal-->
-        <div class="contenedor__todo">
-            <!--Contenedor de todo el contenido-->
-            <div class="caja__trasera">
-                <!--------------------------------------------------------------------------->
-                <div class="caja__trasera_login">
-                    <!--esta clase esta en estilos.css-->
-                    <button id="btn__iniciar-sesion"></button>
+    <div class="pestana_alta" style="display: none;">
+
+        <form>
+            <div class="contiene_alta">
+                <!--<div class="codigo_input alta baja" style="background-color: orenge;">
+                    <label for="codigo" class="label_codigo">Codigo</label>
+                    <input type="text" name="Codigo" class="codigo" id="codigo">
+                </div>-->
+
+                <div class="nombre_input alta modif">
+                    <label for="nombre" class="label_nombre">Nombre</label>
+                    <input type="text" name="Nombre" class="nombre" id="nombre">
                 </div>
-                <!--------------------------------------------------------------------------->
-                <div class="caja__trasera_registro">
-                    <h3>¿Aun no tiene una cuenta?</h3>
-                    <p>Registrate para que puedas iniciar sesion</p>
-                    <button class="button_vs" onclick="location.href='registro.html'">Registrarse</button>
+
+                <div class="apellido_input alta baja modif">
+                    <label for="apellido" class="label_apellido">Apellido</label>
+                    <input type="text" name="Apellido" class="apellido" id="apellido">
                 </div>
-                <!--------------------------------------------------------------------------->
+                
+                <div class="email_input alta modif">
+                    <label for="email" class="label_email">Ingrese su mail</label>
+                    <input type="email" name="Mail" class="email" id="email">
+                </div>
+
+                <div class="clave_input alta modif">
+                    <label for="clave" class="label_clave">Ingrese su clave</label>
+                    <input type="number" name="Clave" class="clave" id="clave">
+                </div>
+
+                
             </div>
-
-            <!--------------------------------------------------------------------------->
-            <!--formulario iniciar sesion-->
-            <!--------------------------------------------------------------------------->
-            <div class="contenedor__login">
-                <form action="" class="formulario__login"id="form__login">
-                    <!--formulario iniciar sesion-->
-                    <!--<h2>Iniciar sesion</h2>-->
-                    <div class="form_contacto__aviso">
-                        <h2>Iniciar sesion</h2>
-                    </div>
-                    <!--Titulo formulario iniciar sesion-->
-                    <input type="hidden" id="2" name="tipo" value="2">
-                    <input autofocus type="email" class="form__input" placeholder="Ingrese su usuario" id="email">                    
-                    <input type="password" class="form__input " placeholder="Contraseña" id="clave">
-                    <button class="button_vs_r">Iniciar sesion</button>
-                </form>
-                <!--fin formulario iniciar sesion-->
-            </div>
-            <!--------------------------------------------------------------------------->
-        </div>
-    </main>
-    <!--Fin de contenido principal-->
-    <!--------------------------------------------------------------------------->
+        </form>
+    </div>
+<!--------------------------------------------------------------------------------------->
 
 
+   <!---------------------div de la tabla -------------------------------------------------->
+    <div class="contenedor_tabla">
+        <table id="productos">
+            <!--
+                <tr>
+                    <th>Codigo</th>
+                    <th>Descripcion</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                </tr>
+             
+
+            <tbody id="cuerpoTabla">-->
+                <!--<tr>
+                <td><input type="text" name="cod" class="cod" id="cod"></td>
+                <td><input type="text" name="descrip" class="descri" id="descrip"></td>
+                <td><input type="text" name="pre" class="pre" id="pre"></td>
+                <td><input type="number" name="stk" class="stk" id="stk"></td>
+                </tr>-->
+
+                <tr>
+                    <td>Codigo</td>
+                    <td>Descripcion</td>
+                    <td>Precio</td>
+                    <td>Stock</td>
+                </tr>
+
+                
+                
+            
+            
+            <!--</tbody>-->
+            
+        </table>
+
+        <button type="submit" class="button_abm graba" id="boton_m">Grabar</button>
+    </div>
+    <!--------------------------------------------------------------------------------------->
 
 
+
+
+    <!---------------------CARTEL LEER ---------------------------------------------------->
+    <div class="ventana_abm">
+        <h1> Contenido no apto para celulares</h1>
+    </div>
+    <!---------------------FIN CARTEL LEER ------------------------------------------------->
+
+
+
+
+
+</div>
+
+<!-------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--------------------------------------------------------------------------------------->
 
 
 
