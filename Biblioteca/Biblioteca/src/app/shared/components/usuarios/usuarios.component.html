@@ -1,8 +1,8 @@
 <br><br><br>
 <div class="col-md-6 offset-md-3">
-<h3 class="text-center">Registrar Libro</h3>
+<h3 class="text-center">Registrar Usuario</h3>
 
-<form (ngSubmit)="onSubmit()">
+<form (ngSubmit)="onSubmit2()">
 <div class="form-group">
   <label class="form-label">Nombre</label>
   <input type="text" class="form-control" id="name" [(ngModel)]="usuario.name" name="name">
@@ -19,10 +19,10 @@
   <label class="form-label">Telefono</label>
   <input type="text" class="form-control" id="tel" [(ngModel)]="usuario.tel" name="tel">
 
-  <label class="form-label">Sanctions</label>
+  <label class="form-label">Sanciones</label>
   <input type="text" class="form-control" id="sanctions" [(ngModel)]="usuario.sanctions" name="sanctions">
 
-  <label class="form-label">SancMoney</label>
+  <label class="form-label">Sanciones de Dinero</label>
   <input type="text" class="form-control" id="sancMoney" [(ngModel)]="usuario.sancMoney" name="sancMoney">
 
 </div>

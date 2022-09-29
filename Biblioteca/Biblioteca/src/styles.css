@@ -4,7 +4,7 @@
   /*background-image: url ("/Biblioteca/ITPLibrary-main/src/itp_library/images/fondo.jpg");imagen de fondo*/
   background-image: url(../src/assets/img/fondo.jpg);
 
-  background-size: cover;/*la imagen de fondo abarca todo/
+  background-size: cover;/*la imagen de fondo abarca todo*/
   background-repeat: no-repeat;/*no se repita la imagen de fondo*/
   background-attachment: fixed;/*para que se vea la imagen de fondo sea adj*/
   background-position: center;/*imagen de fondo centrada*/
@@ -19,6 +19,7 @@
   border-bottom-right-radius: 50px;
   margin: 350px;
   margin-top: 34px;
+
 }
 .form1{
   width: 200px;

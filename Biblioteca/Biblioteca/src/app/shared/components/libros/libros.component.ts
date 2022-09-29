@@ -11,17 +11,17 @@ import { Router } from '@angular/router';
 export class LibrosComponent implements OnInit {
 
   libro:LibroClass= new LibroClass();
-  constructor(private libroService:LibroService, private router:Router) { }
+  constructor(private LibroServicio: LibroService, private router:Router) { }
 
   ngOnInit(): void {
 
   }
 
-  GuardarLibro(){
-    this.libroService.registrarLibro(this.libro).subscribe(dato=>{
-      this.irALaListaDeLibro();
+  GuardarLibros(){
+    this.LibroServicio.registrarLibro(this.libro).subscribe(dato=>{
       console.log(dato);
-    },error => console.log(error));
+      this.irALaListaDeLibro();
+    },error=>console.log(error));
   }
 
 irALaListaDeLibro(){
@@ -29,7 +29,7 @@ irALaListaDeLibro(){
 }
 
   onSubmit(){
-    this.GuardarLibro();
+    this.GuardarLibros();
 
   }
 

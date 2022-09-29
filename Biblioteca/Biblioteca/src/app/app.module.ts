@@ -16,6 +16,7 @@ import { HeaderComponent } from './shared/components/header/header.component';
 import { BodyComponent } from './shared/components/body/body.component';
 import { ErrorComponent } from './shared/components/error/error.component';
 import { FormsModule } from '@angular/forms';
+import { ActualizarLibroComponent } from './shared/components/actualizar-libro/actualizar-libro.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     HeaderComponent,
     BodyComponent,
-    ErrorComponent
+    ErrorComponent,
+    ActualizarLibroComponent
   ],
   imports: [
     BrowserModule,

@@ -10,6 +10,7 @@ import { ReportesComponent } from './shared/components/reportes/reportes.compone
 import { UsuariosComponent } from './shared/components/usuarios/usuarios.component';
 import { BodyComponent } from './shared/components/body/body.component';
 import { ErrorComponent } from './shared/components/error/error.component';
+import { ActualizarLibroComponent } from './shared/components/actualizar-libro/actualizar-libro.component';
 
 const routes: Routes = [
   {path: '', redirectTo:'/inicio',pathMatch:'full'},
@@ -22,7 +23,7 @@ const routes: Routes = [
   {path: 'nuevoPrestamo', component: NuepreComponent},
   {path: 'reportes', component: ReportesComponent},
   {path: 'usuarios', component: UsuariosComponent},
-
+  {path: 'actualizar-libro', component: ActualizarLibroComponent},
   {path: '**', component: ErrorComponent}
 ];
 

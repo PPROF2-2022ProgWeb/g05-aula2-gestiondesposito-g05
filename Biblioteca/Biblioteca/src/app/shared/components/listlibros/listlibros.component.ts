@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { LibroService } from './../../../libro.service';
 import { LibroClass } from './../../../libro-class';
@@ -9,11 +10,23 @@ import { LibroClass } from './../../../libro-class';
 export class ListlibrosComponent implements OnInit {
 
   libro:LibroClass[];
-  constructor(private libroservicio:LibroService) { }
+  constructor(private libroservicio:LibroService, private route:Router) { }
 
   ngOnInit(): void {
     this.obtenerLibro();
   }
+
+  actualizarLibro(id:number){
+    this.route.navigate(['/actualizar-libro',id]);
+  }
+
+  eliminarLibro(id:number){
+    this.libroservicio.eliminarLibro(id).subscribe(dato=>{
+      console.log(dato);
+      this.obtenerLibro();
+      });
+  }
+
   private obtenerLibro(){
     this.libroservicio.obtenerListaDeLibro().subscribe(dato=>{
     this.libro=dato;
