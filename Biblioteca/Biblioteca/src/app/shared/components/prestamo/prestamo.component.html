@@ -3,7 +3,7 @@
 <div class="container">
 <h3 class="text-center">Registrar Pedido</h3>
 <br><br><br>
-<form (ngSubmit)="onSubmit2()" class="row g-3">
+<form (ngSubmit)="onSubmit3()" class="row g-3">
 
 
 
@@ -19,13 +19,18 @@
     <label for="usuario" class="form-label">Nombre del Usuario</label>
     <select [(ngModel)]="prestamo.usuario" class="form-control" name="usuario">
       <option [ngValue]="undefined">--Selecciona un Libro--</option>
-      <option *ngFor="let usuario of usuarios" [ngValue]="usuario">{{usuario.name}}</option>
+      <option *ngFor="let usuario of usuarios" [ngValue]="usuario">{{usuario.name}} {{usuario.last_name_p}}</option>
     </select>
   </div>
 
 <div class="col-md-4">
   <label class="form-label">fechaSalida</label>
   <input type="date" class="form-control" id="fechaSalida" [(ngModel)]="prestamo.fechaSalida" name="fechaSalida" required>
+</div>
+
+<div class="col-md-4">
+  <label class="form-label">fechaEntrega</label>
+  <input type="date" class="form-control" id="fechaEntrega" [(ngModel)]="prestamo.fechaEntrega" name="fechaEntrega" required>
 </div>
 
 <br>

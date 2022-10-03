@@ -11,7 +11,8 @@ import { Injectable } from '@angular/core';
 export class PrestamoServService {
   // URL listado de libros desde el backend
   private baseURL="http://localhost:9010/api/Prestamo";
-
+  private baseURL2="http://localhost:9010/api/v2/Libros";
+  private baseURL3="http://localhost:9010/api/Usuario";
   constructor(private HttpClient :HttpClient) { }
 
       // este metodo nos sirve para obtener los libros
@@ -21,12 +22,12 @@ export class PrestamoServService {
 
        // este metodo nos sirve para obtener los libros
        obtenerListaDeLibro():Observable<LibroClass[]>{
-        return this.HttpClient.get<LibroClass[]>(`${this.baseURL}`);
+        return this.HttpClient.get<LibroClass[]>(`${this.baseURL2}`);
       }
 
        // este metodo nos sirve para obtener los libros
        obtenerListaDeUsuario():Observable<UsuarioClass[]>{
-        return this.HttpClient.get<UsuarioClass[]>(`${this.baseURL}`);
+        return this.HttpClient.get<UsuarioClass[]>(`${this.baseURL3}`);
       }
 
       // este metodo nos sirve para registrar un Libro

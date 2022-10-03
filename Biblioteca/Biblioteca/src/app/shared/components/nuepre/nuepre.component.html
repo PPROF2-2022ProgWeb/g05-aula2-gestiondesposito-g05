@@ -17,13 +17,13 @@
   <tbody>
     <tr *ngFor="let prestamo of prestamo">
       <td>{{prestamo.id}}</td>
-      <td>{{prestamo.libro.title}}</td>
-      <td>{{prestamo.usuario.name}}</td>
+      <td>{{prestamo.libro}}</td>
+      <td>{{prestamo.usuario}}</td>
       <td>{{prestamo.fechaSalida}}</td>
       <td>{{prestamo.fechaEntrega}}</td>
       <td>{{prestamo.estado}}</td>
       <td>
-      <button (click)="actualizarPrestamo(prestamo.id)" class="btn btn-info" style="margin-bottom: 5px;">Editar</button>
+      <button (click)="actualizarPrestamo(prestamo.id)" class="btn btn-info" style="margin-bottom: 5px;">Editar2</button>
       <button (click)="eliminarPrestamo(prestamo.id)" class="btn btn-danger" style="margin-bottom: 5px;">Eliminar</button>
       <button (click)="verDetallePrestamo(prestamo.id)" class="btn btn-primary" style="margin-bottom: 5px;">Detalle</button>
     </td>

@@ -1,12 +1,10 @@
 import { UsuarioClass } from './../../../usuario-class';
-import { LibroService } from './../../../libro.service';
-import { HttpClient } from '@angular/common/http';
 import { LibroClass } from './../../../libro-class';
-import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
 import { PrestamoServService } from './../../../prestamo-serv.service';
 import { PrestamoClass } from './../../../prestamo-class';
 import { Component, OnInit } from '@angular/core';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-prestamo',
@@ -23,12 +21,9 @@ export class PrestamoComponent implements OnInit {
 
   ngOnInit(): void {
 
-   //this.PrestamoServService.obtenerListaDeLibro().subscribe(response=>this.libros=response)
-    //this.PrestamoServService.obtenerListaDeUsuario().subscribe(response2=>this.usuarios=response2)
-    this.PrestamoServService.obtenerListaDeLibro().subscribe(dato=>{
-      this.libros=dato;
-      console.log(dato);
-      });
+    this.PrestamoServService.obtenerListaDeLibro().subscribe(response=>this.libros=response)
+    this.PrestamoServService.obtenerListaDeUsuario().subscribe(response2 => this.usuarios = response2)
+
   }
   GuardarPrestamo(){
     this.PrestamoServService.registrarPrestamo(this.prestamo).subscribe(dato2 => {
@@ -41,9 +36,11 @@ irALaListaDePrestamo(){
   this.router2.navigate(['/nuevoPrestamo']);
 }
 
-  onSubmit2(){
+  onSubmit3(){
     this.GuardarPrestamo();
 
   }
+
+
 
 }

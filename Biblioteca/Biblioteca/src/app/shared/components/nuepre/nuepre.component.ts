@@ -18,13 +18,13 @@ export class NuepreComponent implements OnInit {
   }
 
   actualizarPrestamo(id:number){
-    this.route.navigate(['/actualizar-usuario',id]);
+    this.route.navigate(['/actualizar-prestamo',id]);
   }
 
   eliminarPrestamo(id:number){
     swal({
       title: '¿Estas seguro?',
-      text: "Confirma si deseas eliminar al usuario",
+      text: "Confirma si deseas eliminar al prestamo",
       type: 'warning',
       showCancelButton: true,
       confirmButtonColor: '#3085d6',
@@ -40,8 +40,8 @@ export class NuepreComponent implements OnInit {
           console.log(dato);
           this.obtenerPrestamo();
           swal(
-            'Usuario eliminado',
-            'El usuario ha sido eliminado con exito',
+            'Prestamo eliminado',
+            'El prestamo ha sido eliminado con exito',
             'success'
           )
         })
