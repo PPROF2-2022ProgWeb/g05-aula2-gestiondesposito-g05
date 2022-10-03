@@ -21,10 +21,10 @@ export class ListlibrosComponent implements OnInit {
   }
 
   eliminarLibro(id:number){
-    this.libroservicio.eliminarLibro(id).subscribe(dato=>{
-      console.log(dato);
+    this.libroservicio.eliminarLibroServ(id).subscribe(()=>{
+
       this.obtenerLibro();
-      });
+    },error=>console.log(error));
   }
 
   private obtenerLibro(){

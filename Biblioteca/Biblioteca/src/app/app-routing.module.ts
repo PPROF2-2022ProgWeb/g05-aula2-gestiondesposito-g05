@@ -11,6 +11,7 @@ import { UsuariosComponent } from './shared/components/usuarios/usuarios.compone
 import { BodyComponent } from './shared/components/body/body.component';
 import { ErrorComponent } from './shared/components/error/error.component';
 import { ActualizarLibroComponent } from './shared/components/actualizar-libro/actualizar-libro.component';
+import { ActualizarUsuarioComponent } from './shared/components/actualizar-usuario/actualizar-usuario.component';
 
 const routes: Routes = [
   {path: '', redirectTo:'/inicio',pathMatch:'full'},
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path: 'reportes', component: ReportesComponent},
   {path: 'usuarios', component: UsuariosComponent},
   {path: 'actualizar-libro', component: ActualizarLibroComponent},
+  {path: 'actualizar-usuario', component: ActualizarUsuarioComponent },
   {path: '**', component: ErrorComponent}
 ];
 

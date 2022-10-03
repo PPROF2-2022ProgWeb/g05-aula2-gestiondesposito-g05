@@ -8,6 +8,6 @@ domicilio:string;
 tel:string;
 sanctions:string;
 sancMoney:string;
-
-
+email:string;
+fechaNac:Date;
 }
