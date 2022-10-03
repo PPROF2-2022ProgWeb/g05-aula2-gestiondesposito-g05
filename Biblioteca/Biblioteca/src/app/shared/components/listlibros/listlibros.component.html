@@ -18,6 +18,7 @@
       <th scope="col">ejemplares</th>
       <th scope="col">stock</th>
       <th scope="col">available</th>
+      <th scope="col">Opciones</th>
     </tr>
   </thead>
   <tbody>
@@ -35,8 +36,11 @@
       <td>{{libro.ejemplares}}</td>
       <td>{{libro.stock}}</td>
       <td>{{libro.available}}</td>
-      <button (click)="actualizarLibro(libro.id)" class="btn btn-info" style="margin-bottom: 5px;">Editar</button>
+      <td>
+        <button (click)="actualizarLibro(libro.id)" class="btn btn-info" style="margin-bottom: 5px;">Editar</button>
       <button (click)="eliminarLibro(libro.id)" class="btn btn-danger" style="margin-bottom: 5px;">Eliminar</button>
+      </td>
+
     </tr>
 
   </tbody>
