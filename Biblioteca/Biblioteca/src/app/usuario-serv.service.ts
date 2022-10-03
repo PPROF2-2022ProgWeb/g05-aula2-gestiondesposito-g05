@@ -23,8 +23,8 @@ export class UsuarioServService {
           return  this.HttpClient.post(`${this.baseURL}`,Usuario);
         }
 
-        obtenerUsuarioPorTitle(id:number):Observable<Object>{
-          return  this.HttpClient.get(`${this.baseURL}/${id}`);
+        obtenerUsuarioPorId(id:number):Observable<UsuarioClass>{
+          return  this.HttpClient.get<UsuarioClass>(`${this.baseURL}/${id}`);
         }
 
         eliminarUsuarioServ(id:number):Observable<Object>{
@@ -32,7 +32,7 @@ export class UsuarioServService {
         }
 
         actualizarUsuario(id:number,Usuario:UsuarioClass):Observable<Object>{
-          return  this.HttpClient.post(`${this.baseURL}/${id}`,Usuario);
+          return this.HttpClient.put(`${this.baseURL}/${id}`,Usuario);
         }
 
 }

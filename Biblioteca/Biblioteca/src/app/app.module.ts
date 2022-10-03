@@ -18,6 +18,10 @@ import { ErrorComponent } from './shared/components/error/error.component';
 import { FormsModule } from '@angular/forms';
 import { ActualizarLibroComponent } from './shared/components/actualizar-libro/actualizar-libro.component';
 import { ActualizarUsuarioComponent } from './shared/components/actualizar-usuario/actualizar-usuario.component';
+import { LibroDetalleComponent } from './shared/components/libro-detalle/libro-detalle.component';
+import { UsuarioDetalleComponent } from './shared/components/usuario-detalle/usuario-detalle.component';
+import { PrestamoDetalleComponent } from './shared/components/prestamo-detalle/prestamo-detalle.component';
+import { ActualizarPrestamoComponent } from './shared/components/actualizar-prestamo/actualizar-prestamo.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +38,11 @@ import { ActualizarUsuarioComponent } from './shared/components/actualizar-usuar
     BodyComponent,
     ErrorComponent,
     ActualizarLibroComponent,
-    ActualizarUsuarioComponent
+    ActualizarUsuarioComponent,
+    LibroDetalleComponent,
+    UsuarioDetalleComponent,
+    PrestamoDetalleComponent,
+    ActualizarPrestamoComponent
   ],
   imports: [
     BrowserModule,

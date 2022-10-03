@@ -1,1 +1,60 @@
-<p>actualizar-usuario works!</p>
+
+<br><br><br>
+<div class="container">
+<h3 class="text-center">Registrar Usuario</h3>
+<br><br><br>
+
+
+<form (ngSubmit)= "onSubmit()" #usuarioForm = "ngForm">
+
+<div class="col-md-4">
+  <label class="form-label" for="validationCustom01">Nombre</label>
+  <input type="text" class="form-control" id="name validationCustom01" [(ngModel)]="usuario.name" name="name" required>
+  <div class="valid-feedback">
+    ¡Se ve bien!
+  </div>
+</div>
+<div class="col-md-4">
+  <label class="form-label">Apellido Paterno</label>
+  <input type="text" class="form-control" id="last_name_p" [(ngModel)]="usuario.last_name_p" name="last_name_p" required>
+
+</div>
+<div class="col-md-4">
+  <label class="form-label">Apellido Materno</label>
+  <input type="text" class="form-control" id="last_name_m" [(ngModel)]="usuario.last_name_m" name="last_name_m" required>
+</div>
+<div class="col-md-6">
+  <label class="form-label">Domicilio</label>
+  <input type="text" class="form-control" id="domicilio" [(ngModel)]="usuario.domicilio" name="domicilio" required>
+</div>
+
+<div class="col-md-6">
+  <label class="form-label">email</label>
+  <input type="email" class="form-control" id="email" [(ngModel)]="usuario.email" name="email" required>
+</div>
+<div class="col-md-3">
+  <label class="form-label">Telefono</label>
+  <input type="text" class="form-control" id="tel" [(ngModel)]="usuario.tel" name="tel" required>
+</div>
+
+<div class="col-md-3">
+  <label class="form-label">fechaNac</label>
+  <input type="date" class="form-control" id="fechaNac" [(ngModel)]="usuario.fechaNac" name="fechaNac" required>
+</div>
+<div class="col-md-3">
+  <label class="form-label">Sanciones</label>
+  <input type="text" class="form-control" id="sanctions" [(ngModel)]="usuario.sanctions" name="sanctions" required>
+</div>
+<div class="col-md-3">
+  <label class="form-label">Sanciones de Dinero</label>
+  <input type="text" class="form-control" id="sancMoney" [(ngModel)]="usuario.sancMoney" name="sancMoney" required>
+
+</div>
+<br>
+
+<div class="col-12">
+  <button class="btn btn-success" [disabled]= "!usuarioForm.form.valid">Guardar</button>
+</div>
+</form>
+</div>
+<br><br><br>

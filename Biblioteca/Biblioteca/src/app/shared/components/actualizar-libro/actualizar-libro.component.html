@@ -1,1 +1,48 @@
-<p>actualizar-libro works!</p>
+<br><br><br>
+<div class="col-md-6 offset-md-3">
+<h3 class="text-center">Registrar Libro</h3>
+
+<form (ngSubmit)= "onSubmit()" #LibroForm = "ngForm">
+<div class="form-group">
+  <label class="form-label">Titulo</label>
+  <input type="text" class="form-control" id="title" [(ngModel)]="libro.title" name="title">
+
+  <label class="form-label">Datos</label>
+  <input type="text" class="form-control" id="date" [(ngModel)]="libro.date" name="date">
+
+  <label class="form-label">Autor</label>
+  <input type="text" class="form-control" id="author" [(ngModel)]="libro.author" name="author">
+
+  <label class="form-label">Categoría</label>
+  <input type="text" class="form-control" id="category" [(ngModel)]="libro.category" name="category">
+
+  <label class="form-label">Editorial</label>
+  <input type="text" class="form-control" id="edit" [(ngModel)]="libro.edit" name="edit">
+
+  <label class="form-label">Idioma</label>
+  <input type="text" class="form-control" id="lang" [(ngModel)]="libro.lang" name="lang">
+
+  <label class="form-label">Paginas</label>
+  <input type="text" class="form-control" id="pages" [(ngModel)]="libro.pages" name="pages">
+
+  <label class="form-label">Descripcion</label>
+  <input type="text" class="form-control" id="description" [(ngModel)]="libro.description" name="description">
+
+  <label class="form-label">Ejemplares</label>
+  <input type="text" class="form-control" id="ejemplares" [(ngModel)]="libro.ejemplares" name="ejemplares">
+
+  <label class="form-label">Stock</label>
+  <input type="text" class="form-control" id="stock" [(ngModel)]="libro.stock" name="stock">
+
+  <label class="form-label">Estado</label>
+  <input type="text" class="form-control" id="available" [(ngModel)]="libro.available" name="available">
+</div>
+<br>
+<div class="col-12">
+  <button class="btn btn-success" [disabled]= "!LibroForm.form.valid">Guardar</button>
+</div>
+</form>
+</div>
+
+
+

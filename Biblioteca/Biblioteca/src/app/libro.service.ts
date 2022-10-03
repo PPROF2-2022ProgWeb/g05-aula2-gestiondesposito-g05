@@ -21,8 +21,8 @@ export class LibroService {
       return  this.HttpClient.post(`${this.baseURL2}`,Libros);
     }
 
-    obtenerLibroPorTitle(title:string):Observable<Object>{
-      return  this.HttpClient.get(`${this.baseURL2}/${title}`);
+    obtenerLibroPorId(id:number):Observable<LibroClass>{
+      return  this.HttpClient.get<LibroClass>(`${this.baseURL2}/${id}`);
     }
 
     eliminarLibroServ(id:number):Observable<Object>{
@@ -30,7 +30,7 @@ export class LibroService {
     }
 
     actualizarLibro(id:number,libro:LibroClass):Observable<Object>{
-      return  this.HttpClient.post(`${this.baseURL2}/${id}`,libro);
+      return this.HttpClient.put(`${this.baseURL2}/${id}`,libro);
     }
 
 }
