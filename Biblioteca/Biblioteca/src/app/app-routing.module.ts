@@ -16,12 +16,14 @@ import { ActualizarPrestamoComponent } from './shared/components/actualizar-pres
 import { PrestamoDetalleComponent } from './shared/components/prestamo-detalle/prestamo-detalle.component';
 import { LibroDetalleComponent } from './shared/components/libro-detalle/libro-detalle.component';
 import { UsuarioDetalleComponent } from './shared/components/usuario-detalle/usuario-detalle.component';
+import { PrestamoComponent} from './shared/components/prestamo/prestamo.component';
 const routes: Routes = [
   {path: '', redirectTo:'/inicio',pathMatch:'full'},
 
   {path: 'inicio', component: BodyComponent},
   {path: 'devolucion', component: DevlibComponent},
   {path: 'libros', component: LibrosComponent},
+  {path: 'prestamo', component: PrestamoComponent},
   {path: 'listaLibros', component: ListlibrosComponent},
   {path: 'listaUsuarios', component: ListusuariosComponent},
   {path: 'nuevoPrestamo', component: NuepreComponent},

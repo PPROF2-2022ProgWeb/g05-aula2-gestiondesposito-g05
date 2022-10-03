@@ -22,6 +22,7 @@ import { LibroDetalleComponent } from './shared/components/libro-detalle/libro-d
 import { UsuarioDetalleComponent } from './shared/components/usuario-detalle/usuario-detalle.component';
 import { PrestamoDetalleComponent } from './shared/components/prestamo-detalle/prestamo-detalle.component';
 import { ActualizarPrestamoComponent } from './shared/components/actualizar-prestamo/actualizar-prestamo.component';
+import { PrestamoComponent } from './shared/components/prestamo/prestamo.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { ActualizarPrestamoComponent } from './shared/components/actualizar-pres
     LibroDetalleComponent,
     UsuarioDetalleComponent,
     PrestamoDetalleComponent,
-    ActualizarPrestamoComponent
+    ActualizarPrestamoComponent,
+    PrestamoComponent
   ],
   imports: [
     BrowserModule,

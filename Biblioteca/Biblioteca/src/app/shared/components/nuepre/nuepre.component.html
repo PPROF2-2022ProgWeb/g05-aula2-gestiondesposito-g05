@@ -1,10 +1,32 @@
 <br><br><br>
-<div class="form">
-  <!--<p class="text">Nuevo Prestamo</p>-->
-  <form class="login-form">
-     <input type="text" placeholder="Folio de usuario">
-     <input type="password" placeholder="Libro ID">
-     <button>Prestar</button>
-  </form>
-
-</div>
+<h2>Listado de Uusarios</h2>
+<hr>
+<br><br>
+<table class="table table-striped">
+  <thead class="table-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">ID LIBRO</th>
+      <th scope="col">ID USUARIO</th>
+      <th scope="col">FECH. SALIDA</th>
+      <th scope="col">FECH. ENTREGAo</th>
+      <th scope="col">ESTADO</th>
+      <th scope="col">Opciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let prestamo of prestamo">
+      <td>{{prestamo.id}}</td>
+      <td>{{prestamo.libro}}</td>
+      <td>{{prestamo.usuario}}</td>
+      <td>{{prestamo.fechaSalida}}</td>
+      <td>{{prestamo.fechaEntrega}}</td>
+      <td>{{prestamo.estado}}</td>
+      <td>
+      <button (click)="actualizarPrestamo(prestamo.id)" class="btn btn-info" style="margin-bottom: 5px;">Editar</button>
+      <button (click)="eliminarPrestamo(prestamo.id)" class="btn btn-danger" style="margin-bottom: 5px;">Eliminar</button>
+      <button (click)="verDetallePrestamo(prestamo.id)" class="btn btn-primary" style="margin-bottom: 5px;">Detalle</button>
+    </td>
+    </tr>
+  </tbody>
+</table>
