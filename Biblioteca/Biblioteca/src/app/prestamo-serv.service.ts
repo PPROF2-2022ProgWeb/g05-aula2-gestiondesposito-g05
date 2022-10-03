@@ -1,3 +1,5 @@
+import { UsuarioClass } from './usuario-class';
+import { LibroClass } from './libro-class';
 import { Observable } from 'rxjs';
 import { PrestamoClass } from './prestamo-class';
 import { HttpClient } from '@angular/common/http';
@@ -15,6 +17,16 @@ export class PrestamoServService {
       // este metodo nos sirve para obtener los libros
       obtenerListaDePrestamo():Observable<PrestamoClass[]>{
         return this.HttpClient.get<PrestamoClass[]>(`${this.baseURL}`);
+      }
+
+       // este metodo nos sirve para obtener los libros
+       obtenerListaDeLibro():Observable<LibroClass[]>{
+        return this.HttpClient.get<LibroClass[]>(`${this.baseURL}`);
+      }
+
+       // este metodo nos sirve para obtener los libros
+       obtenerListaDeUsuario():Observable<UsuarioClass[]>{
+        return this.HttpClient.get<UsuarioClass[]>(`${this.baseURL}`);
       }
 
       // este metodo nos sirve para registrar un Libro

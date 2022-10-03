@@ -1,3 +1,8 @@
+import { UsuarioClass } from './../../../usuario-class';
+import { LibroService } from './../../../libro.service';
+import { HttpClient } from '@angular/common/http';
+import { LibroClass } from './../../../libro-class';
+import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
 import { PrestamoServService } from './../../../prestamo-serv.service';
 import { PrestamoClass } from './../../../prestamo-class';
@@ -11,10 +16,19 @@ import { Component, OnInit } from '@angular/core';
 export class PrestamoComponent implements OnInit {
 
   prestamo:PrestamoClass= new PrestamoClass();
+  libros:LibroClass[]=[];
+  usuarios:UsuarioClass[]=[];
 
   constructor(private PrestamoServService: PrestamoServService, private router2:Router) { }
 
   ngOnInit(): void {
+
+   //this.PrestamoServService.obtenerListaDeLibro().subscribe(response=>this.libros=response)
+    //this.PrestamoServService.obtenerListaDeUsuario().subscribe(response2=>this.usuarios=response2)
+    this.PrestamoServService.obtenerListaDeLibro().subscribe(dato=>{
+      this.libros=dato;
+      console.log(dato);
+      });
   }
   GuardarPrestamo(){
     this.PrestamoServService.registrarPrestamo(this.prestamo).subscribe(dato2 => {
@@ -31,4 +45,5 @@ irALaListaDePrestamo(){
     this.GuardarPrestamo();
 
   }
+
 }

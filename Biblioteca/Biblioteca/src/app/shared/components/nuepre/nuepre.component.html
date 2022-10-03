@@ -1,5 +1,5 @@
 <br><br><br>
-<h2>Listado de Uusarios</h2>
+<h2>Listado de Reporte</h2>
 <hr>
 <br><br>
 <table class="table table-striped">
@@ -9,7 +9,7 @@
       <th scope="col">ID LIBRO</th>
       <th scope="col">ID USUARIO</th>
       <th scope="col">FECH. SALIDA</th>
-      <th scope="col">FECH. ENTREGAo</th>
+      <th scope="col">FECH. ENTREGADO</th>
       <th scope="col">ESTADO</th>
       <th scope="col">Opciones</th>
     </tr>
@@ -17,8 +17,8 @@
   <tbody>
     <tr *ngFor="let prestamo of prestamo">
       <td>{{prestamo.id}}</td>
-      <td>{{prestamo.libro}}</td>
-      <td>{{prestamo.usuario}}</td>
+      <td>{{prestamo.libro.title}}</td>
+      <td>{{prestamo.usuario.name}}</td>
       <td>{{prestamo.fechaSalida}}</td>
       <td>{{prestamo.fechaEntrega}}</td>
       <td>{{prestamo.estado}}</td>
