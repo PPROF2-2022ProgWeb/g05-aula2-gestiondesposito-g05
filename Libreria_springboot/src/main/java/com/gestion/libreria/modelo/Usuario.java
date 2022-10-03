@@ -1,6 +1,8 @@
 package com.gestion.libreria.modelo;
 
 import java.time.LocalDate;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,6 +10,7 @@ import javax.persistence.EntityListeners;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
@@ -48,24 +51,8 @@ public class Usuario {
 	@Column(name = "sac_money")
 	private String sancMoney;
 
-	public Usuario() {
-		super();
-	}
-
-	public Usuario(int id, String name, String last_name_p, String last_name_m, String domicilio, String email,
-			String tel, LocalDate fechaNac, String sanctions, String sancMoney) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.last_name_p = last_name_p;
-		this.last_name_m = last_name_m;
-		this.domicilio = domicilio;
-		this.email = email;
-		this.tel = tel;
-		this.fechaNac = fechaNac;
-		this.sanctions = sanctions;
-		this.sancMoney = sancMoney;
-	}
+	@OneToMany (mappedBy="usuario")
+	private Set<Prestamo> prestamo = new HashSet<>();
 
 	public int getId() {
 		return id;
@@ -147,4 +134,16 @@ public class Usuario {
 		this.sancMoney = sancMoney;
 	}
 
+	public Set<Prestamo> getPrestamo() {
+		return prestamo;
+	}
+
+	public void setPrestamo(Set<Prestamo> prestamo) {
+		this.prestamo = prestamo;
+		for(Prestamo prestam:prestamo) {
+			prestam.setUsuario(this);
+		}
+	}
+	
+	
 }

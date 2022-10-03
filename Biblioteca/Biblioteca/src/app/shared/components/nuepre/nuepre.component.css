@@ -4,10 +4,13 @@
   border-radius: 10px;
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
-
-
 }
 
 .login-form{
   margin-top: 94px;
+}
+
+tr{
+  background: rgba(0, 128, 255, 0.8);
+  color: white;/*color del texto*/
 }
