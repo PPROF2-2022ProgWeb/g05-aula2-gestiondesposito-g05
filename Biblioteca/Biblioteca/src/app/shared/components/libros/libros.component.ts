@@ -3,6 +3,7 @@ import { LibroService } from './../../../libro.service';
 import { LibroClass } from './../../../libro-class';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import  swal  from 'sweetalert2';
 @Component({
   selector: 'app-libros',
   templateUrl: './libros.component.html',
@@ -26,6 +27,7 @@ export class LibrosComponent implements OnInit {
 
 irALaListaDeLibro(){
   this.router.navigate(['/listaLibros']);
+  swal('Libro actualizado',`El libro ${this.libro.title} ha sido actualizado con exito`,`success`);
 }
 
   onSubmit(){

@@ -2,6 +2,7 @@ import { UsuarioServService } from './../../../usuario-serv.service';
 import { UsuarioClass } from './../../../usuario-class';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import  swal  from 'sweetalert2';
 @Component({
   selector: 'app-usuarios',
   templateUrl: './usuarios.component.html',
@@ -26,6 +27,7 @@ export class UsuariosComponent implements OnInit {
 
 irALaListaDeUsuario(){
   this.router2.navigate(['/listaUsuarios']);
+  swal('Usuarios actualizado',`El usuarios ${this.usuario.name} ha sido actualizado con exito`,`success`);
 }
 
   onSubmit2(){

@@ -5,7 +5,7 @@ import { PrestamoServService } from './../../../prestamo-serv.service';
 import { PrestamoClass } from './../../../prestamo-class';
 import { Component, OnInit } from '@angular/core';
 import { DatePipe } from '@angular/common';
-
+import  swal  from 'sweetalert2';
 @Component({
   selector: 'app-prestamo',
   templateUrl: './prestamo.component.html',
@@ -34,6 +34,7 @@ export class PrestamoComponent implements OnInit {
 
 irALaListaDePrestamo(){
   this.router2.navigate(['/nuevoPrestamo']);
+  swal('Prestamo actualizado',`El prestamo id: ${this.prestamo.id} ha sido actualizado con exito`,`success`);
 }
 
   onSubmit3(){

@@ -8,4 +8,5 @@ usuario:UsuarioClass;
 fechaSalida:Date;
 fechaEntrega:Date;
 estado:number;
+dia_devolucion:Date;
 }

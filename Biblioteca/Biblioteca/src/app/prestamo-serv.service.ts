@@ -15,7 +15,7 @@ export class PrestamoServService {
   private baseURL3="http://localhost:9010/api/Usuario";
   constructor(private HttpClient :HttpClient) { }
 
-      // este metodo nos sirve para obtener los libros
+      // este metodo nos sirve para obtener los prestamos
       obtenerListaDePrestamo():Observable<PrestamoClass[]>{
         return this.HttpClient.get<PrestamoClass[]>(`${this.baseURL}`);
       }
@@ -25,12 +25,12 @@ export class PrestamoServService {
         return this.HttpClient.get<LibroClass[]>(`${this.baseURL2}`);
       }
 
-       // este metodo nos sirve para obtener los libros
+       // este metodo nos sirve para obtener los usuarios
        obtenerListaDeUsuario():Observable<UsuarioClass[]>{
         return this.HttpClient.get<UsuarioClass[]>(`${this.baseURL3}`);
       }
 
-      // este metodo nos sirve para registrar un Libro
+      // este metodo nos sirve para registrar un prestamo
       registrarPrestamo(Prestamo:PrestamoClass):Observable<Object>{
         return  this.HttpClient.post(`${this.baseURL}`,Prestamo);
       }
