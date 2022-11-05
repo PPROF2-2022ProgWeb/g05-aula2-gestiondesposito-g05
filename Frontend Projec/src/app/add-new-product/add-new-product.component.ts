@@ -26,15 +26,12 @@ export class AddNewProductComponent implements OnInit {
   }
 
   addProduct(productForm: NgForm){
-
     const productFormData = this.prepareFormData(this.product);
-
-    //console.log(this.product);
-
     this.ProductService.addProduct(productFormData).subscribe(
       (response:Product)=>{
         //console.log(Response);
         productForm.reset();
+        this.product.productImages=[]; 
       },
       (error:HttpErrorResponse)=>{
         console.log(error);
