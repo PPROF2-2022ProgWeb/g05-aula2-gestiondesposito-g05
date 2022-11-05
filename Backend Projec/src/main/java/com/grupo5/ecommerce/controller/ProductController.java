@@ -3,15 +3,12 @@ package com.grupo5.ecommerce.controller;
 import com.grupo5.ecommerce.entity.ImageModel;
 import com.grupo5.ecommerce.entity.Product;
 import com.grupo5.ecommerce.service.ProductService;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
-
 import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
