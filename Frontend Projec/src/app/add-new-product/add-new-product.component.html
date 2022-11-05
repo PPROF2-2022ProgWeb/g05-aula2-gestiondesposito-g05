@@ -44,10 +44,41 @@
                 </form>
             </div>
                 <div class="col-6">
+                    <div>
+                        <div class="dropzone" appDrag (files)="fileDropped($event)">
 
-                    <input type="file" multiple value="select" #selectFile
-                    (change)="onFileSelected($event)"
-                    >
+                            <div class="text-wrapper">
+                                <div class="centered">
+                                    Arrastra y suelta tu archivo o 
+                                    <a (click)="selectFile.click()" class="browaw-button">busca</a> 
+                                     un archivo
+                                </div>
+                                
+                            </div>
+                        
+
+
+                        </div>
+
+
+
+                        <input type="file" multiple value="select" #selectFile style="display: none;"
+                        (change)="onFileSelected($event)">
+                    </div>
+                    <div class="mt-5">
+                        <div class="row">
+                            <mat-grid-list cols="4" rowHeight="1:1">
+                                <mat-grid-tile *ngFor="let file of product.productImages; let i=index;">
+                                    <div style="position: relative;">
+                                        <span class="btn-remove-image" (click)="removeImage(i)">X</span>
+                                        <img [src]="file.url" width="100px" height="100px">
+                                    </div>
+                                </mat-grid-tile>
+
+                              </mat-grid-list>
+                        </div>
+                    </div>
+                    
                 </div>
 
             
