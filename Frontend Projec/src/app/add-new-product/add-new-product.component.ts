@@ -1,5 +1,4 @@
 import { Product } from './../_model/product.model';
-import { productos } from './../../../../Angular/src/app/productos';
 import { FileHandle } from './../_model/file_handle.model';
 import { ProductService } from './../_services/product.service';
 import { NgForm } from '@angular/forms';
@@ -33,7 +32,7 @@ export class AddNewProductComponent implements OnInit {
     //console.log(this.product);
 
     this.ProductService.addProduct(productFormData).subscribe(
-      (Response:Product)=>{
+      (response:Product)=>{
         //console.log(Response);
         productForm.reset();
       },
@@ -43,27 +42,27 @@ export class AddNewProductComponent implements OnInit {
     );
   }
 
-prepareFormData(product: Product):FormData{
-  const formData=new FormData();
-  formData.append(
-    'product',
-    new Blob([JSON.stringify(product)],{type:'application/json'})   
-  );
-  for(var i=0; i<product.productImages.length; i++){
+  prepareFormData(product: Product):FormData{
+    const formData=new FormData();
     formData.append(
-      'imageFile',
-      product.productImages[i].file,
-      product.productImages[i].file.name
+      'product',
+      new Blob([JSON.stringify(product)],{type:'application/json'})   
     );
+    for(var i=0; i<product.productImages.length; i++){
+      formData.append(
+        'imageFile',
+        product.productImages[i].file,
+        product.productImages[i].file.name
+      );
+    }
+  return formData;
   }
-return formData;
-}
 
   onFileSelected(event){
 
-    if(event.target.file)
+    if(event.target.files)
     {
-      const file = event.target.file[0];
+      const file = event.target.files[0];
       const filehandle: FileHandle={
         file: file,
         url: this.sanitizer.bypassSecurityTrustUrl(

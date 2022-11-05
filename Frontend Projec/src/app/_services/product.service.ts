@@ -1,5 +1,4 @@
 import { Product } from './../_model/product.model';
-import { productos } from './../../../../Angular/src/app/productos';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
