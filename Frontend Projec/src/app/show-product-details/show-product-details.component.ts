@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShowProductDetailsComponent implements OnInit {
   productDetails:Product[]=[];
-  displayedColumns: string[] = ['Id', 'Nombre', 'Descripción', 'Descuento', 'Precio'];
+  displayedColumns: string[] = ['Id', 'Nombre', 'Descripción', 'Descuento', 'Precio', 'Modificar', 'Eliminar'];
 
   constructor(private productService:ProductService) { }
 
@@ -27,6 +27,17 @@ export class ShowProductDetailsComponent implements OnInit {
         console.log(error);
       }
 
+    );
+  }
+
+  deleteProduct(productId){
+    //console.log(productId);
+    this.productService.deleteProduct(productId).subscribe(
+      (resp)=>{
+        this.getAllProduct();
+      },(error:HttpErrorResponse)=>{
+        console.log(error);
+      }
     );
   }
 }
