@@ -1,3 +1,6 @@
+import { productos } from './../../../../Angular/src/app/productos';
+import { map } from 'rxjs/operators';
+import { ImageProcessingService } from './../image-processing.service';
 import { ShowProductImagesDialogComponent } from './../show-product-images-dialog/show-product-images-dialog.component';
 import { HttpErrorResponse } from '@angular/common/http';
 import { Product } from './../_model/product.model';
@@ -14,21 +17,26 @@ export class ShowProductDetailsComponent implements OnInit {
   productDetails:Product[]=[];
   displayedColumns: string[] = ['Id', 'Nombre', 'Descripción', 'Descuento', 'Precio', 'Imagenes', 'Modificar', 'Eliminar'];
 
-  constructor(private productService:ProductService, public imagesDialog : MatDialog) { }
+  constructor(private productService:ProductService, 
+    public imagesDialog : MatDialog,
+    private imageProcessingService: ImageProcessingService) { }
 
   ngOnInit(): void {
     this.getAllProduct();
   }
 
   public getAllProduct(){
-    this.productService.getAllproducts().subscribe(
+    this.productService.getAllproducts()
+    .pipe(
+      map((x: Product[],i) =>x.map((product: Product) =>this.imageProcessingService.createImages(product)))
+    )
+    .subscribe(
       (resp:Product[])=>{
         console.log(resp);
         this.productDetails=resp;
       },(error:HttpErrorResponse)=>{
         console.log(error);
       }
-
     );
   }
 
@@ -44,7 +52,7 @@ export class ShowProductDetailsComponent implements OnInit {
   }
 
   showImages(product: Product){
-    //console.log(product);
+    console.log(product);
     this.imagesDialog.open(ShowProductImagesDialogComponent, {
       height:'500px',
       width:'800px'
