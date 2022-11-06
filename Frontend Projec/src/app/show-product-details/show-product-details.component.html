@@ -33,7 +33,17 @@
         <th mat-header-cell *matHeaderCellDef> Precio </th>
         <td mat-cell *matCellDef="let element"> {{element.productActualPrice}} </td>
       </ng-container>
-  
+
+   <!-- Imagenes -->
+    <ng-container matColumnDef="Imagenes">
+    <th mat-header-cell *matHeaderCellDef> Imagenes </th>
+    <td mat-cell *matCellDef="let element"> 
+      <button mat-icon-button color="primary" (click)="showImages(element)">
+        <mat-icon>images</mat-icon>
+      </button>
+    </td>
+    </ng-container>
+
       <!-- Edit Buttom -->
       <ng-container matColumnDef="Modificar">
         <th mat-header-cell *matHeaderCellDef> Modificar </th>
