@@ -9,7 +9,7 @@ import { Product } from '../_model/product.model';
   styleUrls: ['./product-view-details.component.css']
 })
 export class ProductViewDetailsComponent implements OnInit {
-
+  selectedProductIndex=0;
   product: Product;
 
   constructor(private activateRoute: ActivatedRoute) { }
@@ -19,4 +19,7 @@ export class ProductViewDetailsComponent implements OnInit {
     console.log(this.product);
   }
 
+  changeIndex(index){
+    this.selectedProductIndex=index;
+  }
 }
