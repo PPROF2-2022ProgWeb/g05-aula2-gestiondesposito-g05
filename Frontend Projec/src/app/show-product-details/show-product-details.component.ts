@@ -54,6 +54,10 @@ export class ShowProductDetailsComponent implements OnInit {
   showImages(product: Product){
     console.log(product);
     this.imagesDialog.open(ShowProductImagesDialogComponent, {
+      data: {
+
+        images:product.productImages
+      },
       height:'500px',
       width:'800px'
     });
