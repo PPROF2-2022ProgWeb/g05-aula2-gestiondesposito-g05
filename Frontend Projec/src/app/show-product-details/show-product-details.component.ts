@@ -15,7 +15,7 @@ import { MatDialog } from '@angular/material/dialog';
 })
 export class ShowProductDetailsComponent implements OnInit {
   productDetails:Product[]=[];
-  displayedColumns: string[] = ['Id', 'Nombre', 'Descripción', 'Descuento', 'Precio', 'Imagenes', 'Modificar', 'Eliminar'];
+  displayedColumns: string[] = ['Id', 'Nombre', 'Descripción', 'Descuento', 'Precio', 'Actions'];
 
   constructor(private productService:ProductService, 
     public imagesDialog : MatDialog,
