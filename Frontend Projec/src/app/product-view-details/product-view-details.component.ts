@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Product } from '../_model/product.model';
+
 
 @Component({
   selector: 'app-product-view-details',
@@ -7,9 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductViewDetailsComponent implements OnInit {
 
-  constructor() { }
+  product: Product;
+
+  constructor(private activateRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.product = this.activateRoute.snapshot.data['product'];
+    console.log(this.product);
   }
 
 }
