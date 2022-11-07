@@ -20,7 +20,7 @@
                 &nbsp; Desc: $<b>{{p.productDiscountedPrice}}</b>
             </div>
             <div class="mt-2">
-               <button mat-raised-button color="warn">Ver Detalles</button>
+               <button mat-raised-button color="warn" (click)="ShowProductDetails(p.productId)">Ver Detalles</button>
             </div>
          </div>
      

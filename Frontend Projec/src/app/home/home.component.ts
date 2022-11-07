@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { ProductService } from './../_services/product.service';
 import { Component, OnInit } from '@angular/core';
 import { map } from 'rxjs/operators';
@@ -14,7 +15,8 @@ export class HomeComponent implements OnInit {
   productDetails=[];
   
   constructor(private productService: ProductService, 
-    private imageProcessingService: ImageProcessingService,) { }
+    private imageProcessingService: ImageProcessingService,
+    private router: Router) { }
 
   ngOnInit(): void {
   this.getAllProducts();
@@ -33,5 +35,7 @@ export class HomeComponent implements OnInit {
       }
     );
   }
-
+  ShowProductDetails(productId){
+    this.router.navigate(['/productViewDetails',{productId: productId}]);
+  }
 }
