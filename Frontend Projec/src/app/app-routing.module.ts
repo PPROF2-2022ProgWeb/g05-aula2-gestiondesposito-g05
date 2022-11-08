@@ -1,3 +1,4 @@
+import { BuyProductComponent } from './buy-product/buy-product.component';
 import { ProductViewDetailsComponent } from './product-view-details/product-view-details.component';
 import { ProductResolveService } from './product-resolve.service';
 import { AddNewProductComponent } from './add-new-product/add-new-product.component';
@@ -27,7 +28,8 @@ const routes: Routes = [
     product: ProductResolveService
   }
   },
-  { path: 'ShowProductDetails', component: ShowProductDetailsComponent,canActivate:[AuthGuard], data:{roles:['Admin']}}
+  { path: 'ShowProductDetails', component: ShowProductDetailsComponent,canActivate:[AuthGuard], data:{roles:['Admin']}},
+  { path: 'buyProduct', component: BuyProductComponent }
 ];
 
 @NgModule({
