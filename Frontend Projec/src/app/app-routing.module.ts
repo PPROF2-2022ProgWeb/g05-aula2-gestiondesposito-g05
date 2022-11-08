@@ -1,3 +1,4 @@
+import { BuyProductResolverService } from './buy-product-resolver.service';
 import { BuyProductComponent } from './buy-product/buy-product.component';
 import { ProductViewDetailsComponent } from './product-view-details/product-view-details.component';
 import { ProductResolveService } from './product-resolve.service';
@@ -29,7 +30,11 @@ const routes: Routes = [
   }
   },
   { path: 'ShowProductDetails', component: ShowProductDetailsComponent,canActivate:[AuthGuard], data:{roles:['Admin']}},
-  { path: 'buyProduct', component: BuyProductComponent }
+  { path: 'buyProduct', component: BuyProductComponent ,  canActivate:[AuthGuard],data:{roles:['User']},
+  resolve:{
+    productDetail: BuyProductResolverService
+  }
+}
 ];
 
 @NgModule({

@@ -1,3 +1,5 @@
+import { OrderDetails } from './../_model/order-details.model';
+import { NgForm } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BuyProductComponent implements OnInit {
 
+  orderDetails: OrderDetails={
+    fullName: '',
+    fullAddress: '',
+    contactNumber: '',
+    alternateContactNumber: '',
+    orderProductQuantityList: []
+  }
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  public placeOrder(orderForm: NgForm){
+
   }
 
 }
