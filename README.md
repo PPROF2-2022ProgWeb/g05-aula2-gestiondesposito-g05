@@ -20,6 +20,22 @@
 
 ####
 ---
+
+![image](https://user-images.githubusercontent.com/63177312/200876270-c07dc194-4ed6-4195-878e-24e3044802f2.png)
+
+![image](https://user-images.githubusercontent.com/63177312/200876431-51c99957-c60f-46a5-858c-b336fa71c04d.png)
+
+
+![image](https://user-images.githubusercontent.com/63177312/200876585-e2559453-3575-47c8-b64c-30623757536c.png)
+
+
+![image](https://user-images.githubusercontent.com/63177312/200876636-ac9e7a32-80b2-458a-902f-d83cdc1eb443.png)
+
+
+
+
+####
+---
 **Perspectiva del producto:**
 <br><br>
 El sistema será un producto diseñado para trabajar en entornos WEB, lo que facilita la manera de trabajar, manejando la facturación y el inventario del mismo, manejo de proveedores. también como punto importante tendrá un control de stock y estará vinculado con la tienda virtual realizando los cambios correspondientes.
