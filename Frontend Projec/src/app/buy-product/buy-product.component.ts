@@ -33,7 +33,7 @@ productDetails: Product[] = [];
 
 
     console.log(this.productDetails);
-  //console.log(this.orderDetails);
+    console.log(this.orderDetails);
   }
 
   public placeOrder(orderForm: NgForm){
