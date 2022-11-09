@@ -3,7 +3,7 @@
 
 ---
 
-<a href="url"><img src="https://github.com/PPROF2-2022ProgWeb/g05-aula2-gestiondesposito-g05/blob/main/Angular/src/assets/img/logo.png" align="left" height="300"></a>
+<a href="url"><img src="https://github.com/PPROF2-2022ProgWeb/g05-aula2-gestiondesposito-g05/blob/main/Frontend%20Projec/src/assets/img/logo.png" align="left" height="300"></a>
 
 
 # Desafío E-commerce..
