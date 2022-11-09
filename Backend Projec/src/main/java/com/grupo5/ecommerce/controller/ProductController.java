@@ -15,7 +15,6 @@ import java.util.Set;
 
 @RestController
 public class ProductController {
-
     @Autowired
     private ProductService productService;
 
@@ -72,7 +71,7 @@ public class ProductController {
     @PreAuthorize("hasRole('User')")
     @GetMapping({"/getProductDetails/{isSingleProductCheckout}/{productId}"})
     public List<Product> getProductDetails(@PathVariable(name="isSingleProductCheckout") boolean isSingleProductCheckout,
-                                  @PathVariable(name="productId") Integer productId){
-            return productService.getProductDetails(isSingleProductCheckout,productId);
+                                           @PathVariable(name="productId") Integer productId){
+        return productService.getProductDetails(isSingleProductCheckout,productId);
     }
 }

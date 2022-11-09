@@ -1,5 +1,4 @@
 package com.grupo5.ecommerce.entity;
-
 import javax.persistence.*;
 
 @Entity

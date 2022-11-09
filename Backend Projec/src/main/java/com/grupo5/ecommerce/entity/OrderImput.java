@@ -1,13 +1,14 @@
 package com.grupo5.ecommerce.entity;
-
 import java.util.List;
-
 public class OrderImput {
     private String fullName;
     private String fullAddress;
     private String contactNumber;
     private String alternateContactNumber;
     private List<OrderProductQuantity> orderProductQuantityList;
+
+    public OrderImput() {
+    }
 
     public String getFullName() {
         return fullName;

@@ -21,7 +21,6 @@ import java.util.Set;
 
 @Service
 public class JwtService implements UserDetailsService {
-
     @Autowired
     private JwtUtil jwtUtil;
 

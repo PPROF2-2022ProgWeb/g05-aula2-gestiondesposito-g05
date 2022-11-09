@@ -12,7 +12,6 @@ import java.util.List;
 
 @Service
 public class OrderDetailService {
-
     private static final String ORDER_PLACED="Placed";
 
     @Autowired
@@ -26,25 +25,25 @@ public class OrderDetailService {
 
     public void placeOrder(OrderImput orderImput) {
 
-      List<OrderProductQuantity> productQuantityList=  orderImput.getOrderProductQuantityList();
+        List<OrderProductQuantity> productQuantityList=  orderImput.getOrderProductQuantityList();
 
-      for(OrderProductQuantity o: productQuantityList){
-          Product product = productDao.findById(o.getProductId()).get();
+        for(OrderProductQuantity o: productQuantityList){
+            Product product = productDao.findById(o.getProductId()).get();
 
-         String currentUser = JwtRequestFilter.CURRENT_USER;
-         User user= userDao.findById(currentUser).get();
+            String currentUser = JwtRequestFilter.CURRENT_USER;
+            User user= userDao.findById(currentUser).get();
 
-          OrderDetail orderDetail = new OrderDetail(
-                  orderImput.getFullName(),
-                  orderImput.getFullAddress(),
-                  orderImput.getContactNumber(),
-                  orderImput.getAlternateContactNumber(),
-                  ORDER_PLACED,
-                  product.getProductActualPrice() * o.getQuantity(),
-                  product,
-                  user
-          );
-          orderDetailDao.save(orderDetail);
-      }
+            OrderDetail orderDetail = new OrderDetail(
+                    orderImput.getFullName(),
+                    orderImput.getFullAddress(),
+                    orderImput.getContactNumber(),
+                    orderImput.getAlternateContactNumber(),
+                    ORDER_PLACED,
+                    product.getProductActualPrice() * o.getQuantity(),
+                    product,
+                    user
+            );
+            orderDetailDao.save(orderDetail);
+        }
     }
 }
