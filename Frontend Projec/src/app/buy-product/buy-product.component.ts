@@ -11,9 +11,9 @@ import { Product } from '../_model/product.model';
 })
 export class BuyProductComponent implements OnInit {
 
-productDetails: Product[]=[];
+productDetails: Product[] = [];
 
-  orderDetails: OrderDetails={
+  orderDetails: OrderDetails = {
     fullName: '',
     fullAddress: '',
     contactNumber: '',
@@ -27,12 +27,13 @@ productDetails: Product[]=[];
     this.productDetails = this.activateRoute.snapshot.data['productDetails'];
 
     this.productDetails.forEach(
-      x => this.orderDetails.orderProductQuantityList.push(
+      x=> this.orderDetails.orderProductQuantityList.push(
         {productId: x.productId, quantity:1}
-      )
-    );
+      ));
+
+
     console.log(this.productDetails);
-    console.log(this.orderDetails);
+  //console.log(this.orderDetails);
   }
 
   public placeOrder(orderForm: NgForm){

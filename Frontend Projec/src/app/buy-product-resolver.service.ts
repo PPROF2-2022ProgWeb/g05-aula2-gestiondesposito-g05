@@ -11,15 +11,18 @@ import { ImageProcessingService } from './image-processing.service';
 })
 export class BuyProductResolverService implements Resolve<Product[]> {
 
-  constructor(private productService: ProductService, private imageProcessingService: ImageProcessingService) { }
+  constructor(private productService: ProductService, 
+    private imageProcessingService: ImageProcessingService) { }
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Product[] | Observable<Product[]> | Promise<Product[]> {
+   
     const id = route.paramMap.get("id");
     const isSingleProductCheckout = route.paramMap.get("isSingleProductCheckout");
     return this.productService.getProductDetails(isSingleProductCheckout, id)
     .pipe(
-      map((x: Product[],i) =>x.map((product: Product) =>this.imageProcessingService.createImages(product)))
+      map(
+        (x: Product[],i) => x.map((product: Product) =>this.imageProcessingService.createImages(product))
+        )
     );
-
   }
 }
