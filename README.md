@@ -189,7 +189,7 @@ Al proyecto desarrollado en 2021, la “consultora ISPC”, solicita  en esta op
 
 <p align="center">
   <a>
-    <img alt="Edit on CodeSandbox" src="https://github.com/PPROF2-2022ProgWeb/g05-aula2-gestiondesposito-g05/blob/main/Angular/src/assets/img/Der.png">
+    <img alt="Edit on CodeSandbox" src="https://github.com/PPROF2-2022ProgWeb/g05-aula2-gestiondesposito-g05/blob/main/Frontend%20Projec/src/assets/img/Der.png">
   </a>
 </p>
 
