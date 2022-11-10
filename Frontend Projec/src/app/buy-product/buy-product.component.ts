@@ -1,3 +1,4 @@
+import { ProductService } from './../_services/product.service';
 import { ActivatedRoute } from '@angular/router';
 import { OrderDetails } from './../_model/order-details.model';
 import { NgForm } from '@angular/forms';
@@ -21,7 +22,9 @@ productDetails: Product[] = [];
     orderProductQuantityList: []
   }
 
-  constructor(private activateRoute: ActivatedRoute) { }
+  constructor(private activateRoute: ActivatedRoute,
+    private productService: ProductService
+    ) { }
 
   ngOnInit(): void {
     this.productDetails = this.activateRoute.snapshot.data['productDetails'];
@@ -37,7 +40,15 @@ productDetails: Product[] = [];
   }
 
   public placeOrder(orderForm: NgForm){
-
+    this.productService.placeOrder(this.orderDetails).subscribe(
+      (resp) =>{
+        console.log(resp);
+        orderForm.reset;
+      },
+      (err) =>{
+        console.log(err);
+      }
+    );
   }
 
 }
