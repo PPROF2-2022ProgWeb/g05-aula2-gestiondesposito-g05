@@ -13,14 +13,21 @@ import { HttpErrorResponse } from '@angular/common/http';
 })
 export class HomeComponent implements OnInit {
   productDetails=[];
-  
+  breakpoint: number;
   constructor(private productService: ProductService, 
     private imageProcessingService: ImageProcessingService,
     private router: Router) { }
 
   ngOnInit(): void {
   this.getAllProducts();
+  this.breakpoint = (window.innerWidth <= 400) ? 1 : 4;
   }
+
+  onResize(event) {
+    this.breakpoint = (event.target.innerWidth <= 400) ? 1 : 2;
+  }
+
+
   public getAllProducts(){
     this.productService.getAllproducts()
     .pipe(

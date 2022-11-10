@@ -1,5 +1,5 @@
 <div class="container mt-5">
-   <mat-grid-list cols="4" rowHeight="3:5" gutterSize="10">
+   <mat-grid-list [cols]="breakpoint" rowHeight="3:5" gutterSize="10" (window:resize)="onResize($event)">
       <mat-grid-tile *ngFor="let p of productDetails">
          <div class="row P-5">
             <div class="image-container">
