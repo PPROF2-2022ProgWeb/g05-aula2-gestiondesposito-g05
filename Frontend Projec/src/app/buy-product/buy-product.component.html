@@ -61,8 +61,11 @@
                             <td>{{product.productName}}</td>
                             <td>{{product.productDiscountedPrice}}</td>
                             <td>
-                                <select class="form-select"
+                                <select 
+                                #quantity
+                                class="form-select"
                                 [ngModel]="getQuantitiFormProduct(product.productid)"
+                                (change)="onQuantityChanged(quantity.value, product.productid)"
                                 >
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -70,6 +73,16 @@
                                     <option value="2">4</option>
                                 </select>
                             </td>
+                            <td>
+                                {{getCalculatedTotal(product.productid , product.productDiscountedPrice)}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><b>Total</b></td>
+                            <td>{{getCalculatorGrandTotal()}} </td>
                         </tr>
 
                     </tbody>
