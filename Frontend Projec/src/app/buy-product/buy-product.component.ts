@@ -23,8 +23,7 @@ productDetails: Product[] = [];
   }
 
   constructor(private activateRoute: ActivatedRoute,
-    private productService: ProductService
-    ) { }
+    private productService: ProductService) { }
 
   ngOnInit(): void {
     this.productDetails = this.activateRoute.snapshot.data['productDetails'];
@@ -43,7 +42,7 @@ productDetails: Product[] = [];
     this.productService.placeOrder(this.orderDetails).subscribe(
       (resp) =>{
         console.log(resp);
-        orderForm.reset;
+        orderForm.reset();
       },
       (err) =>{
         console.log(err);
@@ -51,4 +50,10 @@ productDetails: Product[] = [];
     );
   }
 
+  getQuantitiFormProduct(productid){
+    const filterProduct = this.orderDetails.orderProductQuantityList.filter(
+      (productQuantity) => productQuantity.productId === productid
+    );
+    return filterProduct[0].quantity;
+  }
 }
