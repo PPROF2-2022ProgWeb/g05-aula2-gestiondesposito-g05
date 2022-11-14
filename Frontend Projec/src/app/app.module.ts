@@ -32,6 +32,9 @@ import { ProductViewDetailsComponent } from './product-view-details/product-view
 import { BuyProductComponent } from './buy-product/buy-product.component';
 import { FooterComponent } from './footer/footer.component';
 import { RegistroComponent } from './registro/registro.component';
+import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [	
     AppComponent,
@@ -48,7 +51,8 @@ import { RegistroComponent } from './registro/registro.component';
     ProductViewDetailsComponent,
     BuyProductComponent,
     FooterComponent,
-      RegistroComponent
+      RegistroComponent,
+      ReactiveFormsComponent
    ],
   imports: [
     BrowserModule,
@@ -65,7 +69,8 @@ import { RegistroComponent } from './registro/registro.component';
     MatGridListModule,
     MatTableModule,
     MatIconModule,
-    MatDialogModule
+    MatDialogModule,
+    ReactiveFormsModule
   ],
   providers: [
     AuthGuard,

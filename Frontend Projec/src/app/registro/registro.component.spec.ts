@@ -11,6 +11,7 @@ describe('RegistroComponent', () => {
       declarations: [ RegistroComponent ]
     })
     .compileComponents();
+    console.log(RegistroComponent[2])
   });
 
   beforeEach(() => {
