@@ -1,0 +1,59 @@
+.product-information{
+    font-size: medium;
+}
+
+.image-container{
+    height: 500px;
+    position: relative;
+}
+
+.product-zoom-image{
+    max-width: 90%;
+    max-height: 90%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+
+/* ------------------------------ Responsive Media Styles ---------------------------- */
+
+@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
+
+/* Medium Device: 1200px */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media only screen and (max-width: 991px) {
+
+}
+
+/* Tablet Device: 768px */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Large Device: 480px */
+
+@media only screen and (max-width: 767px) {
+
+}
+
+/* Small Device: 320px */
+
+@media only screen and (max-width: 479px) {
+	
+}

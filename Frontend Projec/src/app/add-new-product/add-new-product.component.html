@@ -1,0 +1,91 @@
+<div class="container mt-5">
+
+    <div class="card p-2">
+        <div class="row">
+            <div class="col-6">
+                <form #productForm="ngForm" (ngSubmit)="addProduct(productForm)">
+                    <div class="col-12">
+                        <mat-form-field appearance="outline" class="w-100">
+                            <mat-label>Producto</mat-label>
+                            <input matInput placeholder="Nombre del producto" 
+                            [(ngModel)]="product.productName" 
+                            name="productName">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-12">
+                        <mat-form-field appearance="outline" class="w-100">
+                            <mat-label>Descripción</mat-label>
+                            <input matInput placeholder="descripción del producto" 
+                            [(ngModel)]="product.productDescription" 
+                            name="productDescription">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-12">
+                        <mat-form-field appearance="outline" class="w-100">
+                            <mat-label>Descuento</mat-label>
+                            <input matInput placeholder="decuento del producto" 
+                            [(ngModel)]="product.productDiscountedPrice" 
+                            name="productDiscountedPrice">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-12">
+                        <mat-form-field appearance="outline" class="w-100">
+                            <mat-label>Precio Actual</mat-label>
+                            <input matInput placeholder="precio del producto" 
+                            [(ngModel)]="product.productActualPrice" 
+                            name="productActualPrice">
+                        </mat-form-field>
+                    </div>
+                    <div Align="end">
+                        <button mat-stroked-button color="primary" type="submit" 
+                        *ngIf="isNewProduct" style="margin-right: 3px;">Agregar Producto</button>
+                        <button mat-stroked-button color="primary" type="submit" 
+                        *ngIf="!isNewProduct" style="margin-right: 3px;">Actualizar Producto</button>
+                        <button mat-stroked-button color="primary">Limpiar</button>
+                    </div>
+                </form>
+            </div>
+                <div class="col-6">
+                    <div>
+                        <div class="dropzone" appDrag (files)="fileDropped($event)">
+
+                            <div class="text-wrapper">
+                                <div class="centered">
+                                    Arrastra y suelta tu archivo o 
+                                    <a (click)="selectFile.click()" class="browaw-button">busca</a> 
+                                     un archivo
+                                </div>
+                                
+                            </div>
+                        
+
+
+                        </div>
+
+
+
+                        <input type="file" multiple value="select" #selectFile style="display: none;"
+                        (change)="onFileSelected($event)">
+                    </div>
+                    <div class="mt-5">
+                        <div class="row">
+                            <mat-grid-list cols="4" rowHeight="1:1">
+                                <mat-grid-tile *ngFor="let file of product.productImages; let i=index;">
+                                    <div style="position: relative;">
+                                        <span class="btn-remove-image" (click)="removeImage(i)">X</span>
+                                        <img [src]="file.url" width="100px" height="100px">
+                                    </div>
+                                </mat-grid-tile>
+
+                              </mat-grid-list>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            
+
+
+        </div>
+    </div>
+
