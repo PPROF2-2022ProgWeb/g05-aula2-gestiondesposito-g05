@@ -10,6 +10,7 @@ import { AdminComponent } from './admin/admin.component';
 import { ForbiddenComponent } from './forbidden/forbidden.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { RegistroComponent } from './registro/registro.component';
 import { UserComponent } from './user/user.component';
 import { AuthGuard } from './_auth/auth.guard';
 
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'admin', component: AdminComponent, canActivate:[AuthGuard], data:{roles:['Admin']} },
   { path: 'user', component: UserComponent ,  canActivate:[AuthGuard], data:{roles:['User']} },
   { path: 'login', component: LoginComponent },
+  { path: 'registro', component: RegistroComponent }, 
   { path: 'forbidden', component: ForbiddenComponent },
   { path: 'productViewDetails', component: ProductViewDetailsComponent, 
   resolve:{

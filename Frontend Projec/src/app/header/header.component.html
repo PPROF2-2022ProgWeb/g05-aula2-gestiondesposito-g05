@@ -3,8 +3,9 @@
     <a [routerLink]="['']"><img class="logo__img" src="../../assets/img/logo.png" width="60" height="60"></a>
     <span>MG Alarmas</span>
     <span class="example-spacer"></span>
+    <button mat-raised-button   type="button" routerLink="/home">Inicio</button>
     <button mat-raised-button  *ngIf="! isLoggedIn()" type="button" routerLink="/login">Login</button>
-    <button mat-raised-button                         type="button" routerLink="/ShowProductDetails">Registrarse</button>
+    <button mat-raised-button   type="button" routerLink="/registro">Registrarse</button>
     <button mat-raised-button color="warn" *ngIf="isLoggedIn()" type="button" (click)="logout()">Logout</button>
 </mat-toolbar>
 
