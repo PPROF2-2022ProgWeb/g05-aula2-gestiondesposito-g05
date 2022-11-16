@@ -8,14 +8,11 @@
 
   .colorUno{  
     background-color: #3f51b5;
-    padding-left: 10px;
+
     padding-right: 10px; 
+
+
   }
   .colorUno:hover{  
     background-color: #f44336;
   }
-
-  .colorDos{
-    margin-left: 5px;
-  }
- 
