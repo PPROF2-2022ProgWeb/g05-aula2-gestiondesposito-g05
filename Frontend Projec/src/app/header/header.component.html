@@ -1,5 +1,5 @@
 
-<mat-toolbar color="primary">
+<mat-toolbar color="primary" class="headerPrincipal">
     <a [routerLink]="['']"><img class="logo__img" src="../../assets/img/logo.png" width="60" height="60"></a>
     <span>MG Alarmas</span>
     <span class="example-spacer"></span>
@@ -7,8 +7,23 @@
     <button mat-raised-button color="warn" *ngIf="isLoggedIn()" type="button" (click)="logout()">Logout</button>
 </mat-toolbar>
 
-<mat-toolbar color="primary" *ngIf="isLoggedIn()">
-  <button mat-raised-button color="primary" routerLink="/" >Inicio</button>
-  <button *ngIf="isAdmin()" mat-raised-button color="primary" routerLink="/addNewProduct">Agregar Producto</button>
-  <button *ngIf="isAdmin()" mat-raised-button color="primary" routerLink="/ShowProductDetails">Mostrar Producto</button>
-</mat-toolbar>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark colorNabBar" *ngIf="isLoggedIn()">
+  <div class="container-fluid">
+    <a class="navbar-brand colorUno" routerLink="/">Inicio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="navbar-brand colorUno" aria-current="page" routerLink="/addNewProduct" *ngIf="isAdmin()">Agregar Producto</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand colorUno colorDos" routerLink="/ShowProductDetails" *ngIf="isAdmin()">Mostrar Producto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
