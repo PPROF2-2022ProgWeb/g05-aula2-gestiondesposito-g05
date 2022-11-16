@@ -13,13 +13,6 @@ public List< >
 
 @PostMapping
 public void insertar(@RequestBody User user){
-
     userregDao.save(user);
 }
-
-
-
-
-
-
 }
