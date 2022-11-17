@@ -27,23 +27,22 @@ productDetails: Product[] = [];
 
   ngOnInit(): void {
     this.productDetails = this.activateRoute.snapshot.data['productDetails'];
-    console.log(this.productDetails);
-    /*
-    this.productDetails.forEach(
-      x=> this.orderDetails.orderProductQuantityList.push(
-        {productId: x.productId, quantity:1}
-      ));
-*/
 
     console.log(this.productDetails);
     console.log(this.orderDetails);
+        
+    this.productDetails.forEach( beer=>{
+      this.orderDetails.orderProductQuantityList.push(
+        {productId: beer.productId, quantity: 1}
+    )});
+
   }
 
   public placeOrder(orderForm: NgForm){
     this.productService.placeOrder(this.orderDetails).subscribe(
       (resp) =>{
         console.log(resp);
-        orderForm.reset();
+        orderForm.reset;
       },
       (err) =>{
         console.log(err);
