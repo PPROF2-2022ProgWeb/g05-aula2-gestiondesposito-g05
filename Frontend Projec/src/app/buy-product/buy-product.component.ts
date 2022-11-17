@@ -27,12 +27,13 @@ productDetails: Product[] = [];
 
   ngOnInit(): void {
     this.productDetails = this.activateRoute.snapshot.data['productDetails'];
-
+    console.log(this.productDetails);
+    /*
     this.productDetails.forEach(
       x=> this.orderDetails.orderProductQuantityList.push(
         {productId: x.productId, quantity:1}
       ));
-
+*/
 
     console.log(this.productDetails);
     console.log(this.orderDetails);
