@@ -28,6 +28,7 @@ productDetails: Product[] = [];
   ngOnInit(): void {
     this.productDetails = this.activateRoute.snapshot.data['productDetails'];
 
+
     this.productDetails.forEach(
       x=> this.orderDetails.orderProductQuantityList.push(
         {productId: x.productId, quantity:1}
@@ -42,7 +43,7 @@ productDetails: Product[] = [];
     this.productService.placeOrder(this.orderDetails).subscribe(
       (resp) =>{
         console.log(resp);
-        orderForm.reset();
+        orderForm.reset;
       },
       (err) =>{
         console.log(err);
@@ -50,21 +51,21 @@ productDetails: Product[] = [];
     );
   }
 
-  getQuantitiFormProduct(productid){
+  getQuantitiFormProduct(productid: number){
     const filterProduct = this.orderDetails.orderProductQuantityList.filter(
       (productQuantity) => productQuantity.productId === productid
     );
     return filterProduct[0].quantity;
   }
 
-  getCalculatedTotal(productid , productDiscountedPrice){
+  getCalculatedTotal(productid: number , productDiscountedPrice: number){
     const filteredProduct = this.orderDetails.orderProductQuantityList.filter(
       (productQuantity) => productQuantity.productId === productid
     );
     return filteredProduct[0].quantity * productDiscountedPrice;
   }
 
-  onQuantityChanged(q, productid){
+  onQuantityChanged(q: number, productid: number){
     this.orderDetails.orderProductQuantityList.filter(
       (orderProduct) => orderProduct.productId === productid
     )[0].quantity = q;
