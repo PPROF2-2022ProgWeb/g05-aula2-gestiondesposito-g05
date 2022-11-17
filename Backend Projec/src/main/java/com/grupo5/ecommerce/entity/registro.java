@@ -12,6 +12,12 @@ public class registro {
 @Id
 @Column
 private Integer user_name;
+@Column 
+private String user_first;
+@Column 
+private String user_last;
+@Column 
+private String user_pass;
 
 
 }
