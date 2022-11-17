@@ -31,8 +31,12 @@ import { ShowProductImagesDialogComponent } from './show-product-images-dialog/s
 import { ProductViewDetailsComponent } from './product-view-details/product-view-details.component';
 import { BuyProductComponent } from './buy-product/buy-product.component';
 import { FooterComponent } from './footer/footer.component';
+import { RegistroComponent } from './registro/registro.component';
+import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     HomeComponent,
     AdminComponent,
@@ -46,8 +50,10 @@ import { FooterComponent } from './footer/footer.component';
     ShowProductImagesDialogComponent,
     ProductViewDetailsComponent,
     BuyProductComponent,
-    FooterComponent
-  ],
+    FooterComponent,
+      RegistroComponent,
+      ReactiveFormsComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -63,7 +69,8 @@ import { FooterComponent } from './footer/footer.component';
     MatGridListModule,
     MatTableModule,
     MatIconModule,
-    MatDialogModule
+    MatDialogModule,
+    ReactiveFormsModule
   ],
   providers: [
     AuthGuard,
