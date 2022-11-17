@@ -5,7 +5,7 @@
     <span class="example-spacer"></span>
     <!-- <button mat-raised-button   type="button" routerLink="/home">Inicio</button> -->
     <button mat-raised-button  *ngIf="! isLoggedIn()" type="button" routerLink="/login">Login</button>
-    <button mat-raised-button   type="button" routerLink="/registro">Registrarse</button>
+    <button mat-raised-button   type="button" routerLink="/registro" style="margin-right: 10px;">Registrarse</button>
     <button mat-raised-button color="warn" *ngIf="isLoggedIn()" type="button" (click)="logout()">Logout</button>
 </mat-toolbar>
 
