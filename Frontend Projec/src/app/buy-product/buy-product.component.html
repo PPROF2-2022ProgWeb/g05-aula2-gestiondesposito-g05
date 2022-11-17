@@ -7,48 +7,86 @@
                     <div class="col-12">
                         <mat-form-field appearance="outline" class="w-100">
                             <mat-label>Nombre del contacto</mat-label>
-                            <input matInput placeholder="Nombre Completro" 
-                            [(ngModel)]="orderDetails.fullName" 
-                            name="fullName">
+                            <input matInput placeholder="Nombre Completro" [(ngModel)]="orderDetails.fullName"
+                                name="fullName">
                         </mat-form-field>
                     </div>
 
                     <div class="col-12">
                         <mat-form-field appearance="outline" class="w-100">
                             <mat-label>Dirección del contacto</mat-label>
-                            <input matInput placeholder="Insertar la Dirección" 
-                            [(ngModel)]="orderDetails.fullAddress" 
-                            name="fullAddress">
+                            <input matInput placeholder="Insertar la Dirección" [(ngModel)]="orderDetails.fullAddress"
+                                name="fullAddress">
                         </mat-form-field>
                     </div>
 
                     <div class="col-6">
                         <mat-form-field appearance="outline" class="w-100">
                             <mat-label>Numero de Contacto</mat-label>
-                            <input matInput placeholder="Nombre de Contacto" 
-                            [(ngModel)]="orderDetails.contactNumber" 
-                            name="contactNumber">
+                            <input matInput placeholder="Nombre de Contacto" [(ngModel)]="orderDetails.contactNumber"
+                                name="contactNumber">
                         </mat-form-field>
                     </div>
 
                     <div class="col-6">
                         <mat-form-field appearance="outline" class="w-100">
                             <mat-label>Numero Alternativo</mat-label>
-                            <input matInput placeholder="Nombre alternativo" 
-                            [(ngModel)]="orderDetails.alternateContactNumber" 
-                            name="alternateContactNumber">
+                            <input matInput placeholder="Nombre alternativo"
+                                [(ngModel)]="orderDetails.alternateContactNumber" name="alternateContactNumber">
                         </mat-form-field>
                     </div>
 
                     <div Align="right">
-                        <button mat-stroked-button color="primary" type="submit" 
-                        style="margin-right: 3px;">Guardar Contacto</button>
-                    </div>     
+                        <button mat-stroked-button color="primary" type="submit" style="margin-right: 3px;">Guardar
+                            Contacto</button>
+                    </div>
                 </form>
 
             </div>
             <div class="col-6">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda numquam optio minima quo corrupti corporis aliquid consectetur blanditiis, at dolores eaque repudiandae sit enim, perferendis atque quaerat recusandae, accusamus error!
+                <table class="table">
+                    <thead class="thead">
+
+                        <tr>
+                            <th>Codigo</th>
+                            <th>Nombre</th>
+                            <th>Amount</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        <tr *ngFor="let product of productDetails">
+                            <td>{{product.productid}}</td>
+                            <td>{{product.productName}}</td>
+                            <td>{{product.productDiscountedPrice}}</td>
+                            <td>
+                                <select 
+                                #quantity
+                                class="form-select"
+                                [ngModel]="getQuantitiFormProduct(product.productid)"
+                                (change)="onQuantityChanged(quantity.value, product.productid)"
+                                >
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="2">3</option>
+                                    <option value="2">4</option>
+                                </select>
+                            </td>
+                            <td>
+                                {{getCalculatedTotal(product.productid , product.productDiscountedPrice)}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><b>Total</b></td>
+                            <td>{{getCalculatorGrandTotal()}} </td>
+                        </tr>
+
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

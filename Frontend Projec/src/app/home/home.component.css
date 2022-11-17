@@ -15,47 +15,12 @@ mat-grid-tile{
 
 .image-container{
     position: relative;
-    height: 300px;
+    height: 250px;
 
 }
 
-/* ------------------------------ Responsive Media Styles ---------------------------- */
+div.center {
+    text-align: center;
+  }
 
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {
 
-}
-
-@media only screen and (min-width: 1200px) {
-
-}
-
-/* Medium Device: 1200px */
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-
-}
-
-@media only screen and (max-width: 991px) {
-
-    .homecolumn{
-        columns: 2;
-    }
-}
-
-/* Tablet Device: 768px */
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-
-}
-
-/* Large Device: 480px */
-
-@media only screen and (max-width: 767px) {
-
-}
-
-/* Small Device: 320px */
-
-@media only screen and (max-width: 479px) {
-	
-}

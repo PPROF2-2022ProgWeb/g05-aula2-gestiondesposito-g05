@@ -23,8 +23,7 @@ productDetails: Product[] = [];
   }
 
   constructor(private activateRoute: ActivatedRoute,
-    private productService: ProductService
-    ) { }
+    private productService: ProductService) { }
 
   ngOnInit(): void {
     this.productDetails = this.activateRoute.snapshot.data['productDetails'];
@@ -43,7 +42,7 @@ productDetails: Product[] = [];
     this.productService.placeOrder(this.orderDetails).subscribe(
       (resp) =>{
         console.log(resp);
-        orderForm.reset;
+        orderForm.reset();
       },
       (err) =>{
         console.log(err);
@@ -51,4 +50,35 @@ productDetails: Product[] = [];
     );
   }
 
+  getQuantitiFormProduct(productid){
+    const filterProduct = this.orderDetails.orderProductQuantityList.filter(
+      (productQuantity) => productQuantity.productId === productid
+    );
+    return filterProduct[0].quantity;
+  }
+
+  getCalculatedTotal(productid , productDiscountedPrice){
+    const filteredProduct = this.orderDetails.orderProductQuantityList.filter(
+      (productQuantity) => productQuantity.productId === productid
+    );
+    return filteredProduct[0].quantity * productDiscountedPrice;
+  }
+
+  onQuantityChanged(q, productid){
+    this.orderDetails.orderProductQuantityList.filter(
+      (orderProduct) => orderProduct.productId === productid
+    )[0].quantity = q;
+  }
+
+  getCalculatorGrandTotal(){
+    let grandTotal =0;
+
+    this.orderDetails.orderProductQuantityList.forEach(
+      (productQuantity) => {
+        const price = this.productDetails.filter(product =>product.productId === productQuantity.productId)[0].productDiscountedPrice;
+        grandTotal = grandTotal + price * productQuantity.quantity;
+      });
+        return grandTotal;
+      }
+  
 }
