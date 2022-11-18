@@ -18,6 +18,7 @@ export class ProductViewDetailsComponent implements OnInit {
   ngOnInit(): void {
     this.product = this.activateRoute.snapshot.data['product'];
     console.log(this.product);
+
   }
 
   changeIndex(index){
@@ -25,8 +26,15 @@ export class ProductViewDetailsComponent implements OnInit {
   }
 
   buyProduct(productId){
+    this.comprarProducto();
     this.router.navigate(['/buyProduct',{
       isSingleProductCheckout: true, id: productId
     }]);
+
+  }
+
+  comprarProducto(){
+
+    localStorage.setItem(this.product.productId.toString(),JSON.stringify(this.product))
   }
 }

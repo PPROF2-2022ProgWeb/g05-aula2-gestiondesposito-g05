@@ -37,8 +37,11 @@
                     </div>
 
                     <div Align="right">
-                        <button mat-stroked-button color="primary" type="submit" style="margin-right: 3px;">Guardar
-                            Contacto</button>
+                        <button mat-stroked-button color="primary" 
+                        type="submit" 
+                        style="margin-right: 3px;"
+                        (click)="limpiar()"
+                        >Guardar Contacto</button>
                     </div>
                 </form>
 
@@ -50,21 +53,21 @@
                         <tr>
                             <th>Codigo</th>
                             <th>Nombre</th>
-                            <th>Amount</th>
-                            <th>Quantity</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
                             <th>Total</th>
                         </tr>
                     </thead>
                     <tbody class="tbody">
                         <tr *ngFor="let product of productDetails">
-                            <td>{{product.productid}}</td>
+                            <td>{{product.productId}}</td>
                             <td>{{product.productName}}</td>
                             <td>{{product.productDiscountedPrice}}</td>
                             <td>
                                 <select 
                                 #quantity
                                 class="form-select"
-                                [ngModel]="getQuantitiFormProduct(product.productid)"
+                                [ngModel]="3"
                                 (change)="onQuantityChanged(quantity.value, product.productid)"
                                 >
                                     <option value="1">1</option>
@@ -74,7 +77,7 @@
                                 </select>
                             </td>
                             <td>
-                                {{getCalculatedTotal(product.productid , product.productDiscountedPrice)}}
+                                {{getCalculatedTotal(product.productId , product.productDiscountedPrice)}}
                             </td>
                         </tr>
                         <tr>
